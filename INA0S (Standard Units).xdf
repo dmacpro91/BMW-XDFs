@@ -1,4 +1,4 @@
-<!-- Written 05/06/2015 13:56:42 -->
+<!-- Written 05/21/2015 21:42:01 -->
 <XDFFORMAT version="1.50">
   <XDFHEADER>
     <flags>0x1</flags>
@@ -1976,7 +1976,7 @@
     <title>VANOS Exhaust (Idle) Cold</title>
     <CATEGORYMEM index="0" category="8" />
     <XDFAXIS id="x" uniqueid="0x0">
-      <EMBEDDEDDATA mmedtypeflags="0x02" mmedaddress="0x7A06E" mmedelementsizebits="16" mmedcolcount="12" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <EMBEDDEDDATA mmedtypeflags="0x02" mmedaddress="0x79C02" mmedelementsizebits="16" mmedcolcount="12" mmedmajorstridebits="0" mmedminorstridebits="0" />
       <units>Load</units>
       <indexcount>12</indexcount>
       <embedinfo type="1" />
@@ -1988,7 +1988,7 @@
       </MATH>
     </XDFAXIS>
     <XDFAXIS id="y" uniqueid="0x0">
-      <EMBEDDEDDATA mmedtypeflags="0x02" mmedaddress="0x7A056" mmedelementsizebits="16" mmedcolcount="12" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <EMBEDDEDDATA mmedtypeflags="0x02" mmedaddress="0x79BEA" mmedelementsizebits="16" mmedcolcount="12" mmedmajorstridebits="0" mmedminorstridebits="0" />
       <units>RPM</units>
       <indexcount>12</indexcount>
       <decimalpl>0</decimalpl>
@@ -2016,7 +2016,7 @@
     <title>VANOS Exhaust (Idle) Warm</title>
     <CATEGORYMEM index="0" category="8" />
     <XDFAXIS id="x" uniqueid="0x0">
-      <EMBEDDEDDATA mmedtypeflags="0x02" mmedaddress="0x79E22" mmedelementsizebits="16" mmedcolcount="12" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <EMBEDDEDDATA mmedtypeflags="0x02" mmedaddress="0x799B6" mmedelementsizebits="16" mmedcolcount="12" mmedmajorstridebits="0" mmedminorstridebits="0" />
       <units>Load</units>
       <indexcount>12</indexcount>
       <embedinfo type="1" />
@@ -2028,7 +2028,7 @@
       </MATH>
     </XDFAXIS>
     <XDFAXIS id="y" uniqueid="0x0">
-      <EMBEDDEDDATA mmedtypeflags="0x02" mmedaddress="0x79E0A" mmedelementsizebits="16" mmedcolcount="12" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <EMBEDDEDDATA mmedtypeflags="0x02" mmedaddress="0x7999E" mmedelementsizebits="16" mmedcolcount="12" mmedmajorstridebits="0" mmedminorstridebits="0" />
       <units>RPM</units>
       <indexcount>12</indexcount>
       <decimalpl>0</decimalpl>
@@ -2137,7 +2137,7 @@
     <title>VANOS Exhaust (Spool)</title>
     <CATEGORYMEM index="0" category="8" />
     <XDFAXIS id="x" uniqueid="0x0">
-      <EMBEDDEDDATA mmedtypeflags="0x02" mmedaddress="0x7AD8E" mmedelementsizebits="16" mmedcolcount="8" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <EMBEDDEDDATA mmedtypeflags="0x02" mmedaddress="0x7A922" mmedelementsizebits="16" mmedcolcount="8" mmedmajorstridebits="0" mmedminorstridebits="0" />
       <units>Load</units>
       <indexcount>8</indexcount>
       <embedinfo type="1" />
@@ -2149,7 +2149,7 @@
       </MATH>
     </XDFAXIS>
     <XDFAXIS id="y" uniqueid="0x0">
-      <EMBEDDEDDATA mmedtypeflags="0x02" mmedaddress="0x7AD7E" mmedelementsizebits="16" mmedcolcount="8" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <EMBEDDEDDATA mmedtypeflags="0x02" mmedaddress="0x7A912" mmedelementsizebits="16" mmedcolcount="8" mmedmajorstridebits="0" mmedminorstridebits="0" />
       <units>RPM</units>
       <indexcount>8</indexcount>
       <decimalpl>0</decimalpl>
@@ -2177,7 +2177,7 @@
     <title>VANOS Intake (Idle) Cold</title>
     <CATEGORYMEM index="0" category="8" />
     <XDFAXIS id="x" uniqueid="0x0">
-      <EMBEDDEDDATA mmedtypeflags="0x02" mmedaddress="0x79FAA" mmedelementsizebits="16" mmedcolcount="12" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <EMBEDDEDDATA mmedtypeflags="0x02" mmedaddress="0x79B3E" mmedelementsizebits="16" mmedcolcount="12" mmedmajorstridebits="0" mmedminorstridebits="0" />
       <units>Load</units>
       <indexcount>12</indexcount>
       <embedinfo type="1" />
@@ -2189,7 +2189,7 @@
       </MATH>
     </XDFAXIS>
     <XDFAXIS id="y" uniqueid="0x0">
-      <EMBEDDEDDATA mmedtypeflags="0x02" mmedaddress="0x79F92" mmedelementsizebits="16" mmedcolcount="12" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <EMBEDDEDDATA mmedtypeflags="0x02" mmedaddress="0x79B26" mmedelementsizebits="16" mmedcolcount="12" mmedmajorstridebits="0" mmedminorstridebits="0" />
       <units>RPM</units>
       <indexcount>12</indexcount>
       <decimalpl>0</decimalpl>
@@ -2217,7 +2217,7 @@
     <title>VANOS Intake (Idle) Warm</title>
     <CATEGORYMEM index="0" category="8" />
     <XDFAXIS id="x" uniqueid="0x0">
-      <EMBEDDEDDATA mmedtypeflags="0x02" mmedaddress="0x79EE6" mmedelementsizebits="16" mmedcolcount="12" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <EMBEDDEDDATA mmedtypeflags="0x02" mmedaddress="0x79A7A" mmedelementsizebits="16" mmedcolcount="12" mmedmajorstridebits="0" mmedminorstridebits="0" />
       <units>Load</units>
       <indexcount>12</indexcount>
       <embedinfo type="1" />
@@ -2229,7 +2229,7 @@
       </MATH>
     </XDFAXIS>
     <XDFAXIS id="y" uniqueid="0x0">
-      <EMBEDDEDDATA mmedtypeflags="0x02" mmedaddress="0x79ECE" mmedelementsizebits="16" mmedcolcount="12" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <EMBEDDEDDATA mmedtypeflags="0x02" mmedaddress="0x79A62" mmedelementsizebits="16" mmedcolcount="12" mmedmajorstridebits="0" mmedminorstridebits="0" />
       <units>RPM</units>
       <indexcount>12</indexcount>
       <decimalpl>0</decimalpl>
@@ -2338,7 +2338,7 @@
     <title>VANOS Intake (Spool)</title>
     <CATEGORYMEM index="0" category="8" />
     <XDFAXIS id="x" uniqueid="0x0">
-      <EMBEDDEDDATA mmedtypeflags="0x02" mmedaddress="0x7AD2A" mmedelementsizebits="16" mmedcolcount="8" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <EMBEDDEDDATA mmedtypeflags="0x02" mmedaddress="0x7A8BE" mmedelementsizebits="16" mmedcolcount="8" mmedmajorstridebits="0" mmedminorstridebits="0" />
       <units>Load</units>
       <indexcount>8</indexcount>
       <embedinfo type="1" />
@@ -2350,7 +2350,7 @@
       </MATH>
     </XDFAXIS>
     <XDFAXIS id="y" uniqueid="0x0">
-      <EMBEDDEDDATA mmedtypeflags="0x02" mmedaddress="0x7AD1A" mmedelementsizebits="16" mmedcolcount="8" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <EMBEDDEDDATA mmedtypeflags="0x02" mmedaddress="0x7A8AE" mmedelementsizebits="16" mmedcolcount="8" mmedmajorstridebits="0" mmedminorstridebits="0" />
       <units>RPM</units>
       <indexcount>8</indexcount>
       <decimalpl>0</decimalpl>
@@ -2868,7 +2868,7 @@
       </MATH>
     </XDFAXIS>
     <XDFAXIS id="y" uniqueid="0x0">
-      <EMBEDDEDDATA mmedtypeflags="0x02" mmedaddress="0x4C265" mmedelementsizebits="8" mmedcolcount="8" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <EMBEDDEDDATA mmedtypeflags="0x02" mmedaddress="0x4C264" mmedelementsizebits="8" mmedcolcount="8" mmedmajorstridebits="0" mmedminorstridebits="0" />
       <units>RPM</units>
       <indexcount>8</indexcount>
       <decimalpl>0</decimalpl>
@@ -2909,7 +2909,7 @@
       </MATH>
     </XDFAXIS>
     <XDFAXIS id="y" uniqueid="0x0">
-      <EMBEDDEDDATA mmedtypeflags="0x02" mmedaddress="0x4C265" mmedelementsizebits="8" mmedcolcount="8" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <EMBEDDEDDATA mmedtypeflags="0x02" mmedaddress="0x4C264" mmedelementsizebits="8" mmedcolcount="8" mmedmajorstridebits="0" mmedminorstridebits="0" />
       <units>RPM</units>
       <indexcount>8</indexcount>
       <decimalpl>0</decimalpl>
@@ -2935,7 +2935,7 @@
     </XDFAXIS>
   </XDFTABLE>
   <XDFTABLE uniqueid="0x353" flags="0x30">
-    <title>Load to Torque Limit</title>
+    <title>Load to Torque Limit 1</title>
     <CATEGORYMEM index="0" category="4" />
     <CATEGORYMEM index="1" category="23" />
     <XDFAXIS id="x" uniqueid="0x0">
@@ -2943,7 +2943,6 @@
       <units>RPM</units>
       <indexcount>16</indexcount>
       <decimalpl>0</decimalpl>
-      <outputtype>2</outputtype>
       <embedinfo type="1" />
       <datatype>0</datatype>
       <unittype>0</unittype>
@@ -2956,7 +2955,6 @@
       <EMBEDDEDDATA mmedtypeflags="0x02" mmedaddress="0x6E95A" mmedelementsizebits="16" mmedcolcount="16" mmedmajorstridebits="0" mmedminorstridebits="0" />
       <units>Load Act.</units>
       <indexcount>16</indexcount>
-      <outputtype>2</outputtype>
       <embedinfo type="1" />
       <datatype>0</datatype>
       <unittype>0</unittype>
@@ -2967,7 +2965,89 @@
     </XDFAXIS>
     <XDFAXIS id="z">
       <EMBEDDEDDATA mmedtypeflags="0x03" mmedaddress="0x6E99A" mmedelementsizebits="16" mmedrowcount="16" mmedcolcount="16" mmedmajorstridebits="0" mmedminorstridebits="0" />
-      <units>Torque (Nm)</units>
+      <units>Torque (ft-lb)</units>
+      <decimalpl>1</decimalpl>
+      <min>0.000000</min>
+      <max>2416.800049</max>
+      <outputtype>1</outputtype>
+      <MATH equation="X/13.5582">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE uniqueid="0x3D32" flags="0x30">
+    <title>Load to Torque Limit 2</title>
+    <CATEGORYMEM index="0" category="4" />
+    <CATEGORYMEM index="1" category="23" />
+    <XDFAXIS id="x" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x02" mmedaddress="0x6EBBE" mmedelementsizebits="16" mmedcolcount="16" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units>RPM</units>
+      <indexcount>16</indexcount>
+      <decimalpl>0</decimalpl>
+      <embedinfo type="1" />
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <DALINK index="0" />
+      <MATH equation="X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="y" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x02" mmedaddress="0x6EB9E" mmedelementsizebits="16" mmedcolcount="16" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units>Load</units>
+      <indexcount>16</indexcount>
+      <embedinfo type="1" />
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <DALINK index="0" />
+      <MATH equation="X/100">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="z">
+      <EMBEDDEDDATA mmedtypeflags="0x03" mmedaddress="0x6EBDE" mmedelementsizebits="16" mmedrowcount="16" mmedcolcount="16" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units>Torque (ft-lb)</units>
+      <decimalpl>1</decimalpl>
+      <min>0.000000</min>
+      <max>2416.800049</max>
+      <outputtype>1</outputtype>
+      <MATH equation="X/13.5582">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE uniqueid="0x48E7" flags="0x30">
+    <title>Load to Torque Limit 3</title>
+    <CATEGORYMEM index="0" category="4" />
+    <CATEGORYMEM index="1" category="23" />
+    <XDFAXIS id="x" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x02" mmedaddress="0x6EE02" mmedelementsizebits="16" mmedcolcount="16" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units>RPM</units>
+      <indexcount>16</indexcount>
+      <decimalpl>0</decimalpl>
+      <embedinfo type="1" />
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <DALINK index="0" />
+      <MATH equation="X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="y" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x02" mmedaddress="0x6EDE2" mmedelementsizebits="16" mmedcolcount="16" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units>Load</units>
+      <indexcount>16</indexcount>
+      <embedinfo type="1" />
+      <datatype>0</datatype>
+      <unittype>1</unittype>
+      <DALINK index="0" />
+      <MATH equation="X/100">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="z">
+      <EMBEDDEDDATA mmedtypeflags="0x03" mmedaddress="0x6EE22" mmedelementsizebits="16" mmedrowcount="16" mmedcolcount="16" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units>Torque (ft-lb)</units>
       <decimalpl>1</decimalpl>
       <min>0.000000</min>
       <max>2416.800049</max>
@@ -3056,55 +3136,13 @@
       </MATH>
     </XDFAXIS>
   </XDFTABLE>
-  <XDFTABLE uniqueid="0x3D32" flags="0x30">
-    <title>Load to Torque Limit 2</title>
-    <CATEGORYMEM index="0" category="4" />
-    <XDFAXIS id="x" uniqueid="0x0">
-      <EMBEDDEDDATA mmedtypeflags="0x02" mmedaddress="0x6EBBE" mmedelementsizebits="16" mmedcolcount="16" mmedmajorstridebits="0" mmedminorstridebits="0" />
-      <units>RPM</units>
-      <indexcount>16</indexcount>
-      <decimalpl>0</decimalpl>
-      <outputtype>2</outputtype>
-      <embedinfo type="1" />
-      <datatype>0</datatype>
-      <unittype>0</unittype>
-      <DALINK index="0" />
-      <MATH equation="X">
-        <VAR id="X" />
-      </MATH>
-    </XDFAXIS>
-    <XDFAXIS id="y" uniqueid="0x0">
-      <EMBEDDEDDATA mmedtypeflags="0x02" mmedaddress="0x6EB9E" mmedelementsizebits="16" mmedcolcount="16" mmedmajorstridebits="0" mmedminorstridebits="0" />
-      <units>Load</units>
-      <indexcount>16</indexcount>
-      <decimalpl>0</decimalpl>
-      <outputtype>2</outputtype>
-      <embedinfo type="1" />
-      <datatype>0</datatype>
-      <unittype>0</unittype>
-      <DALINK index="0" />
-      <MATH equation="X/100">
-        <VAR id="X" />
-      </MATH>
-    </XDFAXIS>
-    <XDFAXIS id="z">
-      <EMBEDDEDDATA mmedtypeflags="0x03" mmedaddress="0x6EBDE" mmedelementsizebits="16" mmedrowcount="16" mmedcolcount="16" mmedmajorstridebits="0" mmedminorstridebits="0" />
-      <units>Torque (Nm)</units>
-      <decimalpl>2</decimalpl>
-      <min>0.000000</min>
-      <max>2000.000000</max>
-      <outputtype>1</outputtype>
-      <MATH equation="X/13.56">
-        <VAR id="X" />
-      </MATH>
-    </XDFAXIS>
-  </XDFTABLE>
   <XDFTABLE uniqueid="0x48D0" flags="0x30">
     <title>Load to Torque Limit 2 Load</title>
     <CATEGORYMEM index="0" category="4" />
     <CATEGORYMEM index="1" category="13" />
     <XDFAXIS id="x" uniqueid="0x0">
       <EMBEDDEDDATA mmedelementsizebits="16" mmedmajorstridebits="-32" mmedminorstridebits="0" />
+      <units>Load</units>
       <indexcount>1</indexcount>
       <datatype>0</datatype>
       <unittype>0</unittype>
@@ -3115,37 +3153,23 @@
       </MATH>
     </XDFAXIS>
     <XDFAXIS id="y" uniqueid="0x0">
-      <EMBEDDEDDATA mmedelementsizebits="16" mmedmajorstridebits="-32" mmedminorstridebits="0" />
+      <EMBEDDEDDATA mmedtypeflags="0x02" mmedaddress="0x6EB9E" mmedelementsizebits="16" mmedcolcount="16" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units>Load</units>
       <indexcount>16</indexcount>
+      <embedinfo type="1" />
       <datatype>0</datatype>
       <unittype>0</unittype>
       <DALINK index="0" />
-      <LABEL index="0" value="0.00" />
-      <LABEL index="1" value="0.00" />
-      <LABEL index="2" value="0.00" />
-      <LABEL index="3" value="0.00" />
-      <LABEL index="4" value="0.00" />
-      <LABEL index="5" value="0.00" />
-      <LABEL index="6" value="0.00" />
-      <LABEL index="7" value="0.00" />
-      <LABEL index="8" value="0.00" />
-      <LABEL index="9" value="0.00" />
-      <LABEL index="10" value="0.00" />
-      <LABEL index="11" value="0.00" />
-      <LABEL index="12" value="0.00" />
-      <LABEL index="13" value="0.00" />
-      <LABEL index="14" value="0.00" />
-      <LABEL index="15" value="0.00" />
-      <MATH equation="X">
+      <MATH equation="X/100">
         <VAR id="X" />
       </MATH>
     </XDFAXIS>
     <XDFAXIS id="z">
       <EMBEDDEDDATA mmedtypeflags="0x03" mmedaddress="0x6EB9E" mmedelementsizebits="16" mmedrowcount="16" mmedmajorstridebits="0" mmedminorstridebits="0" />
-      <decimalpl>0</decimalpl>
+      <decimalpl>2</decimalpl>
       <min>0.000000</min>
-      <max>255.000000</max>
-      <outputtype>2</outputtype>
+      <max>300.000000</max>
+      <outputtype>1</outputtype>
       <MATH equation="X/100">
         <VAR id="X" />
       </MATH>
@@ -3156,33 +3180,21 @@
     <CATEGORYMEM index="0" category="4" />
     <CATEGORYMEM index="1" category="13" />
     <XDFAXIS id="x" uniqueid="0x0">
-      <EMBEDDEDDATA mmedelementsizebits="16" mmedmajorstridebits="-32" mmedminorstridebits="0" />
+      <EMBEDDEDDATA mmedtypeflags="0x02" mmedaddress="0x6EBBE" mmedelementsizebits="16" mmedcolcount="16" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units>RPM</units>
       <indexcount>16</indexcount>
+      <decimalpl>0</decimalpl>
+      <embedinfo type="1" />
       <datatype>0</datatype>
       <unittype>0</unittype>
       <DALINK index="0" />
-      <LABEL index="0" value="0.00" />
-      <LABEL index="1" value="0.00" />
-      <LABEL index="2" value="0.00" />
-      <LABEL index="3" value="0.00" />
-      <LABEL index="4" value="0.00" />
-      <LABEL index="5" value="0.00" />
-      <LABEL index="6" value="0.00" />
-      <LABEL index="7" value="0.00" />
-      <LABEL index="8" value="0.00" />
-      <LABEL index="9" value="0.00" />
-      <LABEL index="10" value="0.00" />
-      <LABEL index="11" value="0.00" />
-      <LABEL index="12" value="0.00" />
-      <LABEL index="13" value="0.00" />
-      <LABEL index="14" value="0.00" />
-      <LABEL index="15" value="0.00" />
       <MATH equation="X">
         <VAR id="X" />
       </MATH>
     </XDFAXIS>
     <XDFAXIS id="y" uniqueid="0x0">
       <EMBEDDEDDATA mmedelementsizebits="16" mmedmajorstridebits="-32" mmedminorstridebits="0" />
+      <units>RPM</units>
       <indexcount>1</indexcount>
       <datatype>0</datatype>
       <unittype>0</unittype>
@@ -3197,62 +3209,19 @@
       <decimalpl>0</decimalpl>
       <min>0.000000</min>
       <max>10000.000000</max>
-      <outputtype>2</outputtype>
-      <MATH equation="X">
-        <VAR id="X" />
-      </MATH>
-    </XDFAXIS>
-  </XDFTABLE>
-  <XDFTABLE uniqueid="0x48E7" flags="0x30">
-    <title>Load to Torque Limit 3</title>
-    <CATEGORYMEM index="0" category="4" />
-    <CATEGORYMEM index="1" category="23" />
-    <XDFAXIS id="x" uniqueid="0x0">
-      <EMBEDDEDDATA mmedtypeflags="0x02" mmedaddress="0x6EE02" mmedelementsizebits="16" mmedcolcount="16" mmedmajorstridebits="0" mmedminorstridebits="0" />
-      <units>RPM</units>
-      <indexcount>16</indexcount>
-      <decimalpl>0</decimalpl>
-      <outputtype>2</outputtype>
-      <embedinfo type="1" />
-      <datatype>0</datatype>
-      <unittype>0</unittype>
-      <DALINK index="0" />
-      <MATH equation="X">
-        <VAR id="X" />
-      </MATH>
-    </XDFAXIS>
-    <XDFAXIS id="y" uniqueid="0x0">
-      <EMBEDDEDDATA mmedtypeflags="0x02" mmedaddress="0x6EDE2" mmedelementsizebits="16" mmedcolcount="16" mmedmajorstridebits="0" mmedminorstridebits="0" />
-      <units>Load</units>
-      <indexcount>16</indexcount>
-      <decimalpl>0</decimalpl>
-      <outputtype>2</outputtype>
-      <embedinfo type="1" />
-      <datatype>0</datatype>
-      <unittype>1</unittype>
-      <DALINK index="0" />
-      <MATH equation="X/100">
-        <VAR id="X" />
-      </MATH>
-    </XDFAXIS>
-    <XDFAXIS id="z">
-      <EMBEDDEDDATA mmedtypeflags="0x03" mmedaddress="0x6EE22" mmedelementsizebits="16" mmedrowcount="16" mmedcolcount="16" mmedmajorstridebits="0" mmedminorstridebits="0" />
-      <units>Torque (Nm)</units>
-      <decimalpl>2</decimalpl>
-      <min>0.000000</min>
-      <max>2000.000000</max>
       <outputtype>1</outputtype>
-      <MATH equation="X/10*.73756">
+      <MATH equation="X">
         <VAR id="X" />
       </MATH>
     </XDFAXIS>
   </XDFTABLE>
-  <XDFTABLE uniqueid="0x5192" flags="0x0">
+  <XDFTABLE uniqueid="0x5192" flags="0x30">
     <title>Load to Torque Limit 3 Load</title>
     <CATEGORYMEM index="0" category="4" />
     <CATEGORYMEM index="1" category="13" />
     <XDFAXIS id="x" uniqueid="0x0">
       <EMBEDDEDDATA mmedelementsizebits="16" mmedmajorstridebits="-32" mmedminorstridebits="0" />
+      <units>Load</units>
       <indexcount>1</indexcount>
       <datatype>0</datatype>
       <unittype>0</unittype>
@@ -3263,9 +3232,9 @@
       </MATH>
     </XDFAXIS>
     <XDFAXIS id="y" uniqueid="0x0">
-      <EMBEDDEDDATA mmedtypeflags="0x03" mmedaddress="0x6EDE2" mmedelementsizebits="16" mmedcolcount="16" mmedmajorstridebits="16" mmedminorstridebits="0" />
+      <EMBEDDEDDATA mmedtypeflags="0x02" mmedaddress="0x6EDE2" mmedelementsizebits="16" mmedcolcount="16" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units>Load</units>
       <indexcount>16</indexcount>
-      <outputtype>2</outputtype>
       <embedinfo type="1" />
       <datatype>0</datatype>
       <unittype>0</unittype>
@@ -3276,10 +3245,10 @@
     </XDFAXIS>
     <XDFAXIS id="z">
       <EMBEDDEDDATA mmedtypeflags="0x03" mmedaddress="0x6EDE2" mmedelementsizebits="16" mmedrowcount="16" mmedmajorstridebits="0" mmedminorstridebits="0" />
-      <decimalpl>0</decimalpl>
+      <decimalpl>2</decimalpl>
       <min>0.000000</min>
-      <max>255.000000</max>
-      <outputtype>2</outputtype>
+      <max>300.000000</max>
+      <outputtype>1</outputtype>
       <MATH equation="X/100">
         <VAR id="X" />
       </MATH>
@@ -3290,9 +3259,9 @@
     <CATEGORYMEM index="0" category="4" />
     <CATEGORYMEM index="1" category="13" />
     <XDFAXIS id="x" uniqueid="0x0">
-      <EMBEDDEDDATA mmedtypeflags="0x02" mmedaddress="0x6EE02" mmedelementsizebits="16" mmedcolcount="16" mmedmajorstridebits="16" mmedminorstridebits="0" />
+      <EMBEDDEDDATA mmedtypeflags="0x02" mmedaddress="0x6EE02" mmedelementsizebits="16" mmedcolcount="16" mmedmajorstridebits="0" mmedminorstridebits="0" />
       <indexcount>16</indexcount>
-      <outputtype>2</outputtype>
+      <decimalpl>0</decimalpl>
       <embedinfo type="1" />
       <datatype>0</datatype>
       <unittype>0</unittype>
@@ -3303,6 +3272,7 @@
     </XDFAXIS>
     <XDFAXIS id="y" uniqueid="0x0">
       <EMBEDDEDDATA mmedelementsizebits="16" mmedmajorstridebits="-32" mmedminorstridebits="0" />
+      <units>RPM</units>
       <indexcount>1</indexcount>
       <datatype>0</datatype>
       <unittype>0</unittype>
@@ -3317,7 +3287,7 @@
       <decimalpl>0</decimalpl>
       <min>0.000000</min>
       <max>10000.000000</max>
-      <outputtype>2</outputtype>
+      <outputtype>1</outputtype>
       <MATH equation="X">
         <VAR id="X" />
       </MATH>
@@ -5028,7 +4998,7 @@
     <CATEGORYMEM index="0" category="1" />
     <CATEGORYMEM index="1" category="9" />
     <XDFAXIS id="x" uniqueid="0x0">
-      <EMBEDDEDDATA mmedtypeflags="0x02" mmedaddress="0x5D196" mmedelementsizebits="16" mmedcolcount="12" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <EMBEDDEDDATA mmedtypeflags="0x02" mmedaddress="0x5D1B6" mmedelementsizebits="16" mmedcolcount="12" mmedmajorstridebits="0" mmedminorstridebits="0" />
       <units>MAF Req (WGDC kgh)</units>
       <indexcount>12</indexcount>
       <decimalpl>0</decimalpl>
@@ -5463,7 +5433,6 @@
       </MATH>
     </XDFAXIS>
   </XDFTABLE>
-
   <XDFTABLE uniqueid="0x5023" flags="0x30">
     <title>WGDC D-Factor Multiplier RPM</title>
     <CATEGORYMEM index="0" category="1" />
@@ -6725,11 +6694,11 @@
   </XDFTABLE>
   <XDFTABLE uniqueid="0x6DA8" flags="0x30">
     <title>Disable Speed Limiter</title>
-    <description>To disable, set to 01&#013;&#010;To enable, set to 00</description>
+    <description>To disable, set to 01&#013;&#010;To enable, set to 00&#013;&#010;Check your stock rom for the enable value.</description>
     <CATEGORYMEM index="0" category="15" />
     <CATEGORYMEM index="1" category="20" />
     <XDFAXIS id="x" uniqueid="0x0">
-      <EMBEDDEDDATA mmedaddress="0x47c9e" mmedelementsizebits="8" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <EMBEDDEDDATA mmedaddress="0x47C9E" mmedelementsizebits="8" mmedmajorstridebits="0" mmedminorstridebits="0" />
       <units>Limiter</units>
       <indexcount>1</indexcount>
       <decimalpl>0</decimalpl>
@@ -6743,7 +6712,7 @@
       </MATH>
     </XDFAXIS>
     <XDFAXIS id="y" uniqueid="0x0">
-      <EMBEDDEDDATA mmedaddress="0x47c9e" mmedelementsizebits="8" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <EMBEDDEDDATA mmedaddress="0x47C9E" mmedelementsizebits="8" mmedmajorstridebits="0" mmedminorstridebits="0" />
       <units>Limiter</units>
       <indexcount>1</indexcount>
       <decimalpl>0</decimalpl>
@@ -6757,7 +6726,7 @@
       </MATH>
     </XDFAXIS>
     <XDFAXIS id="z">
-      <EMBEDDEDDATA mmedaddress="0x47c9e" mmedelementsizebits="8" mmedrowcount="1" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <EMBEDDEDDATA mmedaddress="0x47C9E" mmedelementsizebits="8" mmedrowcount="1" mmedmajorstridebits="0" mmedminorstridebits="0" />
       <units>Limiter</units>
       <decimalpl>2</decimalpl>
       <min>0.000000</min>
@@ -7111,7 +7080,8 @@
     </XDFAXIS>
   </XDFTABLE>
   <XDFTABLE uniqueid="0x5746" flags="0x0">
-    <title>2C77</title>
+    <title>2C77 (AfterCat 02 sensor signal Bank 1)</title>
+    <description>To disable, set to 00&#013;&#010;To enable, set to 56&#013;&#010;Check your stock rom for the enable value.</description>
     <CATEGORYMEM index="0" category="15" />
     <CATEGORYMEM index="1" category="21" />
     <XDFAXIS id="x" uniqueid="0x0">
@@ -7148,7 +7118,8 @@
     </XDFAXIS>
   </XDFTABLE>
   <XDFTABLE uniqueid="0x313C" flags="0x0">
-    <title>2C78</title>
+    <title>2C78 (AfterCat 02 sensor signal Bank 2)</title>
+    <description>To disable, set to 00&#013;&#010;To enable, set to 56&#013;&#010;Check your stock rom for the enable value.</description>
     <CATEGORYMEM index="0" category="15" />
     <CATEGORYMEM index="1" category="21" />
     <XDFAXIS id="x" uniqueid="0x0">
@@ -7261,8 +7232,8 @@
     </XDFAXIS>
   </XDFTABLE>
   <XDFTABLE uniqueid="0x6655" flags="0x0">
-    <title>2A18 DTML</title>
-    <description>0 to disable</description>
+    <title>2A18 (DTML diagnosis module tank leakage, heating; input signal)</title>
+    <description>To disable, set to 00&#013;&#010;To enable, set to 56&#013;&#010;Check your stock rom for the enable value.</description>
     <CATEGORYMEM index="0" category="15" />
     <CATEGORYMEM index="1" category="21" />
     <XDFAXIS id="x" uniqueid="0x0">
@@ -7489,7 +7460,8 @@
     </XDFAXIS>
   </XDFTABLE>
   <XDFTABLE uniqueid="0x6576" flags="0x0">
-    <title>2E18</title>
+    <title>2E18 (Ignition, Cyl. 1)</title>
+    <description>To disable, set to 00&#013;&#010;To enable, set to 11&#013;&#010;Check your stock rom for the enable value.</description>
     <CATEGORYMEM index="0" category="15" />
     <CATEGORYMEM index="1" category="21" />
     <XDFAXIS id="x" uniqueid="0x0">
@@ -7525,45 +7497,9 @@
       </MATH>
     </XDFAXIS>
   </XDFTABLE>
-  <XDFTABLE uniqueid="0xFA2" flags="0x0">
-    <title>2E1D</title>
-    <CATEGORYMEM index="0" category="15" />
-    <CATEGORYMEM index="1" category="21" />
-    <XDFAXIS id="x" uniqueid="0x0">
-      <EMBEDDEDDATA mmedelementsizebits="16" mmedmajorstridebits="-32" mmedminorstridebits="0" />
-      <indexcount>1</indexcount>
-      <datatype>0</datatype>
-      <unittype>0</unittype>
-      <DALINK index="0" />
-      <LABEL index="0" value="0.00" />
-      <MATH equation="X">
-        <VAR id="X" />
-      </MATH>
-    </XDFAXIS>
-    <XDFAXIS id="y" uniqueid="0x0">
-      <EMBEDDEDDATA mmedelementsizebits="16" mmedmajorstridebits="-32" mmedminorstridebits="0" />
-      <indexcount>1</indexcount>
-      <datatype>0</datatype>
-      <unittype>0</unittype>
-      <DALINK index="0" />
-      <LABEL index="0" value="0.00" />
-      <MATH equation="X">
-        <VAR id="X" />
-      </MATH>
-    </XDFAXIS>
-    <XDFAXIS id="z">
-      <EMBEDDEDDATA mmedaddress="0x439DC" mmedelementsizebits="8" mmedrowcount="1" mmedmajorstridebits="0" mmedminorstridebits="0" />
-      <decimalpl>2</decimalpl>
-      <min>0.000000</min>
-      <max>255.000000</max>
-      <outputtype>3</outputtype>
-      <MATH equation="X">
-        <VAR id="X" />
-      </MATH>
-    </XDFAXIS>
-  </XDFTABLE>
   <XDFTABLE uniqueid="0x5F7A" flags="0x0">
-    <title>2E19</title>
+    <title>2E19 (Ignition, Cyl. 2)</title>
+    <description>To disable, set to 00&#013;&#010;To enable, set to 11&#013;&#010;Check your stock rom for the enable value.</description>
     <CATEGORYMEM index="0" category="15" />
     <CATEGORYMEM index="1" category="21" />
     <XDFAXIS id="x" uniqueid="0x0">
@@ -7600,7 +7536,8 @@
     </XDFAXIS>
   </XDFTABLE>
   <XDFTABLE uniqueid="0x40ED" flags="0x0">
-    <title>2E1A</title>
+    <title>2E1A (Ignition, Cyl. 3)</title>
+    <description>To disable, set to 00&#013;&#010;To enable, set to 11&#013;&#010;Check your stock rom for the enable value.</description>
     <CATEGORYMEM index="0" category="15" />
     <CATEGORYMEM index="1" category="21" />
     <XDFAXIS id="x" uniqueid="0x0">
@@ -7637,8 +7574,8 @@
     </XDFAXIS>
   </XDFTABLE>
   <XDFTABLE uniqueid="0x47AA" flags="0x0">
-    <title>2E1B</title>
-    <description>0 disable, 11 enable</description>
+    <title>2E1B (Ignition, Cyl. 4)</title>
+    <description>To disable, set to 00&#013;&#010;To enable, set to 11&#013;&#010;Check your stock rom for the enable value.</description>
     <CATEGORYMEM index="0" category="15" />
     <CATEGORYMEM index="1" category="21" />
     <XDFAXIS id="x" uniqueid="0x0">
@@ -7675,7 +7612,8 @@
     </XDFAXIS>
   </XDFTABLE>
   <XDFTABLE uniqueid="0x5E0A" flags="0x0">
-    <title>2E1C</title>
+    <title>2E1C (Ignition, Cyl. 5)</title>
+    <description>To disable, set to 00&#013;&#010;To enable, set to 11&#013;&#010;Check your stock rom for the enable value.</description>
     <CATEGORYMEM index="0" category="15" />
     <CATEGORYMEM index="1" category="21" />
     <XDFAXIS id="x" uniqueid="0x0">
@@ -7711,9 +7649,47 @@
       </MATH>
     </XDFAXIS>
   </XDFTABLE>
+  <XDFTABLE uniqueid="0xFA2" flags="0x0">
+    <title>2E1D (Ignition, Cyl. 6)</title>
+    <description>To disable, set to 00&#013;&#010;To enable, set to 11&#013;&#010;Check your stock rom for the enable value.</description>
+    <CATEGORYMEM index="0" category="15" />
+    <CATEGORYMEM index="1" category="21" />
+    <XDFAXIS id="x" uniqueid="0x0">
+      <EMBEDDEDDATA mmedelementsizebits="16" mmedmajorstridebits="-32" mmedminorstridebits="0" />
+      <indexcount>1</indexcount>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <DALINK index="0" />
+      <LABEL index="0" value="0.00" />
+      <MATH equation="X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="y" uniqueid="0x0">
+      <EMBEDDEDDATA mmedelementsizebits="16" mmedmajorstridebits="-32" mmedminorstridebits="0" />
+      <indexcount>1</indexcount>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <DALINK index="0" />
+      <LABEL index="0" value="0.00" />
+      <MATH equation="X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="z">
+      <EMBEDDEDDATA mmedaddress="0x439DC" mmedelementsizebits="8" mmedrowcount="1" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <decimalpl>2</decimalpl>
+      <min>0.000000</min>
+      <max>255.000000</max>
+      <outputtype>3</outputtype>
+      <MATH equation="X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
   <XDFTABLE uniqueid="0x3FEF" flags="0x0">
-    <title>2E77</title>
-    <description>0 disable, 11 enable</description>
+    <title>2E77 (Ignition, Voltage Supply)</title>
+    <description>To disable, set to 00&#013;&#010;To enable, set to 11&#013;&#010;Check your stock rom for the enable value.</description>
     <CATEGORYMEM index="0" category="15" />
     <CATEGORYMEM index="1" category="21" />
     <XDFAXIS id="x" uniqueid="0x0">
@@ -8462,7 +8438,7 @@
     <CATEGORYMEM index="0" category="4" />
     <CATEGORYMEM index="1" category="13" />
     <XDFAXIS id="x" uniqueid="0x0">
-      <EMBEDDEDDATA mmedaddress="0x4A7B5" mmedelementsizebits="8" mmedcolcount="4" mmedmajorstridebits="8" mmedminorstridebits="0" />
+      <EMBEDDEDDATA mmedaddress="0x4A99D" mmedelementsizebits="8" mmedcolcount="4" mmedmajorstridebits="8" mmedminorstridebits="0" />
       <indexcount>4</indexcount>
       <outputtype>2</outputtype>
       <embedinfo type="1" />
@@ -8485,7 +8461,7 @@
       </MATH>
     </XDFAXIS>
     <XDFAXIS id="z">
-      <EMBEDDEDDATA mmedaddress="0x4A7B5" mmedelementsizebits="8" mmedrowcount="1" mmedcolcount="4" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <EMBEDDEDDATA mmedaddress="0x4A99D" mmedelementsizebits="8" mmedrowcount="1" mmedcolcount="4" mmedmajorstridebits="0" mmedminorstridebits="0" />
       <decimalpl>2</decimalpl>
       <min>0.000000</min>
       <max>255.000000</max>
