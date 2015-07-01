@@ -5998,7 +5998,7 @@
       <units>Load Act.</units>
       <decimalpl>2</decimalpl>
       <min>0.000000</min>
-      <max>2.000000</max>
+      <max>300.000000</max>
       <outputtype>1</outputtype>
       <MATH equation="X/100">
         <VAR id="X" />
