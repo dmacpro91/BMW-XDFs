@@ -1,11 +1,11 @@
-<!-- Written 06/25/2015 13:18:11 -->
+<!-- Written 08/25/2015 17:16:58 -->
 <XDFFORMAT version="1.50">
   <XDFHEADER>
     <flags>0x1</flags>
-    <fileversion>1.0</fileversion>
+    <fileversion>1.0.2</fileversion>
     <deftitle>IJE0S</deftitle>
     <description></description>
-    <author>WedgePerformance</author>
+    <author>JYamona, MHD, WedgePerformance</author>
     <baseoffset>0</baseoffset>
     <DEFAULTS datasizeinbits="16" sigdigits="2" outputtype="1" signed="0" lsbfirst="0" float="0" />
     <REGION type="0xFFFFFFFF" startaddress="0x0" size="0x1FFFFF" regionflags="0x0" name="Binary File" desc="This region describes the bin file edited by this XDF" />
@@ -36,6 +36,11 @@
     <CATEGORY index="0x18" name="Idle Setpoints" />
     <CATEGORY index="0x19" name="Advanced Boost Control" />
     <CATEGORY index="0x1A" name="Lambda Sensor" />
+    <CATEGORY index="0x1B" name="Lambda Sensor Table Breakpoints" />
+    <CATEGORY index="0x1C" name="Load by Gear" />
+    <CATEGORY index="0x1D" name="Transmission" />
+    <CATEGORY index="0x1E" name="Single Bank O2" />
+    <CATEGORY index="0x1F" name="Spark Dwell" />
   </XDFHEADER>
   <XDFTABLE uniqueid="0x2953" flags="0x30">
     <title>Timing (Fail Safe) RPM</title>
@@ -2845,12 +2850,12 @@
     </XDFAXIS>
     <XDFAXIS id="z">
       <EMBEDDEDDATA mmedtypeflags="0x02" mmedaddress="0x75772" mmedelementsizebits="16" mmedrowcount="8" mmedcolcount="8" mmedmajorstridebits="0" mmedminorstridebits="0" />
-      <units>Torque (ft-lb)</units>
+      <units>%</units>
       <decimalpl>1</decimalpl>
       <min>0.000000</min>
       <max>150.000000</max>
       <outputtype>1</outputtype>
-      <MATH equation="(X/256)*.73756">
+      <MATH equation="(X/256)">
         <VAR id="X" />
       </MATH>
     </XDFAXIS>
@@ -3840,12 +3845,12 @@
       <EMBEDDEDDATA mmedtypeflags="0x03" mmedaddress="0x72B82" mmedelementsizebits="16" mmedcolcount="8" mmedmajorstridebits="0" mmedminorstridebits="0" />
       <units>Timing (degrees)</units>
       <indexcount>8</indexcount>
-      <decimalpl>3</decimalpl>
+      <decimalpl>1</decimalpl>
       <embedinfo type="1" />
       <datatype>0</datatype>
       <unittype>0</unittype>
       <DALINK index="0" />
-      <MATH equation="X/2">
+      <MATH equation="X/20">
         <VAR id="X" />
       </MATH>
     </XDFAXIS>
@@ -4155,7 +4160,7 @@
     </XDFAXIS>
   </XDFTABLE>
   <XDFTABLE uniqueid="0x6F9B" flags="0x0">
-    <title>Torque Loss (HOMO)</title>
+    <title>Torque Loss (Homo)</title>
     <CATEGORYMEM index="0" category="4" />
     <XDFAXIS id="x" uniqueid="0x0">
       <EMBEDDEDDATA mmedtypeflags="0x02" mmedaddress="0x75C72" mmedelementsizebits="16" mmedcolcount="10" mmedmajorstridebits="0" mmedminorstridebits="0" />
@@ -6004,6 +6009,46 @@
       <max>100.000000</max>
       <outputtype>1</outputtype>
       <MATH equation="X/100">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE uniqueid="0x3C48" flags="0x0">
+    <title>Gear Ratio Calculation</title>
+    <description>(id_gr_mt__n_vs_ratio)</description>
+    <CATEGORYMEM index="0" category="30" />
+    <XDFAXIS id="x" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x02" mmedaddress="0x4A180" mmedelementsizebits="8" mmedcolcount="13" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units>gear</units>
+      <indexcount>13</indexcount>
+      <decimalpl>0</decimalpl>
+      <embedinfo type="1" />
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <DALINK index="0" />
+      <MATH equation="X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="y" uniqueid="0x0">
+      <EMBEDDEDDATA mmedelementsizebits="16" mmedmajorstridebits="-32" mmedminorstridebits="0" />
+      <indexcount>1</indexcount>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <DALINK index="0" />
+      <LABEL index="0" value="0.00" />
+      <MATH equation="X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="z">
+      <EMBEDDEDDATA mmedtypeflags="0x02" mmedaddress="0x4912D" mmedelementsizebits="8" mmedrowcount="1" mmedcolcount="13" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units>h/(km*min)</units>
+      <decimalpl>2</decimalpl>
+      <min>0.000000</min>
+      <max>255.000000</max>
+      <outputtype>1</outputtype>
+      <MATH equation="X">
         <VAR id="X" />
       </MATH>
     </XDFAXIS>
@@ -9346,7 +9391,7 @@
     </XDFAXIS>
   </XDFTABLE>
   <XDFTABLE uniqueid="0x3153" flags="0x0">
-    <title>Threshold of time after start for catalyst heating</title>
+    <title>Cold Start Duration</title>
     <CATEGORYMEM index="0" category="3" />
     <XDFAXIS id="x" uniqueid="0x0">
       <EMBEDDEDDATA mmedelementsizebits="16" mmedmajorstridebits="-32" mmedminorstridebits="0" />
@@ -9393,7 +9438,7 @@
     </XDFAXIS>
   </XDFTABLE>
   <XDFTABLE uniqueid="0x2148" flags="0x0">
-    <title>Maximum knock threshold pre-window</title>
+    <title>Maximum Knock Threshold (pre-window)</title>
     <description>(id_knk_thd_max_pre)</description>
     <CATEGORYMEM index="0" category="24" />
     <XDFAXIS id="x" uniqueid="0x0">
@@ -10174,6 +10219,122 @@
       <max>1024.000000</max>
       <outputtype>1</outputtype>
       <MATH equation="X*.1">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE uniqueid="0x3CB3" flags="0x0">
+    <title>Kickdown Pedal Recognition Voltage</title>
+    <description> (c_v_pvs_thd_kd)</description>
+    <CATEGORYMEM index="0" category="30" />
+    <XDFAXIS id="x" uniqueid="0x0">
+      <EMBEDDEDDATA mmedelementsizebits="16" mmedmajorstridebits="-32" mmedminorstridebits="0" />
+      <indexcount>1</indexcount>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <DALINK index="0" />
+      <LABEL index="0" value="0.00" />
+      <MATH equation="X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="y" uniqueid="0x0">
+      <EMBEDDEDDATA mmedelementsizebits="16" mmedmajorstridebits="-32" mmedminorstridebits="0" />
+      <indexcount>1</indexcount>
+      <outputtype>4</outputtype>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <DALINK index="0" />
+      <LABEL index="0" value="V" />
+      <MATH equation="X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="z">
+      <EMBEDDEDDATA mmedtypeflags="0x02" mmedaddress="0x4C825" mmedelementsizebits="8" mmedrowcount="1" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <decimalpl>3</decimalpl>
+      <min>0.000000</min>
+      <max>255.000000</max>
+      <outputtype>1</outputtype>
+      <MATH equation="X*.0196">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE uniqueid="0x2DCB" flags="0x0">
+    <title>Kickdown Pedal Recognition Hysteresis</title>
+    <description>(c_v_pvs_thd_kd_hys)</description>
+    <CATEGORYMEM index="0" category="30" />
+    <XDFAXIS id="x" uniqueid="0x0">
+      <EMBEDDEDDATA mmedelementsizebits="16" mmedmajorstridebits="-32" mmedminorstridebits="0" />
+      <indexcount>1</indexcount>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <DALINK index="0" />
+      <LABEL index="0" value="0.00" />
+      <MATH equation="X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="y" uniqueid="0x0">
+      <EMBEDDEDDATA mmedelementsizebits="16" mmedmajorstridebits="-32" mmedminorstridebits="0" />
+      <indexcount>1</indexcount>
+      <outputtype>4</outputtype>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <DALINK index="0" />
+      <LABEL index="0" value="V" />
+      <MATH equation="X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="z">
+      <EMBEDDEDDATA mmedtypeflags="0x02" mmedaddress="0x4C826" mmedelementsizebits="8" mmedrowcount="1" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <decimalpl>3</decimalpl>
+      <min>0.000000</min>
+      <max>255.000000</max>
+      <outputtype>1</outputtype>
+      <MATH equation="X*.0196">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE uniqueid="0x7BBF" flags="0x0">
+    <title>Dwell Time</title>
+    <CATEGORYMEM index="0" category="32" />
+    <XDFAXIS id="x" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x02" mmedaddress="0x40811" mmedelementsizebits="8" mmedcolcount="8" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units>V</units>
+      <indexcount>8</indexcount>
+      <decimalpl>3</decimalpl>
+      <embedinfo type="1" />
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <DALINK index="0" />
+      <MATH equation="X*0.101563">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="y" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x02" mmedaddress="0x407E1" mmedelementsizebits="8" mmedcolcount="8" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units>rpm</units>
+      <indexcount>8</indexcount>
+      <decimalpl>0</decimalpl>
+      <embedinfo type="1" />
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <DALINK index="0" />
+      <MATH equation="X*32">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="z">
+      <EMBEDDEDDATA mmedtypeflags="0x06" mmedaddress="0x4DCA4" mmedelementsizebits="16" mmedrowcount="8" mmedcolcount="8" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <decimalpl>3</decimalpl>
+      <min>0.000000</min>
+      <max>255.000000</max>
+      <outputtype>1</outputtype>
+      <MATH equation="X*.004">
         <VAR id="X" />
       </MATH>
     </XDFAXIS>
