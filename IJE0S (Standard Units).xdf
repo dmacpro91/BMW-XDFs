@@ -4477,7 +4477,7 @@
     <XDFAXIS id="z">
       <EMBEDDEDDATA mmedtypeflags="0x02" mmedaddress="0x66722" mmedelementsizebits="16" mmedrowcount="12" mmedcolcount="12" mmedmajorstridebits="0" mmedminorstridebits="0" />
       <decimalpl>2</decimalpl>
-      <min>90.000000</min>
+      <min>70.000000</min>
       <max>100.000000</max>
       <outputtype>1</outputtype>
       <MATH equation="X/100">
