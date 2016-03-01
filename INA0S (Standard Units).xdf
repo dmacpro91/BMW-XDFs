@@ -1,4 +1,4 @@
-<!-- Written 01/04/2016 16:46:05 -->
+<!-- Written 03/01/2016 16:16:04 -->
 <XDFFORMAT version="1.50">
   <XDFHEADER>
     <flags>0x1</flags>
@@ -4099,7 +4099,7 @@
       </MATH>
     </XDFAXIS>
     <XDFAXIS id="y" uniqueid="0x0">
-      <EMBEDDEDDATA mmedtypeflags="0x02" mmedelementsizebits="16" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <EMBEDDEDDATA mmedtypeflags="0x02" mmedaddress="0x47C84" mmedelementsizebits="16" mmedmajorstridebits="0" mmedminorstridebits="0" />
       <units>MAX MPH</units>
       <indexcount>1</indexcount>
       <decimalpl>0</decimalpl>
@@ -4112,7 +4112,7 @@
       </MATH>
     </XDFAXIS>
     <XDFAXIS id="z">
-      <EMBEDDEDDATA mmedtypeflags="0x02" mmedelementsizebits="16" mmedrowcount="1" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <EMBEDDEDDATA mmedtypeflags="0x02" mmedaddress="0x47C84" mmedelementsizebits="16" mmedrowcount="1" mmedmajorstridebits="0" mmedminorstridebits="0" />
       <decimalpl>0</decimalpl>
       <min>0.000000</min>
       <max>255.000000</max>
@@ -12385,7 +12385,7 @@
       </MATH>
     </XDFAXIS>
   </XDFTABLE>
-<XDFTABLE uniqueid="0x703" flags="0x30">
+  <XDFTABLE uniqueid="0x703" flags="0x30">
     <title>Boost Limit Multiplier Per Gear MAF</title>
     <CATEGORYMEM index="0" category="36" />
     <CATEGORYMEM index="1" category="37" />
