@@ -7488,6 +7488,44 @@
     </XDFAXIS>
   </XDFTABLE>
   <XDFTABLE uniqueid="0x6655" flags="0x0">
+    <title>2A13 (DTML diagnosis module tank leakage, leakage diagnose; input signal)</title>
+    <description>To disable, set to 00&#013;&#010;To enable, set to 56&#013;&#010;Check your stock rom for the enable value.</description>
+    <CATEGORYMEM index="0" category="15" />
+    <CATEGORYMEM index="1" category="21" />
+    <XDFAXIS id="x" uniqueid="0x0">
+      <EMBEDDEDDATA mmedelementsizebits="16" mmedmajorstridebits="-32" mmedminorstridebits="0" />
+      <indexcount>1</indexcount>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <DALINK index="0" />
+      <LABEL index="0" value="0.00" />
+      <MATH equation="X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="y" uniqueid="0x0">
+      <EMBEDDEDDATA mmedelementsizebits="16" mmedmajorstridebits="-32" mmedminorstridebits="0" />
+      <indexcount>1</indexcount>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <DALINK index="0" />
+      <LABEL index="0" value="0.00" />
+      <MATH equation="X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="z">
+      <EMBEDDEDDATA mmedaddress="0x42EC4" mmedelementsizebits="8" mmedrowcount="1" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <decimalpl>2</decimalpl>
+      <min>0.000000</min>
+      <max>255.000000</max>
+      <outputtype>3</outputtype>
+      <MATH equation="X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE uniqueid="0x6655" flags="0x0">
     <title>2A18 (DTML diagnosis module tank leakage, heating; input signal)</title>
     <description>To disable, set to 00&#013;&#010;To enable, set to 56&#013;&#010;Check your stock rom for the enable value.</description>
     <CATEGORYMEM index="0" category="15" />
