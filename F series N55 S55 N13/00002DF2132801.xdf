@@ -6999,6 +6999,7 @@ KF_F_MDMX_TANS</description>
   </XDFTABLE>
   <XDFTABLE uniqueid="0x0" flags="0x0">
     <title>Max filling</title>
+    <description>KF_RFMAXHDP</description>
     <CATEGORYMEM index="0" category="13" />
     <XDFAXIS id="x" uniqueid="0x0">
       <EMBEDDEDDATA mmedtypeflags="0x02" mmedaddress="0x1A837C" mmedelementsizebits="16" mmedcolcount="12" mmedmajorstridebits="0" mmedminorstridebits="0" />
@@ -11618,7 +11619,7 @@ KF_ZW_UESP_PF1</description>
     <description>FRKMAX_UM</description>
     <CATEGORYMEM index="0" category="5" />
     <XDFAXIS id="x" uniqueid="0x0">
-      <EMBEDDEDDATA mmedtypeflags="0x02" mmedaddress="0x0" mmedelementsizebits="16" mmedmajorstridebits="-32" mmedminorstridebits="0" />
+      <EMBEDDEDDATA mmedtypeflags="0x02" mmedelementsizebits="16" mmedmajorstridebits="-32" mmedminorstridebits="0" />
       <indexcount>1</indexcount>
       <decimalpl>1</decimalpl>
       <datatype>0</datatype>
@@ -11630,7 +11631,7 @@ KF_ZW_UESP_PF1</description>
       </MATH>
     </XDFAXIS>
     <XDFAXIS id="y" uniqueid="0x0">
-      <EMBEDDEDDATA mmedtypeflags="0x02" mmedaddress="0x0" mmedelementsizebits="16" mmedmajorstridebits="-32" mmedminorstridebits="0" />
+      <EMBEDDEDDATA mmedtypeflags="0x02" mmedelementsizebits="16" mmedmajorstridebits="-32" mmedminorstridebits="0" />
       <indexcount>1</indexcount>
       <decimalpl>1</decimalpl>
       <datatype>0</datatype>

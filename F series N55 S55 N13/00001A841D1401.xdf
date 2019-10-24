@@ -942,6 +942,48 @@ K_KHNST_NMAX_HOMDOE</description>
       </MATH>
     </XDFAXIS>
   </XDFTABLE>
+  <XDFTABLE uniqueid="0x0" flags="0x0">
+    <title>Lambda burble</title>
+    <description>KL_LA_SBL</description>
+    <CATEGORYMEM index="0" category="26" />
+    <XDFAXIS id="x" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x03" mmedaddress="0x187DE6" mmedelementsizebits="16" mmedcolcount="6" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units>1/min</units>
+      <indexcount>6</indexcount>
+      <decimalpl>0</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1" />
+      <DALINK index="0" />
+      <MATH equation="X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="y" uniqueid="0x0">
+      <EMBEDDEDDATA mmedelementsizebits="8" mmedrowcount="1" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units>-</units>
+      <indexcount>1</indexcount>
+      <decimalpl>-1</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <DALINK index="0" />
+      <LABEL index="0" value="0.000000" />
+      <MATH equation="X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="z">
+      <EMBEDDEDDATA mmedtypeflags="0x02" mmedaddress="0x18728C" mmedelementsizebits="16" mmedrowcount="1" mmedcolcount="6" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units>-</units>
+      <decimalpl>3</decimalpl>
+      <min>0.000000</min>
+      <max>255.000000</max>
+      <outputtype>1</outputtype>
+      <MATH equation="X*0.0002441406">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
   <XDFTABLE uniqueid="0x0" flags="0x30">
     <title>Fuel (spool)</title>
     <description>&#220;bersp&#252;llambda im Homgenen Bank 1
@@ -1264,6 +1306,32 @@ K_KHNST_NMAX_HOMDOE</description>
       <embedinfo type="1" />
       <DALINK index="0" />
       <MATH equation="X*1">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE>
+    <title>Lambda burble X (autogen)</title>
+    <CATEGORYMEM index="0" category="26" />
+    <CATEGORYMEM index="1" category="31" />
+    <XDFAXIS id="x">
+      <EMBEDDEDDATA />
+      <indexcount>6</indexcount>
+    </XDFAXIS>
+    <XDFAXIS id="y">
+      <EMBEDDEDDATA />
+      <indexcount>1</indexcount>
+    </XDFAXIS>
+    <XDFAXIS id="z" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x03" mmedaddress="0x187DE6" mmedelementsizebits="16" mmedcolcount="6" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units>1/min</units>
+      <indexcount>6</indexcount>
+      <decimalpl>0</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1" />
+      <DALINK index="0" />
+      <MATH equation="X">
         <VAR id="X" />
       </MATH>
     </XDFAXIS>
@@ -16294,6 +16362,32 @@ KF_ZW_UESP_PF1</description>
     </XDFAXIS>
   </XDFTABLE>
   <XDFTABLE>
+    <title>Temperaturkorrektur ZW-Klopfgrenze Pfad 2 Y (autogen)</title>
+    <CATEGORYMEM index="0" category="7" />
+    <CATEGORYMEM index="1" category="8" />
+    <XDFAXIS id="x">
+      <EMBEDDEDDATA />
+      <indexcount>20</indexcount>
+    </XDFAXIS>
+    <XDFAXIS id="y">
+      <EMBEDDEDDATA />
+      <indexcount>1</indexcount>
+    </XDFAXIS>
+    <XDFAXIS id="z" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x03" mmedaddress="0x1B57F8" mmedelementsizebits="16" mmedcolcount="20" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units>Upm</units>
+      <indexcount>20</indexcount>
+      <decimalpl>0</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1" />
+      <DALINK index="0" />
+      <MATH equation="X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE>
     <title>Temperaturkorrektur ZW-Klopfgrenze Pfad 2 X (autogen)</title>
     <CATEGORYMEM index="0" category="35" />
     <CATEGORYMEM index="1" category="36" />
@@ -16310,6 +16404,32 @@ KF_ZW_UESP_PF1</description>
       <units>%</units>
       <indexcount>16</indexcount>
       <decimalpl>1</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1" />
+      <DALINK index="0" />
+      <MATH equation="X*0.010">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE>
+    <title>Temperaturkorrektur ZW-Klopfgrenze Pfad 2 X (autogen)</title>
+    <CATEGORYMEM index="0" category="7" />
+    <CATEGORYMEM index="1" category="8" />
+    <XDFAXIS id="x">
+      <EMBEDDEDDATA />
+      <indexcount>16</indexcount>
+    </XDFAXIS>
+    <XDFAXIS id="y">
+      <EMBEDDEDDATA />
+      <indexcount>1</indexcount>
+    </XDFAXIS>
+    <XDFAXIS id="z" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x03" mmedaddress="0x1B5820" mmedelementsizebits="16" mmedcolcount="16" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units>%</units>
+      <indexcount>16</indexcount>
+      <decimalpl>0</decimalpl>
       <datatype>0</datatype>
       <unittype>0</unittype>
       <embedinfo type="1" />
@@ -16353,6 +16473,48 @@ KF_ZW_UESP_PF1</description>
       <EMBEDDEDDATA mmedtypeflags="0x01" mmedaddress="0x1B5840" mmedelementsizebits="8" mmedrowcount="20" mmedcolcount="16" mmedmajorstridebits="0" mmedminorstridebits="0" />
       <units>&#176;</units>
       <decimalpl>3</decimalpl>
+      <min>0.000000</min>
+      <max>255.000000</max>
+      <outputtype>1</outputtype>
+      <MATH equation="X*0.5">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE uniqueid="0x0" flags="0x0">
+    <title>Temperaturkorrektur ZW-Klopfgrenze Pfad 2</title>
+    <description>KF_DZWT_PF2</description>
+    <CATEGORYMEM index="0" category="7" />
+    <XDFAXIS id="x" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x03" mmedaddress="0x1B5820" mmedelementsizebits="16" mmedcolcount="16" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units>%</units>
+      <indexcount>16</indexcount>
+      <decimalpl>0</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1" />
+      <DALINK index="0" />
+      <MATH equation="X*0.010">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="y" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x03" mmedaddress="0x1B57F8" mmedelementsizebits="16" mmedcolcount="20" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units>Upm</units>
+      <indexcount>20</indexcount>
+      <decimalpl>0</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1" />
+      <DALINK index="0" />
+      <MATH equation="X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="z">
+      <EMBEDDEDDATA mmedtypeflags="0x01" mmedaddress="0x1B5840" mmedelementsizebits="8" mmedrowcount="20" mmedcolcount="16" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units>&#176;</units>
+      <decimalpl>1</decimalpl>
       <min>0.000000</min>
       <max>255.000000</max>
       <outputtype>1</outputtype>
@@ -16482,6 +16644,32 @@ KF_ZW_UESP_PF1</description>
     </XDFAXIS>
   </XDFTABLE>
   <XDFTABLE>
+    <title>Temperaturkorrektur ZW-Klopfgrenze Pfad 1 Y (autogen)</title>
+    <CATEGORYMEM index="0" category="7" />
+    <CATEGORYMEM index="1" category="8" />
+    <XDFAXIS id="x">
+      <EMBEDDEDDATA />
+      <indexcount>20</indexcount>
+    </XDFAXIS>
+    <XDFAXIS id="y">
+      <EMBEDDEDDATA />
+      <indexcount>1</indexcount>
+    </XDFAXIS>
+    <XDFAXIS id="z" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x03" mmedaddress="0x1B5AF8" mmedelementsizebits="16" mmedcolcount="20" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units>Upm</units>
+      <indexcount>20</indexcount>
+      <decimalpl>0</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1" />
+      <DALINK index="0" />
+      <MATH equation="X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE>
     <title>Temperaturkorrektur ZW-Klopfgrenze Pfad 1 X (autogen)</title>
     <CATEGORYMEM index="0" category="35" />
     <CATEGORYMEM index="1" category="36" />
@@ -16498,6 +16686,32 @@ KF_ZW_UESP_PF1</description>
       <units>%</units>
       <indexcount>16</indexcount>
       <decimalpl>3</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1" />
+      <DALINK index="0" />
+      <MATH equation="X*0.010">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE>
+    <title>Temperaturkorrektur ZW-Klopfgrenze Pfad 1 X (autogen)</title>
+    <CATEGORYMEM index="0" category="7" />
+    <CATEGORYMEM index="1" category="8" />
+    <XDFAXIS id="x">
+      <EMBEDDEDDATA />
+      <indexcount>16</indexcount>
+    </XDFAXIS>
+    <XDFAXIS id="y">
+      <EMBEDDEDDATA />
+      <indexcount>1</indexcount>
+    </XDFAXIS>
+    <XDFAXIS id="z" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x03" mmedaddress="0x1B5B20" mmedelementsizebits="16" mmedcolcount="16" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units>%</units>
+      <indexcount>16</indexcount>
+      <decimalpl>0</decimalpl>
       <datatype>0</datatype>
       <unittype>0</unittype>
       <embedinfo type="1" />
@@ -16541,6 +16755,48 @@ KF_ZW_UESP_PF1</description>
       <EMBEDDEDDATA mmedtypeflags="0x01" mmedaddress="0x1B5B40" mmedelementsizebits="8" mmedrowcount="20" mmedcolcount="16" mmedmajorstridebits="0" mmedminorstridebits="0" />
       <units>&#176;</units>
       <decimalpl>3</decimalpl>
+      <min>0.000000</min>
+      <max>255.000000</max>
+      <outputtype>1</outputtype>
+      <MATH equation="X*0.5">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE uniqueid="0x0" flags="0x0">
+    <title>Temperaturkorrektur ZW-Klopfgrenze Pfad 1</title>
+    <description>KF_DZWT_PF1</description>
+    <CATEGORYMEM index="0" category="7" />
+    <XDFAXIS id="x" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x03" mmedaddress="0x1B5B20" mmedelementsizebits="16" mmedcolcount="16" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units>%</units>
+      <indexcount>16</indexcount>
+      <decimalpl>0</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1" />
+      <DALINK index="0" />
+      <MATH equation="X*0.010">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="y" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x03" mmedaddress="0x1B5AF8" mmedelementsizebits="16" mmedcolcount="20" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units>Upm</units>
+      <indexcount>20</indexcount>
+      <decimalpl>0</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1" />
+      <DALINK index="0" />
+      <MATH equation="X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="z">
+      <EMBEDDEDDATA mmedtypeflags="0x01" mmedaddress="0x1B5B40" mmedelementsizebits="8" mmedrowcount="20" mmedcolcount="16" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units>&#176;</units>
+      <decimalpl>1</decimalpl>
       <min>0.000000</min>
       <max>255.000000</max>
       <outputtype>1</outputtype>
@@ -25045,7 +25301,7 @@ DSVDOFS</description>
       </MATH>
     </XDFAXIS>
     <XDFAXIS id="z">
-      <EMBEDDEDDATA mmedtypeflags="0x02" mmedaddress="1ffa50" mmedelementsizebits="32" mmedrowcount="16" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <EMBEDDEDDATA mmedtypeflags="0x02" mmedaddress="0x1FFA50" mmedelementsizebits="32" mmedrowcount="16" mmedmajorstridebits="0" mmedminorstridebits="0" />
       <decimalpl>0</decimalpl>
       <min>0.000000</min>
       <max>255.000000</max>
