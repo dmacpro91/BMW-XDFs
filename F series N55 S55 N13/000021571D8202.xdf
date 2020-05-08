@@ -3645,7 +3645,7 @@ K_MAX_PSSOLBER</description>
       </MATH>
     </XDFAXIS>
     <XDFAXIS id="y" uniqueid="0x0">
-      <EMBEDDEDDATA mmedtypeflags="0x02" mmedaddress="0x0" mmedelementsizebits="16" mmedmajorstridebits="-32" mmedminorstridebits="0" />
+      <EMBEDDEDDATA mmedtypeflags="0x02" mmedelementsizebits="16" mmedmajorstridebits="-32" mmedminorstridebits="0" />
       <indexcount>1</indexcount>
       <decimalpl>1</decimalpl>
       <datatype>0</datatype>
@@ -3711,7 +3711,7 @@ K_MAX_PSSOLBER</description>
       </MATH>
     </XDFAXIS>
     <XDFAXIS id="y" uniqueid="0x0">
-      <EMBEDDEDDATA mmedtypeflags="0x02" mmedaddress="0x0" mmedelementsizebits="16" mmedmajorstridebits="-32" mmedminorstridebits="0" />
+      <EMBEDDEDDATA mmedtypeflags="0x02" mmedelementsizebits="16" mmedmajorstridebits="-32" mmedminorstridebits="0" />
       <indexcount>1</indexcount>
       <decimalpl>1</decimalpl>
       <datatype>0</datatype>
@@ -3740,7 +3740,7 @@ K_TKWSOLL_
 </description>
     <CATEGORYMEM index="0" category="33" />
     <XDFAXIS id="x" uniqueid="0x0">
-      <EMBEDDEDDATA mmedtypeflags="0x02" mmedaddress="0x0" mmedelementsizebits="16" mmedmajorstridebits="-32" mmedminorstridebits="0" />
+      <EMBEDDEDDATA mmedtypeflags="0x02" mmedelementsizebits="16" mmedmajorstridebits="-32" mmedminorstridebits="0" />
       <indexcount>6</indexcount>
       <decimalpl>1</decimalpl>
       <datatype>0</datatype>
@@ -3757,7 +3757,7 @@ K_TKWSOLL_
       </MATH>
     </XDFAXIS>
     <XDFAXIS id="y" uniqueid="0x0">
-      <EMBEDDEDDATA mmedtypeflags="0x02" mmedaddress="0x0" mmedelementsizebits="16" mmedmajorstridebits="-32" mmedminorstridebits="0" />
+      <EMBEDDEDDATA mmedtypeflags="0x02" mmedelementsizebits="16" mmedmajorstridebits="-32" mmedminorstridebits="0" />
       <indexcount>1</indexcount>
       <decimalpl>1</decimalpl>
       <datatype>0</datatype>
@@ -3826,7 +3826,7 @@ K_TKWSOLL_
     <description>K_WMTU_</description>
     <CATEGORYMEM index="0" category="33" />
     <XDFAXIS id="x" uniqueid="0x0">
-      <EMBEDDEDDATA mmedtypeflags="0x02" mmedaddress="0x0" mmedelementsizebits="16" mmedmajorstridebits="-32" mmedminorstridebits="0" />
+      <EMBEDDEDDATA mmedtypeflags="0x02" mmedelementsizebits="16" mmedmajorstridebits="-32" mmedminorstridebits="0" />
       <indexcount>2</indexcount>
       <decimalpl>1</decimalpl>
       <datatype>0</datatype>
@@ -3839,7 +3839,7 @@ K_TKWSOLL_
       </MATH>
     </XDFAXIS>
     <XDFAXIS id="y" uniqueid="0x0">
-      <EMBEDDEDDATA mmedtypeflags="0x02" mmedaddress="0x0" mmedelementsizebits="16" mmedmajorstridebits="-32" mmedminorstridebits="0" />
+      <EMBEDDEDDATA mmedtypeflags="0x02" mmedelementsizebits="16" mmedmajorstridebits="-32" mmedminorstridebits="0" />
       <indexcount>1</indexcount>
       <decimalpl>1</decimalpl>
       <datatype>0</datatype>
@@ -5263,194 +5263,6 @@ KF_WGPOS</description>
     </XDFAXIS>
   </XDFTABLE>
   <XDFTABLE>
-    <title>Fuel start Y (autogen)</title>
-    <CATEGORYMEM index="0" category="5" />
-    <CATEGORYMEM index="1" category="6" />
-    <XDFAXIS id="x">
-      <EMBEDDEDDATA />
-      <indexcount>12</indexcount>
-    </XDFAXIS>
-    <XDFAXIS id="y">
-      <EMBEDDEDDATA />
-      <indexcount>1</indexcount>
-    </XDFAXIS>
-    <XDFAXIS id="z" uniqueid="0x0">
-      <EMBEDDEDDATA mmedtypeflags="0x02" mmedaddress="0x193682" mmedelementsizebits="16" mmedcolcount="12" mmedmajorstridebits="0" mmedminorstridebits="0" />
-      <units>1/min</units>
-      <indexcount>12</indexcount>
-      <decimalpl>0</decimalpl>
-      <datatype>0</datatype>
-      <unittype>0</unittype>
-      <embedinfo type="1" />
-      <DALINK index="0" />
-      <MATH equation="X">
-        <VAR id="X" />
-      </MATH>
-    </XDFAXIS>
-  </XDFTABLE>
-  <XDFTABLE>
-    <title>Fuel start X (autogen)</title>
-    <CATEGORYMEM index="0" category="5" />
-    <CATEGORYMEM index="1" category="6" />
-    <XDFAXIS id="x">
-      <EMBEDDEDDATA />
-      <indexcount>12</indexcount>
-    </XDFAXIS>
-    <XDFAXIS id="y">
-      <EMBEDDEDDATA />
-      <indexcount>1</indexcount>
-    </XDFAXIS>
-    <XDFAXIS id="z" uniqueid="0x0">
-      <EMBEDDEDDATA mmedtypeflags="0x03" mmedaddress="0x19369A" mmedelementsizebits="16" mmedcolcount="12" mmedmajorstridebits="0" mmedminorstridebits="0" />
-      <units>Grad C</units>
-      <indexcount>12</indexcount>
-      <decimalpl>0</decimalpl>
-      <datatype>0</datatype>
-      <unittype>0</unittype>
-      <embedinfo type="1" />
-      <DALINK index="0" />
-      <MATH equation="X*0.01">
-        <VAR id="X" />
-      </MATH>
-    </XDFAXIS>
-  </XDFTABLE>
-  <XDFTABLE uniqueid="0x0" flags="0x0">
-    <title>Fuel start</title>
-    <description>KF_ST_RKBAS_VVT</description>
-    <CATEGORYMEM index="0" category="5" />
-    <XDFAXIS id="x" uniqueid="0x0">
-      <EMBEDDEDDATA mmedtypeflags="0x03" mmedaddress="0x19369A" mmedelementsizebits="16" mmedcolcount="12" mmedmajorstridebits="0" mmedminorstridebits="0" />
-      <units>Grad C</units>
-      <indexcount>12</indexcount>
-      <decimalpl>0</decimalpl>
-      <datatype>0</datatype>
-      <unittype>0</unittype>
-      <embedinfo type="1" />
-      <DALINK index="0" />
-      <MATH equation="X*0.01">
-        <VAR id="X" />
-      </MATH>
-    </XDFAXIS>
-    <XDFAXIS id="y" uniqueid="0x0">
-      <EMBEDDEDDATA mmedtypeflags="0x02" mmedaddress="0x193682" mmedelementsizebits="16" mmedcolcount="12" mmedmajorstridebits="0" mmedminorstridebits="0" />
-      <units>1/min</units>
-      <indexcount>12</indexcount>
-      <decimalpl>0</decimalpl>
-      <datatype>0</datatype>
-      <unittype>0</unittype>
-      <embedinfo type="1" />
-      <DALINK index="0" />
-      <MATH equation="X">
-        <VAR id="X" />
-      </MATH>
-    </XDFAXIS>
-    <XDFAXIS id="z">
-      <EMBEDDEDDATA mmedtypeflags="0x03" mmedaddress="0x1936B2" mmedelementsizebits="16" mmedrowcount="12" mmedcolcount="12" mmedmajorstridebits="0" mmedminorstridebits="0" />
-      <units>%</units>
-      <decimalpl>3</decimalpl>
-      <min>0.000000</min>
-      <max>255.000000</max>
-      <outputtype>1</outputtype>
-      <MATH equation="X/20.48">
-        <VAR id="X" />
-      </MATH>
-    </XDFAXIS>
-  </XDFTABLE>
-  <XDFTABLE>
-    <title>Fuel start comfort Y (autogen)</title>
-    <CATEGORYMEM index="0" category="5" />
-    <CATEGORYMEM index="1" category="6" />
-    <XDFAXIS id="x">
-      <EMBEDDEDDATA />
-      <indexcount>12</indexcount>
-    </XDFAXIS>
-    <XDFAXIS id="y">
-      <EMBEDDEDDATA />
-      <indexcount>1</indexcount>
-    </XDFAXIS>
-    <XDFAXIS id="z" uniqueid="0x0">
-      <EMBEDDEDDATA mmedtypeflags="0x02" mmedaddress="0x1937D4" mmedelementsizebits="16" mmedcolcount="12" mmedmajorstridebits="0" mmedminorstridebits="0" />
-      <units>1/min</units>
-      <indexcount>12</indexcount>
-      <decimalpl>0</decimalpl>
-      <datatype>0</datatype>
-      <unittype>0</unittype>
-      <embedinfo type="1" />
-      <DALINK index="0" />
-      <MATH equation="X">
-        <VAR id="X" />
-      </MATH>
-    </XDFAXIS>
-  </XDFTABLE>
-  <XDFTABLE>
-    <title>Fuel start comfort X (autogen)</title>
-    <CATEGORYMEM index="0" category="5" />
-    <CATEGORYMEM index="1" category="6" />
-    <XDFAXIS id="x">
-      <EMBEDDEDDATA />
-      <indexcount>8</indexcount>
-    </XDFAXIS>
-    <XDFAXIS id="y">
-      <EMBEDDEDDATA />
-      <indexcount>1</indexcount>
-    </XDFAXIS>
-    <XDFAXIS id="z" uniqueid="0x0">
-      <EMBEDDEDDATA mmedtypeflags="0x03" mmedaddress="0x1937EC" mmedelementsizebits="16" mmedcolcount="8" mmedmajorstridebits="0" mmedminorstridebits="0" />
-      <units>Grad C</units>
-      <indexcount>8</indexcount>
-      <decimalpl>0</decimalpl>
-      <datatype>0</datatype>
-      <unittype>0</unittype>
-      <embedinfo type="1" />
-      <DALINK index="0" />
-      <MATH equation="X/100">
-        <VAR id="X" />
-      </MATH>
-    </XDFAXIS>
-  </XDFTABLE>
-  <XDFTABLE uniqueid="0x0" flags="0x0">
-    <title>Fuel start comfort</title>
-    <description>KF_ST_RKBAS_COMF_VVT</description>
-    <CATEGORYMEM index="0" category="5" />
-    <XDFAXIS id="x" uniqueid="0x0">
-      <EMBEDDEDDATA mmedtypeflags="0x03" mmedaddress="0x1937EC" mmedelementsizebits="16" mmedcolcount="8" mmedmajorstridebits="0" mmedminorstridebits="0" />
-      <units>Grad C</units>
-      <indexcount>8</indexcount>
-      <decimalpl>0</decimalpl>
-      <datatype>0</datatype>
-      <unittype>0</unittype>
-      <embedinfo type="1" />
-      <DALINK index="0" />
-      <MATH equation="X/100">
-        <VAR id="X" />
-      </MATH>
-    </XDFAXIS>
-    <XDFAXIS id="y" uniqueid="0x0">
-      <EMBEDDEDDATA mmedtypeflags="0x02" mmedaddress="0x1937D4" mmedelementsizebits="16" mmedcolcount="12" mmedmajorstridebits="0" mmedminorstridebits="0" />
-      <units>1/min</units>
-      <indexcount>12</indexcount>
-      <decimalpl>0</decimalpl>
-      <datatype>0</datatype>
-      <unittype>0</unittype>
-      <embedinfo type="1" />
-      <DALINK index="0" />
-      <MATH equation="X">
-        <VAR id="X" />
-      </MATH>
-    </XDFAXIS>
-    <XDFAXIS id="z">
-      <EMBEDDEDDATA mmedtypeflags="0x03" mmedaddress="0x1937FC" mmedelementsizebits="16" mmedrowcount="12" mmedcolcount="8" mmedmajorstridebits="0" mmedminorstridebits="0" />
-      <units>%</units>
-      <decimalpl>3</decimalpl>
-      <min>0.000000</min>
-      <max>255.000000</max>
-      <outputtype>1</outputtype>
-      <MATH equation="X/20.48">
-        <VAR id="X" />
-      </MATH>
-    </XDFAXIS>
-  </XDFTABLE>
-  <XDFTABLE>
     <title>Fuel start (limp) Y (autogen)</title>
     <CATEGORYMEM index="0" category="1" />
     <CATEGORYMEM index="1" category="2" />
@@ -5639,152 +5451,6 @@ KF_WGPOS</description>
     </XDFAXIS>
   </XDFTABLE>
   <XDFTABLE>
-    <title>Fuel start (limp) Y (autogen)</title>
-    <CATEGORYMEM index="0" category="1" />
-    <CATEGORYMEM index="1" category="2" />
-    <XDFAXIS id="x">
-      <EMBEDDEDDATA />
-      <indexcount>10</indexcount>
-    </XDFAXIS>
-    <XDFAXIS id="y">
-      <EMBEDDEDDATA />
-      <indexcount>1</indexcount>
-    </XDFAXIS>
-    <XDFAXIS id="z" uniqueid="0x0">
-      <EMBEDDEDDATA mmedtypeflags="0x02" mmedaddress="0x193C60" mmedelementsizebits="16" mmedcolcount="10" mmedmajorstridebits="0" mmedminorstridebits="0" />
-      <units>1/min</units>
-      <indexcount>10</indexcount>
-      <decimalpl>0</decimalpl>
-      <datatype>0</datatype>
-      <unittype>0</unittype>
-      <embedinfo type="1" />
-      <DALINK index="0" />
-      <MATH equation="X">
-        <VAR id="X" />
-      </MATH>
-    </XDFAXIS>
-  </XDFTABLE>
-  <XDFTABLE>
-    <title>Fuel start (limp) X (autogen)</title>
-    <CATEGORYMEM index="0" category="1" />
-    <CATEGORYMEM index="1" category="2" />
-    <XDFAXIS id="x">
-      <EMBEDDEDDATA />
-      <indexcount>10</indexcount>
-    </XDFAXIS>
-    <XDFAXIS id="y">
-      <EMBEDDEDDATA />
-      <indexcount>1</indexcount>
-    </XDFAXIS>
-    <XDFAXIS id="z" uniqueid="0x0">
-      <EMBEDDEDDATA mmedtypeflags="0x03" mmedaddress="0x193C74" mmedelementsizebits="16" mmedcolcount="10" mmedmajorstridebits="0" mmedminorstridebits="0" />
-      <units>Grad C</units>
-      <indexcount>10</indexcount>
-      <decimalpl>0</decimalpl>
-      <datatype>0</datatype>
-      <unittype>0</unittype>
-      <embedinfo type="1" />
-      <DALINK index="0" />
-      <MATH equation="X*0.01">
-        <VAR id="X" />
-      </MATH>
-    </XDFAXIS>
-  </XDFTABLE>
-  <XDFTABLE uniqueid="0x0" flags="0x0">
-    <title>Fuel start (limp)</title>
-    <description>KF_ST_RKBAS_GD</description>
-    <CATEGORYMEM index="0" category="1" />
-    <XDFAXIS id="x" uniqueid="0x0">
-      <EMBEDDEDDATA mmedtypeflags="0x03" mmedaddress="0x193C74" mmedelementsizebits="16" mmedcolcount="10" mmedmajorstridebits="0" mmedminorstridebits="0" />
-      <units>Grad C</units>
-      <indexcount>10</indexcount>
-      <decimalpl>0</decimalpl>
-      <datatype>0</datatype>
-      <unittype>0</unittype>
-      <embedinfo type="1" />
-      <DALINK index="0" />
-      <MATH equation="X*0.01">
-        <VAR id="X" />
-      </MATH>
-    </XDFAXIS>
-    <XDFAXIS id="y" uniqueid="0x0">
-      <EMBEDDEDDATA mmedtypeflags="0x02" mmedaddress="0x193C60" mmedelementsizebits="16" mmedcolcount="10" mmedmajorstridebits="0" mmedminorstridebits="0" />
-      <units>1/min</units>
-      <indexcount>10</indexcount>
-      <decimalpl>0</decimalpl>
-      <datatype>0</datatype>
-      <unittype>0</unittype>
-      <embedinfo type="1" />
-      <DALINK index="0" />
-      <MATH equation="X">
-        <VAR id="X" />
-      </MATH>
-    </XDFAXIS>
-    <XDFAXIS id="z">
-      <EMBEDDEDDATA mmedtypeflags="0x03" mmedaddress="0x193C88" mmedelementsizebits="16" mmedrowcount="10" mmedcolcount="10" mmedmajorstridebits="0" mmedminorstridebits="0" />
-      <units>%</units>
-      <decimalpl>3</decimalpl>
-      <min>0.000000</min>
-      <max>255.000000</max>
-      <outputtype>1</outputtype>
-      <MATH equation="X/20.48">
-        <VAR id="X" />
-      </MATH>
-    </XDFAXIS>
-  </XDFTABLE>
-  <XDFTABLE>
-    <title>Fuel start comfort (limp) Y (autogen)</title>
-    <CATEGORYMEM index="0" category="1" />
-    <CATEGORYMEM index="1" category="2" />
-    <XDFAXIS id="x">
-      <EMBEDDEDDATA />
-      <indexcount>10</indexcount>
-    </XDFAXIS>
-    <XDFAXIS id="y">
-      <EMBEDDEDDATA />
-      <indexcount>1</indexcount>
-    </XDFAXIS>
-    <XDFAXIS id="z" uniqueid="0x0">
-      <EMBEDDEDDATA mmedtypeflags="0x02" mmedaddress="0x193D52" mmedelementsizebits="16" mmedcolcount="10" mmedmajorstridebits="0" mmedminorstridebits="0" />
-      <units>1/min</units>
-      <indexcount>10</indexcount>
-      <decimalpl>0</decimalpl>
-      <datatype>0</datatype>
-      <unittype>0</unittype>
-      <embedinfo type="1" />
-      <DALINK index="0" />
-      <MATH equation="X">
-        <VAR id="X" />
-      </MATH>
-    </XDFAXIS>
-  </XDFTABLE>
-  <XDFTABLE>
-    <title>Fuel start comfort (limp) X (autogen)</title>
-    <CATEGORYMEM index="0" category="1" />
-    <CATEGORYMEM index="1" category="2" />
-    <XDFAXIS id="x">
-      <EMBEDDEDDATA />
-      <indexcount>8</indexcount>
-    </XDFAXIS>
-    <XDFAXIS id="y">
-      <EMBEDDEDDATA />
-      <indexcount>1</indexcount>
-    </XDFAXIS>
-    <XDFAXIS id="z" uniqueid="0x0">
-      <EMBEDDEDDATA mmedtypeflags="0x02" mmedaddress="0x193D66" mmedelementsizebits="16" mmedcolcount="8" mmedmajorstridebits="0" mmedminorstridebits="0" />
-      <units>Grad C</units>
-      <indexcount>8</indexcount>
-      <decimalpl>0</decimalpl>
-      <datatype>0</datatype>
-      <unittype>0</unittype>
-      <embedinfo type="1" />
-      <DALINK index="0" />
-      <MATH equation="X*0.01">
-        <VAR id="X" />
-      </MATH>
-    </XDFAXIS>
-  </XDFTABLE>
-  <XDFTABLE>
     <title>Korrektur Start Hoehe ueber Umgebungsdruck X (autogen)</title>
     <CATEGORYMEM index="0" category="35" />
     <CATEGORYMEM index="1" category="36" />
@@ -5806,48 +5472,6 @@ KF_WGPOS</description>
       <embedinfo type="1" />
       <DALINK index="0" />
       <MATH equation="X*0.125">
-        <VAR id="X" />
-      </MATH>
-    </XDFAXIS>
-  </XDFTABLE>
-  <XDFTABLE uniqueid="0x0" flags="0x0">
-    <title>Fuel start comfort (limp)</title>
-    <description>KF_ST_RKBAS_COMF_GD</description>
-    <CATEGORYMEM index="0" category="1" />
-    <XDFAXIS id="x" uniqueid="0x0">
-      <EMBEDDEDDATA mmedtypeflags="0x02" mmedaddress="0x193D66" mmedelementsizebits="16" mmedcolcount="8" mmedmajorstridebits="0" mmedminorstridebits="0" />
-      <units>Grad C</units>
-      <indexcount>8</indexcount>
-      <decimalpl>0</decimalpl>
-      <datatype>0</datatype>
-      <unittype>0</unittype>
-      <embedinfo type="1" />
-      <DALINK index="0" />
-      <MATH equation="X*0.01">
-        <VAR id="X" />
-      </MATH>
-    </XDFAXIS>
-    <XDFAXIS id="y" uniqueid="0x0">
-      <EMBEDDEDDATA mmedtypeflags="0x02" mmedaddress="0x193D52" mmedelementsizebits="16" mmedcolcount="10" mmedmajorstridebits="0" mmedminorstridebits="0" />
-      <units>1/min</units>
-      <indexcount>10</indexcount>
-      <decimalpl>0</decimalpl>
-      <datatype>0</datatype>
-      <unittype>0</unittype>
-      <embedinfo type="1" />
-      <DALINK index="0" />
-      <MATH equation="X">
-        <VAR id="X" />
-      </MATH>
-    </XDFAXIS>
-    <XDFAXIS id="z">
-      <EMBEDDEDDATA mmedtypeflags="0x03" mmedaddress="0x193D76" mmedelementsizebits="16" mmedrowcount="10" mmedcolcount="8" mmedmajorstridebits="0" mmedminorstridebits="0" />
-      <units>%</units>
-      <decimalpl>3</decimalpl>
-      <min>0.000000</min>
-      <max>255.000000</max>
-      <outputtype>1</outputtype>
-      <MATH equation="X/20.48">
         <VAR id="X" />
       </MATH>
     </XDFAXIS>
@@ -11925,7 +11549,7 @@ KL_ATLR_MX</description>
       </MATH>
     </XDFAXIS>
     <XDFAXIS id="y" uniqueid="0x0">
-      <EMBEDDEDDATA mmedtypeflags="0x02" mmedaddress="0x0" mmedelementsizebits="16" mmedmajorstridebits="-32" mmedminorstridebits="0" />
+      <EMBEDDEDDATA mmedtypeflags="0x02" mmedelementsizebits="16" mmedmajorstridebits="-32" mmedminorstridebits="0" />
       <indexcount>1</indexcount>
       <decimalpl>1</decimalpl>
       <datatype>0</datatype>
@@ -13567,7 +13191,7 @@ KF_ZW_UESP_PF1</description>
     <description>FRKMAX_UM</description>
     <CATEGORYMEM index="0" category="5" />
     <XDFAXIS id="x" uniqueid="0x0">
-      <EMBEDDEDDATA mmedtypeflags="0x02" mmedaddress="0x0" mmedelementsizebits="16" mmedmajorstridebits="-32" mmedminorstridebits="0" />
+      <EMBEDDEDDATA mmedtypeflags="0x02" mmedelementsizebits="16" mmedmajorstridebits="-32" mmedminorstridebits="0" />
       <indexcount>1</indexcount>
       <decimalpl>1</decimalpl>
       <datatype>0</datatype>
@@ -13579,7 +13203,7 @@ KF_ZW_UESP_PF1</description>
       </MATH>
     </XDFAXIS>
     <XDFAXIS id="y" uniqueid="0x0">
-      <EMBEDDEDDATA mmedtypeflags="0x02" mmedaddress="0x0" mmedelementsizebits="16" mmedmajorstridebits="-32" mmedminorstridebits="0" />
+      <EMBEDDEDDATA mmedtypeflags="0x02" mmedelementsizebits="16" mmedmajorstridebits="-32" mmedminorstridebits="0" />
       <indexcount>1</indexcount>
       <decimalpl>1</decimalpl>
       <datatype>0</datatype>
@@ -16222,7 +15846,7 @@ KFRKMI_UM</description>
     <description>TMOTAKR</description>
     <CATEGORYMEM index="0" category="26" />
     <XDFAXIS id="x" uniqueid="0x0">
-      <EMBEDDEDDATA mmedtypeflags="0x02" mmedaddress="0x0" mmedelementsizebits="16" mmedmajorstridebits="-32" mmedminorstridebits="0" />
+      <EMBEDDEDDATA mmedtypeflags="0x02" mmedelementsizebits="16" mmedmajorstridebits="-32" mmedminorstridebits="0" />
       <indexcount>1</indexcount>
       <decimalpl>1</decimalpl>
       <datatype>0</datatype>
@@ -16234,7 +15858,7 @@ KFRKMI_UM</description>
       </MATH>
     </XDFAXIS>
     <XDFAXIS id="y" uniqueid="0x0">
-      <EMBEDDEDDATA mmedtypeflags="0x02" mmedaddress="0x0" mmedelementsizebits="16" mmedmajorstridebits="-32" mmedminorstridebits="0" />
+      <EMBEDDEDDATA mmedtypeflags="0x02" mmedelementsizebits="16" mmedmajorstridebits="-32" mmedminorstridebits="0" />
       <indexcount>1</indexcount>
       <decimalpl>1</decimalpl>
       <datatype>0</datatype>
@@ -16261,7 +15885,7 @@ KFRKMI_UM</description>
     <description>TVSTAKR</description>
     <CATEGORYMEM index="0" category="26" />
     <XDFAXIS id="x" uniqueid="0x0">
-      <EMBEDDEDDATA mmedtypeflags="0x02" mmedaddress="0x0" mmedelementsizebits="16" mmedmajorstridebits="-32" mmedminorstridebits="0" />
+      <EMBEDDEDDATA mmedtypeflags="0x02" mmedelementsizebits="16" mmedmajorstridebits="-32" mmedminorstridebits="0" />
       <indexcount>1</indexcount>
       <decimalpl>1</decimalpl>
       <datatype>0</datatype>
@@ -16273,7 +15897,7 @@ KFRKMI_UM</description>
       </MATH>
     </XDFAXIS>
     <XDFAXIS id="y" uniqueid="0x0">
-      <EMBEDDEDDATA mmedtypeflags="0x02" mmedaddress="0x0" mmedelementsizebits="16" mmedmajorstridebits="-32" mmedminorstridebits="0" />
+      <EMBEDDEDDATA mmedtypeflags="0x02" mmedelementsizebits="16" mmedmajorstridebits="-32" mmedminorstridebits="0" />
       <indexcount>1</indexcount>
       <decimalpl>1</decimalpl>
       <datatype>0</datatype>
@@ -16300,7 +15924,7 @@ KFRKMI_UM</description>
     <description>VMINAKR</description>
     <CATEGORYMEM index="0" category="26" />
     <XDFAXIS id="x" uniqueid="0x0">
-      <EMBEDDEDDATA mmedtypeflags="0x02" mmedaddress="0x0" mmedelementsizebits="16" mmedmajorstridebits="-32" mmedminorstridebits="0" />
+      <EMBEDDEDDATA mmedtypeflags="0x02" mmedelementsizebits="16" mmedmajorstridebits="-32" mmedminorstridebits="0" />
       <indexcount>5</indexcount>
       <decimalpl>1</decimalpl>
       <datatype>0</datatype>
@@ -16316,7 +15940,7 @@ KFRKMI_UM</description>
       </MATH>
     </XDFAXIS>
     <XDFAXIS id="y" uniqueid="0x0">
-      <EMBEDDEDDATA mmedtypeflags="0x02" mmedaddress="0x0" mmedelementsizebits="16" mmedmajorstridebits="-32" mmedminorstridebits="0" />
+      <EMBEDDEDDATA mmedtypeflags="0x02" mmedelementsizebits="16" mmedmajorstridebits="-32" mmedminorstridebits="0" />
       <indexcount>1</indexcount>
       <decimalpl>1</decimalpl>
       <datatype>0</datatype>
@@ -16939,74 +16563,6 @@ KFRKMI_UM</description>
       <EMBEDDEDDATA mmedtypeflags="0x02" mmedaddress="0x1CCA3A" mmedelementsizebits="16" mmedrowcount="1" mmedmajorstridebits="0" mmedminorstridebits="0" />
       <units>%</units>
       <decimalpl>4</decimalpl>
-      <min>0.000000</min>
-      <max>255.000000</max>
-      <outputtype>1</outputtype>
-      <MATH equation="X*0.046875">
-        <VAR id="X" />
-      </MATH>
-    </XDFAXIS>
-  </XDFTABLE>
-  <XDFTABLE>
-    <title>Max. relative fuel mass for HPFP plausibility X (autogen)</title>
-    <CATEGORYMEM index="0" category="5" />
-    <CATEGORYMEM index="1" category="6" />
-    <XDFAXIS id="x">
-      <EMBEDDEDDATA />
-      <indexcount>4</indexcount>
-    </XDFAXIS>
-    <XDFAXIS id="y">
-      <EMBEDDEDDATA />
-      <indexcount>1</indexcount>
-    </XDFAXIS>
-    <XDFAXIS id="z" uniqueid="0x0">
-      <EMBEDDEDDATA mmedtypeflags="0x02" mmedaddress="0x1CD464" mmedelementsizebits="16" mmedcolcount="4" mmedmajorstridebits="0" mmedminorstridebits="0" />
-      <units>1/min</units>
-      <indexcount>4</indexcount>
-      <decimalpl>0</decimalpl>
-      <datatype>0</datatype>
-      <unittype>0</unittype>
-      <embedinfo type="1" />
-      <DALINK index="0" />
-      <MATH equation="X*0.25">
-        <VAR id="X" />
-      </MATH>
-    </XDFAXIS>
-  </XDFTABLE>
-  <XDFTABLE uniqueid="0x0" flags="0x0">
-    <title>Max. relative fuel mass for HPFP plausibility</title>
-    <description>KLRKMXHDP</description>
-    <CATEGORYMEM index="0" category="5" />
-    <XDFAXIS id="x" uniqueid="0x0">
-      <EMBEDDEDDATA mmedtypeflags="0x02" mmedaddress="0x1CD464" mmedelementsizebits="16" mmedcolcount="4" mmedmajorstridebits="0" mmedminorstridebits="0" />
-      <units>1/min</units>
-      <indexcount>4</indexcount>
-      <decimalpl>0</decimalpl>
-      <datatype>0</datatype>
-      <unittype>0</unittype>
-      <embedinfo type="1" />
-      <DALINK index="0" />
-      <MATH equation="X*0.25">
-        <VAR id="X" />
-      </MATH>
-    </XDFAXIS>
-    <XDFAXIS id="y" uniqueid="0x0">
-      <EMBEDDEDDATA mmedelementsizebits="8" mmedrowcount="1" mmedmajorstridebits="0" mmedminorstridebits="0" />
-      <units>-</units>
-      <indexcount>1</indexcount>
-      <decimalpl>-1</decimalpl>
-      <datatype>0</datatype>
-      <unittype>0</unittype>
-      <DALINK index="0" />
-      <LABEL index="0" value="0.000000" />
-      <MATH equation="X*1">
-        <VAR id="X" />
-      </MATH>
-    </XDFAXIS>
-    <XDFAXIS id="z">
-      <EMBEDDEDDATA mmedtypeflags="0x02" mmedaddress="0x1CD46C" mmedelementsizebits="16" mmedrowcount="1" mmedcolcount="4" mmedmajorstridebits="0" mmedminorstridebits="0" />
-      <units>%</units>
-      <decimalpl>0</decimalpl>
       <min>0.000000</min>
       <max>255.000000</max>
       <outputtype>1</outputtype>
@@ -19066,7 +18622,7 @@ DSVDOFS</description>
       </MATH>
     </XDFAXIS>
     <XDFAXIS id="z">
-      <EMBEDDEDDATA mmedtypeflags="0x02" mmedaddress="1ffa50" mmedelementsizebits="32" mmedrowcount="16" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <EMBEDDEDDATA mmedtypeflags="0x02" mmedaddress="0x1FFA50" mmedelementsizebits="32" mmedrowcount="16" mmedmajorstridebits="0" mmedminorstridebits="0" />
       <decimalpl>0</decimalpl>
       <min>0.000000</min>
       <max>255.000000</max>

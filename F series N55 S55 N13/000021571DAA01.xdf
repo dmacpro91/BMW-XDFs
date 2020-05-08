@@ -15497,96 +15497,6 @@ KFRKMI_UM</description>
     </XDFAXIS>
   </XDFTABLE>
   <XDFTABLE>
-    <title>AKRGRCCM_VAR1 Y (autogen)</title>
-    <CATEGORYMEM index="0" category="26" />
-    <CATEGORYMEM index="1" category="31" />
-    <XDFAXIS id="x">
-      <EMBEDDEDDATA />
-      <indexcount>6</indexcount>
-    </XDFAXIS>
-    <XDFAXIS id="y">
-      <EMBEDDEDDATA />
-      <indexcount>1</indexcount>
-    </XDFAXIS>
-    <XDFAXIS id="z" uniqueid="0x0">
-      <EMBEDDEDDATA mmedaddress="0x1C9A3C" mmedelementsizebits="8" mmedrowcount="6" mmedmajorstridebits="0" mmedminorstridebits="0" />
-      <indexcount>6</indexcount>
-      <datatype>0</datatype>
-      <unittype>0</unittype>
-      <embedinfo type="1" />
-      <DALINK index="0" />
-      <MATH equation="X">
-        <VAR id="X" />
-      </MATH>
-    </XDFAXIS>
-  </XDFTABLE>
-  <XDFTABLE>
-    <title>AKRGRCCM_VAR1 X (autogen)</title>
-    <CATEGORYMEM index="0" category="26" />
-    <CATEGORYMEM index="1" category="31" />
-    <XDFAXIS id="x">
-      <EMBEDDEDDATA />
-      <indexcount>8</indexcount>
-    </XDFAXIS>
-    <XDFAXIS id="y">
-      <EMBEDDEDDATA />
-      <indexcount>1</indexcount>
-    </XDFAXIS>
-    <XDFAXIS id="z" uniqueid="0x0">
-      <EMBEDDEDDATA mmedaddress="0x1C9A42" mmedelementsizebits="8" mmedcolcount="8" mmedmajorstridebits="0" mmedminorstridebits="0" />
-      <units>1/min</units>
-      <indexcount>8</indexcount>
-      <decimalpl>0</decimalpl>
-      <datatype>0</datatype>
-      <unittype>0</unittype>
-      <embedinfo type="1" />
-      <DALINK index="0" />
-      <MATH equation="X*40">
-        <VAR id="X" />
-      </MATH>
-    </XDFAXIS>
-  </XDFTABLE>
-  <XDFTABLE uniqueid="0x0" flags="0x0">
-    <title>AKRGRCCM_VAR1</title>
-    <description>AKRGRCCM_VAR1</description>
-    <CATEGORYMEM index="0" category="26" />
-    <XDFAXIS id="x" uniqueid="0x0">
-      <EMBEDDEDDATA mmedaddress="0x1C9A42" mmedelementsizebits="8" mmedcolcount="8" mmedmajorstridebits="0" mmedminorstridebits="0" />
-      <units>1/min</units>
-      <indexcount>8</indexcount>
-      <decimalpl>0</decimalpl>
-      <datatype>0</datatype>
-      <unittype>0</unittype>
-      <embedinfo type="1" />
-      <DALINK index="0" />
-      <MATH equation="X*40">
-        <VAR id="X" />
-      </MATH>
-    </XDFAXIS>
-    <XDFAXIS id="y" uniqueid="0x0">
-      <EMBEDDEDDATA mmedaddress="0x1C9A3C" mmedelementsizebits="8" mmedrowcount="6" mmedmajorstridebits="0" mmedminorstridebits="0" />
-      <indexcount>6</indexcount>
-      <datatype>0</datatype>
-      <unittype>0</unittype>
-      <embedinfo type="1" />
-      <DALINK index="0" />
-      <MATH equation="X">
-        <VAR id="X" />
-      </MATH>
-    </XDFAXIS>
-    <XDFAXIS id="z">
-      <EMBEDDEDDATA mmedaddress="0x1C9A4A" mmedelementsizebits="8" mmedrowcount="6" mmedcolcount="8" mmedmajorstridebits="0" mmedminorstridebits="0" />
-      <units>%</units>
-      <decimalpl>1</decimalpl>
-      <min>0.000000</min>
-      <max>255.000000</max>
-      <outputtype>1</outputtype>
-      <MATH equation="X/2.55">
-        <VAR id="X" />
-      </MATH>
-    </XDFAXIS>
-  </XDFTABLE>
-  <XDFTABLE>
     <title>AKRGRCOAT_VAR1 Y (autogen)</title>
     <CATEGORYMEM index="0" category="26" />
     <CATEGORYMEM index="1" category="31" />
@@ -18933,7 +18843,7 @@ DSVDOFS</description>
       </MATH>
     </XDFAXIS>
     <XDFAXIS id="z">
-      <EMBEDDEDDATA mmedtypeflags="0x02" mmedaddress="1ffa50" mmedelementsizebits="32" mmedrowcount="16" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <EMBEDDEDDATA mmedtypeflags="0x02" mmedaddress="0x1FFA50" mmedelementsizebits="32" mmedrowcount="16" mmedmajorstridebits="0" mmedminorstridebits="0" />
       <decimalpl>0</decimalpl>
       <min>0.000000</min>
       <max>255.000000</max>
