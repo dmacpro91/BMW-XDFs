@@ -1,0 +1,6 @@
+base roms are U1 (20i 11:1) if not specified, otherwise O1 (28i 10:1).
+
+13e7 USA (EWG?)
+19a8 EUR (EWG?)
+113D usa (pwg?)
+0ABF usa (pwg?)
