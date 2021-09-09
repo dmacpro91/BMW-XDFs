@@ -3638,8 +3638,8 @@
     </XDFAXIS>
   </XDFTABLE>
   <XDFTABLE uniqueid="0x0" flags="0x0">
-    <title>Max vol. efficiency</title>
-    <description>KL_LAMX</description>
+    <title>Max naturally aspirated volumetric efficiency</title>
+    <description>For naturally aspirated operation, should not exceed 100% KL_LAMX</description>
     <CATEGORYMEM index="0" category="9" />
     <XDFAXIS id="x" uniqueid="0x0">
       <EMBEDDEDDATA mmedtypeflags="0x03" mmedaddress="0x71CC6A" mmedelementsizebits="16" mmedcolcount="18" mmedmajorstridebits="0" mmedminorstridebits="0" />
@@ -3680,7 +3680,7 @@
     </XDFAXIS>
   </XDFTABLE>
   <XDFTABLE>
-    <title>Max vol. efficiency X (autogen)</title>
+    <title>Max naturally aspirated volumetric efficiency X (autogen)</title>
     <CATEGORYMEM index="0" category="9" />
     <CATEGORYMEM index="1" category="10" />
     <XDFAXIS id="x">
@@ -4266,7 +4266,7 @@
     <description>BMWtchctr_pwr_PctlWideRng_M</description>
     <CATEGORYMEM index="0" category="1" />
     <XDFAXIS id="x" uniqueid="0x0">
-      <EMBEDDEDDATA mmedtypeflags="0x02" mmedaddress="0x72214C" mmedelementsizebits="16" mmedcolcount="20" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <EMBEDDEDDATA mmedtypeflags="0x02" mmedaddress="0x722124" mmedelementsizebits="16" mmedcolcount="20" mmedmajorstridebits="0" mmedminorstridebits="0" />
       <units>-</units>
       <indexcount>20</indexcount>
       <decimalpl>1</decimalpl>
@@ -4274,12 +4274,12 @@
       <unittype>0</unittype>
       <embedinfo type="1" />
       <DALINK index="0" />
-      <MATH equation="X*0.0001220703">
+      <MATH equation="X*0.000122070313">
         <VAR id="X" />
       </MATH>
     </XDFAXIS>
     <XDFAXIS id="y" uniqueid="0x0">
-      <EMBEDDEDDATA mmedtypeflags="0x02" mmedaddress="0x722124" mmedelementsizebits="16" mmedcolcount="16" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <EMBEDDEDDATA mmedtypeflags="0x02" mmedaddress="0x72214C" mmedelementsizebits="16" mmedcolcount="16" mmedmajorstridebits="0" mmedminorstridebits="0" />
       <units>g/s</units>
       <indexcount>16</indexcount>
       <decimalpl>1</decimalpl>
@@ -4287,7 +4287,7 @@
       <unittype>0</unittype>
       <embedinfo type="1" />
       <DALINK index="0" />
-      <MATH equation="X*0.03125/3.6">
+      <MATH equation="X*0.0625/3.6">
         <VAR id="X" />
       </MATH>
     </XDFAXIS>
@@ -4562,32 +4562,6 @@
     </XDFAXIS>
   </XDFTABLE>
   <XDFTABLE>
-    <title>Compressor characteristic with required compressor / turbine power Y (autogen)</title>
-    <CATEGORYMEM index="0" category="1" />
-    <CATEGORYMEM index="1" category="2" />
-    <XDFAXIS id="x">
-      <EMBEDDEDDATA />
-      <indexcount>16</indexcount>
-    </XDFAXIS>
-    <XDFAXIS id="y">
-      <EMBEDDEDDATA />
-      <indexcount>1</indexcount>
-    </XDFAXIS>
-    <XDFAXIS id="z" uniqueid="0x0">
-      <EMBEDDEDDATA mmedtypeflags="0x02" mmedaddress="0x722124" mmedelementsizebits="16" mmedcolcount="16" mmedmajorstridebits="0" mmedminorstridebits="0" />
-      <units>g/s</units>
-      <indexcount>16</indexcount>
-      <decimalpl>1</decimalpl>
-      <datatype>0</datatype>
-      <unittype>0</unittype>
-      <embedinfo type="1" />
-      <DALINK index="0" />
-      <MATH equation="X*0.03125/3.6">
-        <VAR id="X" />
-      </MATH>
-    </XDFAXIS>
-  </XDFTABLE>
-  <XDFTABLE>
     <title>Compressor characteristic with required compressor / turbine power X (autogen)</title>
     <CATEGORYMEM index="0" category="1" />
     <CATEGORYMEM index="1" category="2" />
@@ -4600,7 +4574,7 @@
       <indexcount>1</indexcount>
     </XDFAXIS>
     <XDFAXIS id="z" uniqueid="0x0">
-      <EMBEDDEDDATA mmedtypeflags="0x02" mmedaddress="0x72214C" mmedelementsizebits="16" mmedcolcount="20" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <EMBEDDEDDATA mmedtypeflags="0x02" mmedaddress="0x722124" mmedelementsizebits="16" mmedcolcount="20" mmedmajorstridebits="0" mmedminorstridebits="0" />
       <units>-</units>
       <indexcount>20</indexcount>
       <decimalpl>1</decimalpl>
@@ -4608,7 +4582,33 @@
       <unittype>0</unittype>
       <embedinfo type="1" />
       <DALINK index="0" />
-      <MATH equation="X*0.0001220703">
+      <MATH equation="X*0.000122070313">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE>
+    <title>Compressor characteristic with required compressor / turbine power Y (autogen)</title>
+    <CATEGORYMEM index="0" category="1" />
+    <CATEGORYMEM index="1" category="2" />
+    <XDFAXIS id="x">
+      <EMBEDDEDDATA />
+      <indexcount>16</indexcount>
+    </XDFAXIS>
+    <XDFAXIS id="y">
+      <EMBEDDEDDATA />
+      <indexcount>1</indexcount>
+    </XDFAXIS>
+    <XDFAXIS id="z" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x02" mmedaddress="0x72214C" mmedelementsizebits="16" mmedcolcount="16" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units>g/s</units>
+      <indexcount>16</indexcount>
+      <decimalpl>1</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1" />
+      <DALINK index="0" />
+      <MATH equation="X*0.0625/3.6">
         <VAR id="X" />
       </MATH>
     </XDFAXIS>
@@ -9144,12 +9144,12 @@
       <EMBEDDEDDATA mmedtypeflags="0x02" mmedaddress="0x74253E" mmedelementsizebits="16" mmedcolcount="12" mmedmajorstridebits="0" mmedminorstridebits="0" />
       <units>-</units>
       <indexcount>12</indexcount>
-      <decimalpl>0</decimalpl>
+      <decimalpl>2</decimalpl>
       <datatype>0</datatype>
       <unittype>0</unittype>
       <embedinfo type="1" />
       <DALINK index="0" />
-      <MATH equation="X*0.03125/3.6">
+      <MATH equation="X*0.000061035156">
         <VAR id="X" />
       </MATH>
     </XDFAXIS>
@@ -9157,12 +9157,12 @@
       <EMBEDDEDDATA mmedtypeflags="0x02" mmedaddress="0x742526" mmedelementsizebits="16" mmedcolcount="12" mmedmajorstridebits="0" mmedminorstridebits="0" />
       <units>g/s</units>
       <indexcount>12</indexcount>
-      <decimalpl>3</decimalpl>
+      <decimalpl>2</decimalpl>
       <datatype>0</datatype>
       <unittype>0</unittype>
       <embedinfo type="1" />
       <DALINK index="0" />
-      <MATH equation="X*0.00006103516/3.6">
+      <MATH equation="X*0.03125/3.6">
         <VAR id="X" />
       </MATH>
     </XDFAXIS>
@@ -9195,12 +9195,12 @@
       <EMBEDDEDDATA mmedtypeflags="0x02" mmedaddress="0x742526" mmedelementsizebits="16" mmedcolcount="12" mmedmajorstridebits="0" mmedminorstridebits="0" />
       <units>g/s</units>
       <indexcount>12</indexcount>
-      <decimalpl>3</decimalpl>
+      <decimalpl>2</decimalpl>
       <datatype>0</datatype>
       <unittype>0</unittype>
       <embedinfo type="1" />
       <DALINK index="0" />
-      <MATH equation="X*0.00006103516/3.6">
+      <MATH equation="X*0.03125/3.6">
         <VAR id="X" />
       </MATH>
     </XDFAXIS>
@@ -9222,12 +9222,12 @@
       <EMBEDDEDDATA mmedtypeflags="0x02" mmedaddress="0x74253E" mmedelementsizebits="16" mmedcolcount="12" mmedmajorstridebits="0" mmedminorstridebits="0" />
       <units>-</units>
       <indexcount>12</indexcount>
-      <decimalpl>0</decimalpl>
+      <decimalpl>2</decimalpl>
       <datatype>0</datatype>
       <unittype>0</unittype>
       <embedinfo type="1" />
       <DALINK index="0" />
-      <MATH equation="X*0.03125/3.6">
+      <MATH equation="X*0.000061035156">
         <VAR id="X" />
       </MATH>
     </XDFAXIS>

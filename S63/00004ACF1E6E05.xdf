@@ -2538,7 +2538,7 @@
     </XDFAXIS>
   </XDFTABLE>
   <XDFTABLE>
-    <title>Lambda Limit Rich Y (autogen)</title>
+    <title>Lambda Limit Rich Load</title>
     <CATEGORYMEM index="0" category="5" />
     <CATEGORYMEM index="1" category="6" />
     <XDFAXIS id="x">
@@ -2564,7 +2564,7 @@
     </XDFAXIS>
   </XDFTABLE>
   <XDFTABLE>
-    <title>Lambda Limit Rich X (autogen)</title>
+    <title>Lambda Limit Rich RPM</title>
     <CATEGORYMEM index="0" category="5" />
     <CATEGORYMEM index="1" category="6" />
     <XDFAXIS id="x">
@@ -4312,8 +4312,8 @@
     </XDFAXIS>
   </XDFTABLE>
   <XDFTABLE uniqueid="0x0" flags="0x0">
-    <title>Max vol. efficiency</title>
-    <description>KL_LAMX</description>
+    <title>Max naturally aspirated volumetric efficiency</title>
+    <description>For naturally aspirated operation, should not exceed 100% KL_LAMX</description>
     <CATEGORYMEM index="0" category="9" />
     <XDFAXIS id="x" uniqueid="0x0">
       <EMBEDDEDDATA mmedtypeflags="0x03" mmedaddress="0x7184F6" mmedelementsizebits="16" mmedcolcount="18" mmedmajorstridebits="0" mmedminorstridebits="0" />
@@ -4354,7 +4354,7 @@
     </XDFAXIS>
   </XDFTABLE>
   <XDFTABLE>
-    <title>Max vol. efficiency X (autogen)</title>
+    <title>Max naturally aspirated volumetric efficiency X (autogen)</title>
     <CATEGORYMEM index="0" category="9" />
     <CATEGORYMEM index="1" category="10" />
     <XDFAXIS id="x">
@@ -9285,12 +9285,12 @@
       <EMBEDDEDDATA mmedtypeflags="0x02" mmedaddress="0x73AEA4" mmedelementsizebits="16" mmedcolcount="12" mmedmajorstridebits="0" mmedminorstridebits="0" />
       <units>-</units>
       <indexcount>12</indexcount>
-      <decimalpl>0</decimalpl>
+      <decimalpl>2</decimalpl>
       <datatype>0</datatype>
       <unittype>0</unittype>
       <embedinfo type="1" />
       <DALINK index="0" />
-      <MATH equation="X*0.03125/3.6">
+      <MATH equation="X*0.000061035156">
         <VAR id="X" />
       </MATH>
     </XDFAXIS>
@@ -9303,7 +9303,7 @@
       <unittype>0</unittype>
       <embedinfo type="1" />
       <DALINK index="0" />
-      <MATH equation="X*0.00006103516/3.6">
+      <MATH equation="X*0.03125/3.6">
         <VAR id="X" />
       </MATH>
     </XDFAXIS>
@@ -9341,7 +9341,7 @@
       <unittype>0</unittype>
       <embedinfo type="1" />
       <DALINK index="0" />
-      <MATH equation="X*0.00006103516/3.6">
+      <MATH equation="X*0.03125/3.6">
         <VAR id="X" />
       </MATH>
     </XDFAXIS>
@@ -9363,12 +9363,12 @@
       <EMBEDDEDDATA mmedtypeflags="0x02" mmedaddress="0x73AEA4" mmedelementsizebits="16" mmedcolcount="12" mmedmajorstridebits="0" mmedminorstridebits="0" />
       <units>-</units>
       <indexcount>12</indexcount>
-      <decimalpl>0</decimalpl>
+      <decimalpl>2</decimalpl>
       <datatype>0</datatype>
       <unittype>0</unittype>
       <embedinfo type="1" />
       <DALINK index="0" />
-      <MATH equation="X*0.03125/3.6">
+      <MATH equation="X*0.000061035156">
         <VAR id="X" />
       </MATH>
     </XDFAXIS>
