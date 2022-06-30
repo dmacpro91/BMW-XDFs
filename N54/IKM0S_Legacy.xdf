@@ -1,9 +1,10 @@
 <?xml version="1.0"?>
-<XDFFORMAT xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.50">
+<XDFFORMAT xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.60">
   <XDFHEADER>
     <flags>0x1</flags>
     <deftitle>IKM0S</deftitle>
     <description />
+    <BASEOFFSET offset="0" subtract="0" />
     <DEFAULTS datasizeinbits="16" sigdigits="2" outputtype="1" signed="0" lsbfirst="0" float="0" />
     <REGION type="0xFFFFFFFF" startaddress="0x0" size="0x1FFFFF" regionflags="0x0" name="Binary File" desc="This region describes the bin file edited by this XDF" />
     <CATEGORY index="0x0" name="Boost Control" />
@@ -40,7 +41,7 @@
     <CATEGORY index="0x1F" name="Spark Dwell" />
     <CATEGORY index="0x20" name="Shift Bog" />
     <CATEGORY index="0x21" name="WIP - Testing" />
-    <CATEGORY index="0x22" name="Anti-lag" />
+    <CATEGORY index="0x22" name="IAT Sensor" />
     <CATEGORY index="0x23" name="MHD" />
     <CATEGORY index="0x24" name="MHD breakpoints" />
     <CATEGORY index="0x25" name="Single Turbo Boost Control" />
@@ -49,20 +50,27 @@
     <CATEGORY index="0x28" name="Private - Fuel Cut" />
     <CATEGORY index="0x29" name="Private - Exhaust flap" />
     <CATEGORY index="0x2A" name="Exhaust flap" />
-    <CATEGORY index="0x2B" name="Exhaust flap breakpoints" />
-    <CATEGORY index="0x2C" name="Transmission breakpoints" />
-    <CATEGORY index="0x2D" name="Shift Bog breakpoints" />
-    <CATEGORY index="0x2E" name="Rev Limits breakpoints" />
-    <CATEGORY index="0x2F" name="Idle Setpoints breakpoints" />
-    <CATEGORY index="0x30" name="Anti-lag breakpoints" />
-    <CATEGORY index="0x31" name="Knock breakpoints" />
-    <CATEGORY index="0x32" name="WIP - Testing breakpoints" />
-    <CATEGORY index="0x33" name="Spark Dwell breakpoints" />
-    <CATEGORY index="0x34" name="Overboost - Load Adder breakpoints" />
-    <CATEGORY index="0x35" name="Boost Control breakpoints" />
-    <CATEGORY index="0x36" name="Engine Cooling breakpoints" />
-    <CATEGORY index="0x37" name="Torque Limiting Maps breakpoints" />
-    <CATEGORY index="0x38" name="Limits breakpoints" />
+    <CATEGORY index="0x2B" name="Private - Exhaust flap breakpoints" />
+    <CATEGORY index="0x2C" name="Exhaust flap breakpoints" />
+    <CATEGORY index="0x2D" name="Torque Limiting Maps breakpoints" />
+    <CATEGORY index="0x2E" name="Limits breakpoints" />
+    <CATEGORY index="0x2F" name="Boost Control breakpoints" />
+    <CATEGORY index="0x30" name="Overboost - Load Adder breakpoints" />
+    <CATEGORY index="0x31" name="Transmission breakpoints" />
+    <CATEGORY index="0x32" name="Rev Limits breakpoints" />
+    <CATEGORY index="0x33" name="Knock breakpoints" />
+    <CATEGORY index="0x34" name="Idle Setpoints breakpoints" />
+    <CATEGORY index="0x35" name="Spark Dwell breakpoints" />
+    <CATEGORY index="0x36" name="Shift Bog breakpoints" />
+    <CATEGORY index="0x37" name="WIP - Testing breakpoints" />
+    <CATEGORY index="0x38" name="IAT Sensor breakpoints" />
+    <CATEGORY index="0x39" name="Engine Cooling breakpoints" />
+    <CATEGORY index="0x3A" name="Throttle Sensitivity" />
+    <CATEGORY index="0x3B" name="VCV" />
+    <CATEGORY index="0x3C" name="Throttle Sensitivity breakpoints" />
+    <CATEGORY index="0x3D" name="Diagnostic Codes breakpoints" />
+    <CATEGORY index="0x3E" name="Burble" />
+    <CATEGORY index="0x3F" name="Burble breakpoints" />
     <CATEGORY index="0x99" name="Private - Testing" />
     <CATEGORY index="0xA0" name="DAMOS" />
     <CATEGORY index="0xA1" name="MDDMK" />
@@ -75,7 +83,7 @@
   <XDFTABLE>
     <title>Dwell Time Y (autogen)</title>
     <CATEGORYMEM index="0" category="32" />
-    <CATEGORYMEM index="1" category="52" />
+    <CATEGORYMEM index="1" category="54" />
     <XDFAXIS id="x">
       <EMBEDDEDDATA />
       <indexcount>8</indexcount>
@@ -101,7 +109,7 @@
   <XDFTABLE>
     <title>Dwell Time X (autogen)</title>
     <CATEGORYMEM index="0" category="32" />
-    <CATEGORYMEM index="1" category="52" />
+    <CATEGORYMEM index="1" category="54" />
     <XDFAXIS id="x">
       <EMBEDDEDDATA />
       <indexcount>8</indexcount>
@@ -469,7 +477,7 @@
     </XDFAXIS>
   </XDFTABLE>
   <XDFTABLE uniqueid="0x0" flags="0x30">
-    <title>Enable Single Rear O2</title>
+    <title>Enable Single Rear O2 (Toggle 1)</title>
     <description>To use both rear sensors, set to 02
 To enable and use just bank 1 rear, set to 04
 
@@ -504,6 +512,48 @@ To enable and use just bank 1 rear, set to 04
       <decimalpl>0</decimalpl>
       <min>1.000000</min>
       <max>4.000000</max>
+      <outputtype>3</outputtype>
+      <MATH equation="X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE uniqueid="0x0" flags="0x30">
+    <title>Enable Single Rear O2 (Toggle 2)</title>
+    <description>To use both rear sensors, set to 00
+To enable and use just bank 1 rear, set to 01
+
+(lc_var_ex_cus)</description>
+    <CATEGORYMEM index="0" category="15" />
+    <CATEGORYMEM index="1" category="20" />
+    <XDFAXIS id="x" uniqueid="0x0">
+      <EMBEDDEDDATA mmedelementsizebits="16" mmedmajorstridebits="-32" mmedminorstridebits="0" />
+      <indexcount>1</indexcount>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <DALINK index="0" />
+      <LABEL index="0" value="0.00" />
+      <MATH equation="X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="y" uniqueid="0x0">
+      <EMBEDDEDDATA mmedelementsizebits="16" mmedmajorstridebits="-32" mmedminorstridebits="0" />
+      <indexcount>1</indexcount>
+      <outputtype>4</outputtype>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <DALINK index="0" />
+      <LABEL index="0" value="" />
+      <MATH equation="X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="z">
+      <EMBEDDEDDATA mmedtypeflags="0x02" mmedaddress="0x470E6" mmedelementsizebits="8" mmedrowcount="1" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <decimalpl>0</decimalpl>
+      <min>0.000000</min>
+      <max>1.000000</max>
       <outputtype>3</outputtype>
       <MATH equation="X">
         <VAR id="X" />
@@ -2411,6 +2461,46 @@ Check your stock rom for the enable value.</description>
     </XDFAXIS>
   </XDFTABLE>
   <XDFTABLE uniqueid="0x0" flags="0x0">
+    <title>Fuel Trim Post Shift 0 Disable </title>
+    <description>Stock - 0x78
+Disabled - 0x00 or 0x01</description>
+    <CATEGORYMEM index="0" category="15" />
+    <CATEGORYMEM index="1" category="20" />
+    <XDFAXIS id="x" uniqueid="0x0">
+      <EMBEDDEDDATA mmedelementsizebits="16" mmedmajorstridebits="-32" mmedminorstridebits="0" />
+      <indexcount>1</indexcount>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <DALINK index="0" />
+      <LABEL index="0" value="0.00" />
+      <MATH equation="X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="y" uniqueid="0x0">
+      <EMBEDDEDDATA mmedelementsizebits="16" mmedmajorstridebits="-32" mmedminorstridebits="0" />
+      <indexcount>1</indexcount>
+      <outputtype>4</outputtype>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <DALINK index="0" />
+      <LABEL index="0" value="" />
+      <MATH equation="X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="z">
+      <EMBEDDEDDATA mmedtypeflags="0x02" mmedaddress="0x470B2" mmedelementsizebits="8" mmedrowcount="1" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <decimalpl>0</decimalpl>
+      <min>1.000000</min>
+      <max>4.000000</max>
+      <outputtype>3</outputtype>
+      <MATH equation="X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE uniqueid="0x0" flags="0x0">
     <title>Misfire Detection Max RPM (AT)</title>
     <description>(c_n_max_mis_at)</description>
     <CATEGORYMEM index="2" category="34" />
@@ -2696,7 +2786,7 @@ Check your stock rom for the enable value.</description>
   <XDFTABLE>
     <title>Engine Speed - Load Threshold for Fast Fuel Cut-off X (autogen)</title>
     <CATEGORYMEM index="0" category="33" />
-    <CATEGORYMEM index="1" category="46" />
+    <CATEGORYMEM index="1" category="55" />
     <XDFAXIS id="x">
       <EMBEDDEDDATA />
       <indexcount>4</indexcount>
@@ -2722,7 +2812,7 @@ Check your stock rom for the enable value.</description>
   <XDFTABLE>
     <title>Engine Speed - Load Threshold for Fast Fuel Cut-off Y (autogen)</title>
     <CATEGORYMEM index="0" category="33" />
-    <CATEGORYMEM index="1" category="46" />
+    <CATEGORYMEM index="1" category="55" />
     <XDFAXIS id="x">
       <EMBEDDEDDATA />
       <indexcount>4</indexcount>
@@ -2748,7 +2838,7 @@ Check your stock rom for the enable value.</description>
   <XDFTABLE>
     <title>Nominal Idle Speed (part load 3) X (autogen)</title>
     <CATEGORYMEM index="0" category="25" />
-    <CATEGORYMEM index="1" category="48" />
+    <CATEGORYMEM index="1" category="53" />
     <XDFAXIS id="x">
       <EMBEDDEDDATA />
       <indexcount>6</indexcount>
@@ -2774,7 +2864,7 @@ Check your stock rom for the enable value.</description>
   <XDFTABLE>
     <title>Nominal Idle Speed (part load 4) X (autogen)</title>
     <CATEGORYMEM index="0" category="25" />
-    <CATEGORYMEM index="1" category="48" />
+    <CATEGORYMEM index="1" category="53" />
     <XDFAXIS id="x">
       <EMBEDDEDDATA />
       <indexcount>6</indexcount>
@@ -2800,7 +2890,7 @@ Check your stock rom for the enable value.</description>
   <XDFTABLE>
     <title>Nominal Idle Speed (part load 1) X (autogen)</title>
     <CATEGORYMEM index="0" category="25" />
-    <CATEGORYMEM index="1" category="48" />
+    <CATEGORYMEM index="1" category="53" />
     <XDFAXIS id="x">
       <EMBEDDEDDATA />
       <indexcount>6</indexcount>
@@ -2826,7 +2916,7 @@ Check your stock rom for the enable value.</description>
   <XDFTABLE>
     <title>Nominal Idle Speed (part load 2) X (autogen)</title>
     <CATEGORYMEM index="0" category="25" />
-    <CATEGORYMEM index="1" category="48" />
+    <CATEGORYMEM index="1" category="53" />
     <XDFAXIS id="x">
       <EMBEDDEDDATA />
       <indexcount>6</indexcount>
@@ -2892,7 +2982,7 @@ Check your stock rom for the enable value.</description>
   <XDFTABLE>
     <title>Idle Speed (MT drive-off support 1) X (autogen)</title>
     <CATEGORYMEM index="0" category="25" />
-    <CATEGORYMEM index="1" category="48" />
+    <CATEGORYMEM index="1" category="53" />
     <XDFAXIS id="x">
       <EMBEDDEDDATA />
       <indexcount>8</indexcount>
@@ -2917,7 +3007,7 @@ Check your stock rom for the enable value.</description>
   <XDFTABLE>
     <title>Idle Speed (MT drive-off support 2) X (autogen)</title>
     <CATEGORYMEM index="0" category="25" />
-    <CATEGORYMEM index="1" category="48" />
+    <CATEGORYMEM index="1" category="53" />
     <XDFAXIS id="x">
       <EMBEDDEDDATA />
       <indexcount>8</indexcount>
@@ -2942,7 +3032,7 @@ Check your stock rom for the enable value.</description>
   <XDFTABLE>
     <title>Nominal Idle Speed (part load 3) Y (autogen)</title>
     <CATEGORYMEM index="0" category="25" />
-    <CATEGORYMEM index="1" category="48" />
+    <CATEGORYMEM index="1" category="53" />
     <XDFAXIS id="x">
       <EMBEDDEDDATA />
       <indexcount>6</indexcount>
@@ -2966,7 +3056,7 @@ Check your stock rom for the enable value.</description>
   <XDFTABLE>
     <title>Nominal Idle Speed (part load 4) Y (autogen)</title>
     <CATEGORYMEM index="0" category="25" />
-    <CATEGORYMEM index="1" category="48" />
+    <CATEGORYMEM index="1" category="53" />
     <XDFAXIS id="x">
       <EMBEDDEDDATA />
       <indexcount>6</indexcount>
@@ -2990,7 +3080,7 @@ Check your stock rom for the enable value.</description>
   <XDFTABLE>
     <title>Nominal Idle Speed (part load 1) Y (autogen)</title>
     <CATEGORYMEM index="0" category="25" />
-    <CATEGORYMEM index="1" category="48" />
+    <CATEGORYMEM index="1" category="53" />
     <XDFAXIS id="x">
       <EMBEDDEDDATA />
       <indexcount>6</indexcount>
@@ -3014,7 +3104,7 @@ Check your stock rom for the enable value.</description>
   <XDFTABLE>
     <title>Nominal Idle Speed (part load 2) Y (autogen)</title>
     <CATEGORYMEM index="0" category="25" />
-    <CATEGORYMEM index="1" category="48" />
+    <CATEGORYMEM index="1" category="53" />
     <XDFAXIS id="x">
       <EMBEDDEDDATA />
       <indexcount>6</indexcount>
@@ -3035,11 +3125,58 @@ Check your stock rom for the enable value.</description>
       </MATH>
     </XDFAXIS>
   </XDFTABLE>
+  <XDFTABLE uniqueid="0x0" flags="0x30">
+    <title>Rev Limit (Clutch Pressed) X</title>
+    <CATEGORYMEM index="0" category="4" />
+    <CATEGORYMEM index="1" category="12" />
+    <CATEGORYMEM index="2" category="47" />
+    <XDFAXIS id="x" uniqueid="0x0">
+      <EMBEDDEDDATA mmedelementsizebits="16" mmedmajorstridebits="-32" mmedminorstridebits="0" />
+      <units>kmh</units>
+      <indexcount>8</indexcount>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <DALINK index="0" />
+      <LABEL index="0" value="0.00" />
+      <LABEL index="1" value="0.00" />
+      <LABEL index="2" value="0.00" />
+      <LABEL index="3" value="0.00" />
+      <LABEL index="4" value="0.00" />
+      <LABEL index="5" value="0.00" />
+      <LABEL index="6" value="0.00" />
+      <LABEL index="7" value="0.00" />
+      <MATH equation="X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="y" uniqueid="0x0">
+      <EMBEDDEDDATA mmedelementsizebits="16" mmedmajorstridebits="-32" mmedminorstridebits="0" />
+      <indexcount>1</indexcount>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <DALINK index="0" />
+      <LABEL index="0" value="0.00" />
+      <MATH equation="X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="z">
+      <EMBEDDEDDATA mmedtypeflags="0x02" mmedaddress="0x49985" mmedelementsizebits="8" mmedrowcount="1" mmedcolcount="8" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units>kmh</units>
+      <decimalpl>2</decimalpl>
+      <min>0.000000</min>
+      <max>255.000000</max>
+      <outputtype>1</outputtype>
+      <MATH equation="X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
   <XDFTABLE>
     <title>Rev Limit by Gear Floor (AT) X (autogen)</title>
     <CATEGORYMEM index="0" category="4" />
     <CATEGORYMEM index="1" category="12" />
-    <CATEGORYMEM index="2" category="47" />
+    <CATEGORYMEM index="2" category="51" />
     <XDFAXIS id="x">
       <EMBEDDEDDATA />
       <indexcount>9</indexcount>
@@ -3066,7 +3203,7 @@ Check your stock rom for the enable value.</description>
     <title>Rev Limit by Gear Floor (AT Manual Mode) X (autogen)</title>
     <CATEGORYMEM index="0" category="4" />
     <CATEGORYMEM index="1" category="12" />
-    <CATEGORYMEM index="2" category="47" />
+    <CATEGORYMEM index="2" category="51" />
     <XDFAXIS id="x">
       <EMBEDDEDDATA />
       <indexcount>9</indexcount>
@@ -3093,7 +3230,7 @@ Check your stock rom for the enable value.</description>
     <title>Rev Limit by Gear Ceiling (AT) X (autogen)</title>
     <CATEGORYMEM index="0" category="4" />
     <CATEGORYMEM index="1" category="12" />
-    <CATEGORYMEM index="2" category="47" />
+    <CATEGORYMEM index="2" category="51" />
     <XDFAXIS id="x">
       <EMBEDDEDDATA />
       <indexcount>9</indexcount>
@@ -3120,7 +3257,7 @@ Check your stock rom for the enable value.</description>
     <title>Rev Limit by Gear Ceiling (AT Manual Mode) X (autogen)</title>
     <CATEGORYMEM index="0" category="4" />
     <CATEGORYMEM index="1" category="12" />
-    <CATEGORYMEM index="2" category="47" />
+    <CATEGORYMEM index="2" category="51" />
     <XDFAXIS id="x">
       <EMBEDDEDDATA />
       <indexcount>9</indexcount>
@@ -3147,7 +3284,7 @@ Check your stock rom for the enable value.</description>
     <title>Rev Limit by Gear Ceiling (MT) X (autogen)</title>
     <CATEGORYMEM index="0" category="4" />
     <CATEGORYMEM index="1" category="12" />
-    <CATEGORYMEM index="2" category="47" />
+    <CATEGORYMEM index="2" category="51" />
     <XDFAXIS id="x">
       <EMBEDDEDDATA />
       <indexcount>9</indexcount>
@@ -3174,7 +3311,7 @@ Check your stock rom for the enable value.</description>
     <title>Rev Limit by Gear Floor (MT) X (autogen)</title>
     <CATEGORYMEM index="0" category="4" />
     <CATEGORYMEM index="1" category="12" />
-    <CATEGORYMEM index="2" category="47" />
+    <CATEGORYMEM index="2" category="51" />
     <XDFAXIS id="x">
       <EMBEDDEDDATA />
       <indexcount>9</indexcount>
@@ -3201,7 +3338,7 @@ Check your stock rom for the enable value.</description>
     <title>Time Between Rev Limit Bumps (AT) X (autogen)</title>
     <CATEGORYMEM index="0" category="4" />
     <CATEGORYMEM index="1" category="12" />
-    <CATEGORYMEM index="2" category="47" />
+    <CATEGORYMEM index="2" category="51" />
     <XDFAXIS id="x">
       <EMBEDDEDDATA />
       <indexcount>9</indexcount>
@@ -3228,7 +3365,7 @@ Check your stock rom for the enable value.</description>
     <title>Time Between Rev Limit Bumps (AT Manual Mode) X (autogen)</title>
     <CATEGORYMEM index="0" category="4" />
     <CATEGORYMEM index="1" category="12" />
-    <CATEGORYMEM index="2" category="47" />
+    <CATEGORYMEM index="2" category="51" />
     <XDFAXIS id="x">
       <EMBEDDEDDATA />
       <indexcount>9</indexcount>
@@ -3255,7 +3392,7 @@ Check your stock rom for the enable value.</description>
     <title>Time Between Rev Limit Bumps (MT) X (autogen)</title>
     <CATEGORYMEM index="0" category="4" />
     <CATEGORYMEM index="1" category="12" />
-    <CATEGORYMEM index="2" category="47" />
+    <CATEGORYMEM index="2" category="51" />
     <XDFAXIS id="x">
       <EMBEDDEDDATA />
       <indexcount>9</indexcount>
@@ -3281,7 +3418,7 @@ Check your stock rom for the enable value.</description>
   <XDFTABLE>
     <title>Torque Request % for Exhaust Flap Actuation (AT) Y (autogen)</title>
     <CATEGORYMEM index="0" category="43" />
-    <CATEGORYMEM index="1" category="44" />
+    <CATEGORYMEM index="1" category="45" />
     <XDFAXIS id="x">
       <EMBEDDEDDATA />
       <indexcount>8</indexcount>
@@ -3307,7 +3444,7 @@ Check your stock rom for the enable value.</description>
   <XDFTABLE>
     <title>Torque Request % for Exhaust Flap Actuation (MT) Y (autogen)</title>
     <CATEGORYMEM index="0" category="43" />
-    <CATEGORYMEM index="1" category="44" />
+    <CATEGORYMEM index="1" category="45" />
     <XDFAXIS id="x">
       <EMBEDDEDDATA />
       <indexcount>8</indexcount>
@@ -3333,7 +3470,7 @@ Check your stock rom for the enable value.</description>
   <XDFTABLE>
     <title>Torque Request % for Exhaust Flap Actuation (AT - Convertible roof open) Y (autogen)</title>
     <CATEGORYMEM index="0" category="43" />
-    <CATEGORYMEM index="1" category="44" />
+    <CATEGORYMEM index="1" category="45" />
     <XDFAXIS id="x">
       <EMBEDDEDDATA />
       <indexcount>8</indexcount>
@@ -3359,7 +3496,7 @@ Check your stock rom for the enable value.</description>
   <XDFTABLE>
     <title>Torque Request % for Exhaust Flap Actuation (MT - Convertible roof open) Y (autogen)</title>
     <CATEGORYMEM index="0" category="43" />
-    <CATEGORYMEM index="1" category="44" />
+    <CATEGORYMEM index="1" category="45" />
     <XDFAXIS id="x">
       <EMBEDDEDDATA />
       <indexcount>8</indexcount>
@@ -3385,7 +3522,7 @@ Check your stock rom for the enable value.</description>
   <XDFTABLE>
     <title>Maximum Spark Retard Y (autogen)</title>
     <CATEGORYMEM index="0" category="24" />
-    <CATEGORYMEM index="1" category="50" />
+    <CATEGORYMEM index="1" category="52" />
     <XDFAXIS id="x">
       <EMBEDDEDDATA />
       <indexcount>8</indexcount>
@@ -3446,6 +3583,266 @@ Check your stock rom for the enable value.</description>
     </XDFAXIS>
   </XDFTABLE>
   <XDFTABLE>
+    <title>Basic Correction (AT) X (autogen)</title>
+    <CATEGORYMEM index="0" category="6" />
+    <CATEGORYMEM index="1" category="59" />
+    <CATEGORYMEM index="2" category="61" />
+    <XDFAXIS id="x">
+      <EMBEDDEDDATA />
+      <indexcount>6</indexcount>
+    </XDFAXIS>
+    <XDFAXIS id="y">
+      <EMBEDDEDDATA />
+      <indexcount>1</indexcount>
+    </XDFAXIS>
+    <XDFAXIS id="z" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x02" mmedaddress="0x49EFE" mmedelementsizebits="16" mmedcolcount="6" mmedmajorstridebits="16" mmedminorstridebits="0" />
+      <units>rpm</units>
+      <indexcount>6</indexcount>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1" />
+      <DALINK index="0" />
+      <MATH equation="X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE>
+    <title>Basic Correction (AT in manual) X (autogen)</title>
+    <CATEGORYMEM index="0" category="6" />
+    <CATEGORYMEM index="1" category="59" />
+    <CATEGORYMEM index="2" category="61" />
+    <XDFAXIS id="x">
+      <EMBEDDEDDATA />
+      <indexcount>6</indexcount>
+    </XDFAXIS>
+    <XDFAXIS id="y">
+      <EMBEDDEDDATA />
+      <indexcount>1</indexcount>
+    </XDFAXIS>
+    <XDFAXIS id="z" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x02" mmedaddress="0x49EFE" mmedelementsizebits="16" mmedcolcount="6" mmedmajorstridebits="16" mmedminorstridebits="0" />
+      <units>rpm</units>
+      <indexcount>6</indexcount>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1" />
+      <DALINK index="0" />
+      <MATH equation="X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE>
+    <title>Basic Correction (AT in sport) X (autogen)</title>
+    <CATEGORYMEM index="0" category="6" />
+    <CATEGORYMEM index="1" category="59" />
+    <CATEGORYMEM index="2" category="61" />
+    <XDFAXIS id="x">
+      <EMBEDDEDDATA />
+      <indexcount>6</indexcount>
+    </XDFAXIS>
+    <XDFAXIS id="y">
+      <EMBEDDEDDATA />
+      <indexcount>1</indexcount>
+    </XDFAXIS>
+    <XDFAXIS id="z" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x02" mmedaddress="0x49EFE" mmedelementsizebits="16" mmedcolcount="6" mmedmajorstridebits="16" mmedminorstridebits="0" />
+      <units>rpm</units>
+      <indexcount>6</indexcount>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1" />
+      <DALINK index="0" />
+      <MATH equation="X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE>
+    <title>Basic Correction (MT) X (autogen)</title>
+    <CATEGORYMEM index="0" category="6" />
+    <CATEGORYMEM index="1" category="59" />
+    <CATEGORYMEM index="2" category="61" />
+    <XDFAXIS id="x">
+      <EMBEDDEDDATA />
+      <indexcount>6</indexcount>
+    </XDFAXIS>
+    <XDFAXIS id="y">
+      <EMBEDDEDDATA />
+      <indexcount>1</indexcount>
+    </XDFAXIS>
+    <XDFAXIS id="z" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x02" mmedaddress="0x49EFE" mmedelementsizebits="16" mmedcolcount="6" mmedmajorstridebits="16" mmedminorstridebits="0" />
+      <units>rpm</units>
+      <indexcount>6</indexcount>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1" />
+      <DALINK index="0" />
+      <MATH equation="X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE>
+    <title>Basic Correction (DCT) X (autogen)</title>
+    <CATEGORYMEM index="0" category="6" />
+    <CATEGORYMEM index="1" category="59" />
+    <CATEGORYMEM index="2" category="61" />
+    <XDFAXIS id="x">
+      <EMBEDDEDDATA />
+      <indexcount>6</indexcount>
+    </XDFAXIS>
+    <XDFAXIS id="y">
+      <EMBEDDEDDATA />
+      <indexcount>1</indexcount>
+    </XDFAXIS>
+    <XDFAXIS id="z" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x02" mmedaddress="0x49EFE" mmedelementsizebits="16" mmedcolcount="6" mmedmajorstridebits="16" mmedminorstridebits="0" />
+      <units>rpm</units>
+      <indexcount>6</indexcount>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1" />
+      <DALINK index="0" />
+      <MATH equation="X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE>
+    <title>Gear shift intervention correction (MT) X (autogen)</title>
+    <CATEGORYMEM index="0" category="6" />
+    <CATEGORYMEM index="1" category="59" />
+    <CATEGORYMEM index="2" category="61" />
+    <XDFAXIS id="x">
+      <EMBEDDEDDATA />
+      <indexcount>6</indexcount>
+    </XDFAXIS>
+    <XDFAXIS id="y">
+      <EMBEDDEDDATA />
+      <indexcount>1</indexcount>
+    </XDFAXIS>
+    <XDFAXIS id="z" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x02" mmedaddress="0x49EFE" mmedelementsizebits="16" mmedcolcount="6" mmedmajorstridebits="16" mmedminorstridebits="0" />
+      <units>rpm</units>
+      <indexcount>6</indexcount>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1" />
+      <DALINK index="0" />
+      <MATH equation="X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE>
+    <title>Gear shift intervention correction (DCT) X (autogen)</title>
+    <CATEGORYMEM index="0" category="6" />
+    <CATEGORYMEM index="1" category="59" />
+    <CATEGORYMEM index="2" category="61" />
+    <XDFAXIS id="x">
+      <EMBEDDEDDATA />
+      <indexcount>6</indexcount>
+    </XDFAXIS>
+    <XDFAXIS id="y">
+      <EMBEDDEDDATA />
+      <indexcount>1</indexcount>
+    </XDFAXIS>
+    <XDFAXIS id="z" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x02" mmedaddress="0x49EFE" mmedelementsizebits="16" mmedcolcount="6" mmedmajorstridebits="16" mmedminorstridebits="0" />
+      <units>rpm</units>
+      <indexcount>6</indexcount>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1" />
+      <DALINK index="0" />
+      <MATH equation="X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE>
+    <title>Clutch intervention correction (AT) X (autogen)</title>
+    <CATEGORYMEM index="0" category="6" />
+    <CATEGORYMEM index="1" category="59" />
+    <CATEGORYMEM index="2" category="61" />
+    <XDFAXIS id="x">
+      <EMBEDDEDDATA />
+      <indexcount>6</indexcount>
+    </XDFAXIS>
+    <XDFAXIS id="y">
+      <EMBEDDEDDATA />
+      <indexcount>1</indexcount>
+    </XDFAXIS>
+    <XDFAXIS id="z" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x02" mmedaddress="0x49F0E" mmedelementsizebits="16" mmedcolcount="6" mmedmajorstridebits="16" mmedminorstridebits="0" />
+      <units>rpm (Engine speed deviation N_SP_IS_N)</units>
+      <indexcount>6</indexcount>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1" />
+      <DALINK index="0" />
+      <MATH equation="X-32768">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE>
+    <title>Clutch intervention correction (MT) X (autogen)</title>
+    <CATEGORYMEM index="0" category="6" />
+    <CATEGORYMEM index="1" category="59" />
+    <CATEGORYMEM index="2" category="61" />
+    <XDFAXIS id="x">
+      <EMBEDDEDDATA />
+      <indexcount>6</indexcount>
+    </XDFAXIS>
+    <XDFAXIS id="y">
+      <EMBEDDEDDATA />
+      <indexcount>1</indexcount>
+    </XDFAXIS>
+    <XDFAXIS id="z" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x02" mmedaddress="0x49F0E" mmedelementsizebits="16" mmedcolcount="6" mmedmajorstridebits="16" mmedminorstridebits="0" />
+      <units>rpm (Engine speed deviation N_SP_IS_N)</units>
+      <indexcount>6</indexcount>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1" />
+      <DALINK index="0" />
+      <MATH equation="X-32768">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE>
+    <title>Clutch intervention correction (DCT) X (autogen)</title>
+    <CATEGORYMEM index="0" category="6" />
+    <CATEGORYMEM index="1" category="59" />
+    <CATEGORYMEM index="2" category="61" />
+    <XDFAXIS id="x">
+      <EMBEDDEDDATA />
+      <indexcount>6</indexcount>
+    </XDFAXIS>
+    <XDFAXIS id="y">
+      <EMBEDDEDDATA />
+      <indexcount>1</indexcount>
+    </XDFAXIS>
+    <XDFAXIS id="z" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x02" mmedaddress="0x49F0E" mmedelementsizebits="16" mmedcolcount="6" mmedmajorstridebits="16" mmedminorstridebits="0" />
+      <units>rpm (Engine speed deviation N_SP_IS_N)</units>
+      <indexcount>6</indexcount>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1" />
+      <DALINK index="0" />
+      <MATH equation="X-32768">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE>
     <title>Torque Request % (High) Y (autogen)</title>
     <CATEGORYMEM index="0" category="7" />
     <CATEGORYMEM index="1" category="22" />
@@ -3501,7 +3898,7 @@ Check your stock rom for the enable value.</description>
   <XDFTABLE>
     <title>Maximum Spark Retard X (autogen)</title>
     <CATEGORYMEM index="0" category="24" />
-    <CATEGORYMEM index="1" category="50" />
+    <CATEGORYMEM index="1" category="52" />
     <XDFAXIS id="x">
       <EMBEDDEDDATA />
       <indexcount>8</indexcount>
@@ -3564,9 +3961,34 @@ Check your stock rom for the enable value.</description>
     </XDFAXIS>
   </XDFTABLE>
   <XDFTABLE>
+    <title>Warm-up Enrichment Factor X (autogen)</title>
+    <CATEGORYMEM index="0" category="2" />
+    <CATEGORYMEM index="1" category="10" />
+    <XDFAXIS id="x">
+      <EMBEDDEDDATA />
+      <indexcount>8</indexcount>
+    </XDFAXIS>
+    <XDFAXIS id="y">
+      <EMBEDDEDDATA />
+      <indexcount>1</indexcount>
+    </XDFAXIS>
+    <XDFAXIS id="z" uniqueid="0x0">
+      <EMBEDDEDDATA mmedaddress="0x4A1ED" mmedelementsizebits="8" mmedcolcount="8" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units>*C</units>
+      <indexcount>8</indexcount>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1" />
+      <DALINK index="0" />
+      <MATH equation="(X*.75)-48">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE>
     <title>Nominal Idle Speed (MT with a/c on) X (autogen)</title>
     <CATEGORYMEM index="0" category="25" />
-    <CATEGORYMEM index="1" category="48" />
+    <CATEGORYMEM index="1" category="53" />
     <XDFAXIS id="x">
       <EMBEDDEDDATA />
       <indexcount>8</indexcount>
@@ -3591,7 +4013,7 @@ Check your stock rom for the enable value.</description>
   <XDFTABLE>
     <title>Nominal Idle Speed (AT in drive with a/c on) X (autogen)</title>
     <CATEGORYMEM index="0" category="25" />
-    <CATEGORYMEM index="1" category="48" />
+    <CATEGORYMEM index="1" category="53" />
     <XDFAXIS id="x">
       <EMBEDDEDDATA />
       <indexcount>8</indexcount>
@@ -3616,7 +4038,7 @@ Check your stock rom for the enable value.</description>
   <XDFTABLE>
     <title>Nominal Idle Speed (AT in drive) X (autogen)</title>
     <CATEGORYMEM index="0" category="25" />
-    <CATEGORYMEM index="1" category="48" />
+    <CATEGORYMEM index="1" category="53" />
     <XDFAXIS id="x">
       <EMBEDDEDDATA />
       <indexcount>8</indexcount>
@@ -3641,7 +4063,7 @@ Check your stock rom for the enable value.</description>
   <XDFTABLE>
     <title>Idle Speed (limp mode in drive) X (autogen)</title>
     <CATEGORYMEM index="0" category="25" />
-    <CATEGORYMEM index="1" category="48" />
+    <CATEGORYMEM index="1" category="53" />
     <XDFAXIS id="x">
       <EMBEDDEDDATA />
       <indexcount>8</indexcount>
@@ -3666,7 +4088,7 @@ Check your stock rom for the enable value.</description>
   <XDFTABLE>
     <title>Nominal Idle Speed (no engine load) X (autogen)</title>
     <CATEGORYMEM index="0" category="25" />
-    <CATEGORYMEM index="1" category="48" />
+    <CATEGORYMEM index="1" category="53" />
     <XDFAXIS id="x">
       <EMBEDDEDDATA />
       <indexcount>8</indexcount>
@@ -3691,7 +4113,7 @@ Check your stock rom for the enable value.</description>
   <XDFTABLE>
     <title>Idle Speed (limp mode) X (autogen)</title>
     <CATEGORYMEM index="0" category="25" />
-    <CATEGORYMEM index="1" category="48" />
+    <CATEGORYMEM index="1" category="53" />
     <XDFAXIS id="x">
       <EMBEDDEDDATA />
       <indexcount>8</indexcount>
@@ -3714,9 +4136,269 @@ Check your stock rom for the enable value.</description>
     </XDFAXIS>
   </XDFTABLE>
   <XDFTABLE>
+    <title>Additve correction in reverse (AT) X (autogen)</title>
+    <CATEGORYMEM index="0" category="6" />
+    <CATEGORYMEM index="1" category="59" />
+    <CATEGORYMEM index="2" category="61" />
+    <XDFAXIS id="x">
+      <EMBEDDEDDATA />
+      <indexcount>6</indexcount>
+    </XDFAXIS>
+    <XDFAXIS id="y">
+      <EMBEDDEDDATA />
+      <indexcount>1</indexcount>
+    </XDFAXIS>
+    <XDFAXIS id="z" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x02" mmedaddress="0x4A2B6" mmedelementsizebits="16" mmedcolcount="6" mmedmajorstridebits="16" mmedminorstridebits="0" />
+      <units>km/h</units>
+      <indexcount>6</indexcount>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1" />
+      <DALINK index="0" />
+      <MATH equation="X/128">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE>
+    <title>Additve correction in reverse (MT) X (autogen)</title>
+    <CATEGORYMEM index="0" category="6" />
+    <CATEGORYMEM index="1" category="59" />
+    <CATEGORYMEM index="2" category="61" />
+    <XDFAXIS id="x">
+      <EMBEDDEDDATA />
+      <indexcount>6</indexcount>
+    </XDFAXIS>
+    <XDFAXIS id="y">
+      <EMBEDDEDDATA />
+      <indexcount>1</indexcount>
+    </XDFAXIS>
+    <XDFAXIS id="z" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x02" mmedaddress="0x4A2B6" mmedelementsizebits="16" mmedcolcount="6" mmedmajorstridebits="16" mmedminorstridebits="0" />
+      <units>km/h</units>
+      <indexcount>6</indexcount>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1" />
+      <DALINK index="0" />
+      <MATH equation="X/128">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE>
+    <title>Additve correction in reverse (DCT) X (autogen)</title>
+    <CATEGORYMEM index="0" category="6" />
+    <CATEGORYMEM index="1" category="59" />
+    <CATEGORYMEM index="2" category="61" />
+    <XDFAXIS id="x">
+      <EMBEDDEDDATA />
+      <indexcount>6</indexcount>
+    </XDFAXIS>
+    <XDFAXIS id="y">
+      <EMBEDDEDDATA />
+      <indexcount>1</indexcount>
+    </XDFAXIS>
+    <XDFAXIS id="z" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x02" mmedaddress="0x4A2B6" mmedelementsizebits="16" mmedcolcount="6" mmedmajorstridebits="16" mmedminorstridebits="0" />
+      <units>km/h</units>
+      <indexcount>6</indexcount>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1" />
+      <DALINK index="0" />
+      <MATH equation="X/128">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE>
+    <title>Basic correction - Vehicle Speed (AT) X (autogen)</title>
+    <CATEGORYMEM index="0" category="6" />
+    <CATEGORYMEM index="1" category="59" />
+    <CATEGORYMEM index="2" category="61" />
+    <XDFAXIS id="x">
+      <EMBEDDEDDATA />
+      <indexcount>8</indexcount>
+    </XDFAXIS>
+    <XDFAXIS id="y">
+      <EMBEDDEDDATA />
+      <indexcount>1</indexcount>
+    </XDFAXIS>
+    <XDFAXIS id="z" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x02" mmedaddress="0x4A2B6" mmedelementsizebits="16" mmedcolcount="8" mmedmajorstridebits="16" mmedminorstridebits="0" />
+      <units>km/h</units>
+      <indexcount>8</indexcount>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1" />
+      <DALINK index="0" />
+      <MATH equation="X/128">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE>
+    <title>Basic correction - Vehicle Speed (AT in M mode) X (autogen)</title>
+    <CATEGORYMEM index="0" category="6" />
+    <CATEGORYMEM index="1" category="59" />
+    <CATEGORYMEM index="2" category="61" />
+    <XDFAXIS id="x">
+      <EMBEDDEDDATA />
+      <indexcount>8</indexcount>
+    </XDFAXIS>
+    <XDFAXIS id="y">
+      <EMBEDDEDDATA />
+      <indexcount>1</indexcount>
+    </XDFAXIS>
+    <XDFAXIS id="z" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x02" mmedaddress="0x4A2B6" mmedelementsizebits="16" mmedcolcount="8" mmedmajorstridebits="16" mmedminorstridebits="0" />
+      <units>km/h</units>
+      <indexcount>8</indexcount>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1" />
+      <DALINK index="0" />
+      <MATH equation="X/128">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE>
+    <title>Basic correction - Vehicle Speed (AT in S mode) X (autogen)</title>
+    <CATEGORYMEM index="0" category="6" />
+    <CATEGORYMEM index="1" category="59" />
+    <CATEGORYMEM index="2" category="61" />
+    <XDFAXIS id="x">
+      <EMBEDDEDDATA />
+      <indexcount>8</indexcount>
+    </XDFAXIS>
+    <XDFAXIS id="y">
+      <EMBEDDEDDATA />
+      <indexcount>1</indexcount>
+    </XDFAXIS>
+    <XDFAXIS id="z" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x02" mmedaddress="0x4A2B6" mmedelementsizebits="16" mmedcolcount="8" mmedmajorstridebits="16" mmedminorstridebits="0" />
+      <units>km/h</units>
+      <indexcount>8</indexcount>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1" />
+      <DALINK index="0" />
+      <MATH equation="X/128">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE>
+    <title>Basic correction - Vehicle Speed (MT) X (autogen)</title>
+    <CATEGORYMEM index="0" category="6" />
+    <CATEGORYMEM index="1" category="59" />
+    <CATEGORYMEM index="2" category="61" />
+    <XDFAXIS id="x">
+      <EMBEDDEDDATA />
+      <indexcount>8</indexcount>
+    </XDFAXIS>
+    <XDFAXIS id="y">
+      <EMBEDDEDDATA />
+      <indexcount>1</indexcount>
+    </XDFAXIS>
+    <XDFAXIS id="z" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x02" mmedaddress="0x4A2B6" mmedelementsizebits="16" mmedcolcount="8" mmedmajorstridebits="16" mmedminorstridebits="0" />
+      <units>km/h</units>
+      <indexcount>8</indexcount>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1" />
+      <DALINK index="0" />
+      <MATH equation="X/128">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE>
+    <title>Basic correction - Vehicle Speed (DCT) X (autogen)</title>
+    <CATEGORYMEM index="0" category="6" />
+    <CATEGORYMEM index="1" category="59" />
+    <CATEGORYMEM index="2" category="61" />
+    <XDFAXIS id="x">
+      <EMBEDDEDDATA />
+      <indexcount>8</indexcount>
+    </XDFAXIS>
+    <XDFAXIS id="y">
+      <EMBEDDEDDATA />
+      <indexcount>1</indexcount>
+    </XDFAXIS>
+    <XDFAXIS id="z" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x02" mmedaddress="0x4A2B6" mmedelementsizebits="16" mmedcolcount="8" mmedmajorstridebits="16" mmedminorstridebits="0" />
+      <units>km/h</units>
+      <indexcount>8</indexcount>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1" />
+      <DALINK index="0" />
+      <MATH equation="X/128">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE>
+    <title>Gear shift intervention correction - Vehicle Speed (MT) X (autogen)</title>
+    <CATEGORYMEM index="0" category="6" />
+    <CATEGORYMEM index="1" category="59" />
+    <CATEGORYMEM index="2" category="61" />
+    <XDFAXIS id="x">
+      <EMBEDDEDDATA />
+      <indexcount>8</indexcount>
+    </XDFAXIS>
+    <XDFAXIS id="y">
+      <EMBEDDEDDATA />
+      <indexcount>1</indexcount>
+    </XDFAXIS>
+    <XDFAXIS id="z" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x02" mmedaddress="0x4A2B6" mmedelementsizebits="16" mmedcolcount="8" mmedmajorstridebits="16" mmedminorstridebits="0" />
+      <units>km/h</units>
+      <indexcount>8</indexcount>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1" />
+      <DALINK index="0" />
+      <MATH equation="X/128">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE>
+    <title>Gear shift intervention correction - Vehicle Speed (DCT) X (autogen)</title>
+    <CATEGORYMEM index="0" category="6" />
+    <CATEGORYMEM index="1" category="59" />
+    <CATEGORYMEM index="2" category="61" />
+    <XDFAXIS id="x">
+      <EMBEDDEDDATA />
+      <indexcount>8</indexcount>
+    </XDFAXIS>
+    <XDFAXIS id="y">
+      <EMBEDDEDDATA />
+      <indexcount>1</indexcount>
+    </XDFAXIS>
+    <XDFAXIS id="z" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x02" mmedaddress="0x4A2B6" mmedelementsizebits="16" mmedcolcount="8" mmedmajorstridebits="16" mmedminorstridebits="0" />
+      <units>km/h</units>
+      <indexcount>8</indexcount>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1" />
+      <DALINK index="0" />
+      <MATH equation="X/128">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE>
     <title>Max Torque at Clutch (DCT) X (autogen)</title>
     <CATEGORYMEM index="0" category="34" />
-    <CATEGORYMEM index="1" category="51" />
+    <CATEGORYMEM index="1" category="56" />
     <XDFAXIS id="x">
       <EMBEDDEDDATA />
       <indexcount>8</indexcount>
@@ -3741,7 +4423,7 @@ Check your stock rom for the enable value.</description>
   <XDFTABLE>
     <title>Max Torque at Clutch (DCT, Limp Mode?) X (autogen)</title>
     <CATEGORYMEM index="0" category="34" />
-    <CATEGORYMEM index="1" category="51" />
+    <CATEGORYMEM index="1" category="56" />
     <XDFAXIS id="x">
       <EMBEDDEDDATA />
       <indexcount>8</indexcount>
@@ -3765,7 +4447,7 @@ Check your stock rom for the enable value.</description>
   <XDFTABLE>
     <title>Max Torque at Clutch (AT) X (autogen)</title>
     <CATEGORYMEM index="0" category="34" />
-    <CATEGORYMEM index="1" category="51" />
+    <CATEGORYMEM index="1" category="56" />
     <XDFAXIS id="x">
       <EMBEDDEDDATA />
       <indexcount>8</indexcount>
@@ -3790,7 +4472,7 @@ Check your stock rom for the enable value.</description>
   <XDFTABLE>
     <title>Max Torque at Clutch (AT, Limp Mode?) X (autogen)</title>
     <CATEGORYMEM index="0" category="34" />
-    <CATEGORYMEM index="1" category="51" />
+    <CATEGORYMEM index="1" category="56" />
     <XDFAXIS id="x">
       <EMBEDDEDDATA />
       <indexcount>8</indexcount>
@@ -3814,7 +4496,7 @@ Check your stock rom for the enable value.</description>
   <XDFTABLE>
     <title>Gear Ratio Calculation X (autogen)</title>
     <CATEGORYMEM index="0" category="30" />
-    <CATEGORYMEM index="1" category="45" />
+    <CATEGORYMEM index="1" category="50" />
     <XDFAXIS id="x">
       <EMBEDDEDDATA />
       <indexcount>13</indexcount>
@@ -4550,6 +5232,464 @@ Check your stock rom for the enable value.</description>
     </XDFAXIS>
   </XDFTABLE>
   <XDFTABLE uniqueid="0x0" flags="0x0">
+    <title>Additve correction in reverse (AT)</title>
+    <CATEGORYMEM index="0" category="6" />
+    <CATEGORYMEM index="1" category="59" />
+    <XDFAXIS id="x" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x02" mmedaddress="0x4A2B6" mmedelementsizebits="16" mmedcolcount="6" mmedmajorstridebits="16" mmedminorstridebits="0" />
+      <units>km/h</units>
+      <indexcount>6</indexcount>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1" />
+      <DALINK index="0" />
+      <MATH equation="X/128">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="y" uniqueid="0x0">
+      <EMBEDDEDDATA mmedelementsizebits="16" mmedmajorstridebits="-32" mmedminorstridebits="0" />
+      <indexcount>1</indexcount>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <DALINK index="0" />
+      <LABEL index="0" value="0.00" />
+      <MATH equation="X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="z">
+      <EMBEDDEDDATA mmedtypeflags="0x02" mmedaddress="0x4AC24" mmedelementsizebits="16" mmedrowcount="1" mmedcolcount="6" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <decimalpl>3</decimalpl>
+      <min>0.000000</min>
+      <max>255.000000</max>
+      <outputtype>1</outputtype>
+      <MATH equation="X/32768-1">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE uniqueid="0x0" flags="0x0">
+    <title>Additve correction in reverse (MT)</title>
+    <CATEGORYMEM index="0" category="6" />
+    <CATEGORYMEM index="1" category="59" />
+    <XDFAXIS id="x" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x02" mmedaddress="0x4A2B6" mmedelementsizebits="16" mmedcolcount="6" mmedmajorstridebits="16" mmedminorstridebits="0" />
+      <units>km/h</units>
+      <indexcount>6</indexcount>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1" />
+      <DALINK index="0" />
+      <MATH equation="X/128">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="y" uniqueid="0x0">
+      <EMBEDDEDDATA mmedelementsizebits="16" mmedmajorstridebits="-32" mmedminorstridebits="0" />
+      <indexcount>1</indexcount>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <DALINK index="0" />
+      <LABEL index="0" value="0.00" />
+      <MATH equation="X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="z">
+      <EMBEDDEDDATA mmedtypeflags="0x02" mmedaddress="0x4AC30" mmedelementsizebits="16" mmedrowcount="1" mmedcolcount="6" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <decimalpl>3</decimalpl>
+      <min>0.000000</min>
+      <max>255.000000</max>
+      <outputtype>1</outputtype>
+      <MATH equation="X/32768-1">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE uniqueid="0x0" flags="0x0">
+    <title>Additve correction in reverse (DCT)</title>
+    <CATEGORYMEM index="0" category="6" />
+    <CATEGORYMEM index="1" category="59" />
+    <XDFAXIS id="x" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x02" mmedaddress="0x4A2B6" mmedelementsizebits="16" mmedcolcount="6" mmedmajorstridebits="16" mmedminorstridebits="0" />
+      <units>km/h</units>
+      <indexcount>6</indexcount>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1" />
+      <DALINK index="0" />
+      <MATH equation="X/128">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="y" uniqueid="0x0">
+      <EMBEDDEDDATA mmedelementsizebits="16" mmedmajorstridebits="-32" mmedminorstridebits="0" />
+      <indexcount>1</indexcount>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <DALINK index="0" />
+      <LABEL index="0" value="0.00" />
+      <MATH equation="X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="z">
+      <EMBEDDEDDATA mmedtypeflags="0x02" mmedaddress="0x4AC3C" mmedelementsizebits="16" mmedrowcount="1" mmedcolcount="6" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <decimalpl>3</decimalpl>
+      <min>0.000000</min>
+      <max>255.000000</max>
+      <outputtype>1</outputtype>
+      <MATH equation="X/32768-1">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE uniqueid="0x0" flags="0x30">
+    <title>Warm-up Enrichment Factor</title>
+    <CATEGORYMEM index="0" category="2" />
+    <XDFAXIS id="x" uniqueid="0x0">
+      <EMBEDDEDDATA mmedaddress="0x4A1ED" mmedelementsizebits="8" mmedcolcount="8" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units>*C</units>
+      <indexcount>8</indexcount>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1" />
+      <DALINK index="0" />
+      <MATH equation="(X*.75)-48">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="y" uniqueid="0x0">
+      <EMBEDDEDDATA mmedelementsizebits="8" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <indexcount>1</indexcount>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <DALINK index="0" />
+      <LABEL index="0" value="0.00" />
+      <MATH equation="(X*.75)-48">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="z">
+      <EMBEDDEDDATA mmedaddress="0x4ACA8" mmedelementsizebits="8" mmedrowcount="1" mmedcolcount="8" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units>%</units>
+      <decimalpl>2</decimalpl>
+      <min>0.000000</min>
+      <max>2.000000</max>
+      <outputtype>1</outputtype>
+      <MATH equation="X/128">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE uniqueid="0x0" flags="0x0">
+    <title>Basic correction - Vehicle Speed (AT)</title>
+    <CATEGORYMEM index="0" category="6" />
+    <CATEGORYMEM index="1" category="59" />
+    <XDFAXIS id="x" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x02" mmedaddress="0x4A2B6" mmedelementsizebits="16" mmedcolcount="8" mmedmajorstridebits="16" mmedminorstridebits="0" />
+      <units>km/h</units>
+      <indexcount>8</indexcount>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1" />
+      <DALINK index="0" />
+      <MATH equation="X/128">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="y" uniqueid="0x0">
+      <EMBEDDEDDATA mmedelementsizebits="16" mmedmajorstridebits="-32" mmedminorstridebits="0" />
+      <indexcount>1</indexcount>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <DALINK index="0" />
+      <LABEL index="0" value="0.00" />
+      <MATH equation="X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="z">
+      <EMBEDDEDDATA mmedtypeflags="0x02" mmedaddress="0x4AD84" mmedelementsizebits="16" mmedrowcount="1" mmedcolcount="8" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <decimalpl>3</decimalpl>
+      <min>0.000000</min>
+      <max>255.000000</max>
+      <outputtype>1</outputtype>
+      <MATH equation="X/32768-1">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE uniqueid="0x0" flags="0x0">
+    <title>Basic correction - Vehicle Speed (AT in M mode)</title>
+    <CATEGORYMEM index="0" category="6" />
+    <CATEGORYMEM index="1" category="59" />
+    <XDFAXIS id="x" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x02" mmedaddress="0x4A2B6" mmedelementsizebits="16" mmedcolcount="8" mmedmajorstridebits="16" mmedminorstridebits="0" />
+      <units>km/h</units>
+      <indexcount>8</indexcount>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1" />
+      <DALINK index="0" />
+      <MATH equation="X/128">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="y" uniqueid="0x0">
+      <EMBEDDEDDATA mmedelementsizebits="16" mmedmajorstridebits="-32" mmedminorstridebits="0" />
+      <indexcount>1</indexcount>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <DALINK index="0" />
+      <LABEL index="0" value="0.00" />
+      <MATH equation="X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="z">
+      <EMBEDDEDDATA mmedtypeflags="0x02" mmedaddress="0x4AD94" mmedelementsizebits="16" mmedrowcount="1" mmedcolcount="8" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <decimalpl>3</decimalpl>
+      <min>0.000000</min>
+      <max>255.000000</max>
+      <outputtype>1</outputtype>
+      <MATH equation="X/32768-1">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE uniqueid="0x0" flags="0x0">
+    <title>Basic correction - Vehicle Speed (AT in S mode)</title>
+    <CATEGORYMEM index="0" category="6" />
+    <CATEGORYMEM index="1" category="59" />
+    <XDFAXIS id="x" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x02" mmedaddress="0x4A2B6" mmedelementsizebits="16" mmedcolcount="8" mmedmajorstridebits="16" mmedminorstridebits="0" />
+      <units>km/h</units>
+      <indexcount>8</indexcount>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1" />
+      <DALINK index="0" />
+      <MATH equation="X/128">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="y" uniqueid="0x0">
+      <EMBEDDEDDATA mmedelementsizebits="16" mmedmajorstridebits="-32" mmedminorstridebits="0" />
+      <indexcount>1</indexcount>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <DALINK index="0" />
+      <LABEL index="0" value="0.00" />
+      <MATH equation="X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="z">
+      <EMBEDDEDDATA mmedtypeflags="0x02" mmedaddress="0x4ADA4" mmedelementsizebits="16" mmedrowcount="1" mmedcolcount="8" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <decimalpl>3</decimalpl>
+      <min>0.000000</min>
+      <max>255.000000</max>
+      <outputtype>1</outputtype>
+      <MATH equation="X/32768-1">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE uniqueid="0x0" flags="0x0">
+    <title>Basic correction - Vehicle Speed (MT)</title>
+    <CATEGORYMEM index="0" category="6" />
+    <CATEGORYMEM index="1" category="59" />
+    <XDFAXIS id="x" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x02" mmedaddress="0x4A2B6" mmedelementsizebits="16" mmedcolcount="8" mmedmajorstridebits="16" mmedminorstridebits="0" />
+      <units>km/h</units>
+      <indexcount>8</indexcount>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1" />
+      <DALINK index="0" />
+      <MATH equation="X/128">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="y" uniqueid="0x0">
+      <EMBEDDEDDATA mmedelementsizebits="16" mmedmajorstridebits="-32" mmedminorstridebits="0" />
+      <indexcount>1</indexcount>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <DALINK index="0" />
+      <LABEL index="0" value="0.00" />
+      <MATH equation="X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="z">
+      <EMBEDDEDDATA mmedtypeflags="0x02" mmedaddress="0x4ADB4" mmedelementsizebits="16" mmedrowcount="1" mmedcolcount="8" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <decimalpl>3</decimalpl>
+      <min>0.000000</min>
+      <max>255.000000</max>
+      <outputtype>1</outputtype>
+      <MATH equation="X/32768-1">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE uniqueid="0x0" flags="0x0">
+    <title>Basic correction - Vehicle Speed (DCT)</title>
+    <CATEGORYMEM index="0" category="6" />
+    <CATEGORYMEM index="1" category="59" />
+    <XDFAXIS id="x" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x02" mmedaddress="0x4A2B6" mmedelementsizebits="16" mmedcolcount="8" mmedmajorstridebits="16" mmedminorstridebits="0" />
+      <units>km/h</units>
+      <indexcount>8</indexcount>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1" />
+      <DALINK index="0" />
+      <MATH equation="X/128">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="y" uniqueid="0x0">
+      <EMBEDDEDDATA mmedelementsizebits="16" mmedmajorstridebits="-32" mmedminorstridebits="0" />
+      <indexcount>1</indexcount>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <DALINK index="0" />
+      <LABEL index="0" value="0.00" />
+      <MATH equation="X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="z">
+      <EMBEDDEDDATA mmedtypeflags="0x02" mmedaddress="0x4ADC4" mmedelementsizebits="16" mmedrowcount="1" mmedcolcount="8" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <decimalpl>3</decimalpl>
+      <min>0.000000</min>
+      <max>255.000000</max>
+      <outputtype>1</outputtype>
+      <MATH equation="X/32768-1">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE uniqueid="0x0" flags="0x0">
+    <title>Gear shift intervention correction - Vehicle Speed (MT)</title>
+    <CATEGORYMEM index="0" category="6" />
+    <CATEGORYMEM index="1" category="59" />
+    <XDFAXIS id="x" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x02" mmedaddress="0x4A2B6" mmedelementsizebits="16" mmedcolcount="8" mmedmajorstridebits="16" mmedminorstridebits="0" />
+      <units>km/h</units>
+      <indexcount>8</indexcount>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1" />
+      <DALINK index="0" />
+      <MATH equation="X/128">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="y" uniqueid="0x0">
+      <EMBEDDEDDATA mmedelementsizebits="16" mmedmajorstridebits="-32" mmedminorstridebits="0" />
+      <indexcount>1</indexcount>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <DALINK index="0" />
+      <LABEL index="0" value="0.00" />
+      <MATH equation="X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="z">
+      <EMBEDDEDDATA mmedtypeflags="0x02" mmedaddress="0x4ADD4" mmedelementsizebits="16" mmedrowcount="1" mmedcolcount="8" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <decimalpl>3</decimalpl>
+      <min>0.000000</min>
+      <max>255.000000</max>
+      <outputtype>1</outputtype>
+      <MATH equation="X/32768-1">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE uniqueid="0x0" flags="0x0">
+    <title>Gear shift intervention correction - Vehicle Speed (DCT)</title>
+    <CATEGORYMEM index="0" category="6" />
+    <CATEGORYMEM index="1" category="59" />
+    <XDFAXIS id="x" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x02" mmedaddress="0x4A2B6" mmedelementsizebits="16" mmedcolcount="8" mmedmajorstridebits="16" mmedminorstridebits="0" />
+      <units>km/h</units>
+      <indexcount>8</indexcount>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1" />
+      <DALINK index="0" />
+      <MATH equation="X/128">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="y" uniqueid="0x0">
+      <EMBEDDEDDATA mmedelementsizebits="16" mmedmajorstridebits="-32" mmedminorstridebits="0" />
+      <indexcount>1</indexcount>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <DALINK index="0" />
+      <LABEL index="0" value="0.00" />
+      <MATH equation="X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="z">
+      <EMBEDDEDDATA mmedtypeflags="0x02" mmedaddress="0x4ADE4" mmedelementsizebits="16" mmedrowcount="1" mmedcolcount="8" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <decimalpl>3</decimalpl>
+      <min>0.000000</min>
+      <max>255.000000</max>
+      <outputtype>1</outputtype>
+      <MATH equation="X/32768-1">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE uniqueid="0x0" flags="0x30">
+    <title>Rev Limit (Clutch Pressed)</title>
+    <description>ip_n_max_drof__vs</description>
+    <CATEGORYMEM index="0" category="4" />
+    <CATEGORYMEM index="1" category="12" />
+    <XDFAXIS id="x" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x02" mmedaddress="0x49985" mmedelementsizebits="8" mmedcolcount="8" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units>kmh</units>
+      <indexcount>8</indexcount>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1" />
+      <DALINK index="0" />
+      <MATH equation="X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="y" uniqueid="0x0">
+      <EMBEDDEDDATA mmedelementsizebits="16" mmedmajorstridebits="-32" mmedminorstridebits="0" />
+      <indexcount>1</indexcount>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <DALINK index="0" />
+      <LABEL index="0" value="0.00" />
+      <MATH equation="X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="z">
+      <EMBEDDEDDATA mmedtypeflags="0x02" mmedaddress="0x4B1FC" mmedelementsizebits="16" mmedrowcount="1" mmedcolcount="8" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units>rpm</units>
+      <decimalpl>0</decimalpl>
+      <min>0.000000</min>
+      <max>8160.000000</max>
+      <outputtype>1</outputtype>
+      <MATH equation="X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE uniqueid="0x0" flags="0x0">
     <title>Nominal Idle Speed (no engine load)</title>
     <description>(ip_n_sp_is)</description>
     <CATEGORYMEM index="0" category="25" />
@@ -5119,7 +6259,7 @@ Check your stock rom for the enable value.</description>
       <unittype>0</unittype>
       <embedinfo type="1" />
       <DALINK index="0" />
-      <MATH equation="X/204.66">
+      <MATH equation="X/204.8">
         <VAR id="X" />
       </MATH>
     </XDFAXIS>
@@ -5142,7 +6282,7 @@ Check your stock rom for the enable value.</description>
       <min>0.000000</min>
       <max>5.000000</max>
       <outputtype>1</outputtype>
-      <MATH equation="X/204.66">
+      <MATH equation="X/204.8">
         <VAR id="X" />
       </MATH>
     </XDFAXIS>
@@ -5150,7 +6290,7 @@ Check your stock rom for the enable value.</description>
   <XDFTABLE>
     <title>Spark Retard Intensity 1 X (autogen)</title>
     <CATEGORYMEM index="0" category="24" />
-    <CATEGORYMEM index="1" category="50" />
+    <CATEGORYMEM index="1" category="52" />
     <XDFAXIS id="x">
       <EMBEDDEDDATA />
       <indexcount>3</indexcount>
@@ -5176,7 +6316,7 @@ Check your stock rom for the enable value.</description>
   <XDFTABLE>
     <title>Spark Retard Intensity 2 X (autogen)</title>
     <CATEGORYMEM index="0" category="24" />
-    <CATEGORYMEM index="1" category="50" />
+    <CATEGORYMEM index="1" category="52" />
     <XDFAXIS id="x">
       <EMBEDDEDDATA />
       <indexcount>3</indexcount>
@@ -5202,7 +6342,7 @@ Check your stock rom for the enable value.</description>
   <XDFTABLE>
     <title>Torque Request % for Exhaust Flap Actuation (AT) X (autogen)</title>
     <CATEGORYMEM index="0" category="43" />
-    <CATEGORYMEM index="1" category="44" />
+    <CATEGORYMEM index="1" category="45" />
     <XDFAXIS id="x">
       <EMBEDDEDDATA />
       <indexcount>6</indexcount>
@@ -5228,7 +6368,7 @@ Check your stock rom for the enable value.</description>
   <XDFTABLE>
     <title>Torque Request % for Exhaust Flap Actuation (MT) X (autogen)</title>
     <CATEGORYMEM index="0" category="43" />
-    <CATEGORYMEM index="1" category="44" />
+    <CATEGORYMEM index="1" category="45" />
     <XDFAXIS id="x">
       <EMBEDDEDDATA />
       <indexcount>6</indexcount>
@@ -5254,7 +6394,7 @@ Check your stock rom for the enable value.</description>
   <XDFTABLE>
     <title>Torque Request % for Exhaust Flap Actuation (AT - Convertible roof open) X (autogen)</title>
     <CATEGORYMEM index="0" category="43" />
-    <CATEGORYMEM index="1" category="44" />
+    <CATEGORYMEM index="1" category="45" />
     <XDFAXIS id="x">
       <EMBEDDEDDATA />
       <indexcount>6</indexcount>
@@ -5280,7 +6420,7 @@ Check your stock rom for the enable value.</description>
   <XDFTABLE>
     <title>Torque Request % for Exhaust Flap Actuation (MT - Convertible roof open) X (autogen)</title>
     <CATEGORYMEM index="0" category="43" />
-    <CATEGORYMEM index="1" category="44" />
+    <CATEGORYMEM index="1" category="45" />
     <XDFAXIS id="x">
       <EMBEDDEDDATA />
       <indexcount>6</indexcount>
@@ -5306,7 +6446,7 @@ Check your stock rom for the enable value.</description>
   <XDFTABLE>
     <title>Maximum Knock Threshold (pre-window) X (autogen)</title>
     <CATEGORYMEM index="0" category="24" />
-    <CATEGORYMEM index="1" category="50" />
+    <CATEGORYMEM index="1" category="52" />
     <XDFAXIS id="x">
       <EMBEDDEDDATA />
       <indexcount>6</indexcount>
@@ -5330,9 +6470,269 @@ Check your stock rom for the enable value.</description>
     </XDFAXIS>
   </XDFTABLE>
   <XDFTABLE>
+    <title>Basic Correction (AT) Y (autogen)</title>
+    <CATEGORYMEM index="0" category="6" />
+    <CATEGORYMEM index="1" category="59" />
+    <CATEGORYMEM index="2" category="61" />
+    <XDFAXIS id="x">
+      <EMBEDDEDDATA />
+      <indexcount>6</indexcount>
+    </XDFAXIS>
+    <XDFAXIS id="y">
+      <EMBEDDEDDATA />
+      <indexcount>1</indexcount>
+    </XDFAXIS>
+    <XDFAXIS id="z" uniqueid="0x0">
+      <EMBEDDEDDATA mmedaddress="0x4B9E9" mmedelementsizebits="8" mmedcolcount="6" mmedmajorstridebits="8" mmedminorstridebits="0" />
+      <units>% global pedal</units>
+      <indexcount>6</indexcount>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1" />
+      <DALINK index="0" />
+      <MATH equation="0.390625 * X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE>
+    <title>Basic Correction (AT in manual) Y (autogen)</title>
+    <CATEGORYMEM index="0" category="6" />
+    <CATEGORYMEM index="1" category="59" />
+    <CATEGORYMEM index="2" category="61" />
+    <XDFAXIS id="x">
+      <EMBEDDEDDATA />
+      <indexcount>6</indexcount>
+    </XDFAXIS>
+    <XDFAXIS id="y">
+      <EMBEDDEDDATA />
+      <indexcount>1</indexcount>
+    </XDFAXIS>
+    <XDFAXIS id="z" uniqueid="0x0">
+      <EMBEDDEDDATA mmedaddress="0x4B9E9" mmedelementsizebits="8" mmedcolcount="6" mmedmajorstridebits="8" mmedminorstridebits="0" />
+      <units>% global pedal</units>
+      <indexcount>6</indexcount>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1" />
+      <DALINK index="0" />
+      <MATH equation="0.390625 * X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE>
+    <title>Basic Correction (AT in sport) Y (autogen)</title>
+    <CATEGORYMEM index="0" category="6" />
+    <CATEGORYMEM index="1" category="59" />
+    <CATEGORYMEM index="2" category="61" />
+    <XDFAXIS id="x">
+      <EMBEDDEDDATA />
+      <indexcount>6</indexcount>
+    </XDFAXIS>
+    <XDFAXIS id="y">
+      <EMBEDDEDDATA />
+      <indexcount>1</indexcount>
+    </XDFAXIS>
+    <XDFAXIS id="z" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x02" mmedaddress="0x4B9E9" mmedelementsizebits="8" mmedcolcount="6" mmedmajorstridebits="8" mmedminorstridebits="0" />
+      <units>% global pedal</units>
+      <indexcount>6</indexcount>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1" />
+      <DALINK index="0" />
+      <MATH equation="0.390625 * X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE>
+    <title>Basic Correction (MT) Y (autogen)</title>
+    <CATEGORYMEM index="0" category="6" />
+    <CATEGORYMEM index="1" category="59" />
+    <CATEGORYMEM index="2" category="61" />
+    <XDFAXIS id="x">
+      <EMBEDDEDDATA />
+      <indexcount>6</indexcount>
+    </XDFAXIS>
+    <XDFAXIS id="y">
+      <EMBEDDEDDATA />
+      <indexcount>1</indexcount>
+    </XDFAXIS>
+    <XDFAXIS id="z" uniqueid="0x0">
+      <EMBEDDEDDATA mmedaddress="0x4B9E9" mmedelementsizebits="8" mmedcolcount="6" mmedmajorstridebits="8" mmedminorstridebits="0" />
+      <units>% global pedal</units>
+      <indexcount>6</indexcount>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1" />
+      <DALINK index="0" />
+      <MATH equation="0.390625 * X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE>
+    <title>Basic Correction (DCT) Y (autogen)</title>
+    <CATEGORYMEM index="0" category="6" />
+    <CATEGORYMEM index="1" category="59" />
+    <CATEGORYMEM index="2" category="61" />
+    <XDFAXIS id="x">
+      <EMBEDDEDDATA />
+      <indexcount>6</indexcount>
+    </XDFAXIS>
+    <XDFAXIS id="y">
+      <EMBEDDEDDATA />
+      <indexcount>1</indexcount>
+    </XDFAXIS>
+    <XDFAXIS id="z" uniqueid="0x0">
+      <EMBEDDEDDATA mmedaddress="0x4B9E9" mmedelementsizebits="8" mmedcolcount="6" mmedmajorstridebits="8" mmedminorstridebits="0" />
+      <units>% global pedal</units>
+      <indexcount>6</indexcount>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1" />
+      <DALINK index="0" />
+      <MATH equation="0.390625 * X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE>
+    <title>Clutch intervention correction (AT) Y (autogen)</title>
+    <CATEGORYMEM index="0" category="6" />
+    <CATEGORYMEM index="1" category="59" />
+    <CATEGORYMEM index="2" category="61" />
+    <XDFAXIS id="x">
+      <EMBEDDEDDATA />
+      <indexcount>6</indexcount>
+    </XDFAXIS>
+    <XDFAXIS id="y">
+      <EMBEDDEDDATA />
+      <indexcount>1</indexcount>
+    </XDFAXIS>
+    <XDFAXIS id="z" uniqueid="0x0">
+      <EMBEDDEDDATA mmedaddress="0x4B9E9" mmedelementsizebits="8" mmedcolcount="6" mmedmajorstridebits="8" mmedminorstridebits="0" />
+      <units>% global pedal</units>
+      <indexcount>6</indexcount>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1" />
+      <DALINK index="0" />
+      <MATH equation="0.390625 * X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE>
+    <title>Clutch intervention correction (MT) Y (autogen)</title>
+    <CATEGORYMEM index="0" category="6" />
+    <CATEGORYMEM index="1" category="59" />
+    <CATEGORYMEM index="2" category="61" />
+    <XDFAXIS id="x">
+      <EMBEDDEDDATA />
+      <indexcount>6</indexcount>
+    </XDFAXIS>
+    <XDFAXIS id="y">
+      <EMBEDDEDDATA />
+      <indexcount>1</indexcount>
+    </XDFAXIS>
+    <XDFAXIS id="z" uniqueid="0x0">
+      <EMBEDDEDDATA mmedaddress="0x4B9E9" mmedelementsizebits="8" mmedcolcount="6" mmedmajorstridebits="8" mmedminorstridebits="0" />
+      <units>% global pedal</units>
+      <indexcount>6</indexcount>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1" />
+      <DALINK index="0" />
+      <MATH equation="0.390625 * X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE>
+    <title>Clutch intervention correction (DCT) Y (autogen)</title>
+    <CATEGORYMEM index="0" category="6" />
+    <CATEGORYMEM index="1" category="59" />
+    <CATEGORYMEM index="2" category="61" />
+    <XDFAXIS id="x">
+      <EMBEDDEDDATA />
+      <indexcount>6</indexcount>
+    </XDFAXIS>
+    <XDFAXIS id="y">
+      <EMBEDDEDDATA />
+      <indexcount>1</indexcount>
+    </XDFAXIS>
+    <XDFAXIS id="z" uniqueid="0x0">
+      <EMBEDDEDDATA mmedaddress="0x4B9E9" mmedelementsizebits="8" mmedcolcount="6" mmedmajorstridebits="8" mmedminorstridebits="0" />
+      <units>% global pedal</units>
+      <indexcount>6</indexcount>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1" />
+      <DALINK index="0" />
+      <MATH equation="0.390625 * X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE>
+    <title>Gear shift intervention correction (MT) Y (autogen)</title>
+    <CATEGORYMEM index="0" category="6" />
+    <CATEGORYMEM index="1" category="59" />
+    <CATEGORYMEM index="2" category="61" />
+    <XDFAXIS id="x">
+      <EMBEDDEDDATA />
+      <indexcount>6</indexcount>
+    </XDFAXIS>
+    <XDFAXIS id="y">
+      <EMBEDDEDDATA />
+      <indexcount>1</indexcount>
+    </XDFAXIS>
+    <XDFAXIS id="z" uniqueid="0x0">
+      <EMBEDDEDDATA mmedaddress="0x4B9E9" mmedelementsizebits="8" mmedcolcount="6" mmedmajorstridebits="8" mmedminorstridebits="0" />
+      <units>% </units>
+      <indexcount>6</indexcount>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1" />
+      <DALINK index="0" />
+      <MATH equation="0.390625 * X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE>
+    <title>Gear shift intervention correction (DCT) Y (autogen)</title>
+    <CATEGORYMEM index="0" category="6" />
+    <CATEGORYMEM index="1" category="59" />
+    <CATEGORYMEM index="2" category="61" />
+    <XDFAXIS id="x">
+      <EMBEDDEDDATA />
+      <indexcount>6</indexcount>
+    </XDFAXIS>
+    <XDFAXIS id="y">
+      <EMBEDDEDDATA />
+      <indexcount>1</indexcount>
+    </XDFAXIS>
+    <XDFAXIS id="z" uniqueid="0x0">
+      <EMBEDDEDDATA mmedaddress="0x4B9E9" mmedelementsizebits="8" mmedcolcount="6" mmedmajorstridebits="8" mmedminorstridebits="0" />
+      <units>% </units>
+      <indexcount>6</indexcount>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1" />
+      <DALINK index="0" />
+      <MATH equation="0.390625 * X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE>
     <title>Idle Speed (power steering) X (autogen)</title>
     <CATEGORYMEM index="0" category="25" />
-    <CATEGORYMEM index="1" category="48" />
+    <CATEGORYMEM index="1" category="53" />
     <XDFAXIS id="x">
       <EMBEDDEDDATA />
       <indexcount>6</indexcount>
@@ -5357,7 +6757,7 @@ Check your stock rom for the enable value.</description>
   <XDFTABLE>
     <title>Idle Speed (power steering &gt; X mph) X (autogen)</title>
     <CATEGORYMEM index="0" category="25" />
-    <CATEGORYMEM index="1" category="48" />
+    <CATEGORYMEM index="1" category="53" />
     <XDFAXIS id="x">
       <EMBEDDEDDATA />
       <indexcount>6</indexcount>
@@ -5507,7 +6907,7 @@ Check your stock rom for the enable value.</description>
       <unittype>0</unittype>
       <embedinfo type="1" />
       <DALINK index="0" />
-      <MATH equation="X/204.66">
+      <MATH equation="X/204.8">
         <VAR id="X" />
       </MATH>
     </XDFAXIS>
@@ -5530,7 +6930,7 @@ Check your stock rom for the enable value.</description>
       <min>0.000000</min>
       <max>75.000000</max>
       <outputtype>1</outputtype>
-      <MATH equation="X/831.75">
+      <MATH equation="X/831.52">
         <VAR id="X" />
       </MATH>
     </XDFAXIS>
@@ -5651,6 +7051,80 @@ Check your stock rom for the enable value.</description>
       </MATH>
     </XDFAXIS>
   </XDFTABLE>
+  <XDFTABLE uniqueid="0x0" flags="0x0">
+    <title>Burble Duration (Standstill)</title>
+    <description>(c_t_min_pu_vs) - used when vehicle speed &lt; c_vs_min_pu (6kmh stock)</description>
+    <CATEGORYMEM index="0" category="63" />
+    <XDFAXIS id="x" uniqueid="0x0">
+      <EMBEDDEDDATA mmedelementsizebits="16" mmedmajorstridebits="-32" mmedminorstridebits="0" />
+      <indexcount>1</indexcount>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <DALINK index="0" />
+      <LABEL index="0" value="0.00" />
+      <MATH equation="X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="y" uniqueid="0x0">
+      <EMBEDDEDDATA mmedelementsizebits="16" mmedmajorstridebits="-32" mmedminorstridebits="0" />
+      <indexcount>1</indexcount>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <DALINK index="0" />
+      <LABEL index="0" value="0.00" />
+      <MATH equation="X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="z">
+      <EMBEDDEDDATA mmedtypeflags="0x02" mmedaddress="0x4C32C" mmedelementsizebits="16" mmedrowcount="1" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <decimalpl>2</decimalpl>
+      <min>0.000000</min>
+      <max>255.000000</max>
+      <outputtype>1</outputtype>
+      <MATH equation="X/100">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE uniqueid="0x0" flags="0x0">
+    <title>Burble Duration (Low Speed, Clutch-in)</title>
+    <description>(c_t_min_pu_vs_cs) - used when clutch pressed &amp; vehicle speed between c_vs_pu_cs_min and c_vs_pu_cs_max (2kmh and 24kmh stock)</description>
+    <CATEGORYMEM index="0" category="63" />
+    <XDFAXIS id="x" uniqueid="0x0">
+      <EMBEDDEDDATA mmedelementsizebits="16" mmedmajorstridebits="-32" mmedminorstridebits="0" />
+      <indexcount>1</indexcount>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <DALINK index="0" />
+      <LABEL index="0" value="0.00" />
+      <MATH equation="X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="y" uniqueid="0x0">
+      <EMBEDDEDDATA mmedelementsizebits="16" mmedmajorstridebits="-32" mmedminorstridebits="0" />
+      <indexcount>1</indexcount>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <DALINK index="0" />
+      <LABEL index="0" value="0.00" />
+      <MATH equation="X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="z">
+      <EMBEDDEDDATA mmedtypeflags="0x02" mmedaddress="0x4C32E" mmedelementsizebits="16" mmedrowcount="1" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <decimalpl>2</decimalpl>
+      <min>0.000000</min>
+      <max>255.000000</max>
+      <outputtype>1</outputtype>
+      <MATH equation="X/100">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
   <XDFTABLE uniqueid="0x0" flags="0x30">
     <title>Max Throttle Angle</title>
     <CATEGORYMEM index="0" category="6" />
@@ -5713,7 +7187,7 @@ Check your stock rom for the enable value.</description>
       <unittype>0</unittype>
       <embedinfo type="1" />
       <DALINK index="0" />
-      <MATH equation="X/204.69">
+      <MATH equation="X/204.8">
         <VAR id="X" />
       </MATH>
     </XDFAXIS>
@@ -5724,7 +7198,46 @@ Check your stock rom for the enable value.</description>
       <min>0.000000</min>
       <max>5.000000</max>
       <outputtype>1</outputtype>
-      <MATH equation="X/204.69">
+      <MATH equation="X/204.8">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE uniqueid="0x0" flags="0x30">
+    <title>MAP Min Voltage</title>
+    <CATEGORYMEM index="0" category="1" />
+    <XDFAXIS id="x" uniqueid="0x0">
+      <EMBEDDEDDATA mmedelementsizebits="16" mmedmajorstridebits="-32" mmedminorstridebits="0" />
+      <units>Volt</units>
+      <indexcount>1</indexcount>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <DALINK index="0" />
+      <LABEL index="0" value="0.00" />
+      <MATH equation="X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="y" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x02" mmedaddress="0x4C4E0" mmedelementsizebits="16" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units>Volt</units>
+      <indexcount>1</indexcount>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1" />
+      <DALINK index="0" />
+      <MATH equation="X/204.8">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="z">
+      <EMBEDDEDDATA mmedtypeflags="0x02" mmedaddress="0x4C4E0" mmedelementsizebits="16" mmedrowcount="1" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units>Voltage</units>
+      <decimalpl>2</decimalpl>
+      <min>0.000000</min>
+      <max>1.100000</max>
+      <outputtype>1</outputtype>
+      <MATH equation="X/204.8">
         <VAR id="X" />
       </MATH>
     </XDFAXIS>
@@ -5886,6 +7399,46 @@ Check your stock rom for the enable value.</description>
     </XDFAXIS>
   </XDFTABLE>
   <XDFTABLE uniqueid="0x0" flags="0x0">
+    <title>Boost Solenoid check</title>
+    <description>To disable, set to 00
+To enable, set to 02
+Check your stock rom for the enable value.</description>
+    <CATEGORYMEM index="0" category="15" />
+    <CATEGORYMEM index="1" category="20" />
+    <XDFAXIS id="x" uniqueid="0x0">
+      <EMBEDDEDDATA mmedelementsizebits="16" mmedmajorstridebits="-32" mmedminorstridebits="0" />
+      <indexcount>1</indexcount>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <DALINK index="0" />
+      <LABEL index="0" value="0.00" />
+      <MATH equation="X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="y" uniqueid="0x0">
+      <EMBEDDEDDATA mmedelementsizebits="16" mmedmajorstridebits="-32" mmedminorstridebits="0" />
+      <indexcount>1</indexcount>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <DALINK index="0" />
+      <LABEL index="0" value="0.00" />
+      <MATH equation="X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="z">
+      <EMBEDDEDDATA mmedaddress="0x4C6ED" mmedelementsizebits="8" mmedrowcount="1" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <decimalpl>2</decimalpl>
+      <min>0.000000</min>
+      <max>255.000000</max>
+      <outputtype>3</outputtype>
+      <MATH equation="X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE uniqueid="0x0" flags="0x0">
     <title>Max Time Clutch Switch Observation Fast Fuel Cut-off</title>
     <description>(c_t_max_fcut_fast)</description>
     <CATEGORYMEM index="0" category="33" />
@@ -6024,7 +7577,7 @@ Check your stock rom for the enable value.</description>
       <datatype>0</datatype>
       <unittype>0</unittype>
       <DALINK index="0" />
-      <LABEL index="0" value="ÃÂÃÂ°C/500ms" />
+      <LABEL index="0" value="C/500ms" />
       <MATH equation="X">
         <VAR id="X" />
       </MATH>
@@ -6043,9 +7596,7 @@ Check your stock rom for the enable value.</description>
   </XDFTABLE>
   <XDFTABLE uniqueid="0x0" flags="0x0">
     <title>Disable Tq Reduction by Ign</title>
-    <description>To disable, set to 02
-To enable, set to 00
-Check your stock rom for the enable value.</description>
+    <description>Leave this set to 00! (disable value is 02, but will have adverse effects like poor DCT shifts, and prevents separate burble ignition timing table from being used)</description>
     <CATEGORYMEM index="0" category="15" />
     <CATEGORYMEM index="1" category="20" />
     <XDFAXIS id="x" uniqueid="0x0">
@@ -6516,7 +8067,7 @@ Check your stock rom for the enable value.</description>
   <XDFTABLE>
     <title>Torque Monitor (Customer Specific) X (autogen)</title>
     <CATEGORYMEM index="0" category="34" />
-    <CATEGORYMEM index="1" category="51" />
+    <CATEGORYMEM index="1" category="56" />
     <XDFAXIS id="x">
       <EMBEDDEDDATA />
       <indexcount>6</indexcount>
@@ -6619,10 +8170,200 @@ Check your stock rom for the enable value.</description>
       </MATH>
     </XDFAXIS>
   </XDFTABLE>
+  <XDFTABLE uniqueid="0x0" flags="0x0">
+    <title>c_abc_inc_swi_afs_tqi_mon</title>
+    <CATEGORYMEM index="0" category="154" />
+    <XDFAXIS id="x" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x02" mmedelementsizebits="16" mmedmajorstridebits="-32" mmedminorstridebits="0" />
+      <indexcount>1</indexcount>
+      <decimalpl>1</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <DALINK index="0" />
+      <LABEL index="0" value="0.0" />
+      <MATH equation="X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="y" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x02" mmedelementsizebits="16" mmedmajorstridebits="-32" mmedminorstridebits="0" />
+      <indexcount>1</indexcount>
+      <decimalpl>1</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <DALINK index="0" />
+      <LABEL index="0" value="0.0" />
+      <MATH equation="X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="z">
+      <EMBEDDEDDATA mmedtypeflags="0x02" mmedaddress="0x4CF08" mmedelementsizebits="8" mmedrowcount="1" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <decimalpl>0</decimalpl>
+      <min>0.000000</min>
+      <max>1.000000</max>
+      <outputtype>1</outputtype>
+      <MATH equation="X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE uniqueid="0x0" flags="0x0">
+    <title>c_abc_inc_tq_loss_mon</title>
+    <CATEGORYMEM index="0" category="154" />
+    <XDFAXIS id="x" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x02" mmedelementsizebits="16" mmedmajorstridebits="-32" mmedminorstridebits="0" />
+      <indexcount>1</indexcount>
+      <decimalpl>1</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <DALINK index="0" />
+      <LABEL index="0" value="0.0" />
+      <MATH equation="X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="y" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x02" mmedelementsizebits="16" mmedmajorstridebits="-32" mmedminorstridebits="0" />
+      <indexcount>1</indexcount>
+      <decimalpl>1</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <DALINK index="0" />
+      <LABEL index="0" value="0.0" />
+      <MATH equation="X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="z">
+      <EMBEDDEDDATA mmedtypeflags="0x02" mmedaddress="0x4CF0C" mmedelementsizebits="8" mmedrowcount="1" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <decimalpl>0</decimalpl>
+      <min>0.000000</min>
+      <max>1.000000</max>
+      <outputtype>1</outputtype>
+      <MATH equation="X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE uniqueid="0x0" flags="0x0">
+    <title>c_abc_inc_tq_max_clu_mon</title>
+    <CATEGORYMEM index="0" category="154" />
+    <XDFAXIS id="x" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x02" mmedelementsizebits="16" mmedmajorstridebits="-32" mmedminorstridebits="0" />
+      <indexcount>1</indexcount>
+      <decimalpl>1</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <DALINK index="0" />
+      <LABEL index="0" value="0.0" />
+      <MATH equation="X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="y" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x02" mmedelementsizebits="16" mmedmajorstridebits="-32" mmedminorstridebits="0" />
+      <indexcount>1</indexcount>
+      <decimalpl>1</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <DALINK index="0" />
+      <LABEL index="0" value="0.0" />
+      <MATH equation="X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="z">
+      <EMBEDDEDDATA mmedtypeflags="0x02" mmedaddress="0x4CF0D" mmedelementsizebits="8" mmedrowcount="1" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <decimalpl>0</decimalpl>
+      <min>0.000000</min>
+      <max>1.000000</max>
+      <outputtype>1</outputtype>
+      <MATH equation="X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE uniqueid="0x0" flags="0x0">
+    <title>c_abc_inc_tq_min_clu_mon</title>
+    <CATEGORYMEM index="0" category="154" />
+    <XDFAXIS id="x" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x02" mmedelementsizebits="16" mmedmajorstridebits="-32" mmedminorstridebits="0" />
+      <indexcount>1</indexcount>
+      <decimalpl>1</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <DALINK index="0" />
+      <LABEL index="0" value="0.0" />
+      <MATH equation="X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="y" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x02" mmedelementsizebits="16" mmedmajorstridebits="-32" mmedminorstridebits="0" />
+      <indexcount>1</indexcount>
+      <decimalpl>1</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <DALINK index="0" />
+      <LABEL index="0" value="0.0" />
+      <MATH equation="X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="z">
+      <EMBEDDEDDATA mmedtypeflags="0x02" mmedaddress="0x4CF0E" mmedelementsizebits="8" mmedrowcount="1" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <decimalpl>0</decimalpl>
+      <min>0.000000</min>
+      <max>1.000000</max>
+      <outputtype>1</outputtype>
+      <MATH equation="X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE uniqueid="0x0" flags="0x0">
+    <title>c_abc_inc_tqi_av_afs_mon</title>
+    <CATEGORYMEM index="0" category="154" />
+    <XDFAXIS id="x" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x02" mmedelementsizebits="16" mmedmajorstridebits="-32" mmedminorstridebits="0" />
+      <indexcount>1</indexcount>
+      <decimalpl>1</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <DALINK index="0" />
+      <LABEL index="0" value="0.0" />
+      <MATH equation="X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="y" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x02" mmedelementsizebits="16" mmedmajorstridebits="-32" mmedminorstridebits="0" />
+      <indexcount>1</indexcount>
+      <decimalpl>1</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <DALINK index="0" />
+      <LABEL index="0" value="0.0" />
+      <MATH equation="X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="z">
+      <EMBEDDEDDATA mmedtypeflags="0x02" mmedaddress="0x4CF0F" mmedelementsizebits="8" mmedrowcount="1" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <decimalpl>0</decimalpl>
+      <min>0.000000</min>
+      <max>1.000000</max>
+      <outputtype>1</outputtype>
+      <MATH equation="X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
   <XDFTABLE>
     <title>Torque Monitor (Customer Specific) Y (autogen)</title>
     <CATEGORYMEM index="0" category="34" />
-    <CATEGORYMEM index="1" category="51" />
+    <CATEGORYMEM index="1" category="56" />
     <XDFAXIS id="x">
       <EMBEDDEDDATA />
       <indexcount>8</indexcount>
@@ -6778,7 +8519,7 @@ Check your stock rom for the enable value.</description>
   <XDFTABLE>
     <title>Gear Ratio Calculation (Mon.) X (autogen)</title>
     <CATEGORYMEM index="0" category="30" />
-    <CATEGORYMEM index="1" category="45" />
+    <CATEGORYMEM index="1" category="50" />
     <XDFAXIS id="x">
       <EMBEDDEDDATA />
       <indexcount>13</indexcount>
@@ -7099,7 +8840,7 @@ Check your stock rom for the enable value.</description>
   <XDFTABLE>
     <title>IAT Conversion 2 X (autogen)</title>
     <CATEGORYMEM index="0" category="35" />
-    <CATEGORYMEM index="1" category="49" />
+    <CATEGORYMEM index="1" category="57" />
     <XDFAXIS id="x">
       <EMBEDDEDDATA />
       <indexcount>16</indexcount>
@@ -7125,7 +8866,7 @@ Check your stock rom for the enable value.</description>
   <XDFTABLE>
     <title>IAT Conversion 1 X (autogen)</title>
     <CATEGORYMEM index="0" category="35" />
-    <CATEGORYMEM index="1" category="49" />
+    <CATEGORYMEM index="1" category="57" />
     <XDFAXIS id="x">
       <EMBEDDEDDATA />
       <indexcount>16</indexcount>
@@ -7304,6 +9045,405 @@ Check your stock rom for the enable value.</description>
       <max>255.000000</max>
       <outputtype>1</outputtype>
       <MATH equation="X/327.6803679218166">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE uniqueid="0x0" flags="0x0">
+    <title>Basic Correction (AT)</title>
+    <CATEGORYMEM index="0" category="6" />
+    <CATEGORYMEM index="1" category="59" />
+    <XDFAXIS id="x" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x02" mmedaddress="0x49EFE" mmedelementsizebits="16" mmedcolcount="6" mmedmajorstridebits="16" mmedminorstridebits="0" />
+      <units>rpm</units>
+      <indexcount>6</indexcount>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1" />
+      <DALINK index="0" />
+      <MATH equation="X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="y" uniqueid="0x0">
+      <EMBEDDEDDATA mmedaddress="0x4B9E9" mmedelementsizebits="8" mmedcolcount="6" mmedmajorstridebits="8" mmedminorstridebits="0" />
+      <units>% global pedal</units>
+      <indexcount>6</indexcount>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1" />
+      <DALINK index="0" />
+      <MATH equation="0.390625 * X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="z">
+      <EMBEDDEDDATA mmedtypeflags="0x06" mmedaddress="0x583DC" mmedelementsizebits="16" mmedrowcount="6" mmedcolcount="6" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units>factor</units>
+      <decimalpl>3</decimalpl>
+      <min>0.000000</min>
+      <max>255.000000</max>
+      <outputtype>1</outputtype>
+      <MATH equation="(X/32768)-1">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE uniqueid="0x0" flags="0x0">
+    <title>Basic Correction (AT in manual)</title>
+    <CATEGORYMEM index="0" category="6" />
+    <CATEGORYMEM index="1" category="59" />
+    <XDFAXIS id="x" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x02" mmedaddress="0x49EFE" mmedelementsizebits="16" mmedcolcount="6" mmedmajorstridebits="16" mmedminorstridebits="0" />
+      <units>rpm</units>
+      <indexcount>6</indexcount>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1" />
+      <DALINK index="0" />
+      <MATH equation="X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="y" uniqueid="0x0">
+      <EMBEDDEDDATA mmedaddress="0x4B9E9" mmedelementsizebits="8" mmedcolcount="6" mmedmajorstridebits="8" mmedminorstridebits="0" />
+      <units>% global pedal</units>
+      <indexcount>6</indexcount>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1" />
+      <DALINK index="0" />
+      <MATH equation="0.390625 * X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="z">
+      <EMBEDDEDDATA mmedtypeflags="0x06" mmedaddress="0x58424" mmedelementsizebits="16" mmedrowcount="6" mmedcolcount="6" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units>factor</units>
+      <decimalpl>3</decimalpl>
+      <min>0.000000</min>
+      <max>255.000000</max>
+      <outputtype>1</outputtype>
+      <MATH equation="(X/32768)-1">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE uniqueid="0x0" flags="0x0">
+    <title>Basic Correction (AT in sport)</title>
+    <CATEGORYMEM index="0" category="6" />
+    <CATEGORYMEM index="1" category="59" />
+    <XDFAXIS id="x" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x02" mmedaddress="0x49EFE" mmedelementsizebits="16" mmedcolcount="6" mmedmajorstridebits="16" mmedminorstridebits="0" />
+      <units>rpm</units>
+      <indexcount>6</indexcount>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1" />
+      <DALINK index="0" />
+      <MATH equation="X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="y" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x02" mmedaddress="0x4B9E9" mmedelementsizebits="8" mmedcolcount="6" mmedmajorstridebits="8" mmedminorstridebits="0" />
+      <units>% global pedal</units>
+      <indexcount>6</indexcount>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1" />
+      <DALINK index="0" />
+      <MATH equation="0.390625 * X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="z">
+      <EMBEDDEDDATA mmedtypeflags="0x06" mmedaddress="0x5846C" mmedelementsizebits="16" mmedrowcount="6" mmedcolcount="6" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <decimalpl>3</decimalpl>
+      <min>0.000000</min>
+      <max>255.000000</max>
+      <outputtype>1</outputtype>
+      <MATH equation="(X/32768)-1">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE uniqueid="0x0" flags="0x0">
+    <title>Basic Correction (MT)</title>
+    <CATEGORYMEM index="0" category="6" />
+    <CATEGORYMEM index="1" category="59" />
+    <XDFAXIS id="x" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x02" mmedaddress="0x49EFE" mmedelementsizebits="16" mmedcolcount="6" mmedmajorstridebits="16" mmedminorstridebits="0" />
+      <units>rpm</units>
+      <indexcount>6</indexcount>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1" />
+      <DALINK index="0" />
+      <MATH equation="X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="y" uniqueid="0x0">
+      <EMBEDDEDDATA mmedaddress="0x4B9E9" mmedelementsizebits="8" mmedcolcount="6" mmedmajorstridebits="8" mmedminorstridebits="0" />
+      <units>% global pedal</units>
+      <indexcount>6</indexcount>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1" />
+      <DALINK index="0" />
+      <MATH equation="0.390625 * X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="z">
+      <EMBEDDEDDATA mmedtypeflags="0x06" mmedaddress="0x584B4" mmedelementsizebits="16" mmedrowcount="6" mmedcolcount="6" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units>factor</units>
+      <decimalpl>3</decimalpl>
+      <min>0.000000</min>
+      <max>255.000000</max>
+      <outputtype>1</outputtype>
+      <MATH equation="(X/32768)-1">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE uniqueid="0x0" flags="0x0">
+    <title>Basic Correction (DCT)</title>
+    <CATEGORYMEM index="0" category="6" />
+    <CATEGORYMEM index="1" category="59" />
+    <XDFAXIS id="x" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x02" mmedaddress="0x49EFE" mmedelementsizebits="16" mmedcolcount="6" mmedmajorstridebits="16" mmedminorstridebits="0" />
+      <units>rpm</units>
+      <indexcount>6</indexcount>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1" />
+      <DALINK index="0" />
+      <MATH equation="X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="y" uniqueid="0x0">
+      <EMBEDDEDDATA mmedaddress="0x4B9E9" mmedelementsizebits="8" mmedcolcount="6" mmedmajorstridebits="8" mmedminorstridebits="0" />
+      <units>% global pedal</units>
+      <indexcount>6</indexcount>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1" />
+      <DALINK index="0" />
+      <MATH equation="0.390625 * X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="z">
+      <EMBEDDEDDATA mmedtypeflags="0x06" mmedaddress="0x584FC" mmedelementsizebits="16" mmedrowcount="6" mmedcolcount="6" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units>factor</units>
+      <decimalpl>3</decimalpl>
+      <min>0.000000</min>
+      <max>255.000000</max>
+      <outputtype>1</outputtype>
+      <MATH equation="(X/32768)-1">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE uniqueid="0x0" flags="0x0">
+    <title>Clutch intervention correction (AT)</title>
+    <CATEGORYMEM index="0" category="6" />
+    <CATEGORYMEM index="1" category="59" />
+    <XDFAXIS id="x" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x02" mmedaddress="0x49F0E" mmedelementsizebits="16" mmedcolcount="6" mmedmajorstridebits="16" mmedminorstridebits="0" />
+      <units>rpm (Engine speed deviation N_SP_IS_N)</units>
+      <indexcount>6</indexcount>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1" />
+      <DALINK index="0" />
+      <MATH equation="X-32768">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="y" uniqueid="0x0">
+      <EMBEDDEDDATA mmedaddress="0x4B9E9" mmedelementsizebits="8" mmedcolcount="6" mmedmajorstridebits="8" mmedminorstridebits="0" />
+      <units>% global pedal</units>
+      <indexcount>6</indexcount>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1" />
+      <DALINK index="0" />
+      <MATH equation="0.390625 * X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="z">
+      <EMBEDDEDDATA mmedtypeflags="0x06" mmedaddress="0x58544" mmedelementsizebits="16" mmedrowcount="6" mmedcolcount="6" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units>factor</units>
+      <decimalpl>3</decimalpl>
+      <min>0.000000</min>
+      <max>255.000000</max>
+      <outputtype>1</outputtype>
+      <MATH equation="(X/32768)-1">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE uniqueid="0x0" flags="0x0">
+    <title>Clutch intervention correction (MT)</title>
+    <CATEGORYMEM index="0" category="6" />
+    <CATEGORYMEM index="1" category="59" />
+    <XDFAXIS id="x" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x02" mmedaddress="0x49F0E" mmedelementsizebits="16" mmedcolcount="6" mmedmajorstridebits="16" mmedminorstridebits="0" />
+      <units>rpm (Engine speed deviation N_SP_IS_N)</units>
+      <indexcount>6</indexcount>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1" />
+      <DALINK index="0" />
+      <MATH equation="X-32768">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="y" uniqueid="0x0">
+      <EMBEDDEDDATA mmedaddress="0x4B9E9" mmedelementsizebits="8" mmedcolcount="6" mmedmajorstridebits="8" mmedminorstridebits="0" />
+      <units>% global pedal</units>
+      <indexcount>6</indexcount>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1" />
+      <DALINK index="0" />
+      <MATH equation="0.390625 * X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="z">
+      <EMBEDDEDDATA mmedtypeflags="0x06" mmedaddress="0x585D4" mmedelementsizebits="16" mmedrowcount="6" mmedcolcount="6" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units>factor</units>
+      <decimalpl>3</decimalpl>
+      <min>0.000000</min>
+      <max>255.000000</max>
+      <outputtype>1</outputtype>
+      <MATH equation="(X/32768)-1">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE uniqueid="0x0" flags="0x0">
+    <title>Clutch intervention correction (DCT)</title>
+    <CATEGORYMEM index="0" category="6" />
+    <CATEGORYMEM index="1" category="59" />
+    <XDFAXIS id="x" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x02" mmedaddress="0x49F0E" mmedelementsizebits="16" mmedcolcount="6" mmedmajorstridebits="16" mmedminorstridebits="0" />
+      <units>rpm (Engine speed deviation N_SP_IS_N)</units>
+      <indexcount>6</indexcount>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1" />
+      <DALINK index="0" />
+      <MATH equation="X-32768">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="y" uniqueid="0x0">
+      <EMBEDDEDDATA mmedaddress="0x4B9E9" mmedelementsizebits="8" mmedcolcount="6" mmedmajorstridebits="8" mmedminorstridebits="0" />
+      <units>% global pedal</units>
+      <indexcount>6</indexcount>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1" />
+      <DALINK index="0" />
+      <MATH equation="0.390625 * X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="z">
+      <EMBEDDEDDATA mmedtypeflags="0x06" mmedaddress="0x5861C" mmedelementsizebits="16" mmedrowcount="6" mmedcolcount="6" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units>factor</units>
+      <decimalpl>3</decimalpl>
+      <min>0.000000</min>
+      <max>255.000000</max>
+      <outputtype>1</outputtype>
+      <MATH equation="(X/32768)-1">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE uniqueid="0x0" flags="0x0">
+    <title>Gear shift intervention correction (MT)</title>
+    <CATEGORYMEM index="0" category="6" />
+    <CATEGORYMEM index="1" category="59" />
+    <XDFAXIS id="x" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x02" mmedaddress="0x49EFE" mmedelementsizebits="16" mmedcolcount="6" mmedmajorstridebits="16" mmedminorstridebits="0" />
+      <units>rpm</units>
+      <indexcount>6</indexcount>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1" />
+      <DALINK index="0" />
+      <MATH equation="X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="y" uniqueid="0x0">
+      <EMBEDDEDDATA mmedaddress="0x4B9E9" mmedelementsizebits="8" mmedcolcount="6" mmedmajorstridebits="8" mmedminorstridebits="0" />
+      <units>% </units>
+      <indexcount>6</indexcount>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1" />
+      <DALINK index="0" />
+      <MATH equation="0.390625 * X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="z">
+      <EMBEDDEDDATA mmedtypeflags="0x06" mmedaddress="0x58664" mmedelementsizebits="16" mmedrowcount="6" mmedcolcount="6" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units>factor</units>
+      <decimalpl>3</decimalpl>
+      <min>0.000000</min>
+      <max>255.000000</max>
+      <outputtype>1</outputtype>
+      <MATH equation="(X/32768)-1">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE uniqueid="0x0" flags="0x0">
+    <title>Gear shift intervention correction (DCT)</title>
+    <CATEGORYMEM index="0" category="6" />
+    <CATEGORYMEM index="1" category="59" />
+    <XDFAXIS id="x" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x02" mmedaddress="0x49EFE" mmedelementsizebits="16" mmedcolcount="6" mmedmajorstridebits="16" mmedminorstridebits="0" />
+      <units>rpm</units>
+      <indexcount>6</indexcount>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1" />
+      <DALINK index="0" />
+      <MATH equation="X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="y" uniqueid="0x0">
+      <EMBEDDEDDATA mmedaddress="0x4B9E9" mmedelementsizebits="8" mmedcolcount="6" mmedmajorstridebits="8" mmedminorstridebits="0" />
+      <units>% </units>
+      <indexcount>6</indexcount>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1" />
+      <DALINK index="0" />
+      <MATH equation="0.390625 * X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="z">
+      <EMBEDDEDDATA mmedtypeflags="0x06" mmedaddress="0x586AC" mmedelementsizebits="16" mmedrowcount="6" mmedcolcount="6" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units>factor</units>
+      <decimalpl>3</decimalpl>
+      <min>0.000000</min>
+      <max>255.000000</max>
+      <outputtype>1</outputtype>
+      <MATH equation="(X/32768)-1">
         <VAR id="X" />
       </MATH>
     </XDFAXIS>
@@ -7827,6 +9967,132 @@ Check your stock rom for the enable value.</description>
     </XDFAXIS>
   </XDFTABLE>
   <XDFTABLE uniqueid="0x0" flags="0x0">
+    <title>Burble Duration (Normal)</title>
+    <description>ip_t_min_pu__n__tco</description>
+    <CATEGORYMEM index="0" category="63" />
+    <XDFAXIS id="x" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x02" mmedaddress="0x4921A" mmedelementsizebits="16" mmedcolcount="8" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units>RPM</units>
+      <indexcount>8</indexcount>
+      <decimalpl>0</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1" />
+      <DALINK index="0" />
+      <MATH equation="X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="y" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x02" mmedaddress="0x4B81B" mmedelementsizebits="8" mmedcolcount="6" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units>*C</units>
+      <indexcount>6</indexcount>
+      <decimalpl>1</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1" />
+      <DALINK index="0" />
+      <MATH equation="(X*.75) - 48">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="z">
+      <EMBEDDEDDATA mmedtypeflags="0x06" mmedaddress="0x5BAC8" mmedelementsizebits="16" mmedrowcount="6" mmedcolcount="8" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units>sec</units>
+      <decimalpl>2</decimalpl>
+      <min>0.000000</min>
+      <max>255.000000</max>
+      <outputtype>1</outputtype>
+      <MATH equation="X/100">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE uniqueid="0x0" flags="0x0">
+    <title>Burble Duration (Sport)</title>
+    <description>ip_t_min_pu_rng_l__n__tco</description>
+    <CATEGORYMEM index="0" category="63" />
+    <XDFAXIS id="x" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x02" mmedaddress="0x4921A" mmedelementsizebits="16" mmedcolcount="8" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units>RPM</units>
+      <indexcount>8</indexcount>
+      <decimalpl>0</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1" />
+      <DALINK index="0" />
+      <MATH equation="X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="y" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x02" mmedaddress="0x4B81B" mmedelementsizebits="8" mmedcolcount="6" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units>*C</units>
+      <indexcount>6</indexcount>
+      <decimalpl>1</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1" />
+      <DALINK index="0" />
+      <MATH equation="(X*.75) - 48">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="z">
+      <EMBEDDEDDATA mmedtypeflags="0x06" mmedaddress="0x5BB28" mmedelementsizebits="16" mmedrowcount="6" mmedcolcount="8" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units>sec</units>
+      <decimalpl>2</decimalpl>
+      <min>0.000000</min>
+      <max>255.000000</max>
+      <outputtype>1</outputtype>
+      <MATH equation="X/100">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE uniqueid="0x0" flags="0x30">
+    <title>Burble Ignition Timing</title>
+    <description>ip_iga_min_n_maf_pu_h_rng</description>
+    <CATEGORYMEM index="0" category="63" />
+    <XDFAXIS id="x" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x02" mmedaddress="0x49E39" mmedelementsizebits="8" mmedcolcount="8" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units>RPM</units>
+      <indexcount>8</indexcount>
+      <decimalpl>0</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1" />
+      <DALINK index="0" />
+      <MATH equation="X*32">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="y" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x02" mmedaddress="0x4B985" mmedelementsizebits="8" mmedcolcount="6" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units>mg/stk</units>
+      <indexcount>6</indexcount>
+      <decimalpl>1</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1" />
+      <DALINK index="0" />
+      <MATH equation="X*5.4470588">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="z">
+      <EMBEDDEDDATA mmedtypeflags="0x07" mmedaddress="0x5A75C" mmedelementsizebits="16" mmedrowcount="6" mmedcolcount="8" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units>*crk</units>
+      <decimalpl>2</decimalpl>
+      <min>-90.000000</min>
+      <max>90.000000</max>
+      <outputtype>1</outputtype>
+      <MATH equation="X*0.0625 - 90">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE uniqueid="0x0" flags="0x0">
     <title>Max Torque at Clutch (DCT)</title>
     <description>(ip_tq_lim_tout_tct)</description>
     <CATEGORYMEM index="0" category="34" />
@@ -8057,7 +10323,7 @@ Check your stock rom for the enable value.</description>
   <XDFTABLE>
     <title>Pressure Decay Duration (after target reached) X (autogen)</title>
     <CATEGORYMEM index="0" category="29" />
-    <CATEGORYMEM index="1" category="53" />
+    <CATEGORYMEM index="1" category="49" />
     <XDFAXIS id="x">
       <EMBEDDEDDATA />
       <indexcount>6</indexcount>
@@ -8120,7 +10386,7 @@ Check your stock rom for the enable value.</description>
   <XDFTABLE>
     <title>Overboost Duration (after target reached) X (autogen)</title>
     <CATEGORYMEM index="0" category="29" />
-    <CATEGORYMEM index="1" category="53" />
+    <CATEGORYMEM index="1" category="49" />
     <XDFAXIS id="x">
       <EMBEDDEDDATA />
       <indexcount>4</indexcount>
@@ -8183,7 +10449,7 @@ Check your stock rom for the enable value.</description>
   <XDFTABLE>
     <title>Time Delay at Overboost Start X (autogen)</title>
     <CATEGORYMEM index="0" category="29" />
-    <CATEGORYMEM index="1" category="53" />
+    <CATEGORYMEM index="1" category="49" />
     <XDFAXIS id="x">
       <EMBEDDEDDATA />
       <indexcount>6</indexcount>
@@ -8246,7 +10512,7 @@ Check your stock rom for the enable value.</description>
   <XDFTABLE>
     <title>Overboost Duration (total) X (autogen)</title>
     <CATEGORYMEM index="0" category="29" />
-    <CATEGORYMEM index="1" category="53" />
+    <CATEGORYMEM index="1" category="49" />
     <XDFAXIS id="x">
       <EMBEDDEDDATA />
       <indexcount>6</indexcount>
@@ -8676,6 +10942,86 @@ Check your stock rom for the enable value.</description>
     </XDFAXIS>
   </XDFTABLE>
   <XDFTABLE uniqueid="0x0" flags="0x30">
+    <title>WGDC inverted Bank 1</title>
+    <description>Stock: 00
+Invert for BB3 rev: 01</description>
+    <CATEGORYMEM index="0" category="15" />
+    <CATEGORYMEM index="1" category="20" />
+    <XDFAXIS id="x" uniqueid="0x0">
+      <EMBEDDEDDATA mmedelementsizebits="16" mmedmajorstridebits="-32" mmedminorstridebits="0" />
+      <indexcount>1</indexcount>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <DALINK index="0" />
+      <LABEL index="0" value="0.00" />
+      <MATH equation="X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="y" uniqueid="0x0">
+      <EMBEDDEDDATA mmedelementsizebits="16" mmedmajorstridebits="-32" mmedminorstridebits="0" />
+      <indexcount>1</indexcount>
+      <outputtype>4</outputtype>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <DALINK index="0" />
+      <LABEL index="0" value="0.00" />
+      <MATH equation="X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="z">
+      <EMBEDDEDDATA mmedtypeflags="0x02" mmedaddress="0x5DADD" mmedelementsizebits="8" mmedrowcount="1" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <decimalpl>2</decimalpl>
+      <min>0.000000</min>
+      <max>1.000000</max>
+      <outputtype>3</outputtype>
+      <MATH equation="X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE uniqueid="0x0" flags="0x30">
+    <title>WGDC inverted Bank 2</title>
+    <description>Stock: 00
+Invert for BB3 rev: 01</description>
+    <CATEGORYMEM index="0" category="15" />
+    <CATEGORYMEM index="1" category="20" />
+    <XDFAXIS id="x" uniqueid="0x0">
+      <EMBEDDEDDATA mmedelementsizebits="16" mmedmajorstridebits="-32" mmedminorstridebits="0" />
+      <indexcount>1</indexcount>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <DALINK index="0" />
+      <LABEL index="0" value="0.00" />
+      <MATH equation="X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="y" uniqueid="0x0">
+      <EMBEDDEDDATA mmedelementsizebits="16" mmedmajorstridebits="-32" mmedminorstridebits="0" />
+      <indexcount>1</indexcount>
+      <outputtype>4</outputtype>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <DALINK index="0" />
+      <LABEL index="0" value="0.00" />
+      <MATH equation="X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="z">
+      <EMBEDDEDDATA mmedtypeflags="0x02" mmedaddress="0x5DADF" mmedelementsizebits="8" mmedrowcount="1" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <decimalpl>2</decimalpl>
+      <min>0.000000</min>
+      <max>1.000000</max>
+      <outputtype>3</outputtype>
+      <MATH equation="X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE uniqueid="0x0" flags="0x30">
     <title>WGDC Postion Back to WGDC X</title>
     <CATEGORYMEM index="0" category="1" />
     <CATEGORYMEM index="1" category="9" />
@@ -9075,7 +11421,7 @@ Check your stock rom for the enable value.</description>
       <EMBEDDEDDATA mmedtypeflags="0x02" mmedaddress="0x5DD16" mmedelementsizebits="16" mmedrowcount="1" mmedcolcount="6" mmedmajorstridebits="0" mmedminorstridebits="0" />
       <decimalpl>2</decimalpl>
       <min>0.000000</min>
-      <max>40.000000</max>
+      <max>50.000000</max>
       <outputtype>1</outputtype>
       <MATH equation="X/655.35">
         <VAR id="X" />
@@ -9919,7 +12265,7 @@ Check your stock rom for the enable value.</description>
   <XDFTABLE>
     <title>Pressure Drop Over IC X (autogen)</title>
     <CATEGORYMEM index="0" category="1" />
-    <CATEGORYMEM index="1" category="54" />
+    <CATEGORYMEM index="1" category="48" />
     <XDFAXIS id="x">
       <EMBEDDEDDATA />
       <indexcount>8</indexcount>
@@ -10017,6 +12363,47 @@ Check your stock rom for the enable value.</description>
       <min>0.000000</min>
       <max>7000.000000</max>
       <outputtype>1</outputtype>
+      <MATH equation="X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE uniqueid="0x0" flags="0x0">
+    <title>Overboost Disable</title>
+    <description>Stock      - 1B58076C
+Disabled - 03030303
+k_nkwlek_mn_k_nkwlek_mx</description>
+    <CATEGORYMEM index="0" category="15" />
+    <CATEGORYMEM index="1" category="20" />
+    <XDFAXIS id="x" uniqueid="0x0">
+      <EMBEDDEDDATA mmedelementsizebits="16" mmedmajorstridebits="-32" mmedminorstridebits="0" />
+      <indexcount>1</indexcount>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <DALINK index="0" />
+      <LABEL index="0" value="0.00" />
+      <MATH equation="X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="y" uniqueid="0x0">
+      <EMBEDDEDDATA mmedelementsizebits="16" mmedmajorstridebits="-32" mmedminorstridebits="0" />
+      <indexcount>1</indexcount>
+      <outputtype>4</outputtype>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <DALINK index="0" />
+      <LABEL index="0" value="" />
+      <MATH equation="X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="z">
+      <EMBEDDEDDATA mmedtypeflags="0x02" mmedaddress="0x5ECF6" mmedelementsizebits="32" mmedrowcount="1" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <decimalpl>0</decimalpl>
+      <min>1.000000</min>
+      <max>4.000000</max>
+      <outputtype>3</outputtype>
       <MATH equation="X">
         <VAR id="X" />
       </MATH>
@@ -10566,7 +12953,7 @@ Check your stock rom for the enable value.</description>
   <XDFTABLE>
     <title>Coolant Setpoint (High+KFT Mode) X (autogen)</title>
     <CATEGORYMEM index="0" category="26" />
-    <CATEGORYMEM index="1" category="55" />
+    <CATEGORYMEM index="1" category="58" />
     <XDFAXIS id="x">
       <EMBEDDEDDATA />
       <indexcount>4</indexcount>
@@ -10633,7 +13020,7 @@ Check your stock rom for the enable value.</description>
   <XDFTABLE>
     <title>Radiator Fan Duty Cycle (ECT Target Diff) X (autogen)</title>
     <CATEGORYMEM index="0" category="26" />
-    <CATEGORYMEM index="1" category="55" />
+    <CATEGORYMEM index="1" category="58" />
     <XDFAXIS id="x">
       <EMBEDDEDDATA />
       <indexcount>12</indexcount>
@@ -10700,7 +13087,7 @@ Check your stock rom for the enable value.</description>
   <XDFTABLE>
     <title>Coolant Setpoint (High Mode) X (autogen)</title>
     <CATEGORYMEM index="0" category="26" />
-    <CATEGORYMEM index="1" category="55" />
+    <CATEGORYMEM index="1" category="58" />
     <XDFAXIS id="x">
       <EMBEDDEDDATA />
       <indexcount>4</indexcount>
@@ -10768,7 +13155,7 @@ Check your stock rom for the enable value.</description>
     <title>Torque Reduction Factor (Temp) Y (autogen)</title>
     <CATEGORYMEM index="0" category="4" />
     <CATEGORYMEM index="1" category="23" />
-    <CATEGORYMEM index="2" category="56" />
+    <CATEGORYMEM index="2" category="46" />
     <XDFAXIS id="x">
       <EMBEDDEDDATA />
       <indexcount>8</indexcount>
@@ -10795,7 +13182,7 @@ Check your stock rom for the enable value.</description>
     <title>Torque Reduction Factor (Temp) X (autogen)</title>
     <CATEGORYMEM index="0" category="4" />
     <CATEGORYMEM index="1" category="23" />
-    <CATEGORYMEM index="2" category="56" />
+    <CATEGORYMEM index="2" category="46" />
     <XDFAXIS id="x">
       <EMBEDDEDDATA />
       <indexcount>8</indexcount>
@@ -12067,7 +14454,7 @@ Check your stock rom for the enable value.</description>
   <XDFTABLE>
     <title>Boost Request Offset % Y (autogen)</title>
     <CATEGORYMEM index="0" category="1" />
-    <CATEGORYMEM index="1" category="54" />
+    <CATEGORYMEM index="1" category="48" />
     <XDFAXIS id="x">
       <EMBEDDEDDATA />
       <indexcount>12</indexcount>
@@ -12093,7 +14480,7 @@ Check your stock rom for the enable value.</description>
   <XDFTABLE>
     <title>Boost Request Offset % X (autogen)</title>
     <CATEGORYMEM index="0" category="1" />
-    <CATEGORYMEM index="1" category="54" />
+    <CATEGORYMEM index="1" category="48" />
     <XDFAXIS id="x">
       <EMBEDDEDDATA />
       <indexcount>12</indexcount>
@@ -12240,7 +14627,7 @@ Check your stock rom for the enable value.</description>
   <XDFTABLE>
     <title>Max Mass Flow Mon (Bank 1) Y (autogen)</title>
     <CATEGORYMEM index="0" category="4" />
-    <CATEGORYMEM index="1" category="57" />
+    <CATEGORYMEM index="1" category="47" />
     <XDFAXIS id="x">
       <EMBEDDEDDATA />
       <indexcount>4</indexcount>
@@ -12266,7 +14653,7 @@ Check your stock rom for the enable value.</description>
   <XDFTABLE>
     <title>Max Mass Flow Mon (Bank 1) X (autogen)</title>
     <CATEGORYMEM index="0" category="4" />
-    <CATEGORYMEM index="1" category="57" />
+    <CATEGORYMEM index="1" category="47" />
     <XDFAXIS id="x">
       <EMBEDDEDDATA />
       <indexcount>4</indexcount>
@@ -12331,7 +14718,7 @@ Check your stock rom for the enable value.</description>
   <XDFTABLE>
     <title>Max Mass Flow Mon (Bank 2) Y (autogen)</title>
     <CATEGORYMEM index="0" category="4" />
-    <CATEGORYMEM index="1" category="57" />
+    <CATEGORYMEM index="1" category="47" />
     <XDFAXIS id="x">
       <EMBEDDEDDATA />
       <indexcount>4</indexcount>
@@ -12357,7 +14744,7 @@ Check your stock rom for the enable value.</description>
   <XDFTABLE>
     <title>Max Mass Flow Mon (Bank 2) X (autogen)</title>
     <CATEGORYMEM index="0" category="4" />
-    <CATEGORYMEM index="1" category="57" />
+    <CATEGORYMEM index="1" category="47" />
     <XDFAXIS id="x">
       <EMBEDDEDDATA />
       <indexcount>4</indexcount>
@@ -12423,7 +14810,7 @@ Check your stock rom for the enable value.</description>
     <title>Torque Max Intervention Mode X (autogen)</title>
     <CATEGORYMEM index="0" category="4" />
     <CATEGORYMEM index="1" category="23" />
-    <CATEGORYMEM index="2" category="56" />
+    <CATEGORYMEM index="2" category="46" />
     <XDFAXIS id="x">
       <EMBEDDEDDATA />
       <indexcount>4</indexcount>
@@ -13698,7 +16085,7 @@ Check your stock rom for the enable value.</description>
       <units>Factor</units>
       <decimalpl>2</decimalpl>
       <min>0.500000</min>
-      <max>1.600000</max>
+      <max>2.000000</max>
       <outputtype>1</outputtype>
       <MATH equation="X/32667">
         <VAR id="X" />
@@ -13823,7 +16210,7 @@ Check your stock rom for the enable value.</description>
       <units>Factor</units>
       <decimalpl>2</decimalpl>
       <min>0.500000</min>
-      <max>1.600000</max>
+      <max>2.000000</max>
       <outputtype>1</outputtype>
       <MATH equation="X/32667">
         <VAR id="X" />
@@ -13954,7 +16341,7 @@ Check your stock rom for the enable value.</description>
   <XDFTABLE>
     <title>Load Limit Factor X (autogen)</title>
     <CATEGORYMEM index="0" category="4" />
-    <CATEGORYMEM index="1" category="57" />
+    <CATEGORYMEM index="1" category="47" />
     <XDFAXIS id="x">
       <EMBEDDEDDATA />
       <indexcount>12</indexcount>
@@ -14248,7 +16635,7 @@ Check your stock rom for the enable value.</description>
   <XDFTABLE>
     <title>Load Target Limit Factor (Charge Air Temp) Y (autogen)</title>
     <CATEGORYMEM index="0" category="4" />
-    <CATEGORYMEM index="1" category="57" />
+    <CATEGORYMEM index="1" category="47" />
     <XDFAXIS id="x">
       <EMBEDDEDDATA />
       <indexcount>6</indexcount>
@@ -14274,7 +16661,7 @@ Check your stock rom for the enable value.</description>
   <XDFTABLE>
     <title>Load Target Limit Factor (Charge Air Temp) X (autogen)</title>
     <CATEGORYMEM index="0" category="4" />
-    <CATEGORYMEM index="1" category="57" />
+    <CATEGORYMEM index="1" category="47" />
     <XDFAXIS id="x">
       <EMBEDDEDDATA />
       <indexcount>6</indexcount>
@@ -14341,7 +16728,7 @@ Check your stock rom for the enable value.</description>
   <XDFTABLE>
     <title>Load Limit Factor (Knock) Y (autogen)</title>
     <CATEGORYMEM index="0" category="4" />
-    <CATEGORYMEM index="1" category="57" />
+    <CATEGORYMEM index="1" category="47" />
     <XDFAXIS id="x">
       <EMBEDDEDDATA />
       <indexcount>8</indexcount>
@@ -14367,7 +16754,7 @@ Check your stock rom for the enable value.</description>
   <XDFTABLE>
     <title>Load Limit Factor (Knock) X (autogen)</title>
     <CATEGORYMEM index="0" category="4" />
-    <CATEGORYMEM index="1" category="57" />
+    <CATEGORYMEM index="1" category="47" />
     <XDFAXIS id="x">
       <EMBEDDEDDATA />
       <indexcount>8</indexcount>
@@ -14644,7 +17031,7 @@ Check your stock rom for the enable value.</description>
   <XDFTABLE>
     <title>Torque Loss (Strat) Y (autogen)</title>
     <CATEGORYMEM index="0" category="4" />
-    <CATEGORYMEM index="1" category="57" />
+    <CATEGORYMEM index="1" category="47" />
     <XDFAXIS id="x">
       <EMBEDDEDDATA />
       <indexcount>12</indexcount>
@@ -14670,7 +17057,7 @@ Check your stock rom for the enable value.</description>
   <XDFTABLE>
     <title>Torque Loss (Strat) X (autogen)</title>
     <CATEGORYMEM index="0" category="4" />
-    <CATEGORYMEM index="1" category="57" />
+    <CATEGORYMEM index="1" category="47" />
     <XDFAXIS id="x">
       <EMBEDDEDDATA />
       <indexcount>10</indexcount>
@@ -14735,7 +17122,7 @@ Check your stock rom for the enable value.</description>
   <XDFTABLE>
     <title>Torque Loss (Homo) Y (autogen)</title>
     <CATEGORYMEM index="0" category="4" />
-    <CATEGORYMEM index="1" category="57" />
+    <CATEGORYMEM index="1" category="47" />
     <XDFAXIS id="x">
       <EMBEDDEDDATA />
       <indexcount>12</indexcount>
@@ -14761,7 +17148,7 @@ Check your stock rom for the enable value.</description>
   <XDFTABLE>
     <title>Torque Loss (Homo) X (autogen)</title>
     <CATEGORYMEM index="0" category="4" />
-    <CATEGORYMEM index="1" category="57" />
+    <CATEGORYMEM index="1" category="47" />
     <XDFAXIS id="x">
       <EMBEDDEDDATA />
       <indexcount>10</indexcount>
@@ -14826,7 +17213,7 @@ Check your stock rom for the enable value.</description>
   <XDFTABLE>
     <title>Torque Loss C Y (autogen)</title>
     <CATEGORYMEM index="0" category="4" />
-    <CATEGORYMEM index="1" category="57" />
+    <CATEGORYMEM index="1" category="47" />
     <XDFAXIS id="x">
       <EMBEDDEDDATA />
       <indexcount>12</indexcount>
@@ -14852,7 +17239,7 @@ Check your stock rom for the enable value.</description>
   <XDFTABLE>
     <title>Torque Loss C X (autogen)</title>
     <CATEGORYMEM index="0" category="4" />
-    <CATEGORYMEM index="1" category="57" />
+    <CATEGORYMEM index="1" category="47" />
     <XDFAXIS id="x">
       <EMBEDDEDDATA />
       <indexcount>10</indexcount>
@@ -16339,7 +18726,7 @@ Check your stock rom for the enable value.</description>
   <XDFTABLE>
     <title>Cylinder Temp Comp (ECT) X (autogen)</title>
     <CATEGORYMEM index="0" category="1" />
-    <CATEGORYMEM index="1" category="54" />
+    <CATEGORYMEM index="1" category="48" />
     <XDFAXIS id="x">
       <EMBEDDEDDATA />
       <indexcount>8</indexcount>
@@ -16404,7 +18791,7 @@ Check your stock rom for the enable value.</description>
   <XDFTABLE>
     <title>Cylinder Temp Comp (CAT) X (autogen)</title>
     <CATEGORYMEM index="0" category="1" />
-    <CATEGORYMEM index="1" category="54" />
+    <CATEGORYMEM index="1" category="48" />
     <XDFAXIS id="x">
       <EMBEDDEDDATA />
       <indexcount>8</indexcount>
@@ -16469,7 +18856,7 @@ Check your stock rom for the enable value.</description>
   <XDFTABLE>
     <title>Cylinder Temp Comp Weight Factor (ECT) Y (autogen)</title>
     <CATEGORYMEM index="0" category="1" />
-    <CATEGORYMEM index="1" category="54" />
+    <CATEGORYMEM index="1" category="48" />
     <XDFAXIS id="x">
       <EMBEDDEDDATA />
       <indexcount>8</indexcount>
@@ -16495,7 +18882,7 @@ Check your stock rom for the enable value.</description>
   <XDFTABLE>
     <title>Cylinder Temp Comp Weight Factor (ECT) X (autogen)</title>
     <CATEGORYMEM index="0" category="1" />
-    <CATEGORYMEM index="1" category="54" />
+    <CATEGORYMEM index="1" category="48" />
     <XDFAXIS id="x">
       <EMBEDDEDDATA />
       <indexcount>8</indexcount>
@@ -16560,7 +18947,7 @@ Check your stock rom for the enable value.</description>
   <XDFTABLE>
     <title>Cylinder Temp Comp Weight Factor (CAT) Y (autogen)</title>
     <CATEGORYMEM index="0" category="1" />
-    <CATEGORYMEM index="1" category="54" />
+    <CATEGORYMEM index="1" category="48" />
     <XDFAXIS id="x">
       <EMBEDDEDDATA />
       <indexcount>8</indexcount>
@@ -16586,7 +18973,7 @@ Check your stock rom for the enable value.</description>
   <XDFTABLE>
     <title>Cylinder Temp Comp Weight Factor (CAT) X (autogen)</title>
     <CATEGORYMEM index="0" category="1" />
-    <CATEGORYMEM index="1" category="54" />
+    <CATEGORYMEM index="1" category="48" />
     <XDFAXIS id="x">
       <EMBEDDEDDATA />
       <indexcount>8</indexcount>
@@ -16644,6 +19031,198 @@ Check your stock rom for the enable value.</description>
       <max>255.000000</max>
       <outputtype>1</outputtype>
       <MATH equation="X/32764">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE>
+    <title>Boost Pressure Target Modifier (Dynamic Operation) X (autogen)</title>
+    <CATEGORYMEM index="0" category="1" />
+    <CATEGORYMEM index="1" category="48" />
+    <XDFAXIS id="x">
+      <EMBEDDEDDATA />
+      <indexcount>6</indexcount>
+    </XDFAXIS>
+    <XDFAXIS id="y">
+      <EMBEDDEDDATA />
+      <indexcount>1</indexcount>
+    </XDFAXIS>
+    <XDFAXIS id="z" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x02" mmedaddress="0x7DF22" mmedelementsizebits="16" mmedcolcount="6" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units>rpm</units>
+      <indexcount>6</indexcount>
+      <decimalpl>0</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1" />
+      <DALINK index="0" />
+      <MATH equation="X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE>
+    <title>Boost Pressure Target Modifier (Dynamic Operation) Y (autogen)</title>
+    <CATEGORYMEM index="0" category="1" />
+    <CATEGORYMEM index="1" category="48" />
+    <XDFAXIS id="x">
+      <EMBEDDEDDATA />
+      <indexcount>6</indexcount>
+    </XDFAXIS>
+    <XDFAXIS id="y">
+      <EMBEDDEDDATA />
+      <indexcount>1</indexcount>
+    </XDFAXIS>
+    <XDFAXIS id="z" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x02" mmedaddress="0x7DF2E" mmedelementsizebits="16" mmedcolcount="6" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units>Boost Target (abs) / Atm Pres.</units>
+      <indexcount>6</indexcount>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1" />
+      <DALINK index="0" />
+      <MATH equation="X*0.000061035156">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE uniqueid="0x0" flags="0x30">
+    <title>Boost Pressure Target Modifier (Dynamic Operation)</title>
+    <description>KF_PSPLD_DYN
+
+X Axis: RPM
+Y Axis: Boost Target (abs) / Atm Pres.
+Z Data: &quot;Boost Target&quot; / X</description>
+    <CATEGORYMEM index="0" category="1" />
+    <XDFAXIS id="x" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x02" mmedaddress="0x7DF22" mmedelementsizebits="16" mmedcolcount="6" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units>rpm</units>
+      <indexcount>6</indexcount>
+      <decimalpl>0</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1" />
+      <DALINK index="0" />
+      <MATH equation="X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="y" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x02" mmedaddress="0x7DF2E" mmedelementsizebits="16" mmedcolcount="6" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units>Boost Target (abs) / Atm Pres.</units>
+      <indexcount>6</indexcount>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1" />
+      <DALINK index="0" />
+      <MATH equation="X*0.000061035156">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="z">
+      <EMBEDDEDDATA mmedtypeflags="0x06" mmedaddress="0x7DF3A" mmedelementsizebits="16" mmedrowcount="6" mmedcolcount="6" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units>&quot;Boost Target&quot; / X</units>
+      <decimalpl>3</decimalpl>
+      <min>0.900000</min>
+      <max>1.200000</max>
+      <outputtype>1</outputtype>
+      <MATH equation="X/32768">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE>
+    <title>Boost Pressure Target Modifier (Normal Operation) X (autogen)</title>
+    <CATEGORYMEM index="0" category="1" />
+    <CATEGORYMEM index="1" category="48" />
+    <XDFAXIS id="x">
+      <EMBEDDEDDATA />
+      <indexcount>6</indexcount>
+    </XDFAXIS>
+    <XDFAXIS id="y">
+      <EMBEDDEDDATA />
+      <indexcount>1</indexcount>
+    </XDFAXIS>
+    <XDFAXIS id="z" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x02" mmedaddress="0x7DF86" mmedelementsizebits="16" mmedcolcount="6" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units>rpm</units>
+      <indexcount>6</indexcount>
+      <decimalpl>0</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1" />
+      <DALINK index="0" />
+      <MATH equation="X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE>
+    <title>Boost Pressure Target Modifier (Normal Operation) Y (autogen)</title>
+    <CATEGORYMEM index="0" category="1" />
+    <CATEGORYMEM index="1" category="48" />
+    <XDFAXIS id="x">
+      <EMBEDDEDDATA />
+      <indexcount>6</indexcount>
+    </XDFAXIS>
+    <XDFAXIS id="y">
+      <EMBEDDEDDATA />
+      <indexcount>1</indexcount>
+    </XDFAXIS>
+    <XDFAXIS id="z" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x02" mmedaddress="0x7DF92" mmedelementsizebits="16" mmedcolcount="6" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units>Boost Target (abs) / Atm Pres.</units>
+      <indexcount>6</indexcount>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1" />
+      <DALINK index="0" />
+      <MATH equation="X*0.000061035156">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE uniqueid="0x0" flags="0x30">
+    <title>Boost Pressure Target Modifier (Normal Operation)</title>
+    <description>KF_PSPLD_ECO
+
+X Axis: RPM
+Y Axis: Boost Target (abs) / Atm Pres.
+Z Data: &quot;Boost Target&quot; / X</description>
+    <CATEGORYMEM index="0" category="1" />
+    <XDFAXIS id="x" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x02" mmedaddress="0x7DF86" mmedelementsizebits="16" mmedcolcount="6" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units>rpm</units>
+      <indexcount>6</indexcount>
+      <decimalpl>0</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1" />
+      <DALINK index="0" />
+      <MATH equation="X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="y" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x02" mmedaddress="0x7DF92" mmedelementsizebits="16" mmedcolcount="6" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units>Boost Target (abs) / Atm Pres.</units>
+      <indexcount>6</indexcount>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1" />
+      <DALINK index="0" />
+      <MATH equation="X*0.000061035156">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="z">
+      <EMBEDDEDDATA mmedtypeflags="0x06" mmedaddress="0x7DF9E" mmedelementsizebits="16" mmedrowcount="6" mmedcolcount="6" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units>&quot;Boost Target&quot; / X</units>
+      <decimalpl>3</decimalpl>
+      <min>0.900000</min>
+      <max>1.200000</max>
+      <outputtype>1</outputtype>
+      <MATH equation="X/32768">
         <VAR id="X" />
       </MATH>
     </XDFAXIS>
@@ -16781,7 +19360,7 @@ Check your stock rom for the enable value.</description>
       <unittype>0</unittype>
       <embedinfo type="1" />
       <DALINK index="0" />
-      <MATH equation="X/204.66">
+      <MATH equation="X/204.8">
         <VAR id="X" />
       </MATH>
     </XDFAXIS>
@@ -16802,7 +19381,7 @@ Check your stock rom for the enable value.</description>
       <min>0.000000</min>
       <max>255.000000</max>
       <outputtype>1</outputtype>
-      <MATH equation="X/204.66">
+      <MATH equation="X/204.8">
         <VAR id="X" />
       </MATH>
     </XDFAXIS>
@@ -16818,7 +19397,7 @@ Check your stock rom for the enable value.</description>
       <unittype>0</unittype>
       <embedinfo type="1" />
       <DALINK index="0" />
-      <MATH equation="X/204.66">
+      <MATH equation="X/204.8">
         <VAR id="X" />
       </MATH>
     </XDFAXIS>
@@ -16840,7 +19419,7 @@ Check your stock rom for the enable value.</description>
       <min>0.000000</min>
       <max>75.000000</max>
       <outputtype>1</outputtype>
-      <MATH equation="X/831.75">
+      <MATH equation="X/831.52">
         <VAR id="X" />
       </MATH>
     </XDFAXIS>
