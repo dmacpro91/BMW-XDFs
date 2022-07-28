@@ -10900,6 +10900,43 @@ This fixes 2FA4 code. </description>
     </XDFAXIS>
   </XDFTABLE>
   <XDFTABLE uniqueid="0x0" flags="0x0">
+    <title>Max Delay of Overrun to Fuel Cut Transition</title>
+    <description>(c_t_max_pu) - set this low (like 0.16 sec) to force exact following of the Burble Duration tables.</description>
+    <CATEGORYMEM index="0" category="63" />
+    <XDFAXIS id="x" uniqueid="0x0">
+      <EMBEDDEDDATA mmedelementsizebits="16" mmedmajorstridebits="-32" mmedminorstridebits="0" />
+      <indexcount>1</indexcount>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <DALINK index="0" />
+      <LABEL index="0" value="0.00" />
+      <MATH equation="X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="y" uniqueid="0x0">
+      <EMBEDDEDDATA mmedelementsizebits="16" mmedmajorstridebits="-32" mmedminorstridebits="0" />
+      <indexcount>1</indexcount>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <DALINK index="0" />
+      <LABEL index="0" value="0.00" />
+      <MATH equation="X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="z">
+      <EMBEDDEDDATA mmedtypeflags="0x02" mmedaddress="0x4C014" mmedelementsizebits="16" mmedrowcount="1" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <decimalpl>2</decimalpl>
+      <min>0.000000</min>
+      <max>255.000000</max>
+      <outputtype>1</outputtype>
+      <MATH equation="X*.01">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE uniqueid="0x0" flags="0x0">
     <title>Max Torque at Clutch (DCT)</title>
     <description>(ip_tq_lim_tout_tct)</description>
     <CATEGORYMEM index="0" category="34" />
@@ -19553,6 +19590,12 @@ Z Data: &quot;Boost Target&quot; / X</description>
       </MATH>
     </XDFAXIS>
   </XDFTABLE>
+  <XDFPATCH uniqueid="0x11E7">
+    <title>N20 Sensor 3-cell Scaling</title>
+    <description>This patch will automatically apply the &quot;common&quot; 3-cell tmap scaling for the N20 sensor</description>
+    <CATEGORYMEM index="0" category="36" />
+    <XDFPATCHENTRY address="0x7F702" datasize="0xC" patchdata="6600BA01A203BD173B50D578" />
+  </XDFPATCH>
   <XDFTABLE uniqueid="0x0" flags="0x30">
     <title>Load Target per Gear - RPM</title>
     <CATEGORYMEM index="0" category="5" />
