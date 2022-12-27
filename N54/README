@@ -1,5 +1,5 @@
 IMPORTANT, PLEASE READ!
 
-If you are NOT creating a bin using any of the MHD+ features (antilag, flexfuel, mapswitch, 3D boost ceiling, custom WGDC control, etc), then you must use the _LEGACY.xdf for your ROM version.  These will eventually be deprecated and removed.
+If you are using an app prior to v3.00 to flash, then you must use the _LEGACY.xdf for your ROM version.  These will eventually be deprecated and removed.
 
-For custom tunes utilizing any MHD+ feature, you must use the newly updated main XDFs.  Any tables from the _LEGACY xdf that are not in the new main XDFs were intentionally removed, and their CAL space is now use for something else.
+For custom tunes utilizing any MHD+ feature (or app v3.00 or higher), you must use the newly updated main XDFs.  Any tables from the _LEGACY xdf that are not in the new main XDFs were intentionally removed, and their CAL space is now use for something else.
