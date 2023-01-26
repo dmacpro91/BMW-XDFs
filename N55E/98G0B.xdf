@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<XDFFORMAT xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.60">
+<XDFFORMAT xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.70">
   <XDFHEADER>
     <flags>0x1</flags>
     <deftitle>98G0B</deftitle>
@@ -45,6 +45,16 @@
     <CATEGORY index="0x23" name="Dev breakpoints" />
     <CATEGORY index="0x24" name="MAF" />
     <CATEGORY index="0x25" name="MAF breakpoints" />
+    <CATEGORY index="0x26" name="Injectors" />
+    <CATEGORY index="0x27" name="High Pressure Fuel Pump" />
+    <CATEGORY index="0x28" name="Burble" />
+    <CATEGORY index="0x29" name="Flap" />
+    <CATEGORY index="0x2A" name="Pending Removal" />
+    <CATEGORY index="0x2B" name="Flap breakpoints" />
+    <CATEGORY index="0x2C" name="Burble breakpoints" />
+    <CATEGORY index="0x2D" name="Pending Removal breakpoints" />
+    <CATEGORY index="0x2E" name="High Pressure Fuel Pump breakpoints" />
+    <CATEGORY index="0x2F" name="Injectors breakpoints" />
   </XDFHEADER>
   <XDFTABLE uniqueid="0x0" flags="0x0">
     <title>WGDC Limit</title>
@@ -213,7 +223,7 @@
     </XDFAXIS>
   </XDFTABLE>
   <XDFTABLE uniqueid="0x0" flags="0x0">
-    <title>max RPM for cat warmup</title>
+    <title>Max RPM for cat warmup</title>
     <description>max. Drehzahl fuer Katheizen HOM_DOE
 K_KHNST_NMAX_HOMDOE</description>
     <CATEGORYMEM index="0" category="26" />
@@ -562,9 +572,10 @@ K_MAX_PSSOLBER</description>
     </XDFAXIS>
   </XDFTABLE>
   <XDFTABLE uniqueid="0x0" flags="0x0">
-    <title>Speed limit for B_sound the HS with B_sport (Geschwindigkeitsgrenze f&#252;r B_sound beim HS mit B_spor</title>
+    <title>Maximum vehicle speed to enable burble (Sport w/MT)</title>
     <description>K_V_SOUND_HS_SPORT_MX</description>
     <CATEGORYMEM index="0" category="26" />
+    <CATEGORYMEM index="1" category="41" />
     <XDFAXIS id="x" uniqueid="0x0">
       <EMBEDDEDDATA mmedelementsizebits="8" mmedmajorstridebits="0" mmedminorstridebits="0" />
       <units>-</units>
@@ -604,9 +615,10 @@ K_MAX_PSSOLBER</description>
     </XDFAXIS>
   </XDFTABLE>
   <XDFTABLE uniqueid="0x0" flags="0x0">
-    <title>Speed limit for B_sound the HS without B_sport (Geschwindigkeitsgrenze f&#252;r B_sound beim HS ohne B_sport</title>
+    <title>Maximum vehicle speed to enable burble (Normal w/MT)</title>
     <description>K_V_SOUND_HS_MX</description>
     <CATEGORYMEM index="0" category="26" />
+    <CATEGORYMEM index="1" category="41" />
     <XDFAXIS id="x" uniqueid="0x0">
       <EMBEDDEDDATA mmedelementsizebits="8" mmedmajorstridebits="0" mmedminorstridebits="0" />
       <units>-</units>
@@ -646,9 +658,10 @@ K_MAX_PSSOLBER</description>
     </XDFAXIS>
   </XDFTABLE>
   <XDFTABLE uniqueid="0x0" flags="0x0">
-    <title>Max. Fzg.geschw.limit until the Burble is approved (Max. Fzg.geschw.limit, bis der Schubblubbern zugelassen wird</title>
+    <title>Maximum vehicle speed to enable burble</title>
     <description>K_V_SOUND_MX</description>
     <CATEGORYMEM index="0" category="26" />
+    <CATEGORYMEM index="1" category="41" />
     <XDFAXIS id="x" uniqueid="0x0">
       <EMBEDDEDDATA mmedelementsizebits="8" mmedmajorstridebits="0" mmedminorstridebits="0" />
       <units>-</units>
@@ -689,9 +702,10 @@ K_MAX_PSSOLBER</description>
     </XDFAXIS>
   </XDFTABLE>
   <XDFTABLE uniqueid="0x0" flags="0x0">
-    <title>Min. Fzg.geschw.limit, ab der Schubblubbern zugelassen wird</title>
+    <title>Minimum vehicle speed to enable burble</title>
     <description>K_V_SOUND_MN</description>
     <CATEGORYMEM index="0" category="26" />
+    <CATEGORYMEM index="1" category="41" />
     <XDFAXIS id="x" uniqueid="0x0">
       <EMBEDDEDDATA mmedelementsizebits="8" mmedmajorstridebits="0" mmedminorstridebits="0" />
       <units>-</units>
@@ -732,9 +746,10 @@ K_MAX_PSSOLBER</description>
     </XDFAXIS>
   </XDFTABLE>
   <XDFTABLE uniqueid="0x0" flags="0x0">
-    <title>Max. Abgastemperatur vor Lader Bank 1 und 2, unterhalb der Schubblubbern zugelassen wird</title>
+    <title>Maximum EGT in front of turbo(s) to enable burble</title>
     <description>K_T_VL_SOUND_MX</description>
     <CATEGORYMEM index="0" category="26" />
+    <CATEGORYMEM index="1" category="41" />
     <XDFAXIS id="x" uniqueid="0x0">
       <EMBEDDEDDATA mmedelementsizebits="8" mmedmajorstridebits="0" mmedminorstridebits="0" />
       <units>-</units>
@@ -775,9 +790,10 @@ K_MAX_PSSOLBER</description>
     </XDFAXIS>
   </XDFTABLE>
   <XDFTABLE uniqueid="0x0" flags="0x0">
-    <title>Min. Motortemperatur, ab der Schubblubbern zugelassen wird</title>
+    <title>Minimum ECT to enable burble</title>
     <description>K_T_SOUND_MN</description>
     <CATEGORYMEM index="0" category="26" />
+    <CATEGORYMEM index="1" category="41" />
     <XDFAXIS id="x" uniqueid="0x0">
       <EMBEDDEDDATA mmedelementsizebits="8" mmedmajorstridebits="0" mmedminorstridebits="0" />
       <units>-</units>
@@ -818,9 +834,10 @@ K_MAX_PSSOLBER</description>
     </XDFAXIS>
   </XDFTABLE>
   <XDFTABLE uniqueid="0x0" flags="0x0">
-    <title>Max. Temperatur nach Kat, unterhalb der Schubblubbern zugelassen wird</title>
+    <title>Maximum EGT after cat to enable burble</title>
     <description>K_T_NK_SOUND_MX</description>
     <CATEGORYMEM index="0" category="26" />
+    <CATEGORYMEM index="1" category="41" />
     <XDFAXIS id="x" uniqueid="0x0">
       <EMBEDDEDDATA mmedelementsizebits="8" mmedmajorstridebits="0" mmedminorstridebits="0" />
       <units>-</units>
@@ -861,9 +878,10 @@ K_MAX_PSSOLBER</description>
     </XDFAXIS>
   </XDFTABLE>
   <XDFTABLE uniqueid="0x0" flags="0x0">
-    <title>Max. Temperatur im Kat, unterhalb der Schubblubbern zugelassen wird</title>
+    <title>Maximum EGT in cat to enable burble</title>
     <description>K_T_IKAT_SOUND_MX</description>
     <CATEGORYMEM index="0" category="26" />
+    <CATEGORYMEM index="1" category="41" />
     <XDFAXIS id="x" uniqueid="0x0">
       <EMBEDDEDDATA mmedelementsizebits="8" mmedmajorstridebits="0" mmedminorstridebits="0" />
       <units>-</units>
@@ -904,9 +922,10 @@ K_MAX_PSSOLBER</description>
     </XDFAXIS>
   </XDFTABLE>
   <XDFTABLE uniqueid="0x0" flags="0x0">
-    <title>Max. Dauer des VM-Zustands &#220;bergang ins Schubabschalten</title>
+    <title>Maximum duration of overrun before fuel cutoff</title>
     <description>K_TD_UESA_MAX</description>
     <CATEGORYMEM index="0" category="26" />
+    <CATEGORYMEM index="1" category="41" />
     <XDFAXIS id="x" uniqueid="0x0">
       <EMBEDDEDDATA mmedelementsizebits="8" mmedmajorstridebits="0" mmedminorstridebits="0" />
       <units>-</units>
@@ -947,9 +966,10 @@ K_MAX_PSSOLBER</description>
     </XDFAXIS>
   </XDFTABLE>
   <XDFTABLE uniqueid="0x0" flags="0x0">
-    <title>Max. Motordrehzahl, bis der Schubblubbern zugelassen wird</title>
+    <title>Maximum RPM to enable burble</title>
     <description>K_NKW_SOUND_MX</description>
     <CATEGORYMEM index="0" category="26" />
+    <CATEGORYMEM index="1" category="41" />
     <XDFAXIS id="x" uniqueid="0x0">
       <EMBEDDEDDATA mmedelementsizebits="8" mmedmajorstridebits="0" mmedminorstridebits="0" />
       <units>-</units>
@@ -990,9 +1010,10 @@ K_MAX_PSSOLBER</description>
     </XDFAXIS>
   </XDFTABLE>
   <XDFTABLE uniqueid="0x0" flags="0x0">
-    <title>Min. Motordrehzahl, ab der Schubblubbern zugelassen wird</title>
+    <title>Minimum RPM to enable burble</title>
     <description>K_NKW_SOUND_MN</description>
     <CATEGORYMEM index="0" category="26" />
+    <CATEGORYMEM index="1" category="41" />
     <XDFAXIS id="x" uniqueid="0x0">
       <EMBEDDEDDATA mmedelementsizebits="8" mmedmajorstridebits="0" mmedminorstridebits="0" />
       <units>-</units>
@@ -2810,10 +2831,11 @@ KL_DPLLK</description>
     </XDFAXIS>
   </XDFTABLE>
   <XDFTABLE uniqueid="0x0" flags="0x0">
-    <title>EGT For Switch to Component Protection</title>
+    <title>EGT Threshold to Force Exhaust Flap Open</title>
     <description>Abgastemperaturschwelle fuer Umschaltung aktive Umschaltung
 KL_TVKLK</description>
-    <CATEGORYMEM index="0" category="5" />
+    <CATEGORYMEM index="0" category="26" />
+    <CATEGORYMEM index="1" category="42" />
     <XDFAXIS id="x" uniqueid="0x0">
       <EMBEDDEDDATA mmedtypeflags="0x02" mmedaddress="0x189062" mmedelementsizebits="16" mmedcolcount="4" mmedmajorstridebits="0" mmedminorstridebits="0" />
       <units>kph</units>
@@ -2853,9 +2875,10 @@ KL_TVKLK</description>
     </XDFAXIS>
   </XDFTABLE>
   <XDFTABLE>
-    <title>EGT For Switch to Component Protection X (autogen)</title>
-    <CATEGORYMEM index="0" category="5" />
-    <CATEGORYMEM index="1" category="6" />
+    <title>EGT Threshold to Force Exhaust Flap Open X (autogen)</title>
+    <CATEGORYMEM index="0" category="26" />
+    <CATEGORYMEM index="1" category="42" />
+    <CATEGORYMEM index="2" category="44" />
     <XDFAXIS id="x">
       <EMBEDDEDDATA />
       <indexcount>4</indexcount>
@@ -3376,6 +3399,103 @@ KL_WGFEDER</description>
     </XDFAXIS>
   </XDFTABLE>
   <XDFTABLE>
+    <title>Number of injections (warm) Y (autogen)</title>
+    <CATEGORYMEM index="0" category="5" />
+    <CATEGORYMEM index="1" category="39" />
+    <CATEGORYMEM index="2" category="48" />
+    <XDFAXIS id="x">
+      <EMBEDDEDDATA />
+      <indexcount>12</indexcount>
+    </XDFAXIS>
+    <XDFAXIS id="y">
+      <EMBEDDEDDATA />
+      <indexcount>1</indexcount>
+    </XDFAXIS>
+    <XDFAXIS id="z" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x03" mmedaddress="0x18DEC0" mmedelementsizebits="16" mmedcolcount="12" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units>Upm</units>
+      <indexcount>12</indexcount>
+      <decimalpl>0</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1" />
+      <DALINK index="0" />
+      <MATH equation="X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE>
+    <title>Number of injections (warm) X (autogen)</title>
+    <CATEGORYMEM index="0" category="5" />
+    <CATEGORYMEM index="1" category="39" />
+    <CATEGORYMEM index="2" category="48" />
+    <XDFAXIS id="x">
+      <EMBEDDEDDATA />
+      <indexcount>12</indexcount>
+    </XDFAXIS>
+    <XDFAXIS id="y">
+      <EMBEDDEDDATA />
+      <indexcount>1</indexcount>
+    </XDFAXIS>
+    <XDFAXIS id="z" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x03" mmedaddress="0x18DED8" mmedelementsizebits="16" mmedcolcount="12" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units>%</units>
+      <indexcount>12</indexcount>
+      <decimalpl>3</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1" />
+      <DALINK index="0" />
+      <MATH equation="X*0.04882812">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE uniqueid="0x0" flags="0x0">
+    <title>Number of injections (warm)</title>
+    <description>KF_MOD_H_W</description>
+    <CATEGORYMEM index="0" category="5" />
+    <CATEGORYMEM index="1" category="39" />
+    <XDFAXIS id="x" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x03" mmedaddress="0x18DED8" mmedelementsizebits="16" mmedcolcount="12" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units>%</units>
+      <indexcount>12</indexcount>
+      <decimalpl>3</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1" />
+      <DALINK index="0" />
+      <MATH equation="X*0.04882812">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="y" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x03" mmedaddress="0x18DEC0" mmedelementsizebits="16" mmedcolcount="12" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units>Upm</units>
+      <indexcount>12</indexcount>
+      <decimalpl>0</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1" />
+      <DALINK index="0" />
+      <MATH equation="X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="z">
+      <EMBEDDEDDATA mmedaddress="0x18DEF0" mmedelementsizebits="8" mmedrowcount="12" mmedcolcount="12" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units>-</units>
+      <decimalpl>3</decimalpl>
+      <min>0.000000</min>
+      <max>255.000000</max>
+      <outputtype>1</outputtype>
+      <MATH equation="X*0.015625">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE>
     <title>Fuel Start MT (Throttled) X (autogen)</title>
     <CATEGORYMEM index="0" category="5" />
     <CATEGORYMEM index="1" category="6" />
@@ -3752,7 +3872,201 @@ KL_WGFEDER</description>
     </XDFAXIS>
   </XDFTABLE>
   <XDFTABLE>
-    <title>Basic lamda homogen by super knock X (autogen)</title>
+    <title>Rail pressure target for cat heating (single injection) Y (autogen)</title>
+    <CATEGORYMEM index="0" category="5" />
+    <CATEGORYMEM index="1" category="40" />
+    <CATEGORYMEM index="2" category="47" />
+    <XDFAXIS id="x">
+      <EMBEDDEDDATA />
+      <indexcount>8</indexcount>
+    </XDFAXIS>
+    <XDFAXIS id="y">
+      <EMBEDDEDDATA />
+      <indexcount>1</indexcount>
+    </XDFAXIS>
+    <XDFAXIS id="z" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x03" mmedaddress="0x196500" mmedelementsizebits="16" mmedcolcount="8" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units>Upm</units>
+      <indexcount>8</indexcount>
+      <decimalpl>0</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1" />
+      <DALINK index="0" />
+      <MATH equation="X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE>
+    <title>Rail pressure target for cat heating (single injection) X (autogen)</title>
+    <CATEGORYMEM index="0" category="5" />
+    <CATEGORYMEM index="1" category="40" />
+    <CATEGORYMEM index="2" category="47" />
+    <XDFAXIS id="x">
+      <EMBEDDEDDATA />
+      <indexcount>8</indexcount>
+    </XDFAXIS>
+    <XDFAXIS id="y">
+      <EMBEDDEDDATA />
+      <indexcount>1</indexcount>
+    </XDFAXIS>
+    <XDFAXIS id="z" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x03" mmedaddress="0x196510" mmedelementsizebits="16" mmedcolcount="8" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units>%</units>
+      <indexcount>8</indexcount>
+      <decimalpl>3</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1" />
+      <DALINK index="0" />
+      <MATH equation="X*0.04882812">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE uniqueid="0x0" flags="0x0">
+    <title>Rail pressure target for cat heating (single injection)</title>
+    <description>KF_KHNST_PRAIL_HOMEE</description>
+    <CATEGORYMEM index="0" category="5" />
+    <CATEGORYMEM index="1" category="40" />
+    <XDFAXIS id="x" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x03" mmedaddress="0x196510" mmedelementsizebits="16" mmedcolcount="8" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units>%</units>
+      <indexcount>8</indexcount>
+      <decimalpl>3</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1" />
+      <DALINK index="0" />
+      <MATH equation="X*0.04882812">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="y" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x03" mmedaddress="0x196500" mmedelementsizebits="16" mmedcolcount="8" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units>Upm</units>
+      <indexcount>8</indexcount>
+      <decimalpl>0</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1" />
+      <DALINK index="0" />
+      <MATH equation="X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="z">
+      <EMBEDDEDDATA mmedtypeflags="0x02" mmedaddress="0x196520" mmedelementsizebits="16" mmedrowcount="8" mmedcolcount="8" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units>MPa</units>
+      <decimalpl>3</decimalpl>
+      <min>0.000000</min>
+      <max>255.000000</max>
+      <outputtype>1</outputtype>
+      <MATH equation="X*0.0006103516">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE>
+    <title>Rail pressure target for cat heating (multiple injections) Y (autogen)</title>
+    <CATEGORYMEM index="0" category="5" />
+    <CATEGORYMEM index="1" category="40" />
+    <CATEGORYMEM index="2" category="47" />
+    <XDFAXIS id="x">
+      <EMBEDDEDDATA />
+      <indexcount>6</indexcount>
+    </XDFAXIS>
+    <XDFAXIS id="y">
+      <EMBEDDEDDATA />
+      <indexcount>1</indexcount>
+    </XDFAXIS>
+    <XDFAXIS id="z" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x03" mmedaddress="0x1965E8" mmedelementsizebits="16" mmedcolcount="6" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units>Upm</units>
+      <indexcount>6</indexcount>
+      <decimalpl>0</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1" />
+      <DALINK index="0" />
+      <MATH equation="X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE>
+    <title>Rail pressure target for cat heating (multiple injections) X (autogen)</title>
+    <CATEGORYMEM index="0" category="5" />
+    <CATEGORYMEM index="1" category="40" />
+    <CATEGORYMEM index="2" category="47" />
+    <XDFAXIS id="x">
+      <EMBEDDEDDATA />
+      <indexcount>6</indexcount>
+    </XDFAXIS>
+    <XDFAXIS id="y">
+      <EMBEDDEDDATA />
+      <indexcount>1</indexcount>
+    </XDFAXIS>
+    <XDFAXIS id="z" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x03" mmedaddress="0x1965F4" mmedelementsizebits="16" mmedcolcount="6" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units>Nm</units>
+      <indexcount>6</indexcount>
+      <decimalpl>3</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1" />
+      <DALINK index="0" />
+      <MATH equation="X*0.1">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE uniqueid="0x0" flags="0x0">
+    <title>Rail pressure target for cat heating (multiple injections)</title>
+    <description>KF_KHNST_PRAIL_HOMDOE</description>
+    <CATEGORYMEM index="0" category="5" />
+    <CATEGORYMEM index="1" category="40" />
+    <XDFAXIS id="x" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x03" mmedaddress="0x1965F4" mmedelementsizebits="16" mmedcolcount="6" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units>Nm</units>
+      <indexcount>6</indexcount>
+      <decimalpl>3</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1" />
+      <DALINK index="0" />
+      <MATH equation="X*0.1">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="y" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x03" mmedaddress="0x1965E8" mmedelementsizebits="16" mmedcolcount="6" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units>Upm</units>
+      <indexcount>6</indexcount>
+      <decimalpl>0</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1" />
+      <DALINK index="0" />
+      <MATH equation="X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="z">
+      <EMBEDDEDDATA mmedtypeflags="0x02" mmedaddress="0x196600" mmedelementsizebits="16" mmedrowcount="6" mmedcolcount="6" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units>MPa</units>
+      <decimalpl>3</decimalpl>
+      <min>0.000000</min>
+      <max>255.000000</max>
+      <outputtype>1</outputtype>
+      <MATH equation="X*0.0006103516">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE>
+    <title>Lambda target during super-knock X (autogen)</title>
     <CATEGORYMEM index="0" category="5" />
     <CATEGORYMEM index="1" category="6" />
     <XDFAXIS id="x">
@@ -3778,7 +4092,7 @@ KL_WGFEDER</description>
     </XDFAXIS>
   </XDFTABLE>
   <XDFTABLE>
-    <title>Basic lamda homogen by super knock Y (autogen)</title>
+    <title>Lambda target during super-knock Y (autogen)</title>
     <CATEGORYMEM index="0" category="5" />
     <CATEGORYMEM index="1" category="6" />
     <XDFAXIS id="x">
@@ -3804,7 +4118,7 @@ KL_WGFEDER</description>
     </XDFAXIS>
   </XDFTABLE>
   <XDFTABLE uniqueid="0x0" flags="0x0">
-    <title>Basic lamda homogen by super knock</title>
+    <title>Lambda target during super-knock</title>
     <description>KF_LA_SK</description>
     <CATEGORYMEM index="0" category="5" />
     <XDFAXIS id="x" uniqueid="0x0">
@@ -4128,7 +4442,7 @@ KL_WGFEDER</description>
     </XDFAXIS>
   </XDFTABLE>
   <XDFTABLE>
-    <title>Fuel (spool) X (autogen)</title>
+    <title>Fuel (Spool) X (autogen)</title>
     <CATEGORYMEM index="0" category="5" />
     <CATEGORYMEM index="1" category="6" />
     <XDFAXIS id="x">
@@ -4155,7 +4469,7 @@ KL_WGFEDER</description>
     </XDFAXIS>
   </XDFTABLE>
   <XDFTABLE>
-    <title>Fuel (spool) Y (autogen)</title>
+    <title>Fuel (Spool) Y (autogen)</title>
     <CATEGORYMEM index="0" category="5" />
     <CATEGORYMEM index="1" category="6" />
     <XDFAXIS id="x">
@@ -4181,7 +4495,7 @@ KL_WGFEDER</description>
     </XDFAXIS>
   </XDFTABLE>
   <XDFTABLE uniqueid="0x0" flags="0x30">
-    <title>Fuel (spool)</title>
+    <title>Fuel (Spool)</title>
     <description>&#220;bersp&#252;llambda im Homgenen Bank 1
  KF_UESP_LA</description>
     <CATEGORYMEM index="0" category="5" />
@@ -5801,59 +6115,7 @@ KF_PSRF_GRD</description>
     </XDFAXIS>
   </XDFTABLE>
   <XDFTABLE>
-    <title>Vanos IN (idle warm) Y (autogen)</title>
-    <CATEGORYMEM index="0" category="19" />
-    <CATEGORYMEM index="1" category="27" />
-    <XDFAXIS id="x">
-      <EMBEDDEDDATA />
-      <indexcount>12</indexcount>
-    </XDFAXIS>
-    <XDFAXIS id="y">
-      <EMBEDDEDDATA />
-      <indexcount>1</indexcount>
-    </XDFAXIS>
-    <XDFAXIS id="z" uniqueid="0x0">
-      <EMBEDDEDDATA mmedtypeflags="0x03" mmedaddress="0x19A10E" mmedelementsizebits="16" mmedcolcount="12" mmedmajorstridebits="0" mmedminorstridebits="0" />
-      <units>1/min</units>
-      <indexcount>12</indexcount>
-      <decimalpl>0</decimalpl>
-      <datatype>0</datatype>
-      <unittype>0</unittype>
-      <embedinfo type="1" />
-      <DALINK index="0" />
-      <MATH equation="X*1">
-        <VAR id="X" />
-      </MATH>
-    </XDFAXIS>
-  </XDFTABLE>
-  <XDFTABLE>
     <title>Vanos IN (warm) X (autogen)</title>
-    <CATEGORYMEM index="0" category="19" />
-    <CATEGORYMEM index="1" category="27" />
-    <XDFAXIS id="x">
-      <EMBEDDEDDATA />
-      <indexcount>12</indexcount>
-    </XDFAXIS>
-    <XDFAXIS id="y">
-      <EMBEDDEDDATA />
-      <indexcount>1</indexcount>
-    </XDFAXIS>
-    <XDFAXIS id="z" uniqueid="0x0">
-      <EMBEDDEDDATA mmedtypeflags="0x03" mmedaddress="0x19A126" mmedelementsizebits="16" mmedcolcount="12" mmedmajorstridebits="0" mmedminorstridebits="0" />
-      <units>%</units>
-      <indexcount>12</indexcount>
-      <decimalpl>1</decimalpl>
-      <datatype>0</datatype>
-      <unittype>0</unittype>
-      <embedinfo type="1" />
-      <DALINK index="0" />
-      <MATH equation="X*0.01">
-        <VAR id="X" />
-      </MATH>
-    </XDFAXIS>
-  </XDFTABLE>
-  <XDFTABLE>
-    <title>Vanos IN (idle warm) X (autogen)</title>
     <CATEGORYMEM index="0" category="19" />
     <CATEGORYMEM index="1" category="27" />
     <XDFAXIS id="x">
@@ -6177,59 +6439,7 @@ KF_PSRF_GRD</description>
     </XDFAXIS>
   </XDFTABLE>
   <XDFTABLE>
-    <title>Vanos EX (idle warm) Y (autogen)</title>
-    <CATEGORYMEM index="0" category="19" />
-    <CATEGORYMEM index="1" category="27" />
-    <XDFAXIS id="x">
-      <EMBEDDEDDATA />
-      <indexcount>12</indexcount>
-    </XDFAXIS>
-    <XDFAXIS id="y">
-      <EMBEDDEDDATA />
-      <indexcount>1</indexcount>
-    </XDFAXIS>
-    <XDFAXIS id="z" uniqueid="0x0">
-      <EMBEDDEDDATA mmedtypeflags="0x03" mmedaddress="0x19A486" mmedelementsizebits="16" mmedcolcount="12" mmedmajorstridebits="0" mmedminorstridebits="0" />
-      <units>1/min</units>
-      <indexcount>12</indexcount>
-      <decimalpl>0</decimalpl>
-      <datatype>0</datatype>
-      <unittype>0</unittype>
-      <embedinfo type="1" />
-      <DALINK index="0" />
-      <MATH equation="X*1">
-        <VAR id="X" />
-      </MATH>
-    </XDFAXIS>
-  </XDFTABLE>
-  <XDFTABLE>
     <title>Vanos EX (warm) X (autogen)</title>
-    <CATEGORYMEM index="0" category="19" />
-    <CATEGORYMEM index="1" category="27" />
-    <XDFAXIS id="x">
-      <EMBEDDEDDATA />
-      <indexcount>12</indexcount>
-    </XDFAXIS>
-    <XDFAXIS id="y">
-      <EMBEDDEDDATA />
-      <indexcount>1</indexcount>
-    </XDFAXIS>
-    <XDFAXIS id="z" uniqueid="0x0">
-      <EMBEDDEDDATA mmedtypeflags="0x03" mmedaddress="0x19A49E" mmedelementsizebits="16" mmedcolcount="12" mmedmajorstridebits="0" mmedminorstridebits="0" />
-      <units>%</units>
-      <indexcount>12</indexcount>
-      <decimalpl>1</decimalpl>
-      <datatype>0</datatype>
-      <unittype>0</unittype>
-      <embedinfo type="1" />
-      <DALINK index="0" />
-      <MATH equation="X*0.01">
-        <VAR id="X" />
-      </MATH>
-    </XDFAXIS>
-  </XDFTABLE>
-  <XDFTABLE>
-    <title>Vanos EX (idle warm) X (autogen)</title>
     <CATEGORYMEM index="0" category="19" />
     <CATEGORYMEM index="1" category="27" />
     <XDFAXIS id="x">
@@ -6445,7 +6655,7 @@ KF_PSRF_GRD</description>
       <indexcount>1</indexcount>
     </XDFAXIS>
     <XDFAXIS id="z" uniqueid="0x0">
-      <EMBEDDEDDATA mmedtypeflags="0x03" mmedaddress="0x19A704" mmedelementsizebits="16" mmedrowcount="16" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <EMBEDDEDDATA mmedtypeflags="0x03" mmedaddress="0x19A704" mmedelementsizebits="16" mmedcolcount="16" mmedmajorstridebits="0" mmedminorstridebits="0" />
       <units>1/min</units>
       <indexcount>16</indexcount>
       <decimalpl>0</decimalpl>
@@ -8556,9 +8766,10 @@ KF_F_MDMX_TANS</description>
     </XDFAXIS>
   </XDFTABLE>
   <XDFTABLE>
-    <title>Verz&#246;gerung Schubabschalten Y (autogen)</title>
+    <title>Delay in transitioning from overrun to fuel cutoff Y (autogen)</title>
     <CATEGORYMEM index="0" category="26" />
-    <CATEGORYMEM index="1" category="31" />
+    <CATEGORYMEM index="1" category="41" />
+    <CATEGORYMEM index="2" category="45" />
     <XDFAXIS id="x">
       <EMBEDDEDDATA />
       <indexcount>4</indexcount>
@@ -8582,9 +8793,10 @@ KF_F_MDMX_TANS</description>
     </XDFAXIS>
   </XDFTABLE>
   <XDFTABLE>
-    <title>Verz&#246;gerung Schubabschalten X (autogen)</title>
+    <title>Delay in transitioning from overrun to fuel cutoff X (autogen)</title>
     <CATEGORYMEM index="0" category="26" />
-    <CATEGORYMEM index="1" category="31" />
+    <CATEGORYMEM index="1" category="41" />
+    <CATEGORYMEM index="2" category="45" />
     <XDFAXIS id="x">
       <EMBEDDEDDATA />
       <indexcount>4</indexcount>
@@ -8608,9 +8820,10 @@ KF_F_MDMX_TANS</description>
     </XDFAXIS>
   </XDFTABLE>
   <XDFTABLE uniqueid="0x0" flags="0x0">
-    <title>Verz&#246;gerung Schubabschalten</title>
+    <title>Delay in transitioning from overrun to fuel cutoff</title>
     <description>KF_TD_SA_AT</description>
     <CATEGORYMEM index="0" category="26" />
+    <CATEGORYMEM index="1" category="41" />
     <XDFAXIS id="x" uniqueid="0x0">
       <EMBEDDEDDATA mmedtypeflags="0x03" mmedaddress="0x1A3004" mmedelementsizebits="16" mmedcolcount="4" mmedmajorstridebits="0" mmedminorstridebits="0" />
       <units>Grad C</units>
@@ -8650,9 +8863,10 @@ KF_F_MDMX_TANS</description>
     </XDFAXIS>
   </XDFTABLE>
   <XDFTABLE>
-    <title>Max. Duration about Fzg.geschw., During the permitted blow bubbles in the sports program thrust. (Max. Dauer &#252;ber Fzg.geschw., w&#228;hrend der im Sportprogramm Schubblubbern erlaubt wird. X (autogen)</title>
+    <title>Burble Duration (Sport) X (autogen)</title>
     <CATEGORYMEM index="0" category="26" />
-    <CATEGORYMEM index="1" category="31" />
+    <CATEGORYMEM index="1" category="41" />
+    <CATEGORYMEM index="2" category="45" />
     <XDFAXIS id="x">
       <EMBEDDEDDATA />
       <indexcount>4</indexcount>
@@ -8676,9 +8890,10 @@ KF_F_MDMX_TANS</description>
     </XDFAXIS>
   </XDFTABLE>
   <XDFTABLE uniqueid="0x0" flags="0x0">
-    <title>Max. Duration about Fzg.geschw., During the permitted blow bubbles in the sports program thrust. (Max. Dauer &#252;ber Fzg.geschw., w&#228;hrend der im Sportprogramm Schubblubbern erlaubt wird.</title>
+    <title>Burble Duration (Sport)</title>
     <description>KL_TD_SOUND_MX_SPORT</description>
     <CATEGORYMEM index="0" category="26" />
+    <CATEGORYMEM index="1" category="41" />
     <XDFAXIS id="x" uniqueid="0x0">
       <EMBEDDEDDATA mmedtypeflags="0x02" mmedaddress="0x1A3322" mmedelementsizebits="16" mmedcolcount="4" mmedmajorstridebits="0" mmedminorstridebits="0" />
       <units>1/min</units>
@@ -8718,9 +8933,10 @@ KF_F_MDMX_TANS</description>
     </XDFAXIS>
   </XDFTABLE>
   <XDFTABLE>
-    <title>Max. Duration about Fzg.geschw., While permitted in normal program (Max. Dauer &#252;ber Fzg.geschw., w&#228;hrend der im Mormalprogramm Schubblubbern erlaubt wird. X (autogen)</title>
+    <title>Burble Duration (Normal) X (autogen)</title>
     <CATEGORYMEM index="0" category="26" />
-    <CATEGORYMEM index="1" category="31" />
+    <CATEGORYMEM index="1" category="41" />
+    <CATEGORYMEM index="2" category="45" />
     <XDFAXIS id="x">
       <EMBEDDEDDATA />
       <indexcount>4</indexcount>
@@ -8744,9 +8960,10 @@ KF_F_MDMX_TANS</description>
     </XDFAXIS>
   </XDFTABLE>
   <XDFTABLE uniqueid="0x0" flags="0x0">
-    <title>Max. Duration about Fzg.geschw., While permitted in normal program (Max. Dauer &#252;ber Fzg.geschw., w&#228;hrend der im Mormalprogramm Schubblubbern erlaubt wird.</title>
+    <title>Burble Duration (Normal)</title>
     <description>KL_TD_SOUND_MX_SPORT</description>
     <CATEGORYMEM index="0" category="26" />
+    <CATEGORYMEM index="1" category="41" />
     <XDFAXIS id="x" uniqueid="0x0">
       <EMBEDDEDDATA mmedtypeflags="0x02" mmedaddress="0x1A3334" mmedelementsizebits="16" mmedcolcount="4" mmedmajorstridebits="0" mmedminorstridebits="0" />
       <units>1/min</units>
@@ -8786,9 +9003,10 @@ KF_F_MDMX_TANS</description>
     </XDFAXIS>
   </XDFTABLE>
   <XDFTABLE>
-    <title>Allowing Schubblubberns depending on St_egsprog_ko (Erlauben des Schubblubberns abh&#228;ngig vom St_egsprog_kor X (autogen)</title>
+    <title>Enable burble by transmission mode X (autogen)</title>
     <CATEGORYMEM index="0" category="26" />
-    <CATEGORYMEM index="1" category="31" />
+    <CATEGORYMEM index="1" category="41" />
+    <CATEGORYMEM index="2" category="45" />
     <XDFAXIS id="x">
       <EMBEDDEDDATA />
       <indexcount>10</indexcount>
@@ -8811,9 +9029,10 @@ KF_F_MDMX_TANS</description>
     </XDFAXIS>
   </XDFTABLE>
   <XDFTABLE uniqueid="0x0" flags="0x0">
-    <title>Allowing Schubblubberns depending on St_egsprog_ko (Erlauben des Schubblubberns abh&#228;ngig vom St_egsprog_kor</title>
+    <title>Enable burble by transmission mode</title>
     <description>KL_EGS_SOUND</description>
     <CATEGORYMEM index="0" category="26" />
+    <CATEGORYMEM index="1" category="41" />
     <XDFAXIS id="x" uniqueid="0x0">
       <EMBEDDEDDATA mmedaddress="0x1A3368" mmedelementsizebits="8" mmedcolcount="10" mmedmajorstridebits="0" mmedminorstridebits="0" />
       <indexcount>10</indexcount>
@@ -8852,9 +9071,10 @@ KF_F_MDMX_TANS</description>
     </XDFAXIS>
   </XDFTABLE>
   <XDFTABLE uniqueid="0x0" flags="0x0">
-    <title>Konfiguration Schubblubbern</title>
+    <title>Burble Codeword</title>
     <description>CW_SOUND</description>
     <CATEGORYMEM index="0" category="26" />
+    <CATEGORYMEM index="1" category="41" />
     <XDFAXIS id="x" uniqueid="0x0">
       <EMBEDDEDDATA mmedelementsizebits="8" mmedmajorstridebits="0" mmedminorstridebits="0" />
       <units>-</units>
@@ -8962,9 +9182,10 @@ KF_F_MDMX_TANS</description>
     </XDFAXIS>
   </XDFTABLE>
   <XDFTABLE>
-    <title>Rail pressure homogen X (autogen)</title>
+    <title>Rail pressure target (cold/safe) X (autogen)</title>
     <CATEGORYMEM index="0" category="5" />
-    <CATEGORYMEM index="1" category="6" />
+    <CATEGORYMEM index="1" category="40" />
+    <CATEGORYMEM index="2" category="47" />
     <XDFAXIS id="x">
       <EMBEDDEDDATA />
       <indexcount>8</indexcount>
@@ -8974,23 +9195,24 @@ KF_F_MDMX_TANS</description>
       <indexcount>1</indexcount>
     </XDFAXIS>
     <XDFAXIS id="z" uniqueid="0x0">
-      <EMBEDDEDDATA mmedtypeflags="0x02" mmedaddress="0x1A969A" mmedelementsizebits="16" mmedcolcount="8" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <EMBEDDEDDATA mmedtypeflags="0x03" mmedaddress="0x1A95F8" mmedelementsizebits="16" mmedcolcount="8" mmedmajorstridebits="0" mmedminorstridebits="0" />
       <units>1/min</units>
       <indexcount>8</indexcount>
-      <decimalpl>0</decimalpl>
+      <decimalpl>3</decimalpl>
       <datatype>0</datatype>
       <unittype>0</unittype>
       <embedinfo type="1" />
       <DALINK index="0" />
-      <MATH equation="X*1">
+      <MATH equation="X">
         <VAR id="X" />
       </MATH>
     </XDFAXIS>
   </XDFTABLE>
   <XDFTABLE>
-    <title>Rail pressure homogen Y (autogen)</title>
+    <title>Rail pressure target (cold/safe) Y (autogen)</title>
     <CATEGORYMEM index="0" category="5" />
-    <CATEGORYMEM index="1" category="6" />
+    <CATEGORYMEM index="1" category="40" />
+    <CATEGORYMEM index="2" category="47" />
     <XDFAXIS id="x">
       <EMBEDDEDDATA />
       <indexcount>8</indexcount>
@@ -9000,65 +9222,233 @@ KF_F_MDMX_TANS</description>
       <indexcount>1</indexcount>
     </XDFAXIS>
     <XDFAXIS id="z" uniqueid="0x0">
-      <EMBEDDEDDATA mmedtypeflags="0x02" mmedaddress="0x1A96AA" mmedelementsizebits="16" mmedcolcount="8" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <EMBEDDEDDATA mmedtypeflags="0x03" mmedaddress="0x1A9608" mmedelementsizebits="16" mmedcolcount="8" mmedmajorstridebits="0" mmedminorstridebits="0" />
       <units>%</units>
       <indexcount>8</indexcount>
-      <decimalpl>1</decimalpl>
+      <decimalpl>3</decimalpl>
       <datatype>0</datatype>
       <unittype>0</unittype>
       <embedinfo type="1" />
       <DALINK index="0" />
-      <MATH equation="X*0.04882813">
+      <MATH equation="X*0.04882812">
         <VAR id="X" />
       </MATH>
     </XDFAXIS>
   </XDFTABLE>
   <XDFTABLE uniqueid="0x0" flags="0x0">
-    <title>Rail pressure homogen</title>
-    <description>KF_PRAIL_H</description>
+    <title>Rail pressure target (cold/safe)</title>
+    <description>KF_PRAIL_H_K</description>
     <CATEGORYMEM index="0" category="5" />
+    <CATEGORYMEM index="1" category="40" />
     <XDFAXIS id="x" uniqueid="0x0">
-      <EMBEDDEDDATA mmedtypeflags="0x02" mmedaddress="0x1A969A" mmedelementsizebits="16" mmedcolcount="8" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <EMBEDDEDDATA mmedtypeflags="0x03" mmedaddress="0x1A95F8" mmedelementsizebits="16" mmedcolcount="8" mmedmajorstridebits="0" mmedminorstridebits="0" />
       <units>1/min</units>
       <indexcount>8</indexcount>
-      <decimalpl>0</decimalpl>
+      <decimalpl>3</decimalpl>
       <datatype>0</datatype>
       <unittype>0</unittype>
       <embedinfo type="1" />
       <DALINK index="0" />
-      <MATH equation="X*1">
+      <MATH equation="X">
         <VAR id="X" />
       </MATH>
     </XDFAXIS>
     <XDFAXIS id="y" uniqueid="0x0">
-      <EMBEDDEDDATA mmedtypeflags="0x02" mmedaddress="0x1A96AA" mmedelementsizebits="16" mmedcolcount="8" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <EMBEDDEDDATA mmedtypeflags="0x03" mmedaddress="0x1A9608" mmedelementsizebits="16" mmedcolcount="8" mmedmajorstridebits="0" mmedminorstridebits="0" />
       <units>%</units>
       <indexcount>8</indexcount>
-      <decimalpl>1</decimalpl>
+      <decimalpl>3</decimalpl>
       <datatype>0</datatype>
       <unittype>0</unittype>
       <embedinfo type="1" />
       <DALINK index="0" />
-      <MATH equation="X*0.04882813">
+      <MATH equation="X*0.04882812">
         <VAR id="X" />
       </MATH>
     </XDFAXIS>
     <XDFAXIS id="z">
-      <EMBEDDEDDATA mmedtypeflags="0x06" mmedaddress="0x1A96BA" mmedelementsizebits="16" mmedrowcount="8" mmedcolcount="8" mmedmajorstridebits="0" mmedminorstridebits="0" />
-      <units>Bar</units>
-      <decimalpl>0</decimalpl>
+      <EMBEDDEDDATA mmedtypeflags="0x02" mmedaddress="0x1A9618" mmedelementsizebits="16" mmedrowcount="8" mmedcolcount="8" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units>MPa</units>
+      <decimalpl>3</decimalpl>
       <min>0.000000</min>
       <max>255.000000</max>
       <outputtype>1</outputtype>
-      <MATH equation="X*0.006103516">
+      <MATH equation="X*0.0006103516">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE>
+    <title>Rail pressure target (warm) X (autogen)</title>
+    <CATEGORYMEM index="0" category="5" />
+    <CATEGORYMEM index="1" category="40" />
+    <CATEGORYMEM index="2" category="47" />
+    <XDFAXIS id="x">
+      <EMBEDDEDDATA />
+      <indexcount>8</indexcount>
+    </XDFAXIS>
+    <XDFAXIS id="y">
+      <EMBEDDEDDATA />
+      <indexcount>1</indexcount>
+    </XDFAXIS>
+    <XDFAXIS id="z" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x03" mmedaddress="0x1A969A" mmedelementsizebits="16" mmedcolcount="8" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units>1/min</units>
+      <indexcount>8</indexcount>
+      <decimalpl>3</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1" />
+      <DALINK index="0" />
+      <MATH equation="X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE>
+    <title>Rail pressure target (warm) Y (autogen)</title>
+    <CATEGORYMEM index="0" category="5" />
+    <CATEGORYMEM index="1" category="40" />
+    <CATEGORYMEM index="2" category="47" />
+    <XDFAXIS id="x">
+      <EMBEDDEDDATA />
+      <indexcount>8</indexcount>
+    </XDFAXIS>
+    <XDFAXIS id="y">
+      <EMBEDDEDDATA />
+      <indexcount>1</indexcount>
+    </XDFAXIS>
+    <XDFAXIS id="z" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x03" mmedaddress="0x1A96AA" mmedelementsizebits="16" mmedcolcount="8" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units>%</units>
+      <indexcount>8</indexcount>
+      <decimalpl>3</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1" />
+      <DALINK index="0" />
+      <MATH equation="X*0.04882812">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE uniqueid="0x0" flags="0x0">
+    <title>Rail pressure target (warm)</title>
+    <description>KF_PRAIL_H</description>
+    <CATEGORYMEM index="0" category="5" />
+    <CATEGORYMEM index="1" category="40" />
+    <XDFAXIS id="x" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x03" mmedaddress="0x1A969A" mmedelementsizebits="16" mmedcolcount="8" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units>1/min</units>
+      <indexcount>8</indexcount>
+      <decimalpl>3</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1" />
+      <DALINK index="0" />
+      <MATH equation="X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="y" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x03" mmedaddress="0x1A96AA" mmedelementsizebits="16" mmedcolcount="8" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units>%</units>
+      <indexcount>8</indexcount>
+      <decimalpl>3</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1" />
+      <DALINK index="0" />
+      <MATH equation="X*0.04882812">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="z">
+      <EMBEDDEDDATA mmedtypeflags="0x02" mmedaddress="0x1A96BA" mmedelementsizebits="16" mmedrowcount="8" mmedcolcount="8" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units>MPa</units>
+      <decimalpl>3</decimalpl>
+      <min>0.000000</min>
+      <max>255.000000</max>
+      <outputtype>1</outputtype>
+      <MATH equation="X*0.0006103516">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE>
+    <title>Minimum pressure to start injection X (autogen)</title>
+    <CATEGORYMEM index="0" category="5" />
+    <CATEGORYMEM index="1" category="40" />
+    <CATEGORYMEM index="2" category="47" />
+    <XDFAXIS id="x">
+      <EMBEDDEDDATA />
+      <indexcount>8</indexcount>
+    </XDFAXIS>
+    <XDFAXIS id="y">
+      <EMBEDDEDDATA />
+      <indexcount>1</indexcount>
+    </XDFAXIS>
+    <XDFAXIS id="z" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x03" mmedaddress="0x1A974E" mmedelementsizebits="16" mmedcolcount="8" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units>&#176;C</units>
+      <indexcount>8</indexcount>
+      <decimalpl>3</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1" />
+      <DALINK index="0" />
+      <MATH equation="X*0.010">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE uniqueid="0x0" flags="0x0">
+    <title>Minimum pressure to start injection</title>
+    <description>KL_PRAIL_ST</description>
+    <CATEGORYMEM index="0" category="5" />
+    <CATEGORYMEM index="1" category="40" />
+    <XDFAXIS id="x" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x03" mmedaddress="0x1A974E" mmedelementsizebits="16" mmedcolcount="8" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units>&#176;C</units>
+      <indexcount>8</indexcount>
+      <decimalpl>3</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1" />
+      <DALINK index="0" />
+      <MATH equation="X*0.010">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="y" uniqueid="0x0">
+      <EMBEDDEDDATA mmedelementsizebits="8" mmedrowcount="1" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units>-</units>
+      <indexcount>1</indexcount>
+      <decimalpl>-1</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <DALINK index="0" />
+      <LABEL index="0" value="0.000000" />
+      <MATH equation="X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="z">
+      <EMBEDDEDDATA mmedtypeflags="0x02" mmedaddress="0x1A975E" mmedelementsizebits="16" mmedrowcount="1" mmedcolcount="8" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units>MPa</units>
+      <decimalpl>3</decimalpl>
+      <min>0.000000</min>
+      <max>255.000000</max>
+      <outputtype>1</outputtype>
+      <MATH equation="X*0.0006103516">
         <VAR id="X" />
       </MATH>
     </XDFAXIS>
   </XDFTABLE>
   <XDFTABLE>
     <title>Rail pressure WOT Homogen X (autogen)</title>
-    <CATEGORYMEM index="0" category="5" />
-    <CATEGORYMEM index="1" category="6" />
+    <CATEGORYMEM index="0" category="43" />
+    <CATEGORYMEM index="1" category="46" />
     <XDFAXIS id="x">
       <EMBEDDEDDATA />
       <indexcount>12</indexcount>
@@ -9084,7 +9474,7 @@ KF_F_MDMX_TANS</description>
   <XDFTABLE uniqueid="0x0" flags="0x0">
     <title>Rail pressure WOT Homogen</title>
     <description>KL_PRAIL_H_VL</description>
-    <CATEGORYMEM index="0" category="5" />
+    <CATEGORYMEM index="0" category="43" />
     <XDFAXIS id="x" uniqueid="0x0">
       <EMBEDDEDDATA mmedtypeflags="0x02" mmedaddress="0x1A9782" mmedelementsizebits="16" mmedcolcount="12" mmedmajorstridebits="0" mmedminorstridebits="0" />
       <units>1/min</units>
@@ -10563,9 +10953,10 @@ KF_ZW_UESP_PF1</description>
     </XDFAXIS>
   </XDFTABLE>
   <XDFTABLE>
-    <title>Zuendwinkeleingriff fuer Soundtuning Y (autogen)</title>
+    <title>Burble Ignition Timing (Normal) Y (autogen)</title>
     <CATEGORYMEM index="0" category="26" />
-    <CATEGORYMEM index="1" category="31" />
+    <CATEGORYMEM index="1" category="41" />
+    <CATEGORYMEM index="2" category="45" />
     <XDFAXIS id="x">
       <EMBEDDEDDATA />
       <indexcount>6</indexcount>
@@ -10589,9 +10980,10 @@ KF_ZW_UESP_PF1</description>
     </XDFAXIS>
   </XDFTABLE>
   <XDFTABLE>
-    <title>Zuendwinkeleingriff fuer Soundtuning X (autogen)</title>
+    <title>Burble Ignition Timing (Normal) X (autogen)</title>
     <CATEGORYMEM index="0" category="26" />
-    <CATEGORYMEM index="1" category="31" />
+    <CATEGORYMEM index="1" category="41" />
+    <CATEGORYMEM index="2" category="45" />
     <XDFAXIS id="x">
       <EMBEDDEDDATA />
       <indexcount>4</indexcount>
@@ -10615,9 +11007,10 @@ KF_ZW_UESP_PF1</description>
     </XDFAXIS>
   </XDFTABLE>
   <XDFTABLE uniqueid="0x0" flags="0x0">
-    <title>Zuendwinkeleingriff fuer Soundtuning</title>
+    <title>Burble Ignition Timing (Normal)</title>
     <description>KF_DZWMIN_NORMAL_SOT</description>
     <CATEGORYMEM index="0" category="26" />
+    <CATEGORYMEM index="1" category="41" />
     <XDFAXIS id="x" uniqueid="0x0">
       <EMBEDDEDDATA mmedtypeflags="0x02" mmedaddress="0x1B0C5E" mmedelementsizebits="16" mmedcolcount="4" mmedmajorstridebits="0" mmedminorstridebits="0" />
       <units>km/h</units>
@@ -10657,9 +11050,10 @@ KF_ZW_UESP_PF1</description>
     </XDFAXIS>
   </XDFTABLE>
   <XDFTABLE>
-    <title>Zuendwinkeleingriff  fuer Soundtuning bei B_sport Y (autogen)</title>
+    <title>Burble Ignition Timing (Sport) Y (autogen)</title>
     <CATEGORYMEM index="0" category="26" />
-    <CATEGORYMEM index="1" category="31" />
+    <CATEGORYMEM index="1" category="41" />
+    <CATEGORYMEM index="2" category="45" />
     <XDFAXIS id="x">
       <EMBEDDEDDATA />
       <indexcount>6</indexcount>
@@ -10683,9 +11077,10 @@ KF_ZW_UESP_PF1</description>
     </XDFAXIS>
   </XDFTABLE>
   <XDFTABLE>
-    <title>Zuendwinkeleingriff  fuer Soundtuning bei B_sport X (autogen)</title>
+    <title>Burble Ignition Timing (Sport) X (autogen)</title>
     <CATEGORYMEM index="0" category="26" />
-    <CATEGORYMEM index="1" category="31" />
+    <CATEGORYMEM index="1" category="41" />
+    <CATEGORYMEM index="2" category="45" />
     <XDFAXIS id="x">
       <EMBEDDEDDATA />
       <indexcount>4</indexcount>
@@ -10709,9 +11104,10 @@ KF_ZW_UESP_PF1</description>
     </XDFAXIS>
   </XDFTABLE>
   <XDFTABLE uniqueid="0x0" flags="0x0">
-    <title>Zuendwinkeleingriff  fuer Soundtuning bei B_sport</title>
+    <title>Burble Ignition Timing (Sport)</title>
     <description>KF_DZWMIN_SPORT_SOT</description>
     <CATEGORYMEM index="0" category="26" />
+    <CATEGORYMEM index="1" category="41" />
     <XDFAXIS id="x" uniqueid="0x0">
       <EMBEDDEDDATA mmedtypeflags="0x02" mmedaddress="0x1B0C8C" mmedelementsizebits="16" mmedcolcount="4" mmedmajorstridebits="0" mmedminorstridebits="0" />
       <units>km/h</units>
@@ -10751,9 +11147,10 @@ KF_ZW_UESP_PF1</description>
     </XDFAXIS>
   </XDFTABLE>
   <XDFTABLE>
-    <title>Zwmin f&#252;r Soundtuning warm Y (autogen)</title>
+    <title>Minimum ignition angle for burble (Warm) Y (autogen)</title>
     <CATEGORYMEM index="0" category="26" />
-    <CATEGORYMEM index="1" category="31" />
+    <CATEGORYMEM index="1" category="41" />
+    <CATEGORYMEM index="2" category="45" />
     <XDFAXIS id="x">
       <EMBEDDEDDATA />
       <indexcount>8</indexcount>
@@ -10777,9 +11174,10 @@ KF_ZW_UESP_PF1</description>
     </XDFAXIS>
   </XDFTABLE>
   <XDFTABLE>
-    <title>Zwmin f&#252;r Soundtuning warm X (autogen)</title>
+    <title>Minimum ignition angle for burble (Warm) X (autogen)</title>
     <CATEGORYMEM index="0" category="26" />
-    <CATEGORYMEM index="1" category="31" />
+    <CATEGORYMEM index="1" category="41" />
+    <CATEGORYMEM index="2" category="45" />
     <XDFAXIS id="x">
       <EMBEDDEDDATA />
       <indexcount>8</indexcount>
@@ -10803,9 +11201,10 @@ KF_ZW_UESP_PF1</description>
     </XDFAXIS>
   </XDFTABLE>
   <XDFTABLE uniqueid="0x0" flags="0x0">
-    <title>Zwmin f&#252;r Soundtuning warm</title>
+    <title>Minimum ignition angle for burble (Warm)</title>
     <description>KF_ZWMIN_WSOT</description>
     <CATEGORYMEM index="0" category="26" />
+    <CATEGORYMEM index="1" category="41" />
     <XDFAXIS id="x" uniqueid="0x0">
       <EMBEDDEDDATA mmedtypeflags="0x02" mmedaddress="0x1B0CBE" mmedelementsizebits="16" mmedcolcount="8" mmedmajorstridebits="0" mmedminorstridebits="0" />
       <units>%</units>
@@ -10845,9 +11244,10 @@ KF_ZW_UESP_PF1</description>
     </XDFAXIS>
   </XDFTABLE>
   <XDFTABLE>
-    <title>Zwmin f&#252;r Soundtuning kalt Y (autogen)</title>
+    <title>Minimum ignition angle for burble (Cold) Y (autogen)</title>
     <CATEGORYMEM index="0" category="26" />
-    <CATEGORYMEM index="1" category="31" />
+    <CATEGORYMEM index="1" category="41" />
+    <CATEGORYMEM index="2" category="45" />
     <XDFAXIS id="x">
       <EMBEDDEDDATA />
       <indexcount>8</indexcount>
@@ -10871,9 +11271,10 @@ KF_ZW_UESP_PF1</description>
     </XDFAXIS>
   </XDFTABLE>
   <XDFTABLE>
-    <title>Zwmin f&#252;r Soundtuning kalt X (autogen)</title>
+    <title>Minimum ignition angle for burble (Cold) X (autogen)</title>
     <CATEGORYMEM index="0" category="26" />
-    <CATEGORYMEM index="1" category="31" />
+    <CATEGORYMEM index="1" category="41" />
+    <CATEGORYMEM index="2" category="45" />
     <XDFAXIS id="x">
       <EMBEDDEDDATA />
       <indexcount>8</indexcount>
@@ -10897,9 +11298,10 @@ KF_ZW_UESP_PF1</description>
     </XDFAXIS>
   </XDFTABLE>
   <XDFTABLE uniqueid="0x0" flags="0x0">
-    <title>Zwmin f&#252;r Soundtuning kalt</title>
+    <title>Minimum ignition angle for burble (Cold)</title>
     <description>KF_ZWMIN_KSOT</description>
     <CATEGORYMEM index="0" category="26" />
+    <CATEGORYMEM index="1" category="41" />
     <XDFAXIS id="x" uniqueid="0x0">
       <EMBEDDEDDATA mmedtypeflags="0x02" mmedaddress="0x1B0D20" mmedelementsizebits="16" mmedcolcount="8" mmedmajorstridebits="0" mmedminorstridebits="0" />
       <units>%</units>
@@ -11644,7 +12046,8 @@ MoF_rTrqOfs_MAP</description>
   <XDFTABLE>
     <title>AKRGRCC Y (autogen)</title>
     <CATEGORYMEM index="0" category="26" />
-    <CATEGORYMEM index="1" category="31" />
+    <CATEGORYMEM index="1" category="42" />
+    <CATEGORYMEM index="2" category="44" />
     <XDFAXIS id="x">
       <EMBEDDEDDATA />
       <indexcount>10</indexcount>
@@ -11668,7 +12071,8 @@ MoF_rTrqOfs_MAP</description>
   <XDFTABLE>
     <title>AKRGRCC X (autogen)</title>
     <CATEGORYMEM index="0" category="26" />
-    <CATEGORYMEM index="1" category="31" />
+    <CATEGORYMEM index="1" category="42" />
+    <CATEGORYMEM index="2" category="44" />
     <XDFAXIS id="x">
       <EMBEDDEDDATA />
       <indexcount>12</indexcount>
@@ -11693,7 +12097,9 @@ MoF_rTrqOfs_MAP</description>
   </XDFTABLE>
   <XDFTABLE uniqueid="0x0" flags="0x0">
     <title>AKRGRCC</title>
+    <description>AKRGRCC</description>
     <CATEGORYMEM index="0" category="26" />
+    <CATEGORYMEM index="1" category="42" />
     <XDFAXIS id="x" uniqueid="0x0">
       <EMBEDDEDDATA mmedaddress="0x1BE874" mmedelementsizebits="8" mmedcolcount="12" mmedmajorstridebits="0" mmedminorstridebits="0" />
       <units>1/min</units>
@@ -11733,7 +12139,8 @@ MoF_rTrqOfs_MAP</description>
   <XDFTABLE>
     <title>AKRGRCCAT Y (autogen)</title>
     <CATEGORYMEM index="0" category="26" />
-    <CATEGORYMEM index="1" category="31" />
+    <CATEGORYMEM index="1" category="42" />
+    <CATEGORYMEM index="2" category="44" />
     <XDFAXIS id="x">
       <EMBEDDEDDATA />
       <indexcount>10</indexcount>
@@ -11757,7 +12164,8 @@ MoF_rTrqOfs_MAP</description>
   <XDFTABLE>
     <title>AKRGRCCAT X (autogen)</title>
     <CATEGORYMEM index="0" category="26" />
-    <CATEGORYMEM index="1" category="31" />
+    <CATEGORYMEM index="1" category="42" />
+    <CATEGORYMEM index="2" category="44" />
     <XDFAXIS id="x">
       <EMBEDDEDDATA />
       <indexcount>12</indexcount>
@@ -11782,7 +12190,9 @@ MoF_rTrqOfs_MAP</description>
   </XDFTABLE>
   <XDFTABLE uniqueid="0x0" flags="0x0">
     <title>AKRGRCCAT</title>
+    <description>AKRGRCCAT</description>
     <CATEGORYMEM index="0" category="26" />
+    <CATEGORYMEM index="1" category="42" />
     <XDFAXIS id="x" uniqueid="0x0">
       <EMBEDDEDDATA mmedaddress="0x1BE904" mmedelementsizebits="8" mmedcolcount="12" mmedmajorstridebits="0" mmedminorstridebits="0" />
       <units>1/min</units>
@@ -11822,7 +12232,8 @@ MoF_rTrqOfs_MAP</description>
   <XDFTABLE>
     <title>AKRGRCCATM Y (autogen)</title>
     <CATEGORYMEM index="0" category="26" />
-    <CATEGORYMEM index="1" category="31" />
+    <CATEGORYMEM index="1" category="42" />
+    <CATEGORYMEM index="2" category="44" />
     <XDFAXIS id="x">
       <EMBEDDEDDATA />
       <indexcount>10</indexcount>
@@ -11847,7 +12258,8 @@ MoF_rTrqOfs_MAP</description>
   <XDFTABLE>
     <title>AKRGRCCATM X (autogen)</title>
     <CATEGORYMEM index="0" category="26" />
-    <CATEGORYMEM index="1" category="31" />
+    <CATEGORYMEM index="1" category="42" />
+    <CATEGORYMEM index="2" category="44" />
     <XDFAXIS id="x">
       <EMBEDDEDDATA />
       <indexcount>12</indexcount>
@@ -11872,7 +12284,9 @@ MoF_rTrqOfs_MAP</description>
   </XDFTABLE>
   <XDFTABLE uniqueid="0x0" flags="0x30">
     <title>AKRGRCCATM</title>
+    <description>AKRGRCCATM</description>
     <CATEGORYMEM index="0" category="26" />
+    <CATEGORYMEM index="1" category="42" />
     <XDFAXIS id="x" uniqueid="0x0">
       <EMBEDDEDDATA mmedaddress="0x1BE994" mmedelementsizebits="8" mmedcolcount="12" mmedmajorstridebits="0" mmedminorstridebits="0" />
       <units>1/min</units>
@@ -11913,7 +12327,8 @@ MoF_rTrqOfs_MAP</description>
   <XDFTABLE>
     <title>AKRGRCCM Y (autogen)</title>
     <CATEGORYMEM index="0" category="26" />
-    <CATEGORYMEM index="1" category="31" />
+    <CATEGORYMEM index="1" category="42" />
+    <CATEGORYMEM index="2" category="44" />
     <XDFAXIS id="x">
       <EMBEDDEDDATA />
       <indexcount>10</indexcount>
@@ -11938,7 +12353,8 @@ MoF_rTrqOfs_MAP</description>
   <XDFTABLE>
     <title>AKRGRCCM X (autogen)</title>
     <CATEGORYMEM index="0" category="26" />
-    <CATEGORYMEM index="1" category="31" />
+    <CATEGORYMEM index="1" category="42" />
+    <CATEGORYMEM index="2" category="44" />
     <XDFAXIS id="x">
       <EMBEDDEDDATA />
       <indexcount>12</indexcount>
@@ -11963,7 +12379,9 @@ MoF_rTrqOfs_MAP</description>
   </XDFTABLE>
   <XDFTABLE uniqueid="0x0" flags="0x0">
     <title>AKRGRCCM</title>
+    <description>AKRGRCCM</description>
     <CATEGORYMEM index="0" category="26" />
+    <CATEGORYMEM index="1" category="42" />
     <XDFAXIS id="x" uniqueid="0x0">
       <EMBEDDEDDATA mmedaddress="0x1BEA24" mmedelementsizebits="8" mmedcolcount="12" mmedmajorstridebits="0" mmedminorstridebits="0" />
       <units>1/min</units>
@@ -12004,7 +12422,8 @@ MoF_rTrqOfs_MAP</description>
   <XDFTABLE>
     <title>AKRGRCO Y (autogen)</title>
     <CATEGORYMEM index="0" category="26" />
-    <CATEGORYMEM index="1" category="31" />
+    <CATEGORYMEM index="1" category="42" />
+    <CATEGORYMEM index="2" category="44" />
     <XDFAXIS id="x">
       <EMBEDDEDDATA />
       <indexcount>10</indexcount>
@@ -12029,7 +12448,8 @@ MoF_rTrqOfs_MAP</description>
   <XDFTABLE>
     <title>AKRGRCO X (autogen)</title>
     <CATEGORYMEM index="0" category="26" />
-    <CATEGORYMEM index="1" category="31" />
+    <CATEGORYMEM index="1" category="42" />
+    <CATEGORYMEM index="2" category="44" />
     <XDFAXIS id="x">
       <EMBEDDEDDATA />
       <indexcount>12</indexcount>
@@ -12054,7 +12474,9 @@ MoF_rTrqOfs_MAP</description>
   </XDFTABLE>
   <XDFTABLE uniqueid="0x0" flags="0x0">
     <title>AKRGRCO</title>
+    <description>AKRGRCO</description>
     <CATEGORYMEM index="0" category="26" />
+    <CATEGORYMEM index="1" category="42" />
     <XDFAXIS id="x" uniqueid="0x0">
       <EMBEDDEDDATA mmedaddress="0x1BEAB4" mmedelementsizebits="8" mmedcolcount="12" mmedmajorstridebits="0" mmedminorstridebits="0" />
       <units>1/min</units>
@@ -12095,7 +12517,8 @@ MoF_rTrqOfs_MAP</description>
   <XDFTABLE>
     <title>AKRGRCOAT Y (autogen)</title>
     <CATEGORYMEM index="0" category="26" />
-    <CATEGORYMEM index="1" category="31" />
+    <CATEGORYMEM index="1" category="42" />
+    <CATEGORYMEM index="2" category="44" />
     <XDFAXIS id="x">
       <EMBEDDEDDATA />
       <indexcount>10</indexcount>
@@ -12120,7 +12543,8 @@ MoF_rTrqOfs_MAP</description>
   <XDFTABLE>
     <title>AKRGRCOAT X (autogen)</title>
     <CATEGORYMEM index="0" category="26" />
-    <CATEGORYMEM index="1" category="31" />
+    <CATEGORYMEM index="1" category="42" />
+    <CATEGORYMEM index="2" category="44" />
     <XDFAXIS id="x">
       <EMBEDDEDDATA />
       <indexcount>12</indexcount>
@@ -12145,7 +12569,9 @@ MoF_rTrqOfs_MAP</description>
   </XDFTABLE>
   <XDFTABLE uniqueid="0x0" flags="0x0">
     <title>AKRGRCOAT</title>
+    <description>AKRGRCOAT</description>
     <CATEGORYMEM index="0" category="26" />
+    <CATEGORYMEM index="1" category="42" />
     <XDFAXIS id="x" uniqueid="0x0">
       <EMBEDDEDDATA mmedaddress="0x1BEB44" mmedelementsizebits="8" mmedcolcount="12" mmedmajorstridebits="0" mmedminorstridebits="0" />
       <units>1/min</units>
@@ -12186,7 +12612,8 @@ MoF_rTrqOfs_MAP</description>
   <XDFTABLE>
     <title>AKRGRCOATM Y (autogen)</title>
     <CATEGORYMEM index="0" category="26" />
-    <CATEGORYMEM index="1" category="31" />
+    <CATEGORYMEM index="1" category="42" />
+    <CATEGORYMEM index="2" category="44" />
     <XDFAXIS id="x">
       <EMBEDDEDDATA />
       <indexcount>10</indexcount>
@@ -12211,7 +12638,8 @@ MoF_rTrqOfs_MAP</description>
   <XDFTABLE>
     <title>AKRGRCOATM X (autogen)</title>
     <CATEGORYMEM index="0" category="26" />
-    <CATEGORYMEM index="1" category="31" />
+    <CATEGORYMEM index="1" category="42" />
+    <CATEGORYMEM index="2" category="44" />
     <XDFAXIS id="x">
       <EMBEDDEDDATA />
       <indexcount>12</indexcount>
@@ -12236,7 +12664,9 @@ MoF_rTrqOfs_MAP</description>
   </XDFTABLE>
   <XDFTABLE uniqueid="0x0" flags="0x0">
     <title>AKRGRCOATM</title>
+    <description>AKRGRCOATM</description>
     <CATEGORYMEM index="0" category="26" />
+    <CATEGORYMEM index="1" category="42" />
     <XDFAXIS id="x" uniqueid="0x0">
       <EMBEDDEDDATA mmedaddress="0x1BEBD4" mmedelementsizebits="8" mmedcolcount="12" mmedmajorstridebits="0" mmedminorstridebits="0" />
       <units>1/min</units>
@@ -12277,7 +12707,8 @@ MoF_rTrqOfs_MAP</description>
   <XDFTABLE>
     <title>AKRGRCOM Y (autogen)</title>
     <CATEGORYMEM index="0" category="26" />
-    <CATEGORYMEM index="1" category="31" />
+    <CATEGORYMEM index="1" category="42" />
+    <CATEGORYMEM index="2" category="44" />
     <XDFAXIS id="x">
       <EMBEDDEDDATA />
       <indexcount>10</indexcount>
@@ -12302,7 +12733,8 @@ MoF_rTrqOfs_MAP</description>
   <XDFTABLE>
     <title>AKRGRCOM X (autogen)</title>
     <CATEGORYMEM index="0" category="26" />
-    <CATEGORYMEM index="1" category="31" />
+    <CATEGORYMEM index="1" category="42" />
+    <CATEGORYMEM index="2" category="44" />
     <XDFAXIS id="x">
       <EMBEDDEDDATA />
       <indexcount>12</indexcount>
@@ -12327,7 +12759,9 @@ MoF_rTrqOfs_MAP</description>
   </XDFTABLE>
   <XDFTABLE uniqueid="0x0" flags="0x0">
     <title>AKRGRCOM</title>
+    <description>AKRGRCOM</description>
     <CATEGORYMEM index="0" category="26" />
+    <CATEGORYMEM index="1" category="42" />
     <XDFAXIS id="x" uniqueid="0x0">
       <EMBEDDEDDATA mmedaddress="0x1BEC64" mmedelementsizebits="8" mmedcolcount="12" mmedmajorstridebits="0" mmedminorstridebits="0" />
       <units>1/min</units>
@@ -12858,9 +13292,10 @@ DSVDOFS</description>
     </XDFAXIS>
   </XDFTABLE>
   <XDFTABLE>
-    <title>Correction factor fueling system (Korrekturfaktor Kraftstoffversorgungssystem) Y (autogen)</title>
+    <title>Injection Time Correction factor Y (autogen)</title>
     <CATEGORYMEM index="0" category="5" />
-    <CATEGORYMEM index="1" category="6" />
+    <CATEGORYMEM index="1" category="39" />
+    <CATEGORYMEM index="2" category="48" />
     <XDFAXIS id="x">
       <EMBEDDEDDATA />
       <indexcount>12</indexcount>
@@ -12873,6 +13308,7 @@ DSVDOFS</description>
       <EMBEDDEDDATA mmedtypeflags="0x02" mmedaddress="0x1C5262" mmedelementsizebits="16" mmedcolcount="12" mmedmajorstridebits="0" mmedminorstridebits="0" />
       <units>ms</units>
       <indexcount>12</indexcount>
+      <decimalpl>5</decimalpl>
       <datatype>0</datatype>
       <unittype>0</unittype>
       <embedinfo type="1" />
@@ -12883,9 +13319,10 @@ DSVDOFS</description>
     </XDFAXIS>
   </XDFTABLE>
   <XDFTABLE>
-    <title>Correction factor fueling system (Korrekturfaktor Kraftstoffversorgungssystem) X (autogen)</title>
+    <title>Injection Time Correction factor X (autogen)</title>
     <CATEGORYMEM index="0" category="5" />
-    <CATEGORYMEM index="1" category="6" />
+    <CATEGORYMEM index="1" category="39" />
+    <CATEGORYMEM index="2" category="48" />
     <XDFAXIS id="x">
       <EMBEDDEDDATA />
       <indexcount>8</indexcount>
@@ -12898,7 +13335,7 @@ DSVDOFS</description>
       <EMBEDDEDDATA mmedtypeflags="0x02" mmedaddress="0x1C527A" mmedelementsizebits="16" mmedcolcount="8" mmedmajorstridebits="0" mmedminorstridebits="0" />
       <units>1/min</units>
       <indexcount>8</indexcount>
-      <decimalpl>0</decimalpl>
+      <decimalpl>3</decimalpl>
       <datatype>0</datatype>
       <unittype>0</unittype>
       <embedinfo type="1" />
@@ -12909,14 +13346,15 @@ DSVDOFS</description>
     </XDFAXIS>
   </XDFTABLE>
   <XDFTABLE uniqueid="0x0" flags="0x0">
-    <title>Correction factor fueling system (Korrekturfaktor Kraftstoffversorgungssystem)</title>
+    <title>Injection Time Correction factor</title>
     <description>FKKVS</description>
     <CATEGORYMEM index="0" category="5" />
+    <CATEGORYMEM index="1" category="39" />
     <XDFAXIS id="x" uniqueid="0x0">
       <EMBEDDEDDATA mmedtypeflags="0x02" mmedaddress="0x1C527A" mmedelementsizebits="16" mmedcolcount="8" mmedmajorstridebits="0" mmedminorstridebits="0" />
       <units>1/min</units>
       <indexcount>8</indexcount>
-      <decimalpl>0</decimalpl>
+      <decimalpl>3</decimalpl>
       <datatype>0</datatype>
       <unittype>0</unittype>
       <embedinfo type="1" />
@@ -12929,6 +13367,7 @@ DSVDOFS</description>
       <EMBEDDEDDATA mmedtypeflags="0x02" mmedaddress="0x1C5262" mmedelementsizebits="16" mmedcolcount="12" mmedmajorstridebits="0" mmedminorstridebits="0" />
       <units>ms</units>
       <indexcount>12</indexcount>
+      <decimalpl>5</decimalpl>
       <datatype>0</datatype>
       <unittype>0</unittype>
       <embedinfo type="1" />
@@ -12940,11 +13379,167 @@ DSVDOFS</description>
     <XDFAXIS id="z">
       <EMBEDDEDDATA mmedtypeflags="0x02" mmedaddress="0x1C528A" mmedelementsizebits="16" mmedrowcount="12" mmedcolcount="8" mmedmajorstridebits="0" mmedminorstridebits="0" />
       <units>-</units>
-      <decimalpl>3</decimalpl>
+      <decimalpl>6</decimalpl>
       <min>0.000000</min>
       <max>255.000000</max>
       <outputtype>1</outputtype>
       <MATH equation="X*0.00003051758">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE uniqueid="0x0" flags="0x0">
+    <title>Ti correction with variable fuel pressure</title>
+    <description>KLTIKRPR</description>
+    <CATEGORYMEM index="0" category="5" />
+    <CATEGORYMEM index="1" category="39" />
+    <XDFAXIS id="x" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x02" mmedaddress="0x1C54CE" mmedelementsizebits="16" mmedcolcount="20" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units>MPa</units>
+      <indexcount>20</indexcount>
+      <decimalpl>5</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1" />
+      <DALINK index="0" />
+      <MATH equation="X*0.0005">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="y" uniqueid="0x0">
+      <EMBEDDEDDATA mmedelementsizebits="8" mmedrowcount="1" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units>-</units>
+      <indexcount>1</indexcount>
+      <decimalpl>-1</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <DALINK index="0" />
+      <LABEL index="0" value="0.000000" />
+      <MATH equation="X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="z">
+      <EMBEDDEDDATA mmedtypeflags="0x02" mmedaddress="0x1C545C" mmedelementsizebits="16" mmedrowcount="1" mmedcolcount="20" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units>-</units>
+      <decimalpl>5</decimalpl>
+      <min>0.000000</min>
+      <max>255.000000</max>
+      <outputtype>1</outputtype>
+      <MATH equation="X*0.0002441406">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE uniqueid="0x0" flags="0x0">
+    <title>Pressure-dependent injector delay time</title>
+    <description>KLTVTSV</description>
+    <CATEGORYMEM index="0" category="5" />
+    <CATEGORYMEM index="1" category="39" />
+    <XDFAXIS id="x" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x02" mmedaddress="0x1C54CE" mmedelementsizebits="16" mmedcolcount="20" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units>MPa</units>
+      <indexcount>20</indexcount>
+      <decimalpl>5</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1" />
+      <DALINK index="0" />
+      <MATH equation="X*0.0005">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="y" uniqueid="0x0">
+      <EMBEDDEDDATA mmedelementsizebits="8" mmedrowcount="1" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units>-</units>
+      <indexcount>1</indexcount>
+      <decimalpl>-1</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <DALINK index="0" />
+      <LABEL index="0" value="0.000000" />
+      <MATH equation="X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="z">
+      <EMBEDDEDDATA mmedtypeflags="0x03" mmedaddress="0x1C5484" mmedelementsizebits="16" mmedrowcount="1" mmedcolcount="20" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units>ms</units>
+      <decimalpl>5</decimalpl>
+      <min>0.000000</min>
+      <max>255.000000</max>
+      <outputtype>1</outputtype>
+      <MATH equation="X*0.001">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE uniqueid="0x0" flags="0x0">
+    <title>Conversion factor for fuel mass to injection time</title>
+    <description>MK2TE</description>
+    <CATEGORYMEM index="0" category="5" />
+    <CATEGORYMEM index="1" category="39" />
+    <XDFAXIS id="x" uniqueid="0x0">
+      <EMBEDDEDDATA mmedelementsizebits="8" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units>-</units>
+      <indexcount>1</indexcount>
+      <decimalpl>-1</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <DALINK index="0" />
+      <LABEL index="0" value="0.000000" />
+      <MATH equation="X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="y" uniqueid="0x0">
+      <EMBEDDEDDATA mmedelementsizebits="8" mmedrowcount="1" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units>-</units>
+      <indexcount>1</indexcount>
+      <decimalpl>-1</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <DALINK index="0" />
+      <LABEL index="0" value="0.000000" />
+      <MATH equation="X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="z">
+      <EMBEDDEDDATA mmedtypeflags="0x02" mmedaddress="0x1C54C6" mmedelementsizebits="16" mmedrowcount="1" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units>ms * Hub/mg</units>
+      <decimalpl>6</decimalpl>
+      <min>0.000000</min>
+      <max>255.000000</max>
+      <outputtype>1</outputtype>
+      <MATH equation="X*0.00001041667">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE>
+    <title>Ti correction with variable fuel pressure X (autogen)</title>
+    <CATEGORYMEM index="0" category="5" />
+    <CATEGORYMEM index="1" category="39" />
+    <CATEGORYMEM index="2" category="48" />
+    <XDFAXIS id="x">
+      <EMBEDDEDDATA />
+      <indexcount>20</indexcount>
+    </XDFAXIS>
+    <XDFAXIS id="y">
+      <EMBEDDEDDATA />
+      <indexcount>1</indexcount>
+    </XDFAXIS>
+    <XDFAXIS id="z" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x02" mmedaddress="0x1C54CE" mmedelementsizebits="16" mmedcolcount="20" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units>MPa</units>
+      <indexcount>20</indexcount>
+      <decimalpl>5</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1" />
+      <DALINK index="0" />
+      <MATH equation="X*0.0005">
         <VAR id="X" />
       </MATH>
     </XDFAXIS>
@@ -13815,86 +14410,10 @@ MoX_rTrqInrMax_CUR</description>
     </XDFAXIS>
   </XDFTABLE>
   <XDFTABLE>
-    <title>Idle Speed (Heating) X (autogen)</title>
-    <CATEGORYMEM index="0" category="22" />
-    <CATEGORYMEM index="1" category="32" />
-    <XDFAXIS id="x">
-      <EMBEDDEDDATA />
-      <indexcount>6</indexcount>
-    </XDFAXIS>
-    <XDFAXIS id="y">
-      <EMBEDDEDDATA />
-      <indexcount>1</indexcount>
-    </XDFAXIS>
-    <XDFAXIS id="z" uniqueid="0x0">
-      <EMBEDDEDDATA mmedtypeflags="0x02" mmedaddress="0x1C8847" mmedelementsizebits="8" mmedcolcount="6" mmedmajorstridebits="0" mmedminorstridebits="0" />
-      <units>c</units>
-      <indexcount>6</indexcount>
-      <decimalpl>1</decimalpl>
-      <datatype>0</datatype>
-      <unittype>0</unittype>
-      <embedinfo type="1" />
-      <DALINK index="0" />
-      <MATH equation="X*0.75-48">
-        <VAR id="X" />
-      </MATH>
-    </XDFAXIS>
-  </XDFTABLE>
-  <XDFTABLE>
-    <title>Idle Speed (Actuated Clutch) X (autogen)</title>
-    <CATEGORYMEM index="0" category="22" />
-    <CATEGORYMEM index="1" category="32" />
-    <XDFAXIS id="x">
-      <EMBEDDEDDATA />
-      <indexcount>6</indexcount>
-    </XDFAXIS>
-    <XDFAXIS id="y">
-      <EMBEDDEDDATA />
-      <indexcount>1</indexcount>
-    </XDFAXIS>
-    <XDFAXIS id="z" uniqueid="0x0">
-      <EMBEDDEDDATA mmedtypeflags="0x02" mmedaddress="0x1C8847" mmedelementsizebits="8" mmedcolcount="6" mmedmajorstridebits="0" mmedminorstridebits="0" />
-      <units>c</units>
-      <indexcount>6</indexcount>
-      <decimalpl>1</decimalpl>
-      <datatype>0</datatype>
-      <unittype>0</unittype>
-      <embedinfo type="1" />
-      <DALINK index="0" />
-      <MATH equation="X*0.75-48">
-        <VAR id="X" />
-      </MATH>
-    </XDFAXIS>
-  </XDFTABLE>
-  <XDFTABLE>
-    <title>Idle Speed (MT) X (autogen)</title>
-    <CATEGORYMEM index="0" category="22" />
-    <CATEGORYMEM index="1" category="32" />
-    <XDFAXIS id="x">
-      <EMBEDDEDDATA />
-      <indexcount>6</indexcount>
-    </XDFAXIS>
-    <XDFAXIS id="y">
-      <EMBEDDEDDATA />
-      <indexcount>1</indexcount>
-    </XDFAXIS>
-    <XDFAXIS id="z" uniqueid="0x0">
-      <EMBEDDEDDATA mmedtypeflags="0x02" mmedaddress="0x1C8847" mmedelementsizebits="8" mmedcolcount="6" mmedmajorstridebits="0" mmedminorstridebits="0" />
-      <indexcount>6</indexcount>
-      <decimalpl>1</decimalpl>
-      <datatype>0</datatype>
-      <unittype>0</unittype>
-      <embedinfo type="1" />
-      <DALINK index="0" />
-      <MATH equation="X*0.75-48">
-        <VAR id="X" />
-      </MATH>
-    </XDFAXIS>
-  </XDFTABLE>
-  <XDFTABLE>
     <title>IP_CUR_SP_FLOW_CTL_VCV X (autogen)</title>
     <CATEGORYMEM index="0" category="5" />
-    <CATEGORYMEM index="1" category="6" />
+    <CATEGORYMEM index="1" category="40" />
+    <CATEGORYMEM index="2" category="47" />
     <XDFAXIS id="x">
       <EMBEDDEDDATA />
       <indexcount>16</indexcount>
@@ -13920,6 +14439,7 @@ MoX_rTrqInrMax_CUR</description>
   <XDFTABLE uniqueid="0x0" flags="0x0">
     <title>IP_CUR_SP_FLOW_CTL_VCV</title>
     <CATEGORYMEM index="0" category="5" />
+    <CATEGORYMEM index="1" category="40" />
     <XDFAXIS id="x" uniqueid="0x0">
       <EMBEDDEDDATA mmedtypeflags="0x02" mmedaddress="0x1C8A7C" mmedelementsizebits="16" mmedcolcount="16" mmedmajorstridebits="0" mmedminorstridebits="0" />
       <units>l/h</units>
@@ -13960,7 +14480,8 @@ MoX_rTrqInrMax_CUR</description>
   <XDFTABLE>
     <title>IP_PWM_VCV_STND X (autogen)</title>
     <CATEGORYMEM index="0" category="5" />
-    <CATEGORYMEM index="1" category="6" />
+    <CATEGORYMEM index="1" category="40" />
+    <CATEGORYMEM index="2" category="47" />
     <XDFAXIS id="x">
       <EMBEDDEDDATA />
       <indexcount>6</indexcount>
@@ -13985,6 +14506,7 @@ MoX_rTrqInrMax_CUR</description>
   <XDFTABLE uniqueid="0x0" flags="0x0">
     <title>IP_PWM_VCV_STND</title>
     <CATEGORYMEM index="0" category="5" />
+    <CATEGORYMEM index="1" category="40" />
     <XDFAXIS id="x" uniqueid="0x0">
       <EMBEDDEDDATA mmedtypeflags="0x02" mmedaddress="0x1C8BFC" mmedelementsizebits="16" mmedcolcount="6" mmedmajorstridebits="0" mmedminorstridebits="0" />
       <indexcount>6</indexcount>
@@ -14023,7 +14545,7 @@ MoX_rTrqInrMax_CUR</description>
   <XDFTABLE uniqueid="0x0" flags="0x0">
     <title>VMAX coding active</title>
     <description>CWVMAXCOD</description>
-    <CATEGORYMEM index="0" category="26" />
+    <CATEGORYMEM index="0" category="9" />
     <XDFAXIS id="x" uniqueid="0x0">
       <EMBEDDEDDATA mmedelementsizebits="8" mmedmajorstridebits="0" mmedminorstridebits="0" />
       <units>-</units>
@@ -14217,7 +14739,7 @@ MoX_rTrqInrMax_CUR</description>
   </XDFTABLE>
   <XDFTABLE uniqueid="0x0" flags="0x0">
     <title>VMAX by inactive coding</title>
-    <CATEGORYMEM index="0" category="26" />
+    <CATEGORYMEM index="0" category="9" />
     <XDFAXIS id="x" uniqueid="0x0">
       <EMBEDDEDDATA mmedtypeflags="0x02" mmedelementsizebits="16" mmedmajorstridebits="-32" mmedminorstridebits="0" />
       <indexcount>1</indexcount>
@@ -14341,6 +14863,45 @@ MoX_rTrqInrMax_CUR</description>
       <embedinfo type="1" />
       <DALINK index="0" />
       <MATH equation="X*0.1">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE uniqueid="0x0" flags="0x0">
+    <title>MHD - codes list to deactivate</title>
+    <CATEGORYMEM index="0" category="25" />
+    <XDFAXIS id="x" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x02" mmedelementsizebits="16" mmedmajorstridebits="-32" mmedminorstridebits="0" />
+      <indexcount>1</indexcount>
+      <decimalpl>1</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <DALINK index="0" />
+      <LABEL index="0" value="0.0" />
+      <MATH equation="X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="y" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x02" mmedelementsizebits="16" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <indexcount>16</indexcount>
+      <decimalpl>0</decimalpl>
+      <outputtype>2</outputtype>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="2" />
+      <DALINK index="0" />
+      <MATH equation="X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="z">
+      <EMBEDDEDDATA mmedtypeflags="0x02" mmedaddress="0x1FFA50" mmedelementsizebits="32" mmedrowcount="16" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <decimalpl>0</decimalpl>
+      <min>0.000000</min>
+      <max>255.000000</max>
+      <outputtype>3</outputtype>
+      <MATH equation="X">
         <VAR id="X" />
       </MATH>
     </XDFAXIS>
