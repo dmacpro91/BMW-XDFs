@@ -9873,6 +9873,45 @@
     </XDFAXIS>
   </XDFTABLE>
   <XDFTABLE uniqueid="0x0" flags="0x0">
+    <title>Torque limitation based on knock factor</title>
+    <description>KF_MDIMAX_SK</description>
+    <CATEGORYMEM index="0" category="13" />
+    <XDFAXIS id="x" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x02" mmedaddress="0x75A464" mmedelementsizebits="8" mmedcolcount="7" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <indexcount>7</indexcount>
+      <decimalpl>3</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1" />
+      <DALINK index="0" />
+      <MATH equation="X/255">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="y" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x02" mmedaddress="0x745996" mmedelementsizebits="16" mmedcolcount="8" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <indexcount>8</indexcount>
+      <decimalpl>0</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1" />
+      <DALINK index="0" />
+      <MATH equation="X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="z">
+      <EMBEDDEDDATA mmedtypeflags="0x06" mmedaddress="0x745704" mmedelementsizebits="16" mmedrowcount="8" mmedcolcount="7" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <decimalpl>1</decimalpl>
+      <min>0.000000</min>
+      <max>255.000000</max>
+      <outputtype>1</outputtype>
+      <MATH equation="X/10">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE uniqueid="0x0" flags="0x0">
     <title>Faktor Begrenzung inneres Moment durch Klopfregelung (optimlaer Z&#252;ndwinkel kann nicht gefahren werden)</title>
     <description>KF_F_MDIMAX_KR</description>
     <CATEGORYMEM index="0" category="13" />
@@ -10074,6 +10113,31 @@
     <XDFAXIS id="z" uniqueid="0x0">
       <EMBEDDEDDATA mmedtypeflags="0x03" mmedaddress="0x74598A" mmedelementsizebits="16" mmedcolcount="6" mmedmajorstridebits="0" mmedminorstridebits="0" />
       <indexcount>6</indexcount>
+      <decimalpl>0</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1" />
+      <DALINK index="0" />
+      <MATH equation="X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE>
+    <title>Torque limitation based on knock factor Y (autogen)</title>
+    <CATEGORYMEM index="0" category="13" />
+    <CATEGORYMEM index="1" category="14" />
+    <XDFAXIS id="x">
+      <EMBEDDEDDATA />
+      <indexcount>8</indexcount>
+    </XDFAXIS>
+    <XDFAXIS id="y">
+      <EMBEDDEDDATA />
+      <indexcount>1</indexcount>
+    </XDFAXIS>
+    <XDFAXIS id="z" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x02" mmedaddress="0x745996" mmedelementsizebits="16" mmedcolcount="8" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <indexcount>8</indexcount>
       <decimalpl>0</decimalpl>
       <datatype>0</datatype>
       <unittype>0</unittype>
@@ -11334,7 +11398,7 @@
       <indexcount>1</indexcount>
     </XDFAXIS>
     <XDFAXIS id="z" uniqueid="0x0">
-      <EMBEDDEDDATA mmedaddress="0x74F7C0" mmedelementsizebits="8" mmedrowcount="4" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <EMBEDDEDDATA mmedaddress="0x74F7C0" mmedelementsizebits="8" mmedcolcount="4" mmedmajorstridebits="0" mmedminorstridebits="0" />
       <units>-</units>
       <indexcount>4</indexcount>
       <decimalpl>3</decimalpl>
@@ -12700,6 +12764,31 @@
       <max>255.000000</max>
       <outputtype>3</outputtype>
       <MATH equation="X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE>
+    <title>Torque limitation based on knock factor X (autogen)</title>
+    <CATEGORYMEM index="0" category="13" />
+    <CATEGORYMEM index="1" category="14" />
+    <XDFAXIS id="x">
+      <EMBEDDEDDATA />
+      <indexcount>7</indexcount>
+    </XDFAXIS>
+    <XDFAXIS id="y">
+      <EMBEDDEDDATA />
+      <indexcount>1</indexcount>
+    </XDFAXIS>
+    <XDFAXIS id="z" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x02" mmedaddress="0x75A464" mmedelementsizebits="8" mmedcolcount="7" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <indexcount>7</indexcount>
+      <decimalpl>3</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1" />
+      <DALINK index="0" />
+      <MATH equation="X/255">
         <VAR id="X" />
       </MATH>
     </XDFAXIS>

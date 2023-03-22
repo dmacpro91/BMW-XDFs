@@ -1087,6 +1087,838 @@
       </MATH>
     </XDFAXIS>
   </XDFTABLE>
+  <XDFTABLE>
+    <title>Exhaust flap base position (MT) X (autogen)</title>
+    <CATEGORYMEM index="0" category="26" />
+    <CATEGORYMEM index="1" category="31" />
+    <XDFAXIS id="x">
+      <EMBEDDEDDATA />
+      <indexcount>20</indexcount>
+    </XDFAXIS>
+    <XDFAXIS id="y">
+      <EMBEDDEDDATA />
+      <indexcount>1</indexcount>
+    </XDFAXIS>
+    <XDFAXIS id="z" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x03" mmedaddress="0x71902A" mmedelementsizebits="16" mmedcolcount="20" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units>RPM</units>
+      <indexcount>20</indexcount>
+      <decimalpl>0</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1" />
+      <DALINK index="0" />
+      <MATH equation="X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE>
+    <title>Exhaust flap base position (AT) X (autogen)</title>
+    <CATEGORYMEM index="0" category="26" />
+    <CATEGORYMEM index="1" category="31" />
+    <XDFAXIS id="x">
+      <EMBEDDEDDATA />
+      <indexcount>20</indexcount>
+    </XDFAXIS>
+    <XDFAXIS id="y">
+      <EMBEDDEDDATA />
+      <indexcount>1</indexcount>
+    </XDFAXIS>
+    <XDFAXIS id="z" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x03" mmedaddress="0x719052" mmedelementsizebits="16" mmedcolcount="20" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units>RPM</units>
+      <indexcount>20</indexcount>
+      <decimalpl>0</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1" />
+      <DALINK index="0" />
+      <MATH equation="X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE>
+    <title>Exhaust flap position factor in sport+ mode (AT w/ Roof open) Y (autogen)</title>
+    <CATEGORYMEM index="0" category="26" />
+    <CATEGORYMEM index="1" category="31" />
+    <XDFAXIS id="x">
+      <EMBEDDEDDATA />
+      <indexcount>12</indexcount>
+    </XDFAXIS>
+    <XDFAXIS id="y">
+      <EMBEDDEDDATA />
+      <indexcount>1</indexcount>
+    </XDFAXIS>
+    <XDFAXIS id="z" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x03" mmedaddress="0x7190AE" mmedelementsizebits="16" mmedcolcount="12" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units>Nm</units>
+      <indexcount>12</indexcount>
+      <decimalpl>3</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1" />
+      <DALINK index="0" />
+      <MATH equation="X*0.1">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE>
+    <title>Exhaust flap position factor in sport+ mode (AT w/ Roof open) X (autogen)</title>
+    <CATEGORYMEM index="0" category="26" />
+    <CATEGORYMEM index="1" category="31" />
+    <XDFAXIS id="x">
+      <EMBEDDEDDATA />
+      <indexcount>12</indexcount>
+    </XDFAXIS>
+    <XDFAXIS id="y">
+      <EMBEDDEDDATA />
+      <indexcount>1</indexcount>
+    </XDFAXIS>
+    <XDFAXIS id="z" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x03" mmedaddress="0x7190C6" mmedelementsizebits="16" mmedcolcount="12" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units>1/min</units>
+      <indexcount>12</indexcount>
+      <decimalpl>3</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1" />
+      <DALINK index="0" />
+      <MATH equation="X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE>
+    <title>Exhaust flap position factor in sport+ mode (MT w/ Roof closed) Y (autogen)</title>
+    <CATEGORYMEM index="0" category="26" />
+    <CATEGORYMEM index="1" category="31" />
+    <XDFAXIS id="x">
+      <EMBEDDEDDATA />
+      <indexcount>12</indexcount>
+    </XDFAXIS>
+    <XDFAXIS id="y">
+      <EMBEDDEDDATA />
+      <indexcount>1</indexcount>
+    </XDFAXIS>
+    <XDFAXIS id="z" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x03" mmedaddress="0x7190DE" mmedelementsizebits="16" mmedcolcount="12" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units>Nm</units>
+      <indexcount>12</indexcount>
+      <decimalpl>3</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1" />
+      <DALINK index="0" />
+      <MATH equation="X*0.1">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE>
+    <title>Exhaust flap position factor in sport+ mode (MT w/ Roof closed) X (autogen)</title>
+    <CATEGORYMEM index="0" category="26" />
+    <CATEGORYMEM index="1" category="31" />
+    <XDFAXIS id="x">
+      <EMBEDDEDDATA />
+      <indexcount>12</indexcount>
+    </XDFAXIS>
+    <XDFAXIS id="y">
+      <EMBEDDEDDATA />
+      <indexcount>1</indexcount>
+    </XDFAXIS>
+    <XDFAXIS id="z" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x03" mmedaddress="0x7190F6" mmedelementsizebits="16" mmedcolcount="12" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units>1/min</units>
+      <indexcount>12</indexcount>
+      <decimalpl>3</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1" />
+      <DALINK index="0" />
+      <MATH equation="X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE>
+    <title>Exhaust flap position factor in sport+ mode (AT w/ Roof closed) Y (autogen)</title>
+    <CATEGORYMEM index="0" category="26" />
+    <CATEGORYMEM index="1" category="31" />
+    <XDFAXIS id="x">
+      <EMBEDDEDDATA />
+      <indexcount>12</indexcount>
+    </XDFAXIS>
+    <XDFAXIS id="y">
+      <EMBEDDEDDATA />
+      <indexcount>1</indexcount>
+    </XDFAXIS>
+    <XDFAXIS id="z" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x03" mmedaddress="0x71910E" mmedelementsizebits="16" mmedcolcount="12" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units>Nm</units>
+      <indexcount>12</indexcount>
+      <decimalpl>3</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1" />
+      <DALINK index="0" />
+      <MATH equation="X*0.1">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE>
+    <title>Exhaust flap position factor in sport+ mode (AT w/ Roof closed) X (autogen)</title>
+    <CATEGORYMEM index="0" category="26" />
+    <CATEGORYMEM index="1" category="31" />
+    <XDFAXIS id="x">
+      <EMBEDDEDDATA />
+      <indexcount>12</indexcount>
+    </XDFAXIS>
+    <XDFAXIS id="y">
+      <EMBEDDEDDATA />
+      <indexcount>1</indexcount>
+    </XDFAXIS>
+    <XDFAXIS id="z" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x03" mmedaddress="0x719126" mmedelementsizebits="16" mmedcolcount="12" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units>1/min</units>
+      <indexcount>12</indexcount>
+      <decimalpl>3</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1" />
+      <DALINK index="0" />
+      <MATH equation="X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE>
+    <title>Exhaust flap position factor in sport+ mode (Neutral gear) Y (autogen)</title>
+    <CATEGORYMEM index="0" category="26" />
+    <CATEGORYMEM index="1" category="31" />
+    <XDFAXIS id="x">
+      <EMBEDDEDDATA />
+      <indexcount>6</indexcount>
+    </XDFAXIS>
+    <XDFAXIS id="y">
+      <EMBEDDEDDATA />
+      <indexcount>1</indexcount>
+    </XDFAXIS>
+    <XDFAXIS id="z" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x03" mmedaddress="0x71913E" mmedelementsizebits="16" mmedcolcount="6" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units>%</units>
+      <indexcount>6</indexcount>
+      <decimalpl>3</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1" />
+      <DALINK index="0" />
+      <MATH equation="X*0.02441406">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE>
+    <title>Exhaust flap position factor in sport+ mode (Neutral gear) X (autogen)</title>
+    <CATEGORYMEM index="0" category="26" />
+    <CATEGORYMEM index="1" category="31" />
+    <XDFAXIS id="x">
+      <EMBEDDEDDATA />
+      <indexcount>8</indexcount>
+    </XDFAXIS>
+    <XDFAXIS id="y">
+      <EMBEDDEDDATA />
+      <indexcount>1</indexcount>
+    </XDFAXIS>
+    <XDFAXIS id="z" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x03" mmedaddress="0x71914A" mmedelementsizebits="16" mmedcolcount="8" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units>1/min</units>
+      <indexcount>8</indexcount>
+      <decimalpl>3</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1" />
+      <DALINK index="0" />
+      <MATH equation="X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE>
+    <title>Exhaust flap position factor in sport+ mode (MT w/ Roof open) Y (autogen)</title>
+    <CATEGORYMEM index="0" category="26" />
+    <CATEGORYMEM index="1" category="31" />
+    <XDFAXIS id="x">
+      <EMBEDDEDDATA />
+      <indexcount>12</indexcount>
+    </XDFAXIS>
+    <XDFAXIS id="y">
+      <EMBEDDEDDATA />
+      <indexcount>1</indexcount>
+    </XDFAXIS>
+    <XDFAXIS id="z" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x03" mmedaddress="0x71915A" mmedelementsizebits="16" mmedcolcount="12" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units>Nm</units>
+      <indexcount>12</indexcount>
+      <decimalpl>3</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1" />
+      <DALINK index="0" />
+      <MATH equation="X*0.1">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE>
+    <title>Exhaust flap position factor in sport+ mode (MT w/ Roof open) X (autogen)</title>
+    <CATEGORYMEM index="0" category="26" />
+    <CATEGORYMEM index="1" category="31" />
+    <XDFAXIS id="x">
+      <EMBEDDEDDATA />
+      <indexcount>12</indexcount>
+    </XDFAXIS>
+    <XDFAXIS id="y">
+      <EMBEDDEDDATA />
+      <indexcount>1</indexcount>
+    </XDFAXIS>
+    <XDFAXIS id="z" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x03" mmedaddress="0x719172" mmedelementsizebits="16" mmedcolcount="12" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units>1/min</units>
+      <indexcount>12</indexcount>
+      <decimalpl>3</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1" />
+      <DALINK index="0" />
+      <MATH equation="X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE>
+    <title>Exhaust flap position factor in sport mode (AT w/ Roof closed) Y (autogen)</title>
+    <CATEGORYMEM index="0" category="26" />
+    <CATEGORYMEM index="1" category="31" />
+    <XDFAXIS id="x">
+      <EMBEDDEDDATA />
+      <indexcount>12</indexcount>
+    </XDFAXIS>
+    <XDFAXIS id="y">
+      <EMBEDDEDDATA />
+      <indexcount>1</indexcount>
+    </XDFAXIS>
+    <XDFAXIS id="z" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x03" mmedaddress="0x71918A" mmedelementsizebits="16" mmedcolcount="12" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units>Nm</units>
+      <indexcount>12</indexcount>
+      <decimalpl>3</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1" />
+      <DALINK index="0" />
+      <MATH equation="X*0.1">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE>
+    <title>Exhaust flap position factor in sport mode (AT w/ Roof closed) X (autogen)</title>
+    <CATEGORYMEM index="0" category="26" />
+    <CATEGORYMEM index="1" category="31" />
+    <XDFAXIS id="x">
+      <EMBEDDEDDATA />
+      <indexcount>12</indexcount>
+    </XDFAXIS>
+    <XDFAXIS id="y">
+      <EMBEDDEDDATA />
+      <indexcount>1</indexcount>
+    </XDFAXIS>
+    <XDFAXIS id="z" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x03" mmedaddress="0x7191A2" mmedelementsizebits="16" mmedcolcount="12" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units>1/min</units>
+      <indexcount>12</indexcount>
+      <decimalpl>3</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1" />
+      <DALINK index="0" />
+      <MATH equation="X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE>
+    <title>Exhaust flap position factor in sport mode (AT w/ Roof open) Y (autogen)</title>
+    <CATEGORYMEM index="0" category="26" />
+    <CATEGORYMEM index="1" category="31" />
+    <XDFAXIS id="x">
+      <EMBEDDEDDATA />
+      <indexcount>12</indexcount>
+    </XDFAXIS>
+    <XDFAXIS id="y">
+      <EMBEDDEDDATA />
+      <indexcount>1</indexcount>
+    </XDFAXIS>
+    <XDFAXIS id="z" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x03" mmedaddress="0x7191BA" mmedelementsizebits="16" mmedcolcount="12" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units>Nm</units>
+      <indexcount>12</indexcount>
+      <decimalpl>3</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1" />
+      <DALINK index="0" />
+      <MATH equation="X*0.1">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE>
+    <title>Exhaust flap position factor in sport mode (AT w/ Roof open) X (autogen)</title>
+    <CATEGORYMEM index="0" category="26" />
+    <CATEGORYMEM index="1" category="31" />
+    <XDFAXIS id="x">
+      <EMBEDDEDDATA />
+      <indexcount>12</indexcount>
+    </XDFAXIS>
+    <XDFAXIS id="y">
+      <EMBEDDEDDATA />
+      <indexcount>1</indexcount>
+    </XDFAXIS>
+    <XDFAXIS id="z" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x03" mmedaddress="0x7191D2" mmedelementsizebits="16" mmedcolcount="12" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units>1/min</units>
+      <indexcount>12</indexcount>
+      <decimalpl>3</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1" />
+      <DALINK index="0" />
+      <MATH equation="X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE>
+    <title>Exhaust flap position factor in sport mode (MT w/ Roof open) Y (autogen)</title>
+    <CATEGORYMEM index="0" category="26" />
+    <CATEGORYMEM index="1" category="31" />
+    <XDFAXIS id="x">
+      <EMBEDDEDDATA />
+      <indexcount>12</indexcount>
+    </XDFAXIS>
+    <XDFAXIS id="y">
+      <EMBEDDEDDATA />
+      <indexcount>1</indexcount>
+    </XDFAXIS>
+    <XDFAXIS id="z" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x03" mmedaddress="0x7191EA" mmedelementsizebits="16" mmedcolcount="12" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units>Nm</units>
+      <indexcount>12</indexcount>
+      <decimalpl>3</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1" />
+      <DALINK index="0" />
+      <MATH equation="X*0.1">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE>
+    <title>Exhaust flap position factor in sport mode (MT w/ Roof open) X (autogen)</title>
+    <CATEGORYMEM index="0" category="26" />
+    <CATEGORYMEM index="1" category="31" />
+    <XDFAXIS id="x">
+      <EMBEDDEDDATA />
+      <indexcount>12</indexcount>
+    </XDFAXIS>
+    <XDFAXIS id="y">
+      <EMBEDDEDDATA />
+      <indexcount>1</indexcount>
+    </XDFAXIS>
+    <XDFAXIS id="z" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x03" mmedaddress="0x719202" mmedelementsizebits="16" mmedcolcount="12" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units>1/min</units>
+      <indexcount>12</indexcount>
+      <decimalpl>3</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1" />
+      <DALINK index="0" />
+      <MATH equation="X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE>
+    <title>Exhaust flap position factor in sport mode (MT w/ Roof closed) Y (autogen)</title>
+    <CATEGORYMEM index="0" category="26" />
+    <CATEGORYMEM index="1" category="31" />
+    <XDFAXIS id="x">
+      <EMBEDDEDDATA />
+      <indexcount>12</indexcount>
+    </XDFAXIS>
+    <XDFAXIS id="y">
+      <EMBEDDEDDATA />
+      <indexcount>1</indexcount>
+    </XDFAXIS>
+    <XDFAXIS id="z" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x03" mmedaddress="0x71921A" mmedelementsizebits="16" mmedcolcount="12" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units>Nm</units>
+      <indexcount>12</indexcount>
+      <decimalpl>3</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1" />
+      <DALINK index="0" />
+      <MATH equation="X*0.1">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE>
+    <title>Exhaust flap position factor in sport mode (MT w/ Roof closed) X (autogen)</title>
+    <CATEGORYMEM index="0" category="26" />
+    <CATEGORYMEM index="1" category="31" />
+    <XDFAXIS id="x">
+      <EMBEDDEDDATA />
+      <indexcount>12</indexcount>
+    </XDFAXIS>
+    <XDFAXIS id="y">
+      <EMBEDDEDDATA />
+      <indexcount>1</indexcount>
+    </XDFAXIS>
+    <XDFAXIS id="z" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x03" mmedaddress="0x719232" mmedelementsizebits="16" mmedcolcount="12" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units>1/min</units>
+      <indexcount>12</indexcount>
+      <decimalpl>3</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1" />
+      <DALINK index="0" />
+      <MATH equation="X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE>
+    <title>Exhaust flap position factor in sport mode (Neutral gear) Y (autogen)</title>
+    <CATEGORYMEM index="0" category="26" />
+    <CATEGORYMEM index="1" category="31" />
+    <XDFAXIS id="x">
+      <EMBEDDEDDATA />
+      <indexcount>6</indexcount>
+    </XDFAXIS>
+    <XDFAXIS id="y">
+      <EMBEDDEDDATA />
+      <indexcount>1</indexcount>
+    </XDFAXIS>
+    <XDFAXIS id="z" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x03" mmedaddress="0x71924A" mmedelementsizebits="16" mmedcolcount="6" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units>%</units>
+      <indexcount>6</indexcount>
+      <decimalpl>3</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1" />
+      <DALINK index="0" />
+      <MATH equation="X*0.02441406">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE>
+    <title>Exhaust flap position factor in sport mode (Neutral gear) X (autogen)</title>
+    <CATEGORYMEM index="0" category="26" />
+    <CATEGORYMEM index="1" category="31" />
+    <XDFAXIS id="x">
+      <EMBEDDEDDATA />
+      <indexcount>8</indexcount>
+    </XDFAXIS>
+    <XDFAXIS id="y">
+      <EMBEDDEDDATA />
+      <indexcount>1</indexcount>
+    </XDFAXIS>
+    <XDFAXIS id="z" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x03" mmedaddress="0x719256" mmedelementsizebits="16" mmedcolcount="8" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units>1/min</units>
+      <indexcount>8</indexcount>
+      <decimalpl>3</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1" />
+      <DALINK index="0" />
+      <MATH equation="X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE>
+    <title>Exhaust flap position factor in comfort mode (AT w/ Roof closed) Y (autogen)</title>
+    <CATEGORYMEM index="0" category="26" />
+    <CATEGORYMEM index="1" category="31" />
+    <XDFAXIS id="x">
+      <EMBEDDEDDATA />
+      <indexcount>12</indexcount>
+    </XDFAXIS>
+    <XDFAXIS id="y">
+      <EMBEDDEDDATA />
+      <indexcount>1</indexcount>
+    </XDFAXIS>
+    <XDFAXIS id="z" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x03" mmedaddress="0x7192C6" mmedelementsizebits="16" mmedcolcount="12" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units>Nm</units>
+      <indexcount>12</indexcount>
+      <decimalpl>3</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1" />
+      <DALINK index="0" />
+      <MATH equation="X*0.1">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE>
+    <title>Exhaust flap position factor in comfort mode (AT w/ Roof closed) X (autogen)</title>
+    <CATEGORYMEM index="0" category="26" />
+    <CATEGORYMEM index="1" category="31" />
+    <XDFAXIS id="x">
+      <EMBEDDEDDATA />
+      <indexcount>12</indexcount>
+    </XDFAXIS>
+    <XDFAXIS id="y">
+      <EMBEDDEDDATA />
+      <indexcount>1</indexcount>
+    </XDFAXIS>
+    <XDFAXIS id="z" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x03" mmedaddress="0x7192DE" mmedelementsizebits="16" mmedcolcount="12" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units>1/min</units>
+      <indexcount>12</indexcount>
+      <decimalpl>3</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1" />
+      <DALINK index="0" />
+      <MATH equation="X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE>
+    <title>Exhaust flap position factor in comfort mode (AT w/ Roof open) Y (autogen)</title>
+    <CATEGORYMEM index="0" category="26" />
+    <CATEGORYMEM index="1" category="31" />
+    <XDFAXIS id="x">
+      <EMBEDDEDDATA />
+      <indexcount>12</indexcount>
+    </XDFAXIS>
+    <XDFAXIS id="y">
+      <EMBEDDEDDATA />
+      <indexcount>1</indexcount>
+    </XDFAXIS>
+    <XDFAXIS id="z" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x03" mmedaddress="0x7192F6" mmedelementsizebits="16" mmedcolcount="12" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units>Nm</units>
+      <indexcount>12</indexcount>
+      <decimalpl>3</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1" />
+      <DALINK index="0" />
+      <MATH equation="X*0.1">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE>
+    <title>Exhaust flap position factor in comfort mode (AT w/ Roof open) X (autogen)</title>
+    <CATEGORYMEM index="0" category="26" />
+    <CATEGORYMEM index="1" category="31" />
+    <XDFAXIS id="x">
+      <EMBEDDEDDATA />
+      <indexcount>12</indexcount>
+    </XDFAXIS>
+    <XDFAXIS id="y">
+      <EMBEDDEDDATA />
+      <indexcount>1</indexcount>
+    </XDFAXIS>
+    <XDFAXIS id="z" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x03" mmedaddress="0x71930E" mmedelementsizebits="16" mmedcolcount="12" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units>1/min</units>
+      <indexcount>12</indexcount>
+      <decimalpl>3</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1" />
+      <DALINK index="0" />
+      <MATH equation="X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE>
+    <title>Exhaust flap position factor in comfort mode (MT w/ Roof closed) Y (autogen)</title>
+    <CATEGORYMEM index="0" category="26" />
+    <CATEGORYMEM index="1" category="31" />
+    <XDFAXIS id="x">
+      <EMBEDDEDDATA />
+      <indexcount>12</indexcount>
+    </XDFAXIS>
+    <XDFAXIS id="y">
+      <EMBEDDEDDATA />
+      <indexcount>1</indexcount>
+    </XDFAXIS>
+    <XDFAXIS id="z" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x03" mmedaddress="0x719326" mmedelementsizebits="16" mmedcolcount="12" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units>Nm</units>
+      <indexcount>12</indexcount>
+      <decimalpl>3</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1" />
+      <DALINK index="0" />
+      <MATH equation="X*0.1">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE>
+    <title>Exhaust flap position factor in comfort mode (MT w/ Roof closed) X (autogen)</title>
+    <CATEGORYMEM index="0" category="26" />
+    <CATEGORYMEM index="1" category="31" />
+    <XDFAXIS id="x">
+      <EMBEDDEDDATA />
+      <indexcount>12</indexcount>
+    </XDFAXIS>
+    <XDFAXIS id="y">
+      <EMBEDDEDDATA />
+      <indexcount>1</indexcount>
+    </XDFAXIS>
+    <XDFAXIS id="z" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x03" mmedaddress="0x71933E" mmedelementsizebits="16" mmedcolcount="12" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units>1/min</units>
+      <indexcount>12</indexcount>
+      <decimalpl>3</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1" />
+      <DALINK index="0" />
+      <MATH equation="X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE>
+    <title>Exhaust flap position factor in comfort mode (MT w/ Roof open) Y (autogen)</title>
+    <CATEGORYMEM index="0" category="26" />
+    <CATEGORYMEM index="1" category="31" />
+    <XDFAXIS id="x">
+      <EMBEDDEDDATA />
+      <indexcount>12</indexcount>
+    </XDFAXIS>
+    <XDFAXIS id="y">
+      <EMBEDDEDDATA />
+      <indexcount>1</indexcount>
+    </XDFAXIS>
+    <XDFAXIS id="z" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x03" mmedaddress="0x719356" mmedelementsizebits="16" mmedcolcount="12" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units>Nm</units>
+      <indexcount>12</indexcount>
+      <decimalpl>3</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1" />
+      <DALINK index="0" />
+      <MATH equation="X*0.1">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE>
+    <title>Exhaust flap position factor in comfort mode (MT w/ Roof open) X (autogen)</title>
+    <CATEGORYMEM index="0" category="26" />
+    <CATEGORYMEM index="1" category="31" />
+    <XDFAXIS id="x">
+      <EMBEDDEDDATA />
+      <indexcount>12</indexcount>
+    </XDFAXIS>
+    <XDFAXIS id="y">
+      <EMBEDDEDDATA />
+      <indexcount>1</indexcount>
+    </XDFAXIS>
+    <XDFAXIS id="z" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x03" mmedaddress="0x71936E" mmedelementsizebits="16" mmedcolcount="12" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units>1/min</units>
+      <indexcount>12</indexcount>
+      <decimalpl>3</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1" />
+      <DALINK index="0" />
+      <MATH equation="X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE>
+    <title>Exhaust flap position factor in comfort mode (Neutral gear) Y (autogen)</title>
+    <CATEGORYMEM index="0" category="26" />
+    <CATEGORYMEM index="1" category="31" />
+    <XDFAXIS id="x">
+      <EMBEDDEDDATA />
+      <indexcount>6</indexcount>
+    </XDFAXIS>
+    <XDFAXIS id="y">
+      <EMBEDDEDDATA />
+      <indexcount>1</indexcount>
+    </XDFAXIS>
+    <XDFAXIS id="z" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x03" mmedaddress="0x719386" mmedelementsizebits="16" mmedcolcount="6" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units>%</units>
+      <indexcount>6</indexcount>
+      <decimalpl>3</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1" />
+      <DALINK index="0" />
+      <MATH equation="X*0.02441406">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE>
+    <title>Exhaust flap position factor in comfort mode (Neutral gear) X (autogen)</title>
+    <CATEGORYMEM index="0" category="26" />
+    <CATEGORYMEM index="1" category="31" />
+    <XDFAXIS id="x">
+      <EMBEDDEDDATA />
+      <indexcount>8</indexcount>
+    </XDFAXIS>
+    <XDFAXIS id="y">
+      <EMBEDDEDDATA />
+      <indexcount>1</indexcount>
+    </XDFAXIS>
+    <XDFAXIS id="z" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x03" mmedaddress="0x719392" mmedelementsizebits="16" mmedcolcount="8" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units>1/min</units>
+      <indexcount>8</indexcount>
+      <decimalpl>3</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1" />
+      <DALINK index="0" />
+      <MATH equation="X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
   <XDFTABLE uniqueid="0x0" flags="0x0">
     <title>Lambda Lean Best Torque f&#252;r die Begrenzung des Bauteilschutzlambdas</title>
     <description>BMWext_lam_CptPronMinLeanTq_M</description>
@@ -1458,6 +2290,276 @@
     <XDFAXIS id="z" uniqueid="0x0">
       <EMBEDDEDDATA mmedtypeflags="0x03" mmedaddress="0x719E16" mmedelementsizebits="16" mmedcolcount="4" mmedmajorstridebits="0" mmedminorstridebits="0" />
       <units>1/min</units>
+      <indexcount>4</indexcount>
+      <decimalpl>0</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1" />
+      <DALINK index="0" />
+      <MATH equation="X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE uniqueid="0x0" flags="0x0">
+    <title>EGT Pre-cat Ceiling for switch to component protection</title>
+    <description>KF_TA_VKSOLL</description>
+    <CATEGORYMEM index="0" category="9" />
+    <XDFAXIS id="x" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x03" mmedaddress="0x719F54" mmedelementsizebits="16" mmedcolcount="4" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <indexcount>4</indexcount>
+      <decimalpl>0</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1" />
+      <DALINK index="0" />
+      <MATH equation="X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="y" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x03" mmedaddress="0x719F44" mmedelementsizebits="16" mmedcolcount="4" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <indexcount>4</indexcount>
+      <decimalpl>0</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1" />
+      <DALINK index="0" />
+      <MATH equation="X*0.01">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="z">
+      <EMBEDDEDDATA mmedtypeflags="0x03" mmedaddress="0x719E34" mmedelementsizebits="16" mmedrowcount="4" mmedcolcount="4" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units>C</units>
+      <decimalpl>2</decimalpl>
+      <min>0.000000</min>
+      <max>255.000000</max>
+      <outputtype>1</outputtype>
+      <MATH equation="X*0.1">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE uniqueid="0x0" flags="0x0">
+    <title>EGT In-cat Ceiling for switch to component protection</title>
+    <description>KF_TA_IKSOLL</description>
+    <CATEGORYMEM index="0" category="9" />
+    <XDFAXIS id="x" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x03" mmedaddress="0x719F5C" mmedelementsizebits="16" mmedcolcount="4" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <indexcount>4</indexcount>
+      <decimalpl>0</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1" />
+      <DALINK index="0" />
+      <MATH equation="X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="y" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x03" mmedaddress="0x719F4C" mmedelementsizebits="16" mmedcolcount="4" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <indexcount>4</indexcount>
+      <decimalpl>0</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1" />
+      <DALINK index="0" />
+      <MATH equation="X*0.01">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="z">
+      <EMBEDDEDDATA mmedtypeflags="0x03" mmedaddress="0x719E54" mmedelementsizebits="16" mmedrowcount="4" mmedcolcount="4" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units>C</units>
+      <decimalpl>2</decimalpl>
+      <min>0.000000</min>
+      <max>255.000000</max>
+      <outputtype>1</outputtype>
+      <MATH equation="X*0.1">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE uniqueid="0x0" flags="0x0">
+    <title>EGT Ceiling for switch to component protection</title>
+    <description>BMWext_t_CptPronSpEngBas_M</description>
+    <CATEGORYMEM index="0" category="9" />
+    <XDFAXIS id="x" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x03" mmedaddress="0x719F28" mmedelementsizebits="16" mmedcolcount="4" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <indexcount>4</indexcount>
+      <decimalpl>0</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1" />
+      <DALINK index="0" />
+      <MATH equation="X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="y" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x03" mmedaddress="0x719F20" mmedelementsizebits="16" mmedcolcount="4" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <indexcount>4</indexcount>
+      <decimalpl>0</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1" />
+      <DALINK index="0" />
+      <MATH equation="X*0.01">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="z">
+      <EMBEDDEDDATA mmedtypeflags="0x03" mmedaddress="0x719E94" mmedelementsizebits="16" mmedrowcount="4" mmedcolcount="4" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units>C</units>
+      <decimalpl>2</decimalpl>
+      <min>0.000000</min>
+      <max>255.000000</max>
+      <outputtype>1</outputtype>
+      <MATH equation="X*0.1">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE>
+    <title>EGT Ceiling for switch to component protection Y (autogen)</title>
+    <CATEGORYMEM index="0" category="9" />
+    <CATEGORYMEM index="1" category="10" />
+    <XDFAXIS id="x">
+      <EMBEDDEDDATA />
+      <indexcount>4</indexcount>
+    </XDFAXIS>
+    <XDFAXIS id="y">
+      <EMBEDDEDDATA />
+      <indexcount>1</indexcount>
+    </XDFAXIS>
+    <XDFAXIS id="z" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x03" mmedaddress="0x719F20" mmedelementsizebits="16" mmedcolcount="4" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <indexcount>4</indexcount>
+      <decimalpl>0</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1" />
+      <DALINK index="0" />
+      <MATH equation="X*0.01">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE>
+    <title>EGT Ceiling for switch to component protection X (autogen)</title>
+    <CATEGORYMEM index="0" category="9" />
+    <CATEGORYMEM index="1" category="10" />
+    <XDFAXIS id="x">
+      <EMBEDDEDDATA />
+      <indexcount>4</indexcount>
+    </XDFAXIS>
+    <XDFAXIS id="y">
+      <EMBEDDEDDATA />
+      <indexcount>1</indexcount>
+    </XDFAXIS>
+    <XDFAXIS id="z" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x03" mmedaddress="0x719F28" mmedelementsizebits="16" mmedcolcount="4" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <indexcount>4</indexcount>
+      <decimalpl>0</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1" />
+      <DALINK index="0" />
+      <MATH equation="X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE>
+    <title>EGT Pre-cat Ceiling for switch to component protection Y (autogen)</title>
+    <CATEGORYMEM index="0" category="9" />
+    <CATEGORYMEM index="1" category="10" />
+    <XDFAXIS id="x">
+      <EMBEDDEDDATA />
+      <indexcount>4</indexcount>
+    </XDFAXIS>
+    <XDFAXIS id="y">
+      <EMBEDDEDDATA />
+      <indexcount>1</indexcount>
+    </XDFAXIS>
+    <XDFAXIS id="z" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x03" mmedaddress="0x719F44" mmedelementsizebits="16" mmedcolcount="4" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <indexcount>4</indexcount>
+      <decimalpl>0</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1" />
+      <DALINK index="0" />
+      <MATH equation="X*0.01">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE>
+    <title>EGT In-cat Ceiling for switch to component protection Y (autogen)</title>
+    <CATEGORYMEM index="0" category="9" />
+    <CATEGORYMEM index="1" category="10" />
+    <XDFAXIS id="x">
+      <EMBEDDEDDATA />
+      <indexcount>4</indexcount>
+    </XDFAXIS>
+    <XDFAXIS id="y">
+      <EMBEDDEDDATA />
+      <indexcount>1</indexcount>
+    </XDFAXIS>
+    <XDFAXIS id="z" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x03" mmedaddress="0x719F4C" mmedelementsizebits="16" mmedcolcount="4" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <indexcount>4</indexcount>
+      <decimalpl>0</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1" />
+      <DALINK index="0" />
+      <MATH equation="X*0.01">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE>
+    <title>EGT Pre-cat Ceiling for switch to component protection X (autogen)</title>
+    <CATEGORYMEM index="0" category="9" />
+    <CATEGORYMEM index="1" category="10" />
+    <XDFAXIS id="x">
+      <EMBEDDEDDATA />
+      <indexcount>4</indexcount>
+    </XDFAXIS>
+    <XDFAXIS id="y">
+      <EMBEDDEDDATA />
+      <indexcount>1</indexcount>
+    </XDFAXIS>
+    <XDFAXIS id="z" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x03" mmedaddress="0x719F54" mmedelementsizebits="16" mmedcolcount="4" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <indexcount>4</indexcount>
+      <decimalpl>0</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1" />
+      <DALINK index="0" />
+      <MATH equation="X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE>
+    <title>EGT In-cat Ceiling for switch to component protection X (autogen)</title>
+    <CATEGORYMEM index="0" category="9" />
+    <CATEGORYMEM index="1" category="10" />
+    <XDFAXIS id="x">
+      <EMBEDDEDDATA />
+      <indexcount>4</indexcount>
+    </XDFAXIS>
+    <XDFAXIS id="y">
+      <EMBEDDEDDATA />
+      <indexcount>1</indexcount>
+    </XDFAXIS>
+    <XDFAXIS id="z" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x03" mmedaddress="0x719F5C" mmedelementsizebits="16" mmedcolcount="4" mmedmajorstridebits="0" mmedminorstridebits="0" />
       <indexcount>4</indexcount>
       <decimalpl>0</decimalpl>
       <datatype>0</datatype>
@@ -2086,6 +3188,46 @@
       <embedinfo type="1" />
       <DALINK index="0" />
       <MATH equation="X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE uniqueid="0x0" flags="0x0">
+    <title>Boost ceiling</title>
+    <description>K_MAX_PSSOLBER</description>
+    <CATEGORYMEM index="0" category="1" />
+    <XDFAXIS id="x" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x02" mmedelementsizebits="16" mmedmajorstridebits="-32" mmedminorstridebits="0" />
+      <indexcount>1</indexcount>
+      <decimalpl>1</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <DALINK index="0" />
+      <LABEL index="0" value="0.0" />
+      <MATH equation="X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="y" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x02" mmedelementsizebits="16" mmedmajorstridebits="-32" mmedminorstridebits="0" />
+      <indexcount>1</indexcount>
+      <decimalpl>1</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <DALINK index="0" />
+      <LABEL index="0" value="0.0" />
+      <MATH equation="X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="z">
+      <EMBEDDEDDATA mmedtypeflags="0x03" mmedaddress="0x71FC1A" mmedelementsizebits="16" mmedrowcount="1" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units>hPa</units>
+      <decimalpl>2</decimalpl>
+      <min>0.000000</min>
+      <max>255.000000</max>
+      <outputtype>1</outputtype>
+      <MATH equation="X*0.125">
         <VAR id="X" />
       </MATH>
     </XDFAXIS>
@@ -4090,7 +5232,7 @@
       <unittype>0</unittype>
       <embedinfo type="1" />
       <DALINK index="0" />
-      <MATH equation="X*0.03125/3.6">
+      <MATH equation="X*0.0625/3.6">
         <VAR id="X" />
       </MATH>
     </XDFAXIS>
@@ -4406,7 +5548,7 @@
       <unittype>0</unittype>
       <embedinfo type="1" />
       <DALINK index="0" />
-      <MATH equation="X*0.03125/3.6">
+      <MATH equation="X*0.0625/3.6">
         <VAR id="X" />
       </MATH>
     </XDFAXIS>
@@ -4957,7 +6099,7 @@
       <unittype>0</unittype>
       <embedinfo type="1" />
       <DALINK index="0" />
-      <MATH equation="X*0.03125/3.6">
+      <MATH equation="X*0.0625/3.6">
         <VAR id="X" />
       </MATH>
     </XDFAXIS>
@@ -5041,7 +6183,7 @@
       <unittype>0</unittype>
       <embedinfo type="1" />
       <DALINK index="0" />
-      <MATH equation="X*0.03125/3.6">
+      <MATH equation="X*0.0625/3.6">
         <VAR id="X" />
       </MATH>
     </XDFAXIS>
@@ -5066,6 +6208,45 @@
       <max>255.000000</max>
       <outputtype>1</outputtype>
       <MATH equation="X*0.00006103516">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE uniqueid="0x0" flags="0x0">
+    <title>Boost set limit 2</title>
+    <description>BMWtchsp_rat_p_CmprMaxTMax_T</description>
+    <CATEGORYMEM index="0" category="1" />
+    <XDFAXIS id="x" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x02" mmedaddress="0x7287C6" mmedelementsizebits="16" mmedcolcount="8" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <indexcount>8</indexcount>
+      <decimalpl>3</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1" />
+      <DALINK index="0" />
+      <MATH equation="X*0.000061035156">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="y" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x02" mmedelementsizebits="16" mmedmajorstridebits="-32" mmedminorstridebits="0" />
+      <indexcount>1</indexcount>
+      <decimalpl>1</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <DALINK index="0" />
+      <LABEL index="0" value="0.0" />
+      <MATH equation="X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="z">
+      <EMBEDDEDDATA mmedtypeflags="0x02" mmedaddress="0x72873A" mmedelementsizebits="16" mmedrowcount="1" mmedcolcount="8" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <decimalpl>3</decimalpl>
+      <min>0.000000</min>
+      <max>255.000000</max>
+      <outputtype>1</outputtype>
+      <MATH equation="X*0.000061035156">
         <VAR id="X" />
       </MATH>
     </XDFAXIS>
@@ -5117,7 +6298,7 @@
       <unittype>0</unittype>
       <embedinfo type="1" />
       <DALINK index="0" />
-      <MATH equation="X*0.03125/3.6">
+      <MATH equation="X*0.0625/3.6">
         <VAR id="X" />
       </MATH>
     </XDFAXIS>
@@ -5169,7 +6350,32 @@
       <unittype>0</unittype>
       <embedinfo type="1" />
       <DALINK index="0" />
-      <MATH equation="X*0.03125/3.6">
+      <MATH equation="X*0.0625/3.6">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE>
+    <title>Boost set limit 2 X (autogen)</title>
+    <CATEGORYMEM index="0" category="1" />
+    <CATEGORYMEM index="1" category="2" />
+    <XDFAXIS id="x">
+      <EMBEDDEDDATA />
+      <indexcount>8</indexcount>
+    </XDFAXIS>
+    <XDFAXIS id="y">
+      <EMBEDDEDDATA />
+      <indexcount>1</indexcount>
+    </XDFAXIS>
+    <XDFAXIS id="z" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x02" mmedaddress="0x7287C6" mmedelementsizebits="16" mmedcolcount="8" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <indexcount>8</indexcount>
+      <decimalpl>3</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1" />
+      <DALINK index="0" />
+      <MATH equation="X*0.000061035156">
         <VAR id="X" />
       </MATH>
     </XDFAXIS>
@@ -6072,6 +7278,45 @@
     </XDFAXIS>
   </XDFTABLE>
   <XDFTABLE uniqueid="0x0" flags="0x0">
+    <title>Torque limitation based on knock factor</title>
+    <description>KF_MDIMAX_SK</description>
+    <CATEGORYMEM index="0" category="13" />
+    <XDFAXIS id="x" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x02" mmedaddress="0x75BDC2" mmedelementsizebits="8" mmedcolcount="7" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <indexcount>7</indexcount>
+      <decimalpl>3</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1" />
+      <DALINK index="0" />
+      <MATH equation="X/255">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="y" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x02" mmedaddress="0x730FFC" mmedelementsizebits="16" mmedcolcount="8" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <indexcount>8</indexcount>
+      <decimalpl>0</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1" />
+      <DALINK index="0" />
+      <MATH equation="X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="z">
+      <EMBEDDEDDATA mmedtypeflags="0x06" mmedaddress="0x730C98" mmedelementsizebits="16" mmedrowcount="8" mmedcolcount="7" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <decimalpl>1</decimalpl>
+      <min>0.000000</min>
+      <max>255.000000</max>
+      <outputtype>1</outputtype>
+      <MATH equation="X/10">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE uniqueid="0x0" flags="0x0">
     <title>Faktor Begrenzung inneres Moment durch Klopfregelung (optimlaer Z&#252;ndwinkel kann nicht gefahren werden)</title>
     <description>KF_F_MDIMAX_KR</description>
     <CATEGORYMEM index="0" category="13" />
@@ -6181,6 +7426,31 @@
     <XDFAXIS id="z" uniqueid="0x0">
       <EMBEDDEDDATA mmedtypeflags="0x03" mmedaddress="0x730FF0" mmedelementsizebits="16" mmedcolcount="6" mmedmajorstridebits="0" mmedminorstridebits="0" />
       <indexcount>6</indexcount>
+      <decimalpl>0</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1" />
+      <DALINK index="0" />
+      <MATH equation="X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE>
+    <title>Torque limitation based on knock factor Y (autogen)</title>
+    <CATEGORYMEM index="0" category="13" />
+    <CATEGORYMEM index="1" category="14" />
+    <XDFAXIS id="x">
+      <EMBEDDEDDATA />
+      <indexcount>8</indexcount>
+    </XDFAXIS>
+    <XDFAXIS id="y">
+      <EMBEDDEDDATA />
+      <indexcount>1</indexcount>
+    </XDFAXIS>
+    <XDFAXIS id="z" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x02" mmedaddress="0x730FFC" mmedelementsizebits="16" mmedcolcount="8" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <indexcount>8</indexcount>
       <decimalpl>0</decimalpl>
       <datatype>0</datatype>
       <unittype>0</unittype>
@@ -9110,6 +10380,46 @@
     </XDFAXIS>
   </XDFTABLE>
   <XDFTABLE uniqueid="0x0" flags="0x0">
+    <title>Maximum fuel flow rate for boost initialization offset</title>
+    <description>BMWlpa_volf_FuMaxBoosOfs_C</description>
+    <CATEGORYMEM index="0" category="5" />
+    <XDFAXIS id="x" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x02" mmedelementsizebits="16" mmedmajorstridebits="-32" mmedminorstridebits="0" />
+      <indexcount>1</indexcount>
+      <decimalpl>1</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <DALINK index="0" />
+      <LABEL index="0" value="0.0" />
+      <MATH equation="X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="y" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x02" mmedelementsizebits="16" mmedmajorstridebits="-32" mmedminorstridebits="0" />
+      <indexcount>1</indexcount>
+      <decimalpl>1</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <DALINK index="0" />
+      <LABEL index="0" value="0.0" />
+      <MATH equation="X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="z">
+      <EMBEDDEDDATA mmedtypeflags="0x03" mmedaddress="0x740BE8" mmedelementsizebits="16" mmedrowcount="1" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units>l/h</units>
+      <decimalpl>1</decimalpl>
+      <min>0.000000</min>
+      <max>255.000000</max>
+      <outputtype>1</outputtype>
+      <MATH equation="X*0.01">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE uniqueid="0x0" flags="0x0">
     <title>EKP Load Limit Flow Rate (temp)</title>
     <description>BMWlpa_volf_FuFpcOvrT_C</description>
     <CATEGORYMEM index="0" category="5" />
@@ -9147,6 +10457,73 @@
       <max>255.000000</max>
       <outputtype>1</outputtype>
       <MATH equation="X*0.010">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE uniqueid="0x0" flags="0x0">
+    <title>Fuel flow rate adder during boost mode</title>
+    <description>BMWlpa_volf_FuMaxBoosCtlr_T</description>
+    <CATEGORYMEM index="0" category="5" />
+    <XDFAXIS id="x" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x03" mmedaddress="0x740C12" mmedelementsizebits="16" mmedcolcount="6" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units>bar</units>
+      <indexcount>6</indexcount>
+      <decimalpl>1</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1" />
+      <DALINK index="0" />
+      <MATH equation="X*0.001">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="y" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x02" mmedelementsizebits="16" mmedmajorstridebits="-32" mmedminorstridebits="0" />
+      <indexcount>1</indexcount>
+      <decimalpl>1</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <DALINK index="0" />
+      <LABEL index="0" value="0.0" />
+      <MATH equation="X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="z">
+      <EMBEDDEDDATA mmedtypeflags="0x03" mmedaddress="0x740BFE" mmedelementsizebits="16" mmedrowcount="1" mmedcolcount="6" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units>l/h</units>
+      <decimalpl>2</decimalpl>
+      <min>0.000000</min>
+      <max>255.000000</max>
+      <outputtype>1</outputtype>
+      <MATH equation="X*0.01">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE>
+    <title>Fuel flow rate adder during boost mode X (autogen)</title>
+    <CATEGORYMEM index="0" category="5" />
+    <CATEGORYMEM index="1" category="6" />
+    <XDFAXIS id="x">
+      <EMBEDDEDDATA />
+      <indexcount>6</indexcount>
+    </XDFAXIS>
+    <XDFAXIS id="y">
+      <EMBEDDEDDATA />
+      <indexcount>1</indexcount>
+    </XDFAXIS>
+    <XDFAXIS id="z" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x03" mmedaddress="0x740C12" mmedelementsizebits="16" mmedcolcount="6" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units>bar</units>
+      <indexcount>6</indexcount>
+      <decimalpl>1</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1" />
+      <DALINK index="0" />
+      <MATH equation="X*0.001">
         <VAR id="X" />
       </MATH>
     </XDFAXIS>
@@ -9533,7 +10910,7 @@
       <unittype>0</unittype>
       <embedinfo type="1" />
       <DALINK index="0" />
-      <MATH equation="X*0.03125/3.6">
+      <MATH equation="X*0.0390625/3.6">
         <VAR id="X" />
       </MATH>
     </XDFAXIS>
@@ -9570,7 +10947,7 @@
       <unittype>0</unittype>
       <embedinfo type="1" />
       <DALINK index="0" />
-      <MATH equation="X*0.03125/3.6">
+      <MATH equation="X*0.0390625/3.6">
         <VAR id="X" />
       </MATH>
     </XDFAXIS>
@@ -9614,7 +10991,7 @@
       <unittype>0</unittype>
       <embedinfo type="1" />
       <DALINK index="0" />
-      <MATH equation="X*0.03125/3.6">
+      <MATH equation="X*0.0625/3.6">
         <VAR id="X" />
       </MATH>
     </XDFAXIS>
@@ -9657,7 +11034,7 @@
       <unittype>0</unittype>
       <embedinfo type="1" />
       <DALINK index="0" />
-      <MATH equation="X*0.03125/3.6">
+      <MATH equation="X*0.0625/3.6">
         <VAR id="X" />
       </MATH>
     </XDFAXIS>
@@ -9707,7 +11084,7 @@
       <unittype>0</unittype>
       <embedinfo type="1" />
       <DALINK index="0" />
-      <MATH equation="X*0.03125/3.6">
+      <MATH equation="X*0.0625/3.6">
         <VAR id="X" />
       </MATH>
     </XDFAXIS>
@@ -9734,7 +11111,7 @@
       <unittype>0</unittype>
       <embedinfo type="1" />
       <DALINK index="0" />
-      <MATH equation="X*0.03125/3.6">
+      <MATH equation="X*0.0625/3.6">
         <VAR id="X" />
       </MATH>
     </XDFAXIS>
@@ -10507,6 +11884,30 @@
       </MATH>
     </XDFAXIS>
   </XDFTABLE>
+  <XDFTABLE>
+    <title>Ignition timing factor due to OPF back pressure X (autogen)</title>
+    <CATEGORYMEM index="0" category="26" />
+    <CATEGORYMEM index="1" category="31" />
+    <XDFAXIS id="x">
+      <EMBEDDEDDATA />
+      <indexcount>4</indexcount>
+    </XDFAXIS>
+    <XDFAXIS id="y">
+      <EMBEDDEDDATA />
+      <indexcount>1</indexcount>
+    </XDFAXIS>
+    <XDFAXIS id="z" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x03" mmedaddress="0x74CBC8" mmedelementsizebits="16" mmedcolcount="4" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <indexcount>4</indexcount>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1" />
+      <DALINK index="0" />
+      <MATH equation="X*0.125">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
   <XDFTABLE uniqueid="0x0" flags="0x0">
     <title>Lambda-Schwelle ab der eine Anfettanforderung aus KF_LABAS_XXX unterdr&#252;ckt wird</title>
     <description>K_LA_FETTDELAY</description>
@@ -11145,6 +12546,772 @@
     </XDFAXIS>
   </XDFTABLE>
   <XDFTABLE uniqueid="0x0" flags="0x0">
+    <title>Exhaust flap base position (MT)</title>
+    <description>BMWefc_posn_EpFlpLim_M</description>
+    <CATEGORYMEM index="0" category="26" />
+    <XDFAXIS id="x" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x03" mmedaddress="0x71902A" mmedelementsizebits="16" mmedcolcount="20" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units>RPM</units>
+      <indexcount>20</indexcount>
+      <decimalpl>0</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1" />
+      <DALINK index="0" />
+      <MATH equation="X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="y" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x02" mmedaddress="0x7559EC" mmedelementsizebits="8" mmedcolcount="10" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units>Gear</units>
+      <indexcount>10</indexcount>
+      <decimalpl>0</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1" />
+      <DALINK index="0" />
+      <MATH equation="X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="z">
+      <EMBEDDEDDATA mmedtypeflags="0x02" mmedaddress="0x754FBE" mmedelementsizebits="8" mmedrowcount="10" mmedcolcount="20" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units>%</units>
+      <decimalpl>0</decimalpl>
+      <min>0.000000</min>
+      <max>255.000000</max>
+      <outputtype>1</outputtype>
+      <MATH equation="X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE uniqueid="0x0" flags="0x0">
+    <title>Exhaust flap base position (AT)</title>
+    <description>BMWefc_posn_EpFlpLimAt_M</description>
+    <CATEGORYMEM index="0" category="26" />
+    <XDFAXIS id="x" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x03" mmedaddress="0x719052" mmedelementsizebits="16" mmedcolcount="20" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units>RPM</units>
+      <indexcount>20</indexcount>
+      <decimalpl>0</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1" />
+      <DALINK index="0" />
+      <MATH equation="X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="y" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x02" mmedaddress="0x7559F6" mmedelementsizebits="8" mmedcolcount="10" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units>Gear</units>
+      <indexcount>10</indexcount>
+      <decimalpl>0</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1" />
+      <DALINK index="0" />
+      <MATH equation="X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="z">
+      <EMBEDDEDDATA mmedtypeflags="0x02" mmedaddress="0x755086" mmedelementsizebits="8" mmedrowcount="10" mmedcolcount="20" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units>%</units>
+      <decimalpl>0</decimalpl>
+      <min>0.000000</min>
+      <max>255.000000</max>
+      <outputtype>1</outputtype>
+      <MATH equation="X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE uniqueid="0x0" flags="0x0">
+    <title>Exhaust flap position factor in sport+ mode (AT w/ Roof open)</title>
+    <description>BMWefc_fac_EpFlpSptPlusSptOR_M</description>
+    <CATEGORYMEM index="0" category="26" />
+    <XDFAXIS id="x" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x03" mmedaddress="0x7190C6" mmedelementsizebits="16" mmedcolcount="12" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units>1/min</units>
+      <indexcount>12</indexcount>
+      <decimalpl>3</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1" />
+      <DALINK index="0" />
+      <MATH equation="X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="y" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x03" mmedaddress="0x7190AE" mmedelementsizebits="16" mmedrowcount="12" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units>Nm</units>
+      <indexcount>12</indexcount>
+      <decimalpl>3</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1" />
+      <DALINK index="0" />
+      <MATH equation="X*0.1">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="z">
+      <EMBEDDEDDATA mmedaddress="0x75514E" mmedelementsizebits="8" mmedrowcount="12" mmedcolcount="12" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units>-</units>
+      <decimalpl>3</decimalpl>
+      <min>0.000000</min>
+      <max>255.000000</max>
+      <outputtype>1</outputtype>
+      <MATH equation="X*0.003921569">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE uniqueid="0x0" flags="0x0">
+    <title>Exhaust flap position factor in sport+ mode (MT w/ Roof closed)</title>
+    <description>BMWefc_fac_EpFlpSptPlusSptMT_M</description>
+    <CATEGORYMEM index="0" category="26" />
+    <XDFAXIS id="x" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x03" mmedaddress="0x7190F6" mmedelementsizebits="16" mmedcolcount="12" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units>1/min</units>
+      <indexcount>12</indexcount>
+      <decimalpl>3</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1" />
+      <DALINK index="0" />
+      <MATH equation="X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="y" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x03" mmedaddress="0x7190DE" mmedelementsizebits="16" mmedrowcount="12" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units>Nm</units>
+      <indexcount>12</indexcount>
+      <decimalpl>3</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1" />
+      <DALINK index="0" />
+      <MATH equation="X*0.1">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="z">
+      <EMBEDDEDDATA mmedaddress="0x7551DE" mmedelementsizebits="8" mmedrowcount="12" mmedcolcount="12" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units>-</units>
+      <decimalpl>3</decimalpl>
+      <min>0.000000</min>
+      <max>255.000000</max>
+      <outputtype>1</outputtype>
+      <MATH equation="X*0.003921569">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE uniqueid="0x0" flags="0x0">
+    <title>Exhaust flap position factor in sport+ mode (AT w/ Roof closed)</title>
+    <description>BMWefc_fac_EpFlpSptPlusEpSpt_M</description>
+    <CATEGORYMEM index="0" category="26" />
+    <XDFAXIS id="x" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x03" mmedaddress="0x719126" mmedelementsizebits="16" mmedcolcount="12" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units>1/min</units>
+      <indexcount>12</indexcount>
+      <decimalpl>3</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1" />
+      <DALINK index="0" />
+      <MATH equation="X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="y" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x03" mmedaddress="0x71910E" mmedelementsizebits="16" mmedrowcount="12" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units>Nm</units>
+      <indexcount>12</indexcount>
+      <decimalpl>3</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1" />
+      <DALINK index="0" />
+      <MATH equation="X*0.1">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="z">
+      <EMBEDDEDDATA mmedaddress="0x75526E" mmedelementsizebits="8" mmedrowcount="12" mmedcolcount="12" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units>-</units>
+      <decimalpl>3</decimalpl>
+      <min>0.000000</min>
+      <max>255.000000</max>
+      <outputtype>1</outputtype>
+      <MATH equation="X*0.003921569">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE uniqueid="0x0" flags="0x0">
+    <title>Exhaust flap position factor in sport+ mode (Neutral gear)</title>
+    <description>BMWefc_fac_EpFlpSptPlusDgg_M</description>
+    <CATEGORYMEM index="0" category="26" />
+    <XDFAXIS id="x" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x03" mmedaddress="0x71914A" mmedelementsizebits="16" mmedcolcount="8" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units>1/min</units>
+      <indexcount>8</indexcount>
+      <decimalpl>3</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1" />
+      <DALINK index="0" />
+      <MATH equation="X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="y" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x03" mmedaddress="0x71913E" mmedelementsizebits="16" mmedrowcount="6" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units>%</units>
+      <indexcount>6</indexcount>
+      <decimalpl>3</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1" />
+      <DALINK index="0" />
+      <MATH equation="X*0.02441406">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="z">
+      <EMBEDDEDDATA mmedaddress="0x7552FE" mmedelementsizebits="8" mmedrowcount="6" mmedcolcount="8" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units>-</units>
+      <decimalpl>3</decimalpl>
+      <min>0.000000</min>
+      <max>255.000000</max>
+      <outputtype>1</outputtype>
+      <MATH equation="X*0.003921569">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE uniqueid="0x0" flags="0x0">
+    <title>Exhaust flap position factor in sport+ mode (MT w/ Roof open)</title>
+    <description>BMWefc_fac_EpFlpSptPlSptORMT_M</description>
+    <CATEGORYMEM index="0" category="26" />
+    <XDFAXIS id="x" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x03" mmedaddress="0x719172" mmedelementsizebits="16" mmedcolcount="12" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units>1/min</units>
+      <indexcount>12</indexcount>
+      <decimalpl>3</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1" />
+      <DALINK index="0" />
+      <MATH equation="X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="y" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x03" mmedaddress="0x71915A" mmedelementsizebits="16" mmedrowcount="12" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units>Nm</units>
+      <indexcount>12</indexcount>
+      <decimalpl>3</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1" />
+      <DALINK index="0" />
+      <MATH equation="X*0.1">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="z">
+      <EMBEDDEDDATA mmedaddress="0x75532E" mmedelementsizebits="8" mmedrowcount="12" mmedcolcount="12" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units>-</units>
+      <decimalpl>3</decimalpl>
+      <min>0.000000</min>
+      <max>255.000000</max>
+      <outputtype>1</outputtype>
+      <MATH equation="X*0.003921569">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE uniqueid="0x0" flags="0x0">
+    <title>Exhaust flap position factor in sport mode (AT w/ Roof closed)</title>
+    <description>BMWefc_fac_EpFlpSptEpSpt_M</description>
+    <CATEGORYMEM index="0" category="26" />
+    <XDFAXIS id="x" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x03" mmedaddress="0x7191A2" mmedelementsizebits="16" mmedcolcount="12" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units>1/min</units>
+      <indexcount>12</indexcount>
+      <decimalpl>3</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1" />
+      <DALINK index="0" />
+      <MATH equation="X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="y" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x03" mmedaddress="0x71918A" mmedelementsizebits="16" mmedrowcount="12" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units>Nm</units>
+      <indexcount>12</indexcount>
+      <decimalpl>3</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1" />
+      <DALINK index="0" />
+      <MATH equation="X*0.1">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="z">
+      <EMBEDDEDDATA mmedaddress="0x7553BE" mmedelementsizebits="8" mmedrowcount="12" mmedcolcount="12" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units>-</units>
+      <decimalpl>3</decimalpl>
+      <min>0.000000</min>
+      <max>255.000000</max>
+      <outputtype>1</outputtype>
+      <MATH equation="X*0.003921569">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE uniqueid="0x0" flags="0x0">
+    <title>Exhaust flap position factor in sport mode (AT w/ Roof open)</title>
+    <description>BMWefc_fac_EpFlpSptEpSptOR_M</description>
+    <CATEGORYMEM index="0" category="26" />
+    <XDFAXIS id="x" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x03" mmedaddress="0x7191D2" mmedelementsizebits="16" mmedcolcount="12" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units>1/min</units>
+      <indexcount>12</indexcount>
+      <decimalpl>3</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1" />
+      <DALINK index="0" />
+      <MATH equation="X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="y" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x03" mmedaddress="0x7191BA" mmedelementsizebits="16" mmedrowcount="12" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units>Nm</units>
+      <indexcount>12</indexcount>
+      <decimalpl>3</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1" />
+      <DALINK index="0" />
+      <MATH equation="X*0.1">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="z">
+      <EMBEDDEDDATA mmedaddress="0x75544E" mmedelementsizebits="8" mmedrowcount="12" mmedcolcount="12" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units>-</units>
+      <decimalpl>3</decimalpl>
+      <min>0.000000</min>
+      <max>255.000000</max>
+      <outputtype>1</outputtype>
+      <MATH equation="X*0.003921569">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE uniqueid="0x0" flags="0x0">
+    <title>Exhaust flap position factor in sport mode (MT w/ Roof open)</title>
+    <description>BMWefc_fac_EpFlpSptEpSptORMT_M</description>
+    <CATEGORYMEM index="0" category="26" />
+    <XDFAXIS id="x" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x03" mmedaddress="0x719202" mmedelementsizebits="16" mmedcolcount="12" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units>1/min</units>
+      <indexcount>12</indexcount>
+      <decimalpl>3</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1" />
+      <DALINK index="0" />
+      <MATH equation="X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="y" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x03" mmedaddress="0x7191EA" mmedelementsizebits="16" mmedrowcount="12" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units>Nm</units>
+      <indexcount>12</indexcount>
+      <decimalpl>3</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1" />
+      <DALINK index="0" />
+      <MATH equation="X*0.1">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="z">
+      <EMBEDDEDDATA mmedaddress="0x7554DE" mmedelementsizebits="8" mmedrowcount="12" mmedcolcount="12" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units>-</units>
+      <decimalpl>3</decimalpl>
+      <min>0.000000</min>
+      <max>255.000000</max>
+      <outputtype>1</outputtype>
+      <MATH equation="X*0.003921569">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE uniqueid="0x0" flags="0x0">
+    <title>Exhaust flap position factor in sport mode (MT w/ Roof closed)</title>
+    <description>BMWefc_fac_EpFlpSptEpSptMT_M</description>
+    <CATEGORYMEM index="0" category="26" />
+    <XDFAXIS id="x" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x03" mmedaddress="0x719232" mmedelementsizebits="16" mmedcolcount="12" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units>1/min</units>
+      <indexcount>12</indexcount>
+      <decimalpl>3</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1" />
+      <DALINK index="0" />
+      <MATH equation="X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="y" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x03" mmedaddress="0x71921A" mmedelementsizebits="16" mmedrowcount="12" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units>Nm</units>
+      <indexcount>12</indexcount>
+      <decimalpl>3</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1" />
+      <DALINK index="0" />
+      <MATH equation="X*0.1">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="z">
+      <EMBEDDEDDATA mmedaddress="0x75556E" mmedelementsizebits="8" mmedrowcount="12" mmedcolcount="12" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units>-</units>
+      <decimalpl>3</decimalpl>
+      <min>0.000000</min>
+      <max>255.000000</max>
+      <outputtype>1</outputtype>
+      <MATH equation="X*0.003921569">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE uniqueid="0x0" flags="0x0">
+    <title>Exhaust flap position factor in sport mode (Neutral gear)</title>
+    <description>BMWefc_fac_EpFlpSptDgg_M</description>
+    <CATEGORYMEM index="0" category="26" />
+    <XDFAXIS id="x" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x03" mmedaddress="0x719256" mmedelementsizebits="16" mmedcolcount="8" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units>1/min</units>
+      <indexcount>8</indexcount>
+      <decimalpl>3</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1" />
+      <DALINK index="0" />
+      <MATH equation="X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="y" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x03" mmedaddress="0x71924A" mmedelementsizebits="16" mmedrowcount="6" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units>%</units>
+      <indexcount>6</indexcount>
+      <decimalpl>3</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1" />
+      <DALINK index="0" />
+      <MATH equation="X*0.02441406">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="z">
+      <EMBEDDEDDATA mmedaddress="0x7555FE" mmedelementsizebits="8" mmedrowcount="6" mmedcolcount="8" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units>-</units>
+      <decimalpl>3</decimalpl>
+      <min>0.000000</min>
+      <max>255.000000</max>
+      <outputtype>1</outputtype>
+      <MATH equation="X*0.003921569">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE uniqueid="0x0" flags="0x0">
+    <title>Exhaust flap position factor in comfort mode (AT w/ Roof closed)</title>
+    <description>BMWefc_fac_EpFlpNormEpSpt_M</description>
+    <CATEGORYMEM index="0" category="26" />
+    <XDFAXIS id="x" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x03" mmedaddress="0x7192DE" mmedelementsizebits="16" mmedcolcount="12" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units>1/min</units>
+      <indexcount>12</indexcount>
+      <decimalpl>3</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1" />
+      <DALINK index="0" />
+      <MATH equation="X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="y" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x03" mmedaddress="0x7192C6" mmedelementsizebits="16" mmedrowcount="12" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units>Nm</units>
+      <indexcount>12</indexcount>
+      <decimalpl>3</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1" />
+      <DALINK index="0" />
+      <MATH equation="X*0.1">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="z">
+      <EMBEDDEDDATA mmedaddress="0x75574E" mmedelementsizebits="8" mmedrowcount="12" mmedcolcount="12" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units>-</units>
+      <decimalpl>3</decimalpl>
+      <min>0.000000</min>
+      <max>255.000000</max>
+      <outputtype>1</outputtype>
+      <MATH equation="X*0.003921569">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE uniqueid="0x0" flags="0x0">
+    <title>Exhaust flap position factor in comfort mode (AT w/ Roof open)</title>
+    <description>BMWefc_fac_EpFlpNormEpSptOR_M</description>
+    <CATEGORYMEM index="0" category="26" />
+    <XDFAXIS id="x" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x03" mmedaddress="0x71930E" mmedelementsizebits="16" mmedcolcount="12" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units>1/min</units>
+      <indexcount>12</indexcount>
+      <decimalpl>3</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1" />
+      <DALINK index="0" />
+      <MATH equation="X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="y" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x03" mmedaddress="0x7192F6" mmedelementsizebits="16" mmedrowcount="12" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units>Nm</units>
+      <indexcount>12</indexcount>
+      <decimalpl>3</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1" />
+      <DALINK index="0" />
+      <MATH equation="X*0.1">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="z">
+      <EMBEDDEDDATA mmedaddress="0x7557DE" mmedelementsizebits="8" mmedrowcount="12" mmedcolcount="12" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units>-</units>
+      <decimalpl>3</decimalpl>
+      <min>0.000000</min>
+      <max>255.000000</max>
+      <outputtype>1</outputtype>
+      <MATH equation="X*0.003921569">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE uniqueid="0x0" flags="0x0">
+    <title>Exhaust flap position factor in comfort mode (MT w/ Roof open)</title>
+    <description>BMWefc_fac_EpFlpNormEpSptORMT_M</description>
+    <CATEGORYMEM index="0" category="26" />
+    <XDFAXIS id="x" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x03" mmedaddress="0x71936E" mmedelementsizebits="16" mmedcolcount="12" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units>1/min</units>
+      <indexcount>12</indexcount>
+      <decimalpl>3</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1" />
+      <DALINK index="0" />
+      <MATH equation="X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="y" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x03" mmedaddress="0x719356" mmedelementsizebits="16" mmedrowcount="12" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units>Nm</units>
+      <indexcount>12</indexcount>
+      <decimalpl>3</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1" />
+      <DALINK index="0" />
+      <MATH equation="X*0.1">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="z">
+      <EMBEDDEDDATA mmedaddress="0x75586E" mmedelementsizebits="8" mmedrowcount="12" mmedcolcount="12" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units>-</units>
+      <decimalpl>3</decimalpl>
+      <min>0.000000</min>
+      <max>255.000000</max>
+      <outputtype>1</outputtype>
+      <MATH equation="X*0.003921569">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE uniqueid="0x0" flags="0x0">
+    <title>Exhaust flap position factor in comfort mode (MT w/ Roof closed)</title>
+    <description>BMWefc_fac_EpFlpNormEpSptMT_M</description>
+    <CATEGORYMEM index="0" category="26" />
+    <XDFAXIS id="x" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x03" mmedaddress="0x71933E" mmedelementsizebits="16" mmedcolcount="12" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units>1/min</units>
+      <indexcount>12</indexcount>
+      <decimalpl>3</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1" />
+      <DALINK index="0" />
+      <MATH equation="X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="y" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x03" mmedaddress="0x719326" mmedelementsizebits="16" mmedrowcount="12" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units>Nm</units>
+      <indexcount>12</indexcount>
+      <decimalpl>3</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1" />
+      <DALINK index="0" />
+      <MATH equation="X*0.1">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="z">
+      <EMBEDDEDDATA mmedaddress="0x7558FE" mmedelementsizebits="8" mmedrowcount="12" mmedcolcount="12" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units>-</units>
+      <decimalpl>3</decimalpl>
+      <min>0.000000</min>
+      <max>255.000000</max>
+      <outputtype>1</outputtype>
+      <MATH equation="X*0.003921569">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE uniqueid="0x0" flags="0x0">
+    <title>Exhaust flap position factor in comfort mode (Neutral gear)</title>
+    <description>BMWefc_fac_EpFlpNormDgg_M</description>
+    <CATEGORYMEM index="0" category="26" />
+    <XDFAXIS id="x" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x03" mmedaddress="0x719392" mmedelementsizebits="16" mmedcolcount="8" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units>1/min</units>
+      <indexcount>8</indexcount>
+      <decimalpl>3</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1" />
+      <DALINK index="0" />
+      <MATH equation="X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="y" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x03" mmedaddress="0x719386" mmedelementsizebits="16" mmedrowcount="6" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units>%</units>
+      <indexcount>6</indexcount>
+      <decimalpl>3</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1" />
+      <DALINK index="0" />
+      <MATH equation="X*0.02441406">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="z">
+      <EMBEDDEDDATA mmedaddress="0x75598E" mmedelementsizebits="8" mmedrowcount="6" mmedcolcount="8" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units>-</units>
+      <decimalpl>3</decimalpl>
+      <min>0.000000</min>
+      <max>255.000000</max>
+      <outputtype>1</outputtype>
+      <MATH equation="X*0.003921569">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE>
+    <title>Exhaust flap base position (MT) Y (autogen)</title>
+    <CATEGORYMEM index="0" category="26" />
+    <CATEGORYMEM index="1" category="31" />
+    <XDFAXIS id="x">
+      <EMBEDDEDDATA />
+      <indexcount>10</indexcount>
+    </XDFAXIS>
+    <XDFAXIS id="y">
+      <EMBEDDEDDATA />
+      <indexcount>1</indexcount>
+    </XDFAXIS>
+    <XDFAXIS id="z" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x02" mmedaddress="0x7559EC" mmedelementsizebits="8" mmedcolcount="10" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units>Gear</units>
+      <indexcount>10</indexcount>
+      <decimalpl>0</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1" />
+      <DALINK index="0" />
+      <MATH equation="X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE>
+    <title>Exhaust flap base position (AT) Y (autogen)</title>
+    <CATEGORYMEM index="0" category="26" />
+    <CATEGORYMEM index="1" category="31" />
+    <XDFAXIS id="x">
+      <EMBEDDEDDATA />
+      <indexcount>10</indexcount>
+    </XDFAXIS>
+    <XDFAXIS id="y">
+      <EMBEDDEDDATA />
+      <indexcount>1</indexcount>
+    </XDFAXIS>
+    <XDFAXIS id="z" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x02" mmedaddress="0x7559F6" mmedelementsizebits="8" mmedcolcount="10" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units>Gear</units>
+      <indexcount>10</indexcount>
+      <decimalpl>0</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1" />
+      <DALINK index="0" />
+      <MATH equation="X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE uniqueid="0x0" flags="0x0">
     <title>Switch load limit component protection at rich lambda</title>
     <description>S_BSRFMX</description>
     <CATEGORYMEM index="0" category="13" />
@@ -11357,6 +13524,45 @@
       <embedinfo type="1" />
       <DALINK index="0" />
       <MATH equation="X*0.00390625">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE uniqueid="0x0" flags="0x0">
+    <title>Limit P-factor to positive adjustments only during gear change</title>
+    <description>BMWtchctr_swi_PpLimGc_C</description>
+    <CATEGORYMEM index="0" category="1" />
+    <XDFAXIS id="x" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x02" mmedelementsizebits="16" mmedmajorstridebits="-32" mmedminorstridebits="0" />
+      <indexcount>1</indexcount>
+      <decimalpl>1</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <DALINK index="0" />
+      <LABEL index="0" value="0.0" />
+      <MATH equation="X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="y" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x02" mmedelementsizebits="16" mmedmajorstridebits="-32" mmedminorstridebits="0" />
+      <indexcount>1</indexcount>
+      <decimalpl>1</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <DALINK index="0" />
+      <LABEL index="0" value="0.0" />
+      <MATH equation="X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="z">
+      <EMBEDDEDDATA mmedtypeflags="0x02" mmedaddress="0x756F80" mmedelementsizebits="8" mmedrowcount="1" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <decimalpl>1</decimalpl>
+      <min>0.000000</min>
+      <max>255.000000</max>
+      <outputtype>1</outputtype>
+      <MATH equation="X">
         <VAR id="X" />
       </MATH>
     </XDFAXIS>
@@ -11806,6 +14012,31 @@
       </MATH>
     </XDFAXIS>
   </XDFTABLE>
+  <XDFTABLE>
+    <title>Torque limitation based on knock factor X (autogen)</title>
+    <CATEGORYMEM index="0" category="13" />
+    <CATEGORYMEM index="1" category="14" />
+    <XDFAXIS id="x">
+      <EMBEDDEDDATA />
+      <indexcount>7</indexcount>
+    </XDFAXIS>
+    <XDFAXIS id="y">
+      <EMBEDDEDDATA />
+      <indexcount>1</indexcount>
+    </XDFAXIS>
+    <XDFAXIS id="z" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x02" mmedaddress="0x75BDC2" mmedelementsizebits="8" mmedcolcount="7" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <indexcount>7</indexcount>
+      <decimalpl>3</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1" />
+      <DALINK index="0" />
+      <MATH equation="X/255">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
   <XDFTABLE uniqueid="0x0" flags="0x0">
     <title>Timing (spool) 2</title>
     <description>KF_ZW_UESP_PF2</description>
@@ -12059,6 +14290,45 @@
     </XDFAXIS>
   </XDFTABLE>
   <XDFTABLE uniqueid="0x0" flags="0x0">
+    <title>Switch to disable ignition limitation due to best tables</title>
+    <description>S_ZWGRUND_BEST_OFF</description>
+    <CATEGORYMEM index="0" category="7" />
+    <XDFAXIS id="x" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x02" mmedelementsizebits="16" mmedmajorstridebits="-32" mmedminorstridebits="0" />
+      <indexcount>1</indexcount>
+      <decimalpl>1</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <DALINK index="0" />
+      <LABEL index="0" value="0.0" />
+      <MATH equation="X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="y" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x02" mmedelementsizebits="16" mmedmajorstridebits="-32" mmedminorstridebits="0" />
+      <indexcount>1</indexcount>
+      <decimalpl>1</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <DALINK index="0" />
+      <LABEL index="0" value="0.0" />
+      <MATH equation="X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="z">
+      <EMBEDDEDDATA mmedtypeflags="0x02" mmedaddress="0x75CD91" mmedelementsizebits="8" mmedrowcount="1" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <decimalpl>1</decimalpl>
+      <min>0.000000</min>
+      <max>255.000000</max>
+      <outputtype>1</outputtype>
+      <MATH equation="X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE uniqueid="0x0" flags="0x0">
     <title>Dyn. correction</title>
     <description>KF_DZW_DYN</description>
     <CATEGORYMEM index="0" category="7" />
@@ -12096,6 +14366,84 @@
       <max>255.000000</max>
       <outputtype>1</outputtype>
       <MATH equation="X*0.5">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE uniqueid="0x0" flags="0x0">
+    <title>Maximum positive ignition timing correction due to lambda</title>
+    <description>K_DZW_LA_KOR_MX</description>
+    <CATEGORYMEM index="0" category="7" />
+    <XDFAXIS id="x" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x02" mmedelementsizebits="16" mmedmajorstridebits="-32" mmedminorstridebits="0" />
+      <indexcount>1</indexcount>
+      <decimalpl>1</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <DALINK index="0" />
+      <LABEL index="0" value="0.0" />
+      <MATH equation="X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="y" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x02" mmedelementsizebits="16" mmedmajorstridebits="-32" mmedminorstridebits="0" />
+      <indexcount>1</indexcount>
+      <decimalpl>1</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <DALINK index="0" />
+      <LABEL index="0" value="0.0" />
+      <MATH equation="X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="z">
+      <EMBEDDEDDATA mmedtypeflags="0x03" mmedaddress="0x75CDB7" mmedelementsizebits="8" mmedrowcount="1" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <decimalpl>2</decimalpl>
+      <min>0.000000</min>
+      <max>255.000000</max>
+      <outputtype>1</outputtype>
+      <MATH equation="X/2">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE uniqueid="0x0" flags="0x0">
+    <title>Maximum negative ignition timing correction due to lambda</title>
+    <description>K_DZW_LA_KOR_MN</description>
+    <CATEGORYMEM index="0" category="7" />
+    <XDFAXIS id="x" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x02" mmedelementsizebits="16" mmedmajorstridebits="-32" mmedminorstridebits="0" />
+      <indexcount>1</indexcount>
+      <decimalpl>1</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <DALINK index="0" />
+      <LABEL index="0" value="0.0" />
+      <MATH equation="X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="y" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x02" mmedelementsizebits="16" mmedmajorstridebits="-32" mmedminorstridebits="0" />
+      <indexcount>1</indexcount>
+      <decimalpl>1</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <DALINK index="0" />
+      <LABEL index="0" value="0.0" />
+      <MATH equation="X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="z">
+      <EMBEDDEDDATA mmedtypeflags="0x03" mmedaddress="0x75CDB8" mmedelementsizebits="8" mmedrowcount="1" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <decimalpl>2</decimalpl>
+      <min>0.000000</min>
+      <max>255.000000</max>
+      <outputtype>1</outputtype>
+      <MATH equation="X/2">
         <VAR id="X" />
       </MATH>
     </XDFAXIS>
@@ -13073,6 +15421,44 @@
       <max>255.000000</max>
       <outputtype>1</outputtype>
       <MATH equation="X*0.5">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE uniqueid="0x0" flags="0x0">
+    <title>Ignition timing factor due to OPF back pressure</title>
+    <description>BMWign_fac_dag_PclFilFull_T</description>
+    <CATEGORYMEM index="0" category="26" />
+    <XDFAXIS id="x" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x03" mmedaddress="0x74CBC8" mmedelementsizebits="16" mmedcolcount="4" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <indexcount>4</indexcount>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1" />
+      <DALINK index="0" />
+      <MATH equation="X*0.125">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="y" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x02" mmedelementsizebits="16" mmedmajorstridebits="-32" mmedminorstridebits="0" />
+      <indexcount>1</indexcount>
+      <decimalpl>1</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <DALINK index="0" />
+      <LABEL index="0" value="0.0" />
+      <MATH equation="X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="z">
+      <EMBEDDEDDATA mmedtypeflags="0x02" mmedaddress="0x76360B" mmedelementsizebits="8" mmedrowcount="1" mmedcolcount="4" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <decimalpl>1</decimalpl>
+      <min>0.000000</min>
+      <max>255.000000</max>
+      <outputtype>1</outputtype>
+      <MATH equation="X*0.00625">
         <VAR id="X" />
       </MATH>
     </XDFAXIS>
