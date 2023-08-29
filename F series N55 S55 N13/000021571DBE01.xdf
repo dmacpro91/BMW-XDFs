@@ -22007,8 +22007,8 @@ P-Anteil des Raildruckreglers</description>
       <EMBEDDEDDATA mmedtypeflags="0x03" mmedaddress="0x1D7F9C" mmedelementsizebits="16" mmedrowcount="1" mmedcolcount="8" mmedmajorstridebits="0" mmedminorstridebits="0" />
       <units>psi</units>
       <decimalpl>1</decimalpl>
-      <min>0</min>
-      <max>59.4056</max>
+      <min>-59.4</min>
+      <max>59.4</max>
       <outputtype>1</outputtype>
       <MATH equation="X*0.0018129717">
         <VAR id="X" />
