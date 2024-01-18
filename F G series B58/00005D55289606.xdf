@@ -37793,27 +37793,6 @@ Required for manual PI strategy.</description>
     <EMBEDDEDDATA mmedtypeflags="0x02" mmedaddress="0x7E85F4" mmedelementsizebits="32" mmedmajorstridebits="0" mmedminorstridebits="0" />
   </XDFFLAG>
   <XDFFLAG uniqueid="0x0">
-    <title>Private - Inhibit Limp - MHD002 (CAN Sensor 2 Timeout)</title>
-    <mask>0x02</mask>
-    <CATEGORYMEM index="0" category="39" />
-    <CATEGORYMEM index="1" category="53" />
-    <EMBEDDEDDATA mmedtypeflags="0x02" mmedaddress="0x7E85F4" mmedelementsizebits="32" mmedmajorstridebits="0" mmedminorstridebits="0" />
-  </XDFFLAG>
-  <XDFFLAG uniqueid="0x0">
-    <title>Private - Inhibit Limp - MHD003 (CAN Sensor 3 Timeout)</title>
-    <mask>0x04</mask>
-    <CATEGORYMEM index="0" category="39" />
-    <CATEGORYMEM index="1" category="53" />
-    <EMBEDDEDDATA mmedtypeflags="0x02" mmedaddress="0x7E85F4" mmedelementsizebits="32" mmedmajorstridebits="0" mmedminorstridebits="0" />
-  </XDFFLAG>
-  <XDFFLAG uniqueid="0x0">
-    <title>Private - Inhibit Limp - MHD004 (CAN Sensor 4 Timeout)</title>
-    <mask>0x08</mask>
-    <CATEGORYMEM index="0" category="39" />
-    <CATEGORYMEM index="1" category="53" />
-    <EMBEDDEDDATA mmedtypeflags="0x02" mmedaddress="0x7E85F4" mmedelementsizebits="32" mmedmajorstridebits="0" mmedminorstridebits="0" />
-  </XDFFLAG>
-  <XDFFLAG uniqueid="0x0">
     <title>Inhibit Limp - MHD005 (ECA Error Signal)</title>
     <mask>0x10</mask>
     <CATEGORYMEM index="0" category="39" />
@@ -37823,62 +37802,6 @@ Required for manual PI strategy.</description>
   <XDFFLAG uniqueid="0x0">
     <title>Inhibit Limp - MHD006 (ReFlex Aux Pressure)</title>
     <mask>0x20</mask>
-    <CATEGORYMEM index="0" category="39" />
-    <CATEGORYMEM index="1" category="53" />
-    <EMBEDDEDDATA mmedtypeflags="0x02" mmedaddress="0x7E85F4" mmedelementsizebits="32" mmedmajorstridebits="0" mmedminorstridebits="0" />
-  </XDFFLAG>
-  <XDFFLAG uniqueid="0x0">
-    <title>Private - Inhibit Limp - MHD007 (ReFlex PI Injector)</title>
-    <mask>0x40</mask>
-    <CATEGORYMEM index="0" category="39" />
-    <CATEGORYMEM index="1" category="53" />
-    <EMBEDDEDDATA mmedtypeflags="0x02" mmedaddress="0x7E85F4" mmedelementsizebits="32" mmedmajorstridebits="0" mmedminorstridebits="0" />
-  </XDFFLAG>
-  <XDFFLAG uniqueid="0x0">
-    <title>Private - Inhibit Limp - MHD008 (ReFlex Cam Sync)</title>
-    <mask>0x80</mask>
-    <CATEGORYMEM index="0" category="39" />
-    <CATEGORYMEM index="1" category="53" />
-    <EMBEDDEDDATA mmedtypeflags="0x02" mmedaddress="0x7E85F4" mmedelementsizebits="32" mmedmajorstridebits="0" mmedminorstridebits="0" />
-  </XDFFLAG>
-  <XDFFLAG uniqueid="0x0">
-    <title>Private - Inhibit Limp - MHD009 (ReFlex Crank Sync)</title>
-    <mask>0x100</mask>
-    <CATEGORYMEM index="0" category="39" />
-    <CATEGORYMEM index="1" category="53" />
-    <EMBEDDEDDATA mmedtypeflags="0x02" mmedaddress="0x7E85F4" mmedelementsizebits="32" mmedmajorstridebits="0" mmedminorstridebits="0" />
-  </XDFFLAG>
-  <XDFFLAG uniqueid="0x0">
-    <title>Private - Inhibit Limp - MHD010 (ReFlex Firmware Unsupported)</title>
-    <mask>0x200</mask>
-    <CATEGORYMEM index="0" category="39" />
-    <CATEGORYMEM index="1" category="53" />
-    <EMBEDDEDDATA mmedtypeflags="0x02" mmedaddress="0x7E85F4" mmedelementsizebits="32" mmedmajorstridebits="0" mmedminorstridebits="0" />
-  </XDFFLAG>
-  <XDFFLAG uniqueid="0x0">
-    <title>Private - Inhibit Limp - MHD011 (ReFlex CANBUS Data Corrupt)</title>
-    <mask>0x400</mask>
-    <CATEGORYMEM index="0" category="39" />
-    <CATEGORYMEM index="1" category="53" />
-    <EMBEDDEDDATA mmedtypeflags="0x02" mmedaddress="0x7E85F4" mmedelementsizebits="32" mmedmajorstridebits="0" mmedminorstridebits="0" />
-  </XDFFLAG>
-  <XDFFLAG uniqueid="0x0">
-    <title>Private - Inhibit Limp - MHD012 (ReFlex Low Pressure Sensor Error)</title>
-    <mask>0x800</mask>
-    <CATEGORYMEM index="0" category="39" />
-    <CATEGORYMEM index="1" category="53" />
-    <EMBEDDEDDATA mmedtypeflags="0x02" mmedaddress="0x7E85F4" mmedelementsizebits="32" mmedmajorstridebits="0" mmedminorstridebits="0" />
-  </XDFFLAG>
-  <XDFFLAG uniqueid="0x0">
-    <title>Private - Inhibit Limp - MHD013 (ReFlex Not Receiving CAN Data)</title>
-    <mask>0x1000</mask>
-    <CATEGORYMEM index="0" category="39" />
-    <CATEGORYMEM index="1" category="53" />
-    <EMBEDDEDDATA mmedtypeflags="0x02" mmedaddress="0x7E85F4" mmedelementsizebits="32" mmedmajorstridebits="0" mmedminorstridebits="0" />
-  </XDFFLAG>
-  <XDFFLAG uniqueid="0x0">
-    <title>Private - Inhibit Limp - MHD014 (ReFlex PI Max Fuel Mass Exceeded)</title>
-    <mask>0x2000</mask>
     <CATEGORYMEM index="0" category="39" />
     <CATEGORYMEM index="1" category="53" />
     <EMBEDDEDDATA mmedtypeflags="0x02" mmedaddress="0x7E85F4" mmedelementsizebits="32" mmedmajorstridebits="0" mmedminorstridebits="0" />
