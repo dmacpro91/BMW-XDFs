@@ -80,6 +80,8 @@
     <CATEGORY index="0x47" name="ReFlex Integration" />
     <CATEGORY index="0x48" name="Performance Gauges" />
     <CATEGORY index="0x49" name="Performance Gauges breakpoints" />
+    <CATEGORY index="0x4A" name="Advanced / Max Effort" />
+    <CATEGORY index="0x4B" name="Advanced / Max Effort breakpoints" />
   </XDFHEADER>
   <XDFTABLE uniqueid="0x0" flags="0x0">
     <title>Min. speed for burble (SOT)</title>
@@ -2147,10 +2149,10 @@
       <EMBEDDEDDATA mmedtypeflags="0x2" mmedaddress="0x71ef9c" mmedelementsizebits="16" mmedrowcount="6" mmedcolcount="6" mmedmajorstridebits="0" mmedminorstridebits="0" />
       <units>-</units>
       <decimalpl>3</decimalpl>
-      <min>0</min>
-      <max>15.999755859375</max>
+      <min>10.0</min>
+      <max>18.0</max>
       <outputtype>1</outputtype>
-      <MATH equation="X*0.000244140625">
+      <MATH equation="X/4096*14.7">
         <VAR id="X" />
       </MATH>
     </XDFAXIS>
@@ -7376,7 +7378,7 @@
       <units>Tamb</units>
       <indexcount>4</indexcount>
       <decimalpl>0</decimalpl>
-      <outputtype>2</outputtype>
+      <outputtype>1</outputtype>
       <datatype>0</datatype>
       <unittype>0</unittype>
       <embedinfo type="1" />
@@ -7417,7 +7419,7 @@
       <units>Tamb</units>
       <indexcount>4</indexcount>
       <decimalpl>0</decimalpl>
-      <outputtype>2</outputtype>
+      <outputtype>1</outputtype>
       <datatype>0</datatype>
       <unittype>0</unittype>
       <embedinfo type="1" />
@@ -7466,7 +7468,7 @@
       <units>Tamb</units>
       <indexcount>4</indexcount>
       <decimalpl>0</decimalpl>
-      <outputtype>2</outputtype>
+      <outputtype>1</outputtype>
       <datatype>0</datatype>
       <unittype>0</unittype>
       <embedinfo type="1" />
@@ -7493,7 +7495,7 @@
       <units>Tamb</units>
       <indexcount>4</indexcount>
       <decimalpl>0</decimalpl>
-      <outputtype>2</outputtype>
+      <outputtype>1</outputtype>
       <datatype>0</datatype>
       <unittype>0</unittype>
       <embedinfo type="1" />
@@ -11552,7 +11554,7 @@
       <units>-</units>
       <indexcount>4</indexcount>
       <decimalpl>-1</decimalpl>
-      <outputtype>2</outputtype>
+      <outputtype>1</outputtype>
       <datatype>0</datatype>
       <unittype>0</unittype>
       <DALINK index="0" />
@@ -11598,7 +11600,7 @@
       <units>-</units>
       <indexcount>5</indexcount>
       <decimalpl>-1</decimalpl>
-      <outputtype>2</outputtype>
+      <outputtype>1</outputtype>
       <datatype>0</datatype>
       <unittype>0</unittype>
       <DALINK index="0" />
@@ -11979,48 +11981,6 @@
     </XDFAXIS>
   </XDFTABLE>
   <XDFTABLE uniqueid="0x0" flags="0x0">
-    <title>Codeword zylinder shut off for diverter function</title>
-    <description>BMWtchbov_cw_CylOffEna_C</description>
-    <CATEGORYMEM index="0" category="13" />
-    <XDFAXIS id="x" uniqueid="0x0">
-      <EMBEDDEDDATA mmedelementsizebits="8" mmedmajorstridebits="0" mmedminorstridebits="0" />
-      <units>-</units>
-      <indexcount>1</indexcount>
-      <decimalpl>-1</decimalpl>
-      <datatype>0</datatype>
-      <unittype>0</unittype>
-      <DALINK index="0" />
-      <LABEL index="0" value="0.000000" />
-      <MATH equation="X">
-        <VAR id="X" />
-      </MATH>
-    </XDFAXIS>
-    <XDFAXIS id="y" uniqueid="0x0">
-      <EMBEDDEDDATA mmedelementsizebits="8" mmedrowcount="1" mmedmajorstridebits="0" mmedminorstridebits="0" />
-      <units>-</units>
-      <indexcount>1</indexcount>
-      <decimalpl>-1</decimalpl>
-      <datatype>0</datatype>
-      <unittype>0</unittype>
-      <DALINK index="0" />
-      <LABEL index="0" value="0.000000" />
-      <MATH equation="X">
-        <VAR id="X" />
-      </MATH>
-    </XDFAXIS>
-    <XDFAXIS id="z">
-      <EMBEDDEDDATA mmedaddress="0x7562C8" mmedelementsizebits="8" mmedrowcount="1" mmedmajorstridebits="0" mmedminorstridebits="0" />
-      <units>-</units>
-      <decimalpl>3</decimalpl>
-      <min>0.000000</min>
-      <max>255.000000</max>
-      <outputtype>1</outputtype>
-      <MATH equation="X">
-        <VAR id="X" />
-      </MATH>
-    </XDFAXIS>
-  </XDFTABLE>
-  <XDFTABLE uniqueid="0x0" flags="0x0">
     <title>manual request to prohibit EZA during gear change (request to EGS) (0 = kein Verbot, 1 = Verbot)</title>
     <description>BMWtqe_st_ProhCylOffGc_C</description>
     <CATEGORYMEM index="0" category="26" />
@@ -12056,7 +12016,7 @@
       <decimalpl>1</decimalpl>
       <min>0.000000</min>
       <max>255.000000</max>
-      <outputtype>2</outputtype>
+      <outputtype>1</outputtype>
       <MATH equation="X">
         <VAR id="X" />
       </MATH>
@@ -12095,7 +12055,7 @@
       <decimalpl>1</decimalpl>
       <min>0.000000</min>
       <max>255.000000</max>
-      <outputtype>2</outputtype>
+      <outputtype>1</outputtype>
       <MATH equation="X">
         <VAR id="X" />
       </MATH>
@@ -12204,7 +12164,7 @@
       <units>-</units>
       <indexcount>12</indexcount>
       <decimalpl>1</decimalpl>
-      <outputtype>2</outputtype>
+      <outputtype>1</outputtype>
       <datatype>0</datatype>
       <unittype>0</unittype>
       <embedinfo type="1" />
@@ -12218,7 +12178,7 @@
       <units>-</units>
       <indexcount>4</indexcount>
       <decimalpl>1</decimalpl>
-      <outputtype>2</outputtype>
+      <outputtype>1</outputtype>
       <datatype>0</datatype>
       <unittype>0</unittype>
       <embedinfo type="1" />
@@ -12233,7 +12193,7 @@
       <decimalpl>0</decimalpl>
       <min>0.000000</min>
       <max>255.000000</max>
-      <outputtype>2</outputtype>
+      <outputtype>1</outputtype>
       <MATH equation="X">
         <VAR id="X" />
       </MATH>
@@ -12248,7 +12208,7 @@
       <units>-</units>
       <indexcount>12</indexcount>
       <decimalpl>1</decimalpl>
-      <outputtype>2</outputtype>
+      <outputtype>1</outputtype>
       <datatype>0</datatype>
       <unittype>0</unittype>
       <embedinfo type="1" />
@@ -12276,7 +12236,7 @@
       <decimalpl>1</decimalpl>
       <min>0.000000</min>
       <max>255.000000</max>
-      <outputtype>2</outputtype>
+      <outputtype>1</outputtype>
       <MATH equation="X">
         <VAR id="X" />
       </MATH>
@@ -12299,7 +12259,7 @@
       <units>-</units>
       <indexcount>4</indexcount>
       <decimalpl>1</decimalpl>
-      <outputtype>2</outputtype>
+      <outputtype>1</outputtype>
       <datatype>0</datatype>
       <unittype>0</unittype>
       <embedinfo type="1" />
@@ -12326,7 +12286,7 @@
       <units>-</units>
       <indexcount>12</indexcount>
       <decimalpl>1</decimalpl>
-      <outputtype>2</outputtype>
+      <outputtype>1</outputtype>
       <datatype>0</datatype>
       <unittype>0</unittype>
       <embedinfo type="1" />
@@ -12917,7 +12877,7 @@
       <decimalpl>0</decimalpl>
       <min>0.000000</min>
       <max>255.000000</max>
-      <outputtype>2</outputtype>
+      <outputtype>1</outputtype>
       <MATH equation="X">
         <VAR id="X" />
       </MATH>
@@ -12958,7 +12918,7 @@
       <decimalpl>0</decimalpl>
       <min>0.000000</min>
       <max>255.000000</max>
-      <outputtype>2</outputtype>
+      <outputtype>1</outputtype>
       <MATH equation="X">
         <VAR id="X" />
       </MATH>
@@ -13039,7 +12999,7 @@
       <decimalpl>1</decimalpl>
       <min>0.000000</min>
       <max>255.000000</max>
-      <outputtype>2</outputtype>
+      <outputtype>1</outputtype>
       <MATH equation="X">
         <VAR id="X" />
       </MATH>
@@ -13756,7 +13716,7 @@
       <decimalpl>1</decimalpl>
       <min>0.000000</min>
       <max>255.000000</max>
-      <outputtype>2</outputtype>
+      <outputtype>1</outputtype>
       <MATH equation="X">
         <VAR id="X" />
       </MATH>
@@ -14056,7 +14016,7 @@
       <EMBEDDEDDATA mmedtypeflags="0x02" mmedaddress="0x78BE1E" mmedelementsizebits="16" mmedcolcount="10" mmedmajorstridebits="0" mmedminorstridebits="0" />
       <indexcount>10</indexcount>
       <decimalpl>0</decimalpl>
-      <outputtype>2</outputtype>
+      <outputtype>1</outputtype>
       <datatype>0</datatype>
       <unittype>0</unittype>
       <embedinfo type="1" />
@@ -14083,7 +14043,7 @@
       <units>1/min</units>
       <indexcount>12</indexcount>
       <decimalpl>0</decimalpl>
-      <outputtype>2</outputtype>
+      <outputtype>1</outputtype>
       <datatype>0</datatype>
       <unittype>0</unittype>
       <embedinfo type="1" />
@@ -14102,7 +14062,7 @@
       <units>1/min</units>
       <indexcount>12</indexcount>
       <decimalpl>0</decimalpl>
-      <outputtype>2</outputtype>
+      <outputtype>1</outputtype>
       <datatype>0</datatype>
       <unittype>0</unittype>
       <embedinfo type="1" />
@@ -14115,7 +14075,7 @@
       <EMBEDDEDDATA mmedtypeflags="0x02" mmedaddress="0x78BE1E" mmedelementsizebits="16" mmedcolcount="10" mmedmajorstridebits="0" mmedminorstridebits="0" />
       <indexcount>10</indexcount>
       <decimalpl>0</decimalpl>
-      <outputtype>2</outputtype>
+      <outputtype>1</outputtype>
       <datatype>0</datatype>
       <unittype>0</unittype>
       <embedinfo type="1" />
@@ -16298,7 +16258,7 @@
       <units>-</units>
       <indexcount>4</indexcount>
       <decimalpl>-1</decimalpl>
-      <outputtype>2</outputtype>
+      <outputtype>1</outputtype>
       <datatype>0</datatype>
       <unittype>0</unittype>
       <embedinfo type="2" />
@@ -16465,7 +16425,7 @@
       <units>-</units>
       <indexcount>5</indexcount>
       <decimalpl>-1</decimalpl>
-      <outputtype>2</outputtype>
+      <outputtype>1</outputtype>
       <datatype>0</datatype>
       <unittype>0</unittype>
       <DALINK index="0" />
@@ -17182,7 +17142,7 @@
       <decimalpl>1</decimalpl>
       <min>0.000000</min>
       <max>255.000000</max>
-      <outputtype>2</outputtype>
+      <outputtype>1</outputtype>
       <MATH equation="X">
         <VAR id="X" />
       </MATH>
@@ -17824,7 +17784,7 @@
       <decimalpl>1</decimalpl>
       <min>0.000000</min>
       <max>255.000000</max>
-      <outputtype>2</outputtype>
+      <outputtype>1</outputtype>
       <MATH equation="X">
         <VAR id="X" />
       </MATH>
@@ -17847,9 +17807,9 @@
     </XDFAXIS>
     <XDFAXIS id="y" uniqueid="0x0">
       <EMBEDDEDDATA mmedtypeflags="0x02" mmedelementsizebits="16" mmedmajorstridebits="0" mmedminorstridebits="0" />
-      <indexcount>16</indexcount>
+      <indexcount>32</indexcount>
       <decimalpl>0</decimalpl>
-      <outputtype>2</outputtype>
+      <outputtype>1</outputtype>
       <datatype>0</datatype>
       <unittype>0</unittype>
       <embedinfo type="2" />
@@ -19865,8 +19825,8 @@ Note: this is overriden by our custom boost control if the &quot;Enable Custom W
       <EMBEDDEDDATA mmedtypeflags="0x02" mmedaddress="0x7E877E" mmedelementsizebits="16" mmedrowcount="16" mmedcolcount="16" mmedmajorstridebits="0" mmedminorstridebits="0" />
       <units>-</units>
       <decimalpl>2</decimalpl>
-      <min>0.500000</min>
-      <max>1.600000</max>
+      <min>0</min>
+      <max>2</max>
       <outputtype>1</outputtype>
       <MATH equation="X*0.00003051758">
         <VAR id="X" />
@@ -19909,8 +19869,8 @@ Note: this is overriden by our custom boost control if the &quot;Enable Custom W
       <EMBEDDEDDATA mmedtypeflags="0x02" mmedaddress="0x7E89BE" mmedelementsizebits="16" mmedrowcount="16" mmedcolcount="16" mmedmajorstridebits="0" mmedminorstridebits="0" />
       <units>-</units>
       <decimalpl>2</decimalpl>
-      <min>0.500000</min>
-      <max>1.600000</max>
+      <min>0</min>
+      <max>2</max>
       <outputtype>1</outputtype>
       <MATH equation="X*0.00003051758">
         <VAR id="X" />
@@ -19953,8 +19913,8 @@ Note: this is overriden by our custom boost control if the &quot;Enable Custom W
       <EMBEDDEDDATA mmedtypeflags="0x02" mmedaddress="0x7E8BFE" mmedelementsizebits="16" mmedrowcount="16" mmedcolcount="16" mmedmajorstridebits="0" mmedminorstridebits="0" />
       <units>-</units>
       <decimalpl>2</decimalpl>
-      <min>0.500000</min>
-      <max>1.600000</max>
+      <min>0</min>
+      <max>2</max>
       <outputtype>1</outputtype>
       <MATH equation="X*0.00003051758">
         <VAR id="X" />
@@ -19997,8 +19957,8 @@ Note: this is overriden by our custom boost control if the &quot;Enable Custom W
       <EMBEDDEDDATA mmedtypeflags="0x02" mmedaddress="0x7E8E3E" mmedelementsizebits="16" mmedrowcount="16" mmedcolcount="16" mmedmajorstridebits="0" mmedminorstridebits="0" />
       <units>-</units>
       <decimalpl>2</decimalpl>
-      <min>0.500000</min>
-      <max>1.600000</max>
+      <min>0</min>
+      <max>2</max>
       <outputtype>1</outputtype>
       <MATH equation="X*0.00003051758">
         <VAR id="X" />
@@ -20041,8 +20001,8 @@ Note: this is overriden by our custom boost control if the &quot;Enable Custom W
       <EMBEDDEDDATA mmedtypeflags="0x02" mmedaddress="0x7E907E" mmedelementsizebits="16" mmedrowcount="16" mmedcolcount="16" mmedmajorstridebits="0" mmedminorstridebits="0" />
       <units>-</units>
       <decimalpl>2</decimalpl>
-      <min>0.500000</min>
-      <max>1.600000</max>
+      <min>0</min>
+      <max>2</max>
       <outputtype>1</outputtype>
       <MATH equation="X*0.00003051758">
         <VAR id="X" />
@@ -33260,7 +33220,7 @@ ipol factors 1.01 - 2 blend from map slot to FF2</description>
       <EMBEDDEDDATA mmedtypeflags="0x03" mmedaddress="0x7F0BE4" mmedelementsizebits="16" mmedrowcount="14" mmedmajorstridebits="0" mmedminorstridebits="0" />
       <units>psi</units>
       <indexcount>14</indexcount>
-      <decimalpl>1</decimalpl>
+      <decimalpl>2</decimalpl>
       <embedinfo type="1" />
       <MATH equation="X*0.0018129717">
         <VAR id="X" />
@@ -33270,8 +33230,8 @@ ipol factors 1.01 - 2 blend from map slot to FF2</description>
       <EMBEDDEDDATA mmedtypeflags="0x03" mmedaddress="0x7F0C00" mmedelementsizebits="16" mmedrowcount="14" mmedcolcount="16" mmedmajorstridebits="0" mmedminorstridebits="0" />
       <units>%</units>
       <decimalpl>2</decimalpl>
-      <min>-100</min>
-      <max>99.998</max>
+      <min>-50</min>
+      <max>49.998</max>
       <embedinfo type="1" />
       <MATH equation="X/655.36">
         <VAR id="X" />
@@ -33325,7 +33285,7 @@ ipol factors 1.01 - 2 blend from map slot to FF2</description>
       <EMBEDDEDDATA mmedtypeflags="0x03" mmedaddress="0x7F0BE4" mmedelementsizebits="16" mmedcolcount="14" mmedmajorstridebits="0" mmedminorstridebits="0" />
       <units>psi</units>
       <indexcount>14</indexcount>
-      <decimalpl>1</decimalpl>
+      <decimalpl>2</decimalpl>
       <min>-59.4</min>
       <max>59.4</max>
       <datatype>0</datatype>
@@ -33346,7 +33306,7 @@ ipol factors 1.01 - 2 blend from map slot to FF2</description>
       <EMBEDDEDDATA mmedtypeflags="0x03" mmedaddress="0x7F0DC0" mmedelementsizebits="16" mmedcolcount="14" mmedmajorstridebits="0" mmedminorstridebits="0" />
       <units>psi</units>
       <indexcount>14</indexcount>
-      <decimalpl>0</decimalpl>
+      <decimalpl>2</decimalpl>
       <embedinfo type="1" />
       <MATH equation="X*0.0018129717">
         <VAR id="X" />
@@ -33356,7 +33316,7 @@ ipol factors 1.01 - 2 blend from map slot to FF2</description>
       <EMBEDDEDDATA mmedtypeflags="0x03" mmedaddress="0x7F0DDC" mmedelementsizebits="16" mmedrowcount="14" mmedmajorstridebits="0" mmedminorstridebits="0" />
       <units>psi</units>
       <indexcount>14</indexcount>
-      <decimalpl>0</decimalpl>
+      <decimalpl>3</decimalpl>
       <embedinfo type="1" />
       <MATH equation="X*0.0018129717">
         <VAR id="X" />
@@ -33366,8 +33326,8 @@ ipol factors 1.01 - 2 blend from map slot to FF2</description>
       <EMBEDDEDDATA mmedtypeflags="0x03" mmedaddress="0x7F0DF8" mmedelementsizebits="16" mmedrowcount="14" mmedcolcount="14" mmedmajorstridebits="0" mmedminorstridebits="0" />
       <units>%</units>
       <decimalpl>2</decimalpl>
-      <min>-100</min>
-      <max>99.998</max>
+      <min>-50</min>
+      <max>49.998</max>
       <embedinfo type="1" />
       <MATH equation="X/655.36">
         <VAR id="X" />
@@ -33392,7 +33352,7 @@ ipol factors 1.01 - 2 blend from map slot to FF2</description>
       <EMBEDDEDDATA mmedtypeflags="0x03" mmedaddress="0x7F0DC0" mmedelementsizebits="16" mmedcolcount="14" mmedmajorstridebits="0" mmedminorstridebits="0" />
       <units>psi</units>
       <indexcount>14</indexcount>
-      <decimalpl>1</decimalpl>
+      <decimalpl>2</decimalpl>
       <min>-59.4</min>
       <max>59.4</max>
       <datatype>0</datatype>
@@ -33421,7 +33381,7 @@ ipol factors 1.01 - 2 blend from map slot to FF2</description>
       <EMBEDDEDDATA mmedtypeflags="0x03" mmedaddress="0x7F0DDC" mmedelementsizebits="16" mmedcolcount="14" mmedmajorstridebits="0" mmedminorstridebits="0" />
       <units>psi</units>
       <indexcount>14</indexcount>
-      <decimalpl>1</decimalpl>
+      <decimalpl>3</decimalpl>
       <min>-59.4</min>
       <max>59.4</max>
       <datatype>0</datatype>
@@ -36600,7 +36560,7 @@ ipol factors 1.01 - 2 blend from map slot to FF2</description>
       <EMBEDDEDDATA mmedtypeflags="0x03" mmedaddress="0x7F1E24" mmedelementsizebits="16" mmedrowcount="7" mmedmajorstridebits="0" mmedminorstridebits="0" />
       <units>psi</units>
       <indexcount>7</indexcount>
-      <decimalpl>1</decimalpl>
+      <decimalpl>2</decimalpl>
       <embedinfo type="1" />
       <MATH equation="X*0.0018129717">
         <VAR id="X" />
@@ -36610,8 +36570,8 @@ ipol factors 1.01 - 2 blend from map slot to FF2</description>
       <EMBEDDEDDATA mmedtypeflags="0x03" mmedaddress="0x7F1E32" mmedelementsizebits="16" mmedrowcount="7" mmedcolcount="8" mmedmajorstridebits="0" mmedminorstridebits="0" />
       <units>%</units>
       <decimalpl>2</decimalpl>
-      <min>-100</min>
-      <max>99.998</max>
+      <min>-50</min>
+      <max>49.998</max>
       <embedinfo type="1" />
       <MATH equation="X/655.36">
         <VAR id="X" />
@@ -36665,7 +36625,7 @@ ipol factors 1.01 - 2 blend from map slot to FF2</description>
       <EMBEDDEDDATA mmedtypeflags="0x03" mmedaddress="0x7F1E24" mmedelementsizebits="16" mmedcolcount="7" mmedmajorstridebits="0" mmedminorstridebits="0" />
       <units>psi</units>
       <indexcount>7</indexcount>
-      <decimalpl>1</decimalpl>
+      <decimalpl>2</decimalpl>
       <min>-59.4</min>
       <max>59.4</max>
       <datatype>0</datatype>
@@ -36686,7 +36646,7 @@ ipol factors 1.01 - 2 blend from map slot to FF2</description>
       <EMBEDDEDDATA mmedtypeflags="0x03" mmedaddress="0x7F1EA2" mmedelementsizebits="16" mmedcolcount="7" mmedmajorstridebits="0" mmedminorstridebits="0" />
       <units>psi</units>
       <indexcount>7</indexcount>
-      <decimalpl>0</decimalpl>
+      <decimalpl>2</decimalpl>
       <embedinfo type="1" />
       <MATH equation="X*0.0018129717">
         <VAR id="X" />
@@ -36696,7 +36656,7 @@ ipol factors 1.01 - 2 blend from map slot to FF2</description>
       <EMBEDDEDDATA mmedtypeflags="0x03" mmedaddress="0x7F1EB0" mmedelementsizebits="16" mmedrowcount="7" mmedmajorstridebits="0" mmedminorstridebits="0" />
       <units>psi</units>
       <indexcount>7</indexcount>
-      <decimalpl>0</decimalpl>
+      <decimalpl>3</decimalpl>
       <embedinfo type="1" />
       <MATH equation="X*0.0018129717">
         <VAR id="X" />
@@ -36706,8 +36666,8 @@ ipol factors 1.01 - 2 blend from map slot to FF2</description>
       <EMBEDDEDDATA mmedtypeflags="0x03" mmedaddress="0x7F1EBE" mmedelementsizebits="16" mmedrowcount="7" mmedcolcount="7" mmedmajorstridebits="0" mmedminorstridebits="0" />
       <units>%</units>
       <decimalpl>2</decimalpl>
-      <min>-100</min>
-      <max>99.998</max>
+      <min>-50</min>
+      <max>49.998</max>
       <embedinfo type="1" />
       <MATH equation="X/655.36">
         <VAR id="X" />
@@ -36732,7 +36692,7 @@ ipol factors 1.01 - 2 blend from map slot to FF2</description>
       <EMBEDDEDDATA mmedtypeflags="0x03" mmedaddress="0x7F1EA2" mmedelementsizebits="16" mmedcolcount="7" mmedmajorstridebits="0" mmedminorstridebits="0" />
       <units>psi</units>
       <indexcount>7</indexcount>
-      <decimalpl>1</decimalpl>
+      <decimalpl>2</decimalpl>
       <min>-59.4</min>
       <max>59.4</max>
       <datatype>0</datatype>
@@ -36761,7 +36721,7 @@ ipol factors 1.01 - 2 blend from map slot to FF2</description>
       <EMBEDDEDDATA mmedtypeflags="0x03" mmedaddress="0x7F1EB0" mmedelementsizebits="16" mmedcolcount="7" mmedmajorstridebits="0" mmedminorstridebits="0" />
       <units>psi</units>
       <indexcount>7</indexcount>
-      <decimalpl>1</decimalpl>
+      <decimalpl>3</decimalpl>
       <min>-59.4</min>
       <max>59.4</max>
       <datatype>0</datatype>
@@ -37585,7 +37545,9 @@ NOTE: Even with a boost referenced FPR, using a pressure substitute value is not
     <title>Injector Scalar (Auto)</title>
     <description>Port fuel injector fuel in cc/min. Make sure to enter this appropriately for your base pressure.
 
-Required for auto PI strategy.</description>
+Required for auto PI strategy.
+
+NOTE::: Do NOT use WinOLS to enter this table value, it will be incorrect as the scaling conversion format is not supported.</description>
     <CATEGORYMEM index="0" category="39" />
     <CATEGORYMEM index="1" category="72" />
     <CATEGORYMEM index="2" category="69" />
@@ -37779,7 +37741,7 @@ Required for auto PI strategy.</description>
     </XDFAXIS>
     <XDFAXIS id="z">
       <EMBEDDEDDATA mmedtypeflags="0x02" mmedaddress="0x7F2302" mmedelementsizebits="16" mmedrowcount="1" mmedcolcount="8" mmedmajorstridebits="0" mmedminorstridebits="0" />
-      <units>-</units>
+      <units>%</units>
       <decimalpl>2</decimalpl>
       <min>0</min>
       <max>399.99</max>
@@ -37903,7 +37865,7 @@ Required for auto PI strategy.</description>
     </XDFAXIS>
     <XDFAXIS id="z">
       <EMBEDDEDDATA mmedtypeflags="0x02" mmedaddress="0x7F2344" mmedelementsizebits="16" mmedrowcount="8" mmedcolcount="16" mmedmajorstridebits="0" mmedminorstridebits="0" />
-      <units>-</units>
+      <units>%</units>
       <decimalpl>2</decimalpl>
       <min>0</min>
       <max>399.99</max>
@@ -38664,6 +38626,238 @@ Required for manual PI strategy.</description>
       <max>950</max>
       <outputtype>1</outputtype>
       <MATH equation="X*0.0145037738">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE uniqueid="0x0" flags="0x30">
+    <title>Enable Increased Boost Ceiling (5 bar+)</title>
+    <description>Set to 1 to enable our custom patch which allows full use of 5 bar (and higher) MAP sensors. If using the OEM sensor gradient and offset tables, the following PNP Bosch 5 bar map sensor is required (part #: 13628514488)!  Otherwise you will need to enable and use the custom MAP scaling tables we provide.</description>
+    <CATEGORYMEM index="0" category="39" />
+    <CATEGORYMEM index="1" category="75" />
+    <XDFAXIS id="x" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x02" mmedelementsizebits="16" mmedmajorstridebits="-32" mmedminorstridebits="0" />
+      <indexcount>1</indexcount>
+      <decimalpl>1</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <DALINK index="0" />
+      <LABEL index="0" value="0.0" />
+      <MATH equation="X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="y" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x02" mmedelementsizebits="16" mmedmajorstridebits="-32" mmedminorstridebits="0" />
+      <indexcount>1</indexcount>
+      <decimalpl>1</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <DALINK index="0" />
+      <LABEL index="0" value="0.0" />
+      <MATH equation="X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="z">
+      <EMBEDDEDDATA mmedtypeflags="0x02" mmedaddress="0x7E85F9" mmedelementsizebits="8" mmedrowcount="1" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <decimalpl>0</decimalpl>
+      <min>0.000000</min>
+      <max>1.000000</max>
+      <outputtype>1</outputtype>
+      <MATH equation="X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE uniqueid="0x0" flags="0x30">
+    <title>Load Scaling for Increased Boost Ceiling</title>
+    <description>In OEM form, 3 bar relative can max out load actual at 327% Rf. This table can be used (carefully!) to adjust that boost to load actual relationship in the DME. A factor of 1.0 is &quot;no rescaling&quot;, while lower factors will scale load down proportionally, so that higher boost will not all just trace the same 327% column. Fuel mass is automatically corrected for this as well.
+
+NO scaling will be applied below 164% Rf. Recommended starting values: axis breakpoints of 246 and 327, table data of 1.0 and 0.8.</description>
+    <CATEGORYMEM index="0" category="39" />
+    <CATEGORYMEM index="1" category="75" />
+    <XDFAXIS id="x" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x03" mmedaddress="0x7E85FC" mmedelementsizebits="16" mmedcolcount="2" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units>%</units>
+      <indexcount>2</indexcount>
+      <decimalpl>1</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1" />
+      <DALINK index="0" />
+      <MATH equation="X/100">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="y" uniqueid="0x0">
+      <EMBEDDEDDATA mmedelementsizebits="8" mmedrowcount="1" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units>-</units>
+      <indexcount>1</indexcount>
+      <decimalpl>1</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <DALINK index="0" />
+      <LABEL index="0" value="0.0" />
+      <MATH equation="X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="z">
+      <EMBEDDEDDATA mmedtypeflags="0x02" mmedaddress="0x7E8600" mmedelementsizebits="16" mmedrowcount="1" mmedcolcount="2" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units>-</units>
+      <decimalpl>2</decimalpl>
+      <min>0</min>
+      <max>1</max>
+      <outputtype>1</outputtype>
+      <MATH equation="X/65535">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE uniqueid="0x0" flags="0x30">
+    <title>Load Scaling for Increased Boost Ceiling - Load Actual</title>
+    <description />
+    <CATEGORYMEM index="0" category="39" />
+    <CATEGORYMEM index="1" category="75" />
+    <CATEGORYMEM index="2" category="76" />
+    <XDFAXIS id="x">
+      <EMBEDDEDDATA />
+      <indexcount>2</indexcount>
+    </XDFAXIS>
+    <XDFAXIS id="y">
+      <EMBEDDEDDATA />
+      <indexcount>1</indexcount>
+    </XDFAXIS>
+    <XDFAXIS id="z" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x03" mmedaddress="0x7E85FC" mmedelementsizebits="16" mmedcolcount="2" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units>%</units>
+      <decimalpl>2</decimalpl>
+      <min>0</min>
+      <max>327.67</max>
+      <outputtype>1</outputtype>
+      <MATH equation="X/100">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE uniqueid="0x0" flags="0x30">
+    <title>Enable Custom MAP Sensor Scaling</title>
+    <description>Set to 1 to use our custom MAP sensor scaling table instead of the OEM gradient and offset tables. This is only for the pre-throttle sensor.</description>
+    <CATEGORYMEM index="0" category="39" />
+    <CATEGORYMEM index="1" category="75" />
+    <XDFAXIS id="x" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x02" mmedelementsizebits="16" mmedmajorstridebits="-32" mmedminorstridebits="0" />
+      <indexcount>1</indexcount>
+      <decimalpl>1</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <DALINK index="0" />
+      <LABEL index="0" value="0.0" />
+      <MATH equation="X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="y" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x02" mmedelementsizebits="16" mmedmajorstridebits="-32" mmedminorstridebits="0" />
+      <indexcount>1</indexcount>
+      <decimalpl>1</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <DALINK index="0" />
+      <LABEL index="0" value="0.0" />
+      <MATH equation="X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="z">
+      <EMBEDDEDDATA mmedtypeflags="0x02" mmedaddress="0x7E8604" mmedelementsizebits="8" mmedrowcount="1" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <decimalpl>0</decimalpl>
+      <min>0.000000</min>
+      <max>1.000000</max>
+      <outputtype>1</outputtype>
+      <MATH equation="X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE uniqueid="0x0" flags="0x30">
+    <title>Pre-Throttle MAP Sensor Scaling (Custom)</title>
+    <description>This table can be used to either gain a bit of sensor resolution by using some of it&#39;s non-linear range, or to support a sensor that would not work in the OEM gradient/offset tables due to hex maxes.</description>
+    <CATEGORYMEM index="0" category="39" />
+    <CATEGORYMEM index="1" category="75" />
+    <XDFAXIS id="x" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x02" mmedaddress="0x7E8656" mmedelementsizebits="16" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units>V</units>
+      <indexcount>11</indexcount>
+      <decimalpl>2</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1" />
+      <DALINK index="0" />
+      <MATH equation="X*0.0000762939453125">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="y" uniqueid="0x0">
+      <EMBEDDEDDATA mmedelementsizebits="16" mmedmajorstridebits="-32" mmedminorstridebits="0" />
+      <indexcount>1</indexcount>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <DALINK index="0" />
+      <LABEL index="0" value="0.00" />
+      <MATH equation="X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="z">
+      <EMBEDDEDDATA mmedtypeflags="0x02" mmedaddress="0x7E866C" mmedelementsizebits="16" mmedrowcount="1" mmedcolcount="11" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units>hPa</units>
+      <decimalpl>1</decimalpl>
+      <min>0</min>
+      <max>8191.875</max>
+      <outputtype>1</outputtype>
+      <MATH equation="X/8">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE uniqueid="0x0" flags="0x30">
+    <title>Pre-Throttle MAP Sensor Scaling (Custom) - Voltage</title>
+    <description />
+    <CATEGORYMEM index="0" category="39" />
+    <CATEGORYMEM index="1" category="75" />
+    <CATEGORYMEM index="2" category="76" />
+    <XDFAXIS id="x" uniqueid="0x0">
+      <EMBEDDEDDATA mmedelementsizebits="16" mmedmajorstridebits="-32" mmedminorstridebits="0" />
+      <indexcount>11</indexcount>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <DALINK index="0" />
+      <LABEL index="0" value="0.00" />
+      <MATH equation="X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="y" uniqueid="0x0">
+      <EMBEDDEDDATA mmedelementsizebits="16" mmedmajorstridebits="-32" mmedminorstridebits="0" />
+      <indexcount>1</indexcount>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <DALINK index="0" />
+      <LABEL index="0" value="0.00" />
+      <MATH equation="X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="z">
+      <EMBEDDEDDATA mmedtypeflags="0x02" mmedaddress="0x7E8656" mmedelementsizebits="16" mmedrowcount="1" mmedcolcount="11" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units>V</units>
+      <decimalpl>2</decimalpl>
+      <min>0</min>
+      <max>4.999924</max>
+      <outputtype>1</outputtype>
+      <MATH equation="X*0.0000762939453125">
         <VAR id="X" />
       </MATH>
     </XDFAXIS>
