@@ -1,11 +1,11 @@
 <?xml version="1.0"?>
-<XDFFORMAT xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.70">
+<XDFFORMAT xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.80">
   <XDFHEADER>
     <flags>0x1</flags>
     <description />
     <BASEOFFSET offset="0" subtract="0" />
     <DEFAULTS datasizeinbits="16" sigdigits="1" outputtype="1" signed="0" lsbfirst="1" float="0" />
-    <REGION type="0xFFFFFFFF" startaddress="0x0" size="0x800000" regionflags="0x0" name="Binary File" desc="This region describes the bin file edited by this XDF" />
+    <REGION type="0xFFFFFFFF" startaddress="0x0" size="0x800000" regioncolor="0x0" regionflags="0x0" name="Binary File" desc="This region describes the bin file edited by this XDF" />
     <CATEGORY index="0x0" name="Boost" />
     <CATEGORY index="0x1" name="Boost breakpoints" />
     <CATEGORY index="0x2" name="WGDC" />
@@ -3286,8 +3286,8 @@
       <EMBEDDEDDATA mmedtypeflags="0x02" mmedaddress="0x71F5E4" mmedelementsizebits="16" mmedrowcount="6" mmedcolcount="6" mmedmajorstridebits="0" mmedminorstridebits="0" />
       <units>-</units>
       <decimalpl>3</decimalpl>
-      <min>10.0</min>
-      <max>18.0</max>
+      <min>10.000000</min>
+      <max>18.000000</max>
       <outputtype>1</outputtype>
       <MATH equation="X/4096*14.7">
         <VAR id="X" />
@@ -6012,9 +6012,9 @@
     <CATEGORYMEM index="0" category="1" />
     <CATEGORYMEM index="1" category="3" />
     <XDFAXIS id="x" uniqueid="0x0">
-      <EMBEDDEDDATA mmedtypeflags="0x03" mmedaddress="0x727E3E" mmedelementsizebits="16" mmedcolcount="4" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <EMBEDDEDDATA mmedtypeflags="0x03" mmedaddress="0x727E3E" mmedelementsizebits="16" mmedcolcount="5" mmedmajorstridebits="0" mmedminorstridebits="0" />
       <units>hPa</units>
-      <indexcount>4</indexcount>
+      <indexcount>5</indexcount>
       <decimalpl>0</decimalpl>
       <datatype>0</datatype>
       <unittype>0</unittype>
@@ -6025,9 +6025,9 @@
       </MATH>
     </XDFAXIS>
     <XDFAXIS id="y" uniqueid="0x0">
-      <EMBEDDEDDATA mmedtypeflags="0x02" mmedaddress="0x727E34" mmedelementsizebits="16" mmedcolcount="4" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <EMBEDDEDDATA mmedtypeflags="0x02" mmedaddress="0x727E34" mmedelementsizebits="16" mmedcolcount="5" mmedmajorstridebits="0" mmedminorstridebits="0" />
       <units>-</units>
-      <indexcount>4</indexcount>
+      <indexcount>5</indexcount>
       <decimalpl>1</decimalpl>
       <datatype>0</datatype>
       <unittype>0</unittype>
@@ -6038,7 +6038,7 @@
       </MATH>
     </XDFAXIS>
     <XDFAXIS id="z">
-      <EMBEDDEDDATA mmedtypeflags="0x03" mmedaddress="0x727D00" mmedelementsizebits="16" mmedrowcount="4" mmedcolcount="4" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <EMBEDDEDDATA mmedtypeflags="0x03" mmedaddress="0x727D00" mmedelementsizebits="16" mmedrowcount="5" mmedcolcount="5" mmedmajorstridebits="0" mmedminorstridebits="0" />
       <units>%</units>
       <decimalpl>3</decimalpl>
       <min>0.000000</min>
@@ -6055,9 +6055,9 @@
     <CATEGORYMEM index="0" category="1" />
     <CATEGORYMEM index="1" category="3" />
     <XDFAXIS id="x" uniqueid="0x0">
-      <EMBEDDEDDATA mmedtypeflags="0x03" mmedaddress="0x727E52" mmedelementsizebits="16" mmedcolcount="4" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <EMBEDDEDDATA mmedtypeflags="0x03" mmedaddress="0x727E52" mmedelementsizebits="16" mmedcolcount="5" mmedmajorstridebits="0" mmedminorstridebits="0" />
       <units>hPa</units>
-      <indexcount>4</indexcount>
+      <indexcount>5</indexcount>
       <decimalpl>0</decimalpl>
       <datatype>0</datatype>
       <unittype>0</unittype>
@@ -6068,9 +6068,9 @@
       </MATH>
     </XDFAXIS>
     <XDFAXIS id="y" uniqueid="0x0">
-      <EMBEDDEDDATA mmedtypeflags="0x02" mmedaddress="0x727E48" mmedelementsizebits="16" mmedcolcount="4" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <EMBEDDEDDATA mmedtypeflags="0x02" mmedaddress="0x727E48" mmedelementsizebits="16" mmedcolcount="5" mmedmajorstridebits="0" mmedminorstridebits="0" />
       <units>-</units>
-      <indexcount>4</indexcount>
+      <indexcount>5</indexcount>
       <decimalpl>1</decimalpl>
       <datatype>0</datatype>
       <unittype>0</unittype>
@@ -6081,7 +6081,7 @@
       </MATH>
     </XDFAXIS>
     <XDFAXIS id="z">
-      <EMBEDDEDDATA mmedtypeflags="0x03" mmedaddress="0x727D32" mmedelementsizebits="16" mmedrowcount="4" mmedcolcount="4" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <EMBEDDEDDATA mmedtypeflags="0x03" mmedaddress="0x727D32" mmedelementsizebits="16" mmedrowcount="5" mmedcolcount="5" mmedmajorstridebits="0" mmedminorstridebits="0" />
       <units>%</units>
       <decimalpl>3</decimalpl>
       <min>0.000000</min>
@@ -6140,16 +6140,16 @@
     <CATEGORYMEM index="2" category="4" />
     <XDFAXIS id="x">
       <EMBEDDEDDATA />
-      <indexcount>4</indexcount>
+      <indexcount>5</indexcount>
     </XDFAXIS>
     <XDFAXIS id="y">
       <EMBEDDEDDATA />
       <indexcount>1</indexcount>
     </XDFAXIS>
     <XDFAXIS id="z" uniqueid="0x0">
-      <EMBEDDEDDATA mmedtypeflags="0x02" mmedaddress="0x727E34" mmedelementsizebits="16" mmedcolcount="4" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <EMBEDDEDDATA mmedtypeflags="0x02" mmedaddress="0x727E34" mmedelementsizebits="16" mmedcolcount="5" mmedmajorstridebits="0" mmedminorstridebits="0" />
       <units>-</units>
-      <indexcount>4</indexcount>
+      <indexcount>5</indexcount>
       <decimalpl>1</decimalpl>
       <datatype>0</datatype>
       <unittype>0</unittype>
@@ -6167,16 +6167,16 @@
     <CATEGORYMEM index="2" category="4" />
     <XDFAXIS id="x">
       <EMBEDDEDDATA />
-      <indexcount>4</indexcount>
+      <indexcount>5</indexcount>
     </XDFAXIS>
     <XDFAXIS id="y">
       <EMBEDDEDDATA />
       <indexcount>1</indexcount>
     </XDFAXIS>
     <XDFAXIS id="z" uniqueid="0x0">
-      <EMBEDDEDDATA mmedtypeflags="0x03" mmedaddress="0x727E3E" mmedelementsizebits="16" mmedcolcount="4" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <EMBEDDEDDATA mmedtypeflags="0x03" mmedaddress="0x727E3E" mmedelementsizebits="16" mmedcolcount="5" mmedmajorstridebits="0" mmedminorstridebits="0" />
       <units>hPa</units>
-      <indexcount>4</indexcount>
+      <indexcount>5</indexcount>
       <decimalpl>0</decimalpl>
       <datatype>0</datatype>
       <unittype>0</unittype>
@@ -6194,16 +6194,16 @@
     <CATEGORYMEM index="2" category="4" />
     <XDFAXIS id="x">
       <EMBEDDEDDATA />
-      <indexcount>4</indexcount>
+      <indexcount>5</indexcount>
     </XDFAXIS>
     <XDFAXIS id="y">
       <EMBEDDEDDATA />
       <indexcount>1</indexcount>
     </XDFAXIS>
     <XDFAXIS id="z" uniqueid="0x0">
-      <EMBEDDEDDATA mmedtypeflags="0x02" mmedaddress="0x727E48" mmedelementsizebits="16" mmedcolcount="4" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <EMBEDDEDDATA mmedtypeflags="0x02" mmedaddress="0x727E48" mmedelementsizebits="16" mmedcolcount="5" mmedmajorstridebits="0" mmedminorstridebits="0" />
       <units>-</units>
-      <indexcount>4</indexcount>
+      <indexcount>5</indexcount>
       <decimalpl>1</decimalpl>
       <datatype>0</datatype>
       <unittype>0</unittype>
@@ -6221,16 +6221,16 @@
     <CATEGORYMEM index="2" category="4" />
     <XDFAXIS id="x">
       <EMBEDDEDDATA />
-      <indexcount>4</indexcount>
+      <indexcount>5</indexcount>
     </XDFAXIS>
     <XDFAXIS id="y">
       <EMBEDDEDDATA />
       <indexcount>1</indexcount>
     </XDFAXIS>
     <XDFAXIS id="z" uniqueid="0x0">
-      <EMBEDDEDDATA mmedtypeflags="0x03" mmedaddress="0x727E52" mmedelementsizebits="16" mmedcolcount="4" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <EMBEDDEDDATA mmedtypeflags="0x03" mmedaddress="0x727E52" mmedelementsizebits="16" mmedcolcount="5" mmedmajorstridebits="0" mmedminorstridebits="0" />
       <units>hPa</units>
-      <indexcount>4</indexcount>
+      <indexcount>5</indexcount>
       <decimalpl>0</decimalpl>
       <datatype>0</datatype>
       <unittype>0</unittype>
@@ -8778,7 +8778,6 @@
       <units>Tamb</units>
       <indexcount>4</indexcount>
       <decimalpl>0</decimalpl>
-      <outputtype>1</outputtype>
       <datatype>0</datatype>
       <unittype>0</unittype>
       <embedinfo type="1" />
@@ -8819,7 +8818,6 @@
       <units>Tamb</units>
       <indexcount>4</indexcount>
       <decimalpl>0</decimalpl>
-      <outputtype>1</outputtype>
       <datatype>0</datatype>
       <unittype>0</unittype>
       <embedinfo type="1" />
@@ -8868,7 +8866,6 @@
       <units>Tamb</units>
       <indexcount>4</indexcount>
       <decimalpl>0</decimalpl>
-      <outputtype>1</outputtype>
       <datatype>0</datatype>
       <unittype>0</unittype>
       <embedinfo type="1" />
@@ -8895,7 +8892,6 @@
       <units>Tamb</units>
       <indexcount>4</indexcount>
       <decimalpl>0</decimalpl>
-      <outputtype>1</outputtype>
       <datatype>0</datatype>
       <unittype>0</unittype>
       <embedinfo type="1" />
@@ -12570,7 +12566,7 @@
     <description>KF_ST_RKBAS_VVT - Relative fuel used during startup (leave stock if using MHD+ Startup and Warmup enrichment table)</description>
     <CATEGORYMEM index="0" category="5" />
     <XDFAXIS id="x" uniqueid="0x0">
-      <EMBEDDEDDATA mmedtypeflags="0x3" mmedaddress="0x74FEE0" mmedelementsizebits="16" mmedcolcount="12" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <EMBEDDEDDATA mmedtypeflags="0x03" mmedaddress="0x74FEE0" mmedelementsizebits="16" mmedcolcount="12" mmedmajorstridebits="0" mmedminorstridebits="0" />
       <units>1/min</units>
       <indexcount>12</indexcount>
       <decimalpl>0</decimalpl>
@@ -12583,7 +12579,7 @@
       </MATH>
     </XDFAXIS>
     <XDFAXIS id="y" uniqueid="0x0">
-      <EMBEDDEDDATA mmedtypeflags="0x3" mmedaddress="0x74FE98" mmedelementsizebits="16" mmedcolcount="12" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <EMBEDDEDDATA mmedtypeflags="0x03" mmedaddress="0x74FE98" mmedelementsizebits="16" mmedcolcount="12" mmedmajorstridebits="0" mmedminorstridebits="0" />
       <units>&#176;C</units>
       <indexcount>12</indexcount>
       <decimalpl>1</decimalpl>
@@ -12596,11 +12592,11 @@
       </MATH>
     </XDFAXIS>
     <XDFAXIS id="z">
-      <EMBEDDEDDATA mmedtypeflags="0x3" mmedaddress="0x74FD78" mmedelementsizebits="16" mmedrowcount="12" mmedcolcount="12" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <EMBEDDEDDATA mmedtypeflags="0x03" mmedaddress="0x74FD78" mmedelementsizebits="16" mmedrowcount="12" mmedcolcount="12" mmedmajorstridebits="0" mmedminorstridebits="0" />
       <units>%</units>
       <decimalpl>3</decimalpl>
-      <min>-1600</min>
-      <max>1599.9</max>
+      <min>-1600.000000</min>
+      <max>1599.900024</max>
       <outputtype>1</outputtype>
       <MATH equation="X*0.048828125">
         <VAR id="X" />
@@ -12620,7 +12616,7 @@
       <indexcount>1</indexcount>
     </XDFAXIS>
     <XDFAXIS id="z" uniqueid="0x0">
-      <EMBEDDEDDATA mmedtypeflags="0x3" mmedaddress="0x74FE98" mmedelementsizebits="16" mmedcolcount="12" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <EMBEDDEDDATA mmedtypeflags="0x03" mmedaddress="0x74FE98" mmedelementsizebits="16" mmedcolcount="12" mmedmajorstridebits="0" mmedminorstridebits="0" />
       <units>&#176;C</units>
       <indexcount>12</indexcount>
       <decimalpl>1</decimalpl>
@@ -12646,7 +12642,7 @@
       <indexcount>1</indexcount>
     </XDFAXIS>
     <XDFAXIS id="z" uniqueid="0x0">
-      <EMBEDDEDDATA mmedtypeflags="0x3" mmedaddress="0x74FEE0" mmedelementsizebits="16" mmedcolcount="12" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <EMBEDDEDDATA mmedtypeflags="0x03" mmedaddress="0x74FEE0" mmedelementsizebits="16" mmedcolcount="12" mmedmajorstridebits="0" mmedminorstridebits="0" />
       <units>1/min</units>
       <indexcount>12</indexcount>
       <decimalpl>0</decimalpl>
@@ -12664,7 +12660,7 @@
     <description>KF_ST_RKBAS_GD - Relative fuel used during startup (leave stock if using MHD+ Startup and Warmup enrichment table)</description>
     <CATEGORYMEM index="0" category="5" />
     <XDFAXIS id="x" uniqueid="0x0">
-      <EMBEDDEDDATA mmedtypeflags="0x3" mmedaddress="0x75006A" mmedelementsizebits="16" mmedcolcount="10" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <EMBEDDEDDATA mmedtypeflags="0x03" mmedaddress="0x75006A" mmedelementsizebits="16" mmedcolcount="10" mmedmajorstridebits="0" mmedminorstridebits="0" />
       <units>1/min</units>
       <indexcount>10</indexcount>
       <decimalpl>0</decimalpl>
@@ -12677,7 +12673,7 @@
       </MATH>
     </XDFAXIS>
     <XDFAXIS id="y" uniqueid="0x0">
-      <EMBEDDEDDATA mmedtypeflags="0x3" mmedaddress="0x750002" mmedelementsizebits="16" mmedcolcount="10" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <EMBEDDEDDATA mmedtypeflags="0x03" mmedaddress="0x750002" mmedelementsizebits="16" mmedcolcount="10" mmedmajorstridebits="0" mmedminorstridebits="0" />
       <units>&#176;C</units>
       <indexcount>10</indexcount>
       <decimalpl>1</decimalpl>
@@ -12690,11 +12686,11 @@
       </MATH>
     </XDFAXIS>
     <XDFAXIS id="z">
-      <EMBEDDEDDATA mmedtypeflags="0x3" mmedaddress="0x74FF0A" mmedelementsizebits="16" mmedrowcount="10" mmedcolcount="10" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <EMBEDDEDDATA mmedtypeflags="0x03" mmedaddress="0x74FF0A" mmedelementsizebits="16" mmedrowcount="10" mmedcolcount="10" mmedmajorstridebits="0" mmedminorstridebits="0" />
       <units>%</units>
       <decimalpl>3</decimalpl>
-      <min>-1600</min>
-      <max>1599.9</max>
+      <min>-1600.000000</min>
+      <max>1599.900024</max>
       <outputtype>1</outputtype>
       <MATH equation="X*0.048828125">
         <VAR id="X" />
@@ -12714,7 +12710,7 @@
       <indexcount>1</indexcount>
     </XDFAXIS>
     <XDFAXIS id="z" uniqueid="0x0">
-      <EMBEDDEDDATA mmedtypeflags="0x3" mmedaddress="0x750002" mmedelementsizebits="16" mmedcolcount="10" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <EMBEDDEDDATA mmedtypeflags="0x03" mmedaddress="0x750002" mmedelementsizebits="16" mmedcolcount="10" mmedmajorstridebits="0" mmedminorstridebits="0" />
       <units>&#176;C</units>
       <indexcount>10</indexcount>
       <decimalpl>1</decimalpl>
@@ -12740,7 +12736,7 @@
       <indexcount>1</indexcount>
     </XDFAXIS>
     <XDFAXIS id="z" uniqueid="0x0">
-      <EMBEDDEDDATA mmedtypeflags="0x3" mmedaddress="0x75006A" mmedelementsizebits="16" mmedcolcount="10" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <EMBEDDEDDATA mmedtypeflags="0x03" mmedaddress="0x75006A" mmedelementsizebits="16" mmedcolcount="10" mmedmajorstridebits="0" mmedminorstridebits="0" />
       <units>1/min</units>
       <indexcount>10</indexcount>
       <decimalpl>0</decimalpl>
@@ -13034,14 +13030,13 @@
       <units>-</units>
       <indexcount>4</indexcount>
       <decimalpl>-1</decimalpl>
-      <outputtype>1</outputtype>
       <datatype>0</datatype>
       <unittype>0</unittype>
       <DALINK index="0" />
-      <LABEL index="0" value="0" />
-      <LABEL index="1" value="0" />
-      <LABEL index="2" value="0" />
-      <LABEL index="3" value="0" />
+      <LABEL index="0" value="0.000000" />
+      <LABEL index="1" value="0.000000" />
+      <LABEL index="2" value="0.000000" />
+      <LABEL index="3" value="0.000000" />
       <MATH equation="X">
         <VAR id="X" />
       </MATH>
@@ -13080,15 +13075,14 @@
       <units>-</units>
       <indexcount>5</indexcount>
       <decimalpl>-1</decimalpl>
-      <outputtype>1</outputtype>
       <datatype>0</datatype>
       <unittype>0</unittype>
       <DALINK index="0" />
-      <LABEL index="0" value="0" />
-      <LABEL index="1" value="0" />
-      <LABEL index="2" value="0" />
-      <LABEL index="3" value="0" />
-      <LABEL index="4" value="0" />
+      <LABEL index="0" value="0.000000" />
+      <LABEL index="1" value="0.000000" />
+      <LABEL index="2" value="0.000000" />
+      <LABEL index="3" value="0.000000" />
+      <LABEL index="4" value="0.000000" />
       <MATH equation="X">
         <VAR id="X" />
       </MATH>
@@ -14285,7 +14279,6 @@
       <units>-</units>
       <indexcount>12</indexcount>
       <decimalpl>1</decimalpl>
-      <outputtype>1</outputtype>
       <datatype>0</datatype>
       <unittype>0</unittype>
       <embedinfo type="1" />
@@ -14299,7 +14292,6 @@
       <units>-</units>
       <indexcount>4</indexcount>
       <decimalpl>1</decimalpl>
-      <outputtype>1</outputtype>
       <datatype>0</datatype>
       <unittype>0</unittype>
       <embedinfo type="1" />
@@ -14329,7 +14321,6 @@
       <units>-</units>
       <indexcount>12</indexcount>
       <decimalpl>1</decimalpl>
-      <outputtype>1</outputtype>
       <datatype>0</datatype>
       <unittype>0</unittype>
       <embedinfo type="1" />
@@ -14380,7 +14371,6 @@
       <units>-</units>
       <indexcount>4</indexcount>
       <decimalpl>1</decimalpl>
-      <outputtype>1</outputtype>
       <datatype>0</datatype>
       <unittype>0</unittype>
       <embedinfo type="1" />
@@ -14407,7 +14397,6 @@
       <units>-</units>
       <indexcount>12</indexcount>
       <decimalpl>1</decimalpl>
-      <outputtype>1</outputtype>
       <datatype>0</datatype>
       <unittype>0</unittype>
       <embedinfo type="1" />
@@ -16505,7 +16494,6 @@
       <EMBEDDEDDATA mmedtypeflags="0x02" mmedaddress="0x78DF02" mmedelementsizebits="16" mmedcolcount="10" mmedmajorstridebits="0" mmedminorstridebits="0" />
       <indexcount>10</indexcount>
       <decimalpl>0</decimalpl>
-      <outputtype>1</outputtype>
       <datatype>0</datatype>
       <unittype>0</unittype>
       <embedinfo type="1" />
@@ -16532,7 +16520,6 @@
       <units>1/min</units>
       <indexcount>12</indexcount>
       <decimalpl>0</decimalpl>
-      <outputtype>1</outputtype>
       <datatype>0</datatype>
       <unittype>0</unittype>
       <embedinfo type="1" />
@@ -16551,7 +16538,6 @@
       <units>1/min</units>
       <indexcount>12</indexcount>
       <decimalpl>0</decimalpl>
-      <outputtype>1</outputtype>
       <datatype>0</datatype>
       <unittype>0</unittype>
       <embedinfo type="1" />
@@ -16564,7 +16550,6 @@
       <EMBEDDEDDATA mmedtypeflags="0x02" mmedaddress="0x78DF02" mmedelementsizebits="16" mmedcolcount="10" mmedmajorstridebits="0" mmedminorstridebits="0" />
       <indexcount>10</indexcount>
       <decimalpl>0</decimalpl>
-      <outputtype>1</outputtype>
       <datatype>0</datatype>
       <unittype>0</unittype>
       <embedinfo type="1" />
@@ -18747,7 +18732,6 @@
       <units>-</units>
       <indexcount>4</indexcount>
       <decimalpl>-1</decimalpl>
-      <outputtype>1</outputtype>
       <datatype>0</datatype>
       <unittype>0</unittype>
       <embedinfo type="2" />
@@ -18914,15 +18898,14 @@
       <units>-</units>
       <indexcount>5</indexcount>
       <decimalpl>-1</decimalpl>
-      <outputtype>1</outputtype>
       <datatype>0</datatype>
       <unittype>0</unittype>
       <DALINK index="0" />
-      <LABEL index="0" value="0" />
-      <LABEL index="1" value="0" />
-      <LABEL index="2" value="0" />
-      <LABEL index="3" value="0" />
-      <LABEL index="4" value="0" />
+      <LABEL index="0" value="0.000000" />
+      <LABEL index="1" value="0.000000" />
+      <LABEL index="2" value="0.000000" />
+      <LABEL index="3" value="0.000000" />
+      <LABEL index="4" value="0.000000" />
       <MATH equation="X">
         <VAR id="X" />
       </MATH>
@@ -19093,7 +19076,7 @@
     <description>PVDMX - Boost ceiling from the Bosch layer</description>
     <CATEGORYMEM index="0" category="1" />
     <XDFAXIS id="x" uniqueid="0x0">
-      <EMBEDDEDDATA mmedtypeflags="0x0" mmedaddress="0x0" mmedelementsizebits="8" mmedcolcount="1" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <EMBEDDEDDATA mmedelementsizebits="8" mmedmajorstridebits="0" mmedminorstridebits="0" />
       <units>-</units>
       <indexcount>1</indexcount>
       <decimalpl>0</decimalpl>
@@ -19106,7 +19089,7 @@
       </MATH>
     </XDFAXIS>
     <XDFAXIS id="y" uniqueid="0x0">
-      <EMBEDDEDDATA mmedtypeflags="0x0" mmedaddress="0x0" mmedelementsizebits="8" mmedcolcount="1" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <EMBEDDEDDATA mmedelementsizebits="8" mmedmajorstridebits="0" mmedminorstridebits="0" />
       <units>-</units>
       <indexcount>1</indexcount>
       <decimalpl>0</decimalpl>
@@ -19119,11 +19102,11 @@
       </MATH>
     </XDFAXIS>
     <XDFAXIS id="z">
-      <EMBEDDEDDATA mmedtypeflags="0x2" mmedaddress="0x796212" mmedelementsizebits="16" mmedrowcount="1" mmedcolcount="1" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <EMBEDDEDDATA mmedtypeflags="0x02" mmedaddress="0x796212" mmedelementsizebits="16" mmedrowcount="1" mmedmajorstridebits="0" mmedminorstridebits="0" />
       <units>hPa</units>
       <decimalpl>3</decimalpl>
-      <min>0</min>
-      <max>5119.92</max>
+      <min>0.000000</min>
+      <max>5119.919922</max>
       <outputtype>1</outputtype>
       <MATH equation="X*0.078125">
         <VAR id="X" />
@@ -19306,12 +19289,15 @@
       <EMBEDDEDDATA />
       <indexcount>1</indexcount>
     </XDFAXIS>
-    <XDFAXIS id="z">
+    <XDFAXIS id="z" uniqueid="0x0">
       <EMBEDDEDDATA mmedtypeflags="0x03" mmedaddress="0x79ECF0" mmedelementsizebits="16" mmedcolcount="16" mmedmajorstridebits="0" mmedminorstridebits="0" />
       <units>l/min</units>
       <indexcount>16</indexcount>
       <decimalpl>0</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
       <embedinfo type="1" />
+      <DALINK index="0" />
       <MATH equation="X*0.5">
         <VAR id="X" />
       </MATH>
@@ -19329,12 +19315,15 @@
       <EMBEDDEDDATA />
       <indexcount>1</indexcount>
     </XDFAXIS>
-    <XDFAXIS id="z">
+    <XDFAXIS id="z" uniqueid="0x0">
       <EMBEDDEDDATA mmedtypeflags="0x02" mmedaddress="0x79ED2E" mmedelementsizebits="16" mmedcolcount="4" mmedmajorstridebits="0" mmedminorstridebits="0" />
       <units>%</units>
       <indexcount>4</indexcount>
       <decimalpl>1</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
       <embedinfo type="1" />
+      <DALINK index="0" />
       <MATH equation="X*0.0234375">
         <VAR id="X" />
       </MATH>
@@ -19344,22 +19333,28 @@
     <title>Knock detection factor 1</title>
     <description>IKCtl_FacKnockDetThd0_GM - Knock detection factor for cylinder 1</description>
     <CATEGORYMEM index="0" category="7" />
-    <XDFAXIS id="x">
+    <XDFAXIS id="x" uniqueid="0x0">
       <EMBEDDEDDATA mmedtypeflags="0x03" mmedaddress="0x79ECF0" mmedelementsizebits="16" mmedrowcount="16" mmedmajorstridebits="0" mmedminorstridebits="0" />
       <units>l/min</units>
       <indexcount>16</indexcount>
       <decimalpl>0</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
       <embedinfo type="1" />
+      <DALINK index="0" />
       <MATH equation="X*0.5">
         <VAR id="X" />
       </MATH>
     </XDFAXIS>
-    <XDFAXIS id="y">
+    <XDFAXIS id="y" uniqueid="0x0">
       <EMBEDDEDDATA mmedtypeflags="0x02" mmedaddress="0x79ED2E" mmedelementsizebits="16" mmedcolcount="4" mmedmajorstridebits="0" mmedminorstridebits="0" />
       <units>%</units>
       <indexcount>4</indexcount>
       <decimalpl>1</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
       <embedinfo type="1" />
+      <DALINK index="0" />
       <MATH equation="X*0.0234375">
         <VAR id="X" />
       </MATH>
@@ -19369,8 +19364,8 @@
       <units>-</units>
       <decimalpl>4</decimalpl>
       <min>0.000000</min>
-      <max>15.9375</max>
-      <embedinfo type="1" />
+      <max>15.937500</max>
+      <outputtype>1</outputtype>
       <MATH equation="X*0.0625">
         <VAR id="X" />
       </MATH>
@@ -19380,22 +19375,28 @@
     <title>Knock detection factor 2</title>
     <description>IKCtl_FacKnockDetThd1_GM - Knock detection factor for cylinder 2</description>
     <CATEGORYMEM index="0" category="7" />
-    <XDFAXIS id="x">
+    <XDFAXIS id="x" uniqueid="0x0">
       <EMBEDDEDDATA mmedtypeflags="0x03" mmedaddress="0x79ECF0" mmedelementsizebits="16" mmedrowcount="16" mmedmajorstridebits="0" mmedminorstridebits="0" />
       <units>l/min</units>
       <indexcount>16</indexcount>
       <decimalpl>0</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
       <embedinfo type="1" />
+      <DALINK index="0" />
       <MATH equation="X*0.5">
         <VAR id="X" />
       </MATH>
     </XDFAXIS>
-    <XDFAXIS id="y">
+    <XDFAXIS id="y" uniqueid="0x0">
       <EMBEDDEDDATA mmedtypeflags="0x02" mmedaddress="0x79ED2E" mmedelementsizebits="16" mmedcolcount="4" mmedmajorstridebits="0" mmedminorstridebits="0" />
       <units>%</units>
       <indexcount>4</indexcount>
       <decimalpl>1</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
       <embedinfo type="1" />
+      <DALINK index="0" />
       <MATH equation="X*0.0234375">
         <VAR id="X" />
       </MATH>
@@ -19405,8 +19406,8 @@
       <units>-</units>
       <decimalpl>4</decimalpl>
       <min>0.000000</min>
-      <max>15.9375</max>
-      <embedinfo type="1" />
+      <max>15.937500</max>
+      <outputtype>1</outputtype>
       <MATH equation="X*0.0625">
         <VAR id="X" />
       </MATH>
@@ -19416,22 +19417,28 @@
     <title>Knock detection factor 3</title>
     <description>IKCtl_FacKnockDetThd2_GM - Knock detection factor for cylinder 3</description>
     <CATEGORYMEM index="0" category="7" />
-    <XDFAXIS id="x">
+    <XDFAXIS id="x" uniqueid="0x0">
       <EMBEDDEDDATA mmedtypeflags="0x03" mmedaddress="0x79ECF0" mmedelementsizebits="16" mmedrowcount="16" mmedmajorstridebits="0" mmedminorstridebits="0" />
       <units>l/min</units>
       <indexcount>16</indexcount>
       <decimalpl>0</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
       <embedinfo type="1" />
+      <DALINK index="0" />
       <MATH equation="X*0.5">
         <VAR id="X" />
       </MATH>
     </XDFAXIS>
-    <XDFAXIS id="y">
+    <XDFAXIS id="y" uniqueid="0x0">
       <EMBEDDEDDATA mmedtypeflags="0x02" mmedaddress="0x79ED2E" mmedelementsizebits="16" mmedcolcount="4" mmedmajorstridebits="0" mmedminorstridebits="0" />
       <units>%</units>
       <indexcount>4</indexcount>
       <decimalpl>1</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
       <embedinfo type="1" />
+      <DALINK index="0" />
       <MATH equation="X*0.0234375">
         <VAR id="X" />
       </MATH>
@@ -19441,8 +19448,8 @@
       <units>-</units>
       <decimalpl>4</decimalpl>
       <min>0.000000</min>
-      <max>15.9375</max>
-      <embedinfo type="1" />
+      <max>15.937500</max>
+      <outputtype>1</outputtype>
       <MATH equation="X*0.0625">
         <VAR id="X" />
       </MATH>
@@ -19452,22 +19459,28 @@
     <title>Knock detection factor 4</title>
     <description>IKCtl_FacKnockDetThd3_GM - Knock detection factor for cylinder 4</description>
     <CATEGORYMEM index="0" category="7" />
-    <XDFAXIS id="x">
+    <XDFAXIS id="x" uniqueid="0x0">
       <EMBEDDEDDATA mmedtypeflags="0x03" mmedaddress="0x79ECF0" mmedelementsizebits="16" mmedrowcount="16" mmedmajorstridebits="0" mmedminorstridebits="0" />
       <units>l/min</units>
       <indexcount>16</indexcount>
       <decimalpl>0</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
       <embedinfo type="1" />
+      <DALINK index="0" />
       <MATH equation="X*0.5">
         <VAR id="X" />
       </MATH>
     </XDFAXIS>
-    <XDFAXIS id="y">
+    <XDFAXIS id="y" uniqueid="0x0">
       <EMBEDDEDDATA mmedtypeflags="0x02" mmedaddress="0x79ED2E" mmedelementsizebits="16" mmedcolcount="4" mmedmajorstridebits="0" mmedminorstridebits="0" />
       <units>%</units>
       <indexcount>4</indexcount>
       <decimalpl>1</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
       <embedinfo type="1" />
+      <DALINK index="0" />
       <MATH equation="X*0.0234375">
         <VAR id="X" />
       </MATH>
@@ -19477,8 +19490,8 @@
       <units>-</units>
       <decimalpl>4</decimalpl>
       <min>0.000000</min>
-      <max>15.9375</max>
-      <embedinfo type="1" />
+      <max>15.937500</max>
+      <outputtype>1</outputtype>
       <MATH equation="X*0.0625">
         <VAR id="X" />
       </MATH>
@@ -19488,22 +19501,28 @@
     <title>Knock detection factor 5</title>
     <description>IKCtl_FacKnockDetThd4_GM - Knock detection factor for cylinder 5</description>
     <CATEGORYMEM index="0" category="7" />
-    <XDFAXIS id="x">
+    <XDFAXIS id="x" uniqueid="0x0">
       <EMBEDDEDDATA mmedtypeflags="0x03" mmedaddress="0x79ECF0" mmedelementsizebits="16" mmedrowcount="16" mmedmajorstridebits="0" mmedminorstridebits="0" />
       <units>l/min</units>
       <indexcount>16</indexcount>
       <decimalpl>0</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
       <embedinfo type="1" />
+      <DALINK index="0" />
       <MATH equation="X*0.5">
         <VAR id="X" />
       </MATH>
     </XDFAXIS>
-    <XDFAXIS id="y">
+    <XDFAXIS id="y" uniqueid="0x0">
       <EMBEDDEDDATA mmedtypeflags="0x02" mmedaddress="0x79ED2E" mmedelementsizebits="16" mmedcolcount="4" mmedmajorstridebits="0" mmedminorstridebits="0" />
       <units>%</units>
       <indexcount>4</indexcount>
       <decimalpl>1</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
       <embedinfo type="1" />
+      <DALINK index="0" />
       <MATH equation="X*0.0234375">
         <VAR id="X" />
       </MATH>
@@ -19513,8 +19532,8 @@
       <units>-</units>
       <decimalpl>4</decimalpl>
       <min>0.000000</min>
-      <max>15.9375</max>
-      <embedinfo type="1" />
+      <max>15.937500</max>
+      <outputtype>1</outputtype>
       <MATH equation="X*0.0625">
         <VAR id="X" />
       </MATH>
@@ -19524,22 +19543,28 @@
     <title>Knock detection factor 6</title>
     <description>IKCtl_FacKnockDetThd5_GM - Knock detection factor for cylinder 6</description>
     <CATEGORYMEM index="0" category="7" />
-    <XDFAXIS id="x">
+    <XDFAXIS id="x" uniqueid="0x0">
       <EMBEDDEDDATA mmedtypeflags="0x03" mmedaddress="0x79ECF0" mmedelementsizebits="16" mmedrowcount="16" mmedmajorstridebits="0" mmedminorstridebits="0" />
       <units>l/min</units>
       <indexcount>16</indexcount>
       <decimalpl>0</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
       <embedinfo type="1" />
+      <DALINK index="0" />
       <MATH equation="X*0.5">
         <VAR id="X" />
       </MATH>
     </XDFAXIS>
-    <XDFAXIS id="y">
+    <XDFAXIS id="y" uniqueid="0x0">
       <EMBEDDEDDATA mmedtypeflags="0x02" mmedaddress="0x79ED2E" mmedelementsizebits="16" mmedcolcount="4" mmedmajorstridebits="0" mmedminorstridebits="0" />
       <units>%</units>
       <indexcount>4</indexcount>
       <decimalpl>1</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
       <embedinfo type="1" />
+      <DALINK index="0" />
       <MATH equation="X*0.0234375">
         <VAR id="X" />
       </MATH>
@@ -19549,8 +19574,8 @@
       <units>-</units>
       <decimalpl>4</decimalpl>
       <min>0.000000</min>
-      <max>15.9375</max>
-      <embedinfo type="1" />
+      <max>15.937500</max>
+      <outputtype>1</outputtype>
       <MATH equation="X*0.0625">
         <VAR id="X" />
       </MATH>
@@ -20422,7 +20447,6 @@
       <EMBEDDEDDATA mmedtypeflags="0x02" mmedelementsizebits="16" mmedmajorstridebits="0" mmedminorstridebits="0" />
       <indexcount>32</indexcount>
       <decimalpl>0</decimalpl>
-      <outputtype>1</outputtype>
       <datatype>0</datatype>
       <unittype>0</unittype>
       <embedinfo type="2" />
