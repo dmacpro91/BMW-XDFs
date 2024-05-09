@@ -1,0 +1,335 @@
+<ADXFORMAT version="1.01">
+  <!-- Written 04/10/2024 11:27:04 -->
+  <ADXHEADER>
+    <guid>c15be4a1-e7d8-46c2-871b-e2bfeefecb7a</guid>
+    <flags>0x10000</flags>
+    <objectcount>22</objectcount>
+    <userversion>1.0</userversion>
+    <author>MHD Tuning</author>
+    <baud>1200</baud>
+    <DEFAULTS datasizeinbits="8" sigdigits="2" outputtype="3" baud="0" signed="0" lsbfirst="1" float="0" />
+    <monitorcmd>MONITORMACRO</monitorcmd>
+  </ADXHEADER>
+
+  <ADXLISTVIEW id="RTAXISPARAMS" idhash="0xB630221B" title="Real Time Axis Parameters">
+    <entrycount>18</entrycount>
+    <ADXLVENTRY entrytype="0" itemidhash="0xCD0CD1DB" />
+    <ADXLVENTRY entrytype="0" itemidhash="0xAA726CF9" />
+    <ADXLVENTRY entrytype="0" itemidhash="0xE2448F75" />
+    <ADXLVENTRY entrytype="0" itemidhash="0x21F5438C" />
+    <ADXLVENTRY entrytype="0" itemidhash="0x01C8B5F8" />
+    <ADXLVENTRY entrytype="0" itemidhash="0x4CBE55F1" />
+    <ADXLVENTRY entrytype="0" itemidhash="0x589AD216" />
+    <ADXLVENTRY entrytype="0" itemidhash="0xA6737119" />
+    <ADXLVENTRY entrytype="0" itemidhash="0x70BAF631" />
+    <ADXLVENTRY entrytype="0" itemidhash="0x53094B44" />
+    <ADXLVENTRY entrytype="0" itemidhash="0x8000742C" />
+    <ADXLVENTRY entrytype="0" itemidhash="0x000E9250" />
+    <ADXLVENTRY entrytype="0" itemidhash="0x71755893" />
+    <ADXLVENTRY entrytype="0" itemidhash="0x2EAB05AE" />
+    <ADXLVENTRY entrytype="0" itemidhash="0xE1FB8632" />
+    <ADXLVENTRY entrytype="0" itemidhash="0xE12680B5" />
+    <ADXLVENTRY entrytype="0" itemidhash="0x524CD4FC" />
+    <ADXLVENTRY entrytype="0" itemidhash="0x0882C50D" />
+  </ADXLISTVIEW>
+
+  <ADXMACRO id="MONITORMACRO" idhash="0xD177CF5B" title="Monitor Macro" repeatcount="1">
+    <NODE commandID="MONITORREQUEST" repeatcount="1" />
+    <NODE commandID="MONITORREPLY" repeatcount="1" />
+  </ADXMACRO>
+
+  <ADXVALUE id="RPM" idhash="0xCD0CD1DB" title="RPM">
+    <desc>Nkw</desc>
+    <flags>0x00000003</flags>
+    <units>l/min</units>
+    <packetoffset>0x00</packetoffset>
+    <sizeinbits>16</sizeinbits>
+    <range low="0.000000" high="32767.000000" />
+    <alarms low="0.000000" high="255.000000" />
+    <digcount>0</digcount>
+    <outputtype>3</outputtype>
+    <datatype>6</datatype>
+    <MATH equation="X">
+      <VAR varID="X" type="native" />
+    </MATH>
+  </ADXVALUE>
+
+  <ADXVALUE id="LOAD" idhash="0xAA726CF9" title="Load">
+    <desc>Rf</desc>
+    <flags>0x00000003</flags>
+    <units>%</units>
+    <packetoffset>0x02</packetoffset>
+    <sizeinbits>16</sizeinbits>
+    <range low="-327.679993" high="327.670013" />
+    <alarms low="0.000000" high="255.000000" />
+    <digcount>2</digcount>
+    <outputtype>3</outputtype>
+    <datatype>23</datatype>
+    <MATH equation="X*0.01">
+      <VAR varID="X" type="native" />
+    </MATH>
+  </ADXVALUE>
+
+  <ADXVALUE id="BOOST" idhash="0xE2448F75" title="Boost">
+    <desc>pvdr_w_msg</desc>
+    <flags>0x00000002</flags>
+    <units>psi</units>
+    <packetoffset>0x04</packetoffset>
+    <sizeinbits>16</sizeinbits>
+    <range low="0.000000" high="74.250000" />
+    <alarms low="0.000000" high="255.000000" />
+    <digcount>2</digcount>
+    <outputtype>3</outputtype>
+    <datatype>71</datatype>
+    <MATH equation="X*0.001133107328125">
+      <VAR varID="X" type="native" />
+    </MATH>
+  </ADXVALUE>
+
+  <ADXVALUE id="BOOSTTARGET" idhash="0x21F5438C" title="Boost Target">
+    <desc>BMWtchsp_p_Req_uw</desc>
+    <flags>0x00000002</flags>
+    <units>psi</units>
+    <packetoffset>0x06</packetoffset>
+    <sizeinbits>16</sizeinbits>
+    <range low="0.000000" high="118.809998" />
+    <alarms low="0.000000" high="255.000000" />
+    <digcount>2</digcount>
+    <outputtype>3</outputtype>
+    <datatype>71</datatype>
+    <MATH equation="X*0.0018129717">
+      <VAR varID="X" type="native" />
+    </MATH>
+  </ADXVALUE>
+
+  <ADXVALUE id="BOOSTDEVIATION" idhash="0x01C8B5F8" title="Boost Deviation">
+    <desc>BMWtchbas_p_Dif_sw</desc>
+    <flags>0x00000003</flags>
+    <units>psi</units>
+    <packetoffset>0x08</packetoffset>
+    <sizeinbits>16</sizeinbits>
+    <range low="-59.400002" high="59.400002" />
+    <alarms low="0.000000" high="255.000000" />
+    <digcount>2</digcount>
+    <outputtype>3</outputtype>
+    <datatype>71</datatype>
+    <MATH equation="X*0.0018129717">
+      <VAR varID="X" type="native" />
+    </MATH>
+  </ADXVALUE>
+
+  <ADXVALUE id="BOOSTDEVGRAD" idhash="0x4CBE55F1" title="Boost Deviation Gradient">
+    <desc>BMWtchbas_p_DifGra_sw</desc>
+    <flags>0x00000003</flags>
+    <units>psi</units>
+    <packetoffset>0x0A</packetoffset>
+    <sizeinbits>16</sizeinbits>
+    <range low="-59.400002" high="59.400002" />
+    <alarms low="0.000000" high="255.000000" />
+    <digcount>2</digcount>
+    <outputtype>3</outputtype>
+    <datatype>71</datatype>
+    <MATH equation="X*0.0018129717">
+      <VAR varID="X" type="native" />
+    </MATH>
+  </ADXVALUE>
+
+  <ADXVALUE id="ENGINETEMP" idhash="0x589AD216" title="Engine Temp">
+    <desc>Tmot</desc>
+    <flags>0x00000003</flags>
+    <units>&#176;C</units>
+    <packetoffset>0x0C</packetoffset>
+    <sizeinbits>16</sizeinbits>
+    <range low="-327.679993" high="327.670013" />
+    <alarms low="0.000000" high="255.000000" />
+    <digcount>2</digcount>
+    <outputtype>3</outputtype>
+    <datatype>13</datatype>
+    <MATH equation="X*0.01">
+      <VAR varID="X" type="native" />
+    </MATH>
+  </ADXVALUE>
+
+  <ADXVALUE id="GEAR" idhash="0xA6737119" title="Gear">
+    <desc>Gang_gb1_ist</desc>
+    <flags>0x00000003</flags>
+    <packetoffset>0x0E</packetoffset>
+    <range low="0.000000" high="255.000000" />
+    <alarms low="0.000000" high="255.000000" />
+    <digcount>0</digcount>
+    <outputtype>3</outputtype>
+    <datatype>64</datatype>
+    <MATH equation="X">
+      <VAR varID="X" type="native" />
+    </MATH>
+  </ADXVALUE>
+
+  <ADXVALUE id="ETHANOLCONTENT" idhash="0x70BAF631" title="Ethanol Content (Active)">
+    <desc>ethanol_content_active</desc>
+    <flags>0x00000002</flags>
+    <units>%</units>
+    <packetoffset>0x0F</packetoffset>
+    <range low="0.000000" high="100.000000" />
+    <alarms low="0.000000" high="255.000000" />
+    <digcount>0</digcount>
+    <outputtype>3</outputtype>
+    <MATH equation="X">
+      <VAR varID="X" type="native" />
+    </MATH>
+  </ADXVALUE>
+
+  <ADXVALUE id="WGDISTRIBFAC" idhash="0x53094B44" title="Distribution Factor">
+    <desc>BMWtchctr_rat_mf_TrbWg_uw</desc>
+    <flags>0x00000002</flags>
+    <units>-</units>
+    <packetoffset>0x10</packetoffset>
+    <sizeinbits>16</sizeinbits>
+    <range low="0.000000" high="3.999938" />
+    <alarms low="0.000000" high="255.000000" />
+    <digcount>2</digcount>
+    <outputtype>3</outputtype>
+    <datatype>25</datatype>
+    <MATH equation="X/16384">
+      <VAR varID="X" type="native" />
+    </MATH>
+  </ADXVALUE>
+
+  <ADXVALUE id="TURBOMASSFLOW" idhash="0x8000742C" title="Air Mass Flow (Exhaust, new style)">
+    <desc>BMWtchctr_mf_EgCrtd</desc>
+    <flags>0x00000002</flags>
+    <units>g/s</units>
+    <packetoffset>0x12</packetoffset>
+    <sizeinbits>16</sizeinbits>
+    <range low="0.000000" high="711.100281" />
+    <alarms low="0.000000" high="255.000000" />
+    <digcount>2</digcount>
+    <outputtype>3</outputtype>
+    <datatype>26</datatype>
+    <MATH equation="X*0.0390625/3.6">
+      <VAR varID="X" type="native" />
+    </MATH>
+  </ADXVALUE>
+
+  <ADXVALUE id="TURBOMASSFLOW2" idhash="0x000E9250" title="Air Mass Flow (Exhaust, old style)">
+    <desc>BMWtchsp_mf_Ex_uw</desc>
+    <flags>0x00000002</flags>
+    <units>g/s</units>
+    <packetoffset>0x14</packetoffset>
+    <sizeinbits>16</sizeinbits>
+    <range low="0.000000" high="568.880188" />
+    <alarms low="0.000000" high="255.000000" />
+    <digcount>2</digcount>
+    <outputtype>3</outputtype>
+    <datatype>26</datatype>
+    <MATH equation="X*0.03125/3.6">
+      <VAR varID="X" type="native" />
+    </MATH>
+  </ADXVALUE>
+
+  <ADXVALUE id="CMPRMASSFLOW" idhash="0x71755893" title="Air Mass Flow (Compressor, S58)">
+    <desc>BMWtchsp_mf_CmprNormWideRng_uw</desc>
+    <flags>0x00000002</flags>
+    <units>g/s</units>
+    <packetoffset>0x16</packetoffset>
+    <sizeinbits>16</sizeinbits>
+    <range low="0.000000" high="1.000000" />
+    <alarms low="0.000000" high="255.000000" />
+    <digcount>2</digcount>
+    <outputtype>3</outputtype>
+    <datatype>26</datatype>
+    <MATH equation="X*0.0625/3.6">
+      <VAR varID="X" type="native" />
+    </MATH>
+  </ADXVALUE>
+
+  <ADXVALUE id="CMPRMASSFLOW2" idhash="0x2EAB05AE" title="Air Mass Flow (Compressor, B58)">
+    <desc>BMWtchsp_mf_CmprNorm_uw</desc>
+    <flags>0x00000002</flags>
+    <units>g/s</units>
+    <packetoffset>0x18</packetoffset>
+    <sizeinbits>16</sizeinbits>
+    <range low="0.000000" high="568.880188" />
+    <alarms low="0.000000" high="255.000000" />
+    <digcount>2</digcount>
+    <outputtype>3</outputtype>
+    <datatype>26</datatype>
+    <MATH equation="X*0.03125/3.6">
+      <VAR varID="X" type="native" />
+    </MATH>
+  </ADXVALUE>
+
+  <ADXVALUE id="BOOSTSETPOINTF" idhash="0xE1FB8632" title="Boost Setpoint Factor">
+    <desc>BMWtchsp_rat_p_CmprLim_uw</desc>
+    <flags>0x00000002</flags>
+    <units>-</units>
+    <packetoffset>0x1A</packetoffset>
+    <sizeinbits>16</sizeinbits>
+    <range low="0.000000" high="7.999870" />
+    <alarms low="0.000000" high="255.000000" />
+    <digcount>2</digcount>
+    <outputtype>3</outputtype>
+    <datatype>71</datatype>
+    <MATH equation="X/8192">
+      <VAR varID="X" type="native" />
+    </MATH>
+  </ADXVALUE>
+
+  <ADXVALUE id="SPEED" idhash="0xE12680B5" title="Speed">
+    <desc>V</desc>
+    <flags>0x00000002</flags>
+    <units>km/h</units>
+    <packetoffset>0x1C</packetoffset>
+    <sizeinbits>16</sizeinbits>
+    <range low="0.000000" high="255.000000" />
+    <alarms low="0.000000" high="255.000000" />
+    <digcount>0</digcount>
+    <outputtype>3</outputtype>
+    <datatype>5</datatype>
+    <MATH equation="X">
+      <VAR varID="X" type="native" />
+    </MATH>
+  </ADXVALUE>
+
+  <ADXVALUE id="AMBIENTTEMP" idhash="0x524CD4FC" title="Ambient Temp">
+    <desc>Tumg_wm</desc>
+    <flags>0x00000003</flags>
+    <units>&#176;C</units>
+    <packetoffset>0x1E</packetoffset>
+    <sizeinbits>16</sizeinbits>
+    <range low="-3276.800049" high="3276.699951" />
+    <alarms low="0.000000" high="255.000000" />
+    <digcount>1</digcount>
+    <outputtype>3</outputtype>
+    <MATH equation="X/10">
+      <VAR varID="X" type="native" />
+    </MATH>
+  </ADXVALUE>
+
+  <ADXVALUE id="INTAKEAIRTEMP" idhash="0x0882C50D" title="Intake Air Temp">
+    <desc>Tans</desc>
+    <flags>0x00000003</flags>
+    <units>&#176;C</units>
+    <packetoffset>0x20</packetoffset>
+    <sizeinbits>16</sizeinbits>
+    <range low="-3276.800049" high="3276.699951" />
+    <alarms low="0.000000" high="255.000000" />
+    <digcount>1</digcount>
+    <outputtype>3</outputtype>
+    <datatype>19</datatype>
+    <MATH equation="X/10">
+      <VAR varID="X" type="native" />
+    </MATH>
+  </ADXVALUE>
+
+  <ADXCSENDCOMMAND id="MONITORREQUEST" idhash="0xA5AC8868" title="Monitor Request" flags="0x00000003">
+    <bytestring size="0x3">2C8801</bytestring>
+  </ADXCSENDCOMMAND>
+
+  <ADXCLISTENPACKET id="MONITORREPLY" idhash="0x0A29353A" title="Monitor Reply" flags="0x00000005">
+    <listentimeout>100</listentimeout>
+    <packetbodylength>34</packetbodylength>
+    <packetoffsetinbody>0</packetoffsetinbody>
+    <packetsize>34</packetsize>
+    <headerstring size="2">6C88</headerstring>
+  </ADXCLISTENPACKET>
+</ADXFORMAT>
