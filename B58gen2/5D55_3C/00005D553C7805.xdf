@@ -4245,6 +4245,33 @@
       </MATH>
     </XDFAXIS>
   </XDFTABLE>
+  <XDFTABLE>
+    <title>WGDC Pre-Control Fader (partial load) X (autogen)</title>
+    <CATEGORYMEM index="0" category="1" />
+    <CATEGORYMEM index="1" category="3" />
+    <CATEGORYMEM index="2" category="4" />
+    <XDFAXIS id="x">
+      <EMBEDDEDDATA />
+      <indexcount>6</indexcount>
+    </XDFAXIS>
+    <XDFAXIS id="y">
+      <EMBEDDEDDATA />
+      <indexcount>1</indexcount>
+    </XDFAXIS>
+    <XDFAXIS id="z" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x2" mmedaddress="0x720a72" mmedelementsizebits="16" mmedcolcount="6" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units>-</units>
+      <indexcount>6</indexcount>
+      <decimalpl>3</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1" />
+      <DALINK index="0" />
+      <MATH equation="X*0.000122070312">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
   <XDFTABLE uniqueid="0x0" flags="0x0">
     <title>Max RPM to activate the limitation of P during shifts</title>
     <description>BMWtchctr_n_PpLimMax_C</description>
@@ -5139,6 +5166,76 @@
       <embedinfo type="1" />
       <DALINK index="0" />
       <MATH equation="X*0.125">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE uniqueid="0x0" flags="0x30">
+    <title>WGDC during blow off</title>
+    <description>BMWtchout_pct_WgBlwOff_T - </description>
+    <CATEGORYMEM index="0" category="1" />
+    <CATEGORYMEM index="1" category="3" />
+    <XDFAXIS id="x" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x3" mmedaddress="0x7218f0" mmedelementsizebits="16" mmedcolcount="4" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units>1/min</units>
+      <indexcount>4</indexcount>
+      <decimalpl>0</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1" />
+      <DALINK index="0" />
+      <MATH equation="X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="y" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x0" mmedaddress="0x0" mmedelementsizebits="8" mmedcolcount="1" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units>-</units>
+      <indexcount>1</indexcount>
+      <decimalpl>0</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1" />
+      <DALINK index="0" />
+      <MATH equation="X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="z">
+      <EMBEDDEDDATA mmedtypeflags="0x2" mmedaddress="0x7218e8" mmedelementsizebits="16" mmedrowcount="1" mmedcolcount="4" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units>%</units>
+      <decimalpl>2</decimalpl>
+      <min>0</min>
+      <max>100</max>
+      <outputtype>1</outputtype>
+      <MATH equation="X*0.001525878906">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE>
+    <title>WGDC during blow off X (autogen)</title>
+    <CATEGORYMEM index="0" category="1" />
+    <CATEGORYMEM index="1" category="3" />
+    <CATEGORYMEM index="2" category="4" />
+    <XDFAXIS id="x">
+      <EMBEDDEDDATA />
+      <indexcount>4</indexcount>
+    </XDFAXIS>
+    <XDFAXIS id="y">
+      <EMBEDDEDDATA />
+      <indexcount>1</indexcount>
+    </XDFAXIS>
+    <XDFAXIS id="z" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x3" mmedaddress="0x7218f0" mmedelementsizebits="16" mmedcolcount="4" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units>1/min</units>
+      <indexcount>4</indexcount>
+      <decimalpl>0</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1" />
+      <DALINK index="0" />
+      <MATH equation="X">
         <VAR id="X" />
       </MATH>
     </XDFAXIS>
@@ -9216,6 +9313,116 @@
       </MATH>
     </XDFAXIS>
   </XDFTABLE>
+  <XDFTABLE uniqueid="0x0" flags="0x30">
+    <title>EKP Fuel flow offset</title>
+    <description>BMWlpa_volf_FuBoosRstOfs_C - Use this table to disable RF Max Index 4. Set to 327</description>
+    <CATEGORYMEM index="0" category="5" />
+    <XDFAXIS id="x" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x0" mmedaddress="0x0" mmedelementsizebits="8" mmedcolcount="1" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units>-</units>
+      <indexcount>1</indexcount>
+      <decimalpl>0</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1" />
+      <DALINK index="0" />
+      <MATH equation="X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="y" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x0" mmedaddress="0x0" mmedelementsizebits="8" mmedcolcount="1" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units>-</units>
+      <indexcount>1</indexcount>
+      <decimalpl>0</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1" />
+      <DALINK index="0" />
+      <MATH equation="X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="z">
+      <EMBEDDEDDATA mmedtypeflags="0x3" mmedaddress="0x73a7b8" mmedelementsizebits="16" mmedrowcount="1" mmedcolcount="1" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units>l/h</units>
+      <decimalpl>0</decimalpl>
+      <min>0</min>
+      <max>327</max>
+      <outputtype>1</outputtype>
+      <MATH equation="X*0.01">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE uniqueid="0x0" flags="0x30">
+    <title>EKP Fuel flow rate reduction</title>
+    <description>BMWlpa_volf_FuMaxBoosCtlr_T - Use this table to disable RF Max Index 4. Set to 327</description>
+    <CATEGORYMEM index="0" category="5" />
+    <XDFAXIS id="x" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x3" mmedaddress="0x73a7d8" mmedelementsizebits="16" mmedcolcount="6" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units>bar</units>
+      <indexcount>6</indexcount>
+      <decimalpl>0</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1" />
+      <DALINK index="0" />
+      <MATH equation="X*0.001">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="y" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x0" mmedaddress="0x0" mmedelementsizebits="8" mmedcolcount="1" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units>-</units>
+      <indexcount>1</indexcount>
+      <decimalpl>0</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1" />
+      <DALINK index="0" />
+      <MATH equation="X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="z">
+      <EMBEDDEDDATA mmedtypeflags="0x3" mmedaddress="0x73a7c4" mmedelementsizebits="16" mmedrowcount="1" mmedcolcount="6" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units>l/h</units>
+      <decimalpl>0</decimalpl>
+      <min>0</min>
+      <max>327</max>
+      <outputtype>1</outputtype>
+      <MATH equation="X*0.01">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE>
+    <title>EKP Fuel flow rate reduction X (autogen)</title>
+    <CATEGORYMEM index="0" category="5" />
+    <CATEGORYMEM index="1" category="6" />
+    <XDFAXIS id="x">
+      <EMBEDDEDDATA />
+      <indexcount>6</indexcount>
+    </XDFAXIS>
+    <XDFAXIS id="y">
+      <EMBEDDEDDATA />
+      <indexcount>1</indexcount>
+    </XDFAXIS>
+    <XDFAXIS id="z" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x3" mmedaddress="0x73a7d8" mmedelementsizebits="16" mmedcolcount="6" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units>bar</units>
+      <indexcount>6</indexcount>
+      <decimalpl>0</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1" />
+      <DALINK index="0" />
+      <MATH equation="X*0.001">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
   <XDFTABLE uniqueid="0x0" flags="0x0">
     <title>EKP Maximum Pressure x Flow Rate</title>
     <description>BMWlpsc_p_HppMax_T</description>
@@ -11652,6 +11859,48 @@
       </MATH>
     </XDFAXIS>
   </XDFTABLE>
+  <XDFTABLE uniqueid="0x0" flags="0x30">
+    <title>OPF force activation</title>
+    <description>BMWgpfp_swi_PclFil_C - </description>
+    <CATEGORYMEM index="0" category="26" />
+    <XDFAXIS id="x" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x0" mmedaddress="0x0" mmedelementsizebits="8" mmedcolcount="1" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units>-</units>
+      <indexcount>1</indexcount>
+      <decimalpl>0</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1" />
+      <DALINK index="0" />
+      <MATH equation="X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="y" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x0" mmedaddress="0x0" mmedelementsizebits="8" mmedcolcount="1" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units>-</units>
+      <indexcount>1</indexcount>
+      <decimalpl>0</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1" />
+      <DALINK index="0" />
+      <MATH equation="X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="z">
+      <EMBEDDEDDATA mmedtypeflags="0x0" mmedaddress="0x74ced2" mmedelementsizebits="8" mmedrowcount="1" mmedcolcount="1" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units>-</units>
+      <decimalpl>0</decimalpl>
+      <min>0</min>
+      <max>1</max>
+      <outputtype>1</outputtype>
+      <MATH equation="X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
   <XDFTABLE uniqueid="0x0" flags="0x0">
     <title>Faktor f&#252;r Leerlaufsolldrehzahl nach Change of Mind DKG</title>
     <description>KF_LLR_F_N_SOLL_CHOM_DKG</description>
@@ -11799,6 +12048,49 @@
       <unittype>0</unittype>
       <embedinfo type="1" />
       <DALINK index="0" />
+      <MATH equation="X*0.00390625">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE uniqueid="0x0" flags="0x30">
+    <title>WGDC Pre-Control Fader (partial load)</title>
+    <description>BMWtchco_fac_FadePl_T - </description>
+    <CATEGORYMEM index="0" category="1" />
+    <CATEGORYMEM index="1" category="3" />
+    <XDFAXIS id="x" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x2" mmedaddress="0x720a72" mmedelementsizebits="16" mmedcolcount="6" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units>-</units>
+      <indexcount>6</indexcount>
+      <decimalpl>3</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1" />
+      <DALINK index="0" />
+      <MATH equation="X*0.000122070312">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="y" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x0" mmedaddress="0x0" mmedelementsizebits="8" mmedcolcount="1" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units>-</units>
+      <indexcount>1</indexcount>
+      <decimalpl>3</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1" />
+      <DALINK index="0" />
+      <MATH equation="X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="z">
+      <EMBEDDEDDATA mmedtypeflags="0x0" mmedaddress="0x74dd4f" mmedelementsizebits="8" mmedrowcount="1" mmedcolcount="6" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units>-</units>
+      <decimalpl>3</decimalpl>
+      <min>0</min>
+      <max>0.99609375</max>
+      <outputtype>1</outputtype>
       <MATH equation="X*0.00390625">
         <VAR id="X" />
       </MATH>
@@ -17721,7 +18013,7 @@
       <datatype>0</datatype>
       <unittype>0</unittype>
       <embedinfo type="1" />
-      <DALINK index="0" />
+      <DALINK index="0" flags="0x02" objidhash="0xCD0CD1DB" />
       <MATH equation="X*1">
         <VAR id="X" />
       </MATH>
@@ -17734,7 +18026,7 @@
       <datatype>0</datatype>
       <unittype>0</unittype>
       <embedinfo type="1" />
-      <DALINK index="0" />
+      <DALINK index="0" flags="0x02" objidhash="0x21F5438C" />
       <MATH equation="X*0.0018129717">
         <VAR id="X" />
       </MATH>
@@ -17763,7 +18055,7 @@
       <datatype>0</datatype>
       <unittype>0</unittype>
       <embedinfo type="1" />
-      <DALINK index="0" />
+      <DALINK index="0" flags="0x02" objidhash="0xCD0CD1DB" />
       <MATH equation="X*1">
         <VAR id="X" />
       </MATH>
@@ -17776,7 +18068,7 @@
       <datatype>0</datatype>
       <unittype>0</unittype>
       <embedinfo type="1" />
-      <DALINK index="0" />
+      <DALINK index="0" flags="0x02" objidhash="0x01C8B5F8" />
       <MATH equation="X*0.0018129717">
         <VAR id="X" />
       </MATH>
@@ -33047,7 +33339,7 @@ ipol factors 1.01 - 2 blend from map slot to FF2</description>
       <datatype>0</datatype>
       <unittype>0</unittype>
       <embedinfo type="1" />
-      <DALINK index="0" />
+      <DALINK index="0" flags="0x02" objidhash="0xCD0CD1DB" />
       <MATH equation="X">
         <VAR id="X" />
       </MATH>
@@ -33060,7 +33352,7 @@ ipol factors 1.01 - 2 blend from map slot to FF2</description>
       <datatype>0</datatype>
       <unittype>0</unittype>
       <embedinfo type="1" />
-      <DALINK index="0" />
+      <DALINK index="0" flags="0x02" objidhash="0x21F5438C" />
       <MATH equation="X*0.0018129717">
         <VAR id="X" />
       </MATH>
@@ -33147,6 +33439,7 @@ ipol factors 1.01 - 2 blend from map slot to FF2</description>
       <indexcount>16</indexcount>
       <decimalpl>0</decimalpl>
       <embedinfo type="1" />
+      <DALINK flags="0x02" objidhash="0xCD0CD1DB" />
       <MATH equation="X">
         <VAR id="X" />
       </MATH>
@@ -33157,6 +33450,7 @@ ipol factors 1.01 - 2 blend from map slot to FF2</description>
       <indexcount>14</indexcount>
       <decimalpl>2</decimalpl>
       <embedinfo type="1" />
+      <DALINK flags="0x02" objidhash="0x01C8B5F8" />
       <MATH equation="X*0.0018129717">
         <VAR id="X" />
       </MATH>
@@ -33243,6 +33537,7 @@ ipol factors 1.01 - 2 blend from map slot to FF2</description>
       <indexcount>14</indexcount>
       <decimalpl>2</decimalpl>
       <embedinfo type="1" />
+      <DALINK flags="0x02" objidhash="0x01C8B5F8" />
       <MATH equation="X*0.0018129717">
         <VAR id="X" />
       </MATH>
@@ -33253,6 +33548,7 @@ ipol factors 1.01 - 2 blend from map slot to FF2</description>
       <indexcount>14</indexcount>
       <decimalpl>3</decimalpl>
       <embedinfo type="1" />
+      <DALINK flags="0x02" objidhash="0x4CBE55F1" />
       <MATH equation="X*0.0018129717">
         <VAR id="X" />
       </MATH>
@@ -33559,7 +33855,7 @@ ipol factors 1.01 - 2 blend from map slot to FF2</description>
       <datatype>0</datatype>
       <unittype>0</unittype>
       <embedinfo type="1" />
-      <DALINK index="0" />
+      <DALINK index="0" flags="0x02" objidhash="0xCD0CD1DB" />
       <MATH equation="X">
         <VAR id="X" />
       </MATH>
@@ -33572,7 +33868,7 @@ ipol factors 1.01 - 2 blend from map slot to FF2</description>
       <datatype>0</datatype>
       <unittype>0</unittype>
       <embedinfo type="1" />
-      <DALINK index="0" />
+      <DALINK index="0" flags="0x02" objidhash="0xE2448F75" />
       <MATH equation="X*0.001133107328125">
         <VAR id="X" />
       </MATH>
@@ -33602,7 +33898,7 @@ ipol factors 1.01 - 2 blend from map slot to FF2</description>
       <datatype>0</datatype>
       <unittype>0</unittype>
       <embedinfo type="1" />
-      <DALINK index="0" />
+      <DALINK index="0" flags="0x02" objidhash="0xCD0CD1DB" />
       <MATH equation="X">
         <VAR id="X" />
       </MATH>
@@ -33615,7 +33911,7 @@ ipol factors 1.01 - 2 blend from map slot to FF2</description>
       <datatype>0</datatype>
       <unittype>0</unittype>
       <embedinfo type="1" />
-      <DALINK index="0" />
+      <DALINK index="0" flags="0x02" objidhash="0xE2448F75" />
       <MATH equation="X*0.001133107328125">
         <VAR id="X" />
       </MATH>
@@ -33645,7 +33941,7 @@ ipol factors 1.01 - 2 blend from map slot to FF2</description>
       <datatype>0</datatype>
       <unittype>0</unittype>
       <embedinfo type="1" />
-      <DALINK index="0" />
+      <DALINK index="0" flags="0x02" objidhash="0xCD0CD1DB" />
       <MATH equation="X">
         <VAR id="X" />
       </MATH>
@@ -33658,7 +33954,7 @@ ipol factors 1.01 - 2 blend from map slot to FF2</description>
       <datatype>0</datatype>
       <unittype>0</unittype>
       <embedinfo type="1" />
-      <DALINK index="0" />
+      <DALINK index="0" flags="0x02" objidhash="0xE2448F75" />
       <MATH equation="X*0.001133107328125">
         <VAR id="X" />
       </MATH>
@@ -33688,7 +33984,7 @@ ipol factors 1.01 - 2 blend from map slot to FF2</description>
       <datatype>0</datatype>
       <unittype>0</unittype>
       <embedinfo type="1" />
-      <DALINK index="0" />
+      <DALINK index="0" flags="0x02" objidhash="0xCD0CD1DB" />
       <MATH equation="X">
         <VAR id="X" />
       </MATH>
@@ -33701,7 +33997,7 @@ ipol factors 1.01 - 2 blend from map slot to FF2</description>
       <datatype>0</datatype>
       <unittype>0</unittype>
       <embedinfo type="1" />
-      <DALINK index="0" />
+      <DALINK index="0" flags="0x02" objidhash="0xE2448F75" />
       <MATH equation="X*0.001133107328125">
         <VAR id="X" />
       </MATH>
@@ -33731,7 +34027,7 @@ ipol factors 1.01 - 2 blend from map slot to FF2</description>
       <datatype>0</datatype>
       <unittype>0</unittype>
       <embedinfo type="1" />
-      <DALINK index="0" />
+      <DALINK index="0" flags="0x02" objidhash="0xCD0CD1DB" />
       <MATH equation="X">
         <VAR id="X" />
       </MATH>
@@ -33744,7 +34040,7 @@ ipol factors 1.01 - 2 blend from map slot to FF2</description>
       <datatype>0</datatype>
       <unittype>0</unittype>
       <embedinfo type="1" />
-      <DALINK index="0" />
+      <DALINK index="0" flags="0x02" objidhash="0xE2448F75" />
       <MATH equation="X*0.001133107328125">
         <VAR id="X" />
       </MATH>
@@ -33774,7 +34070,7 @@ ipol factors 1.01 - 2 blend from map slot to FF2</description>
       <datatype>0</datatype>
       <unittype>0</unittype>
       <embedinfo type="1" />
-      <DALINK index="0" />
+      <DALINK index="0" flags="0x02" objidhash="0xCD0CD1DB" />
       <MATH equation="X">
         <VAR id="X" />
       </MATH>
@@ -33787,7 +34083,7 @@ ipol factors 1.01 - 2 blend from map slot to FF2</description>
       <datatype>0</datatype>
       <unittype>0</unittype>
       <embedinfo type="1" />
-      <DALINK index="0" />
+      <DALINK index="0" flags="0x02" objidhash="0xE2448F75" />
       <MATH equation="X*0.001133107328125">
         <VAR id="X" />
       </MATH>
@@ -34154,7 +34450,7 @@ ipol factors 1.01 - 2 blend from map slot to FF2</description>
       <datatype>0</datatype>
       <unittype>0</unittype>
       <embedinfo type="1" />
-      <DALINK index="0" />
+      <DALINK index="0" flags="0x02" objidhash="0xCD0CD1DB" />
       <MATH equation="X">
         <VAR id="X" />
       </MATH>
@@ -34198,7 +34494,7 @@ ipol factors 1.01 - 2 blend from map slot to FF2</description>
       <datatype>0</datatype>
       <unittype>0</unittype>
       <embedinfo type="1" />
-      <DALINK index="0" />
+      <DALINK index="0" flags="0x02" objidhash="0xCD0CD1DB" />
       <MATH equation="X">
         <VAR id="X" />
       </MATH>
@@ -34242,7 +34538,7 @@ ipol factors 1.01 - 2 blend from map slot to FF2</description>
       <datatype>0</datatype>
       <unittype>0</unittype>
       <embedinfo type="1" />
-      <DALINK index="0" />
+      <DALINK index="0" flags="0x02" objidhash="0xCD0CD1DB" />
       <MATH equation="X">
         <VAR id="X" />
       </MATH>
@@ -34286,7 +34582,7 @@ ipol factors 1.01 - 2 blend from map slot to FF2</description>
       <datatype>0</datatype>
       <unittype>0</unittype>
       <embedinfo type="1" />
-      <DALINK index="0" />
+      <DALINK index="0" flags="0x02" objidhash="0xCD0CD1DB" />
       <MATH equation="X">
         <VAR id="X" />
       </MATH>
@@ -34330,7 +34626,7 @@ ipol factors 1.01 - 2 blend from map slot to FF2</description>
       <datatype>0</datatype>
       <unittype>0</unittype>
       <embedinfo type="1" />
-      <DALINK index="0" />
+      <DALINK index="0" flags="0x02" objidhash="0xCD0CD1DB" />
       <MATH equation="X">
         <VAR id="X" />
       </MATH>
@@ -34374,7 +34670,7 @@ ipol factors 1.01 - 2 blend from map slot to FF2</description>
       <datatype>0</datatype>
       <unittype>0</unittype>
       <embedinfo type="1" />
-      <DALINK index="0" />
+      <DALINK index="0" flags="0x02" objidhash="0xCD0CD1DB" />
       <MATH equation="X">
         <VAR id="X" />
       </MATH>
@@ -34754,7 +35050,7 @@ ipol factors 1.01 - 2 blend from map slot to FF2</description>
       <datatype>0</datatype>
       <unittype>0</unittype>
       <embedinfo type="1" />
-      <DALINK index="0" />
+      <DALINK index="0" flags="0x02" objidhash="0xCD0CD1DB" />
       <MATH equation="X">
         <VAR id="X" />
       </MATH>
@@ -34798,7 +35094,7 @@ ipol factors 1.01 - 2 blend from map slot to FF2</description>
       <datatype>0</datatype>
       <unittype>0</unittype>
       <embedinfo type="1" />
-      <DALINK index="0" />
+      <DALINK index="0" flags="0x02" objidhash="0xCD0CD1DB" />
       <MATH equation="X">
         <VAR id="X" />
       </MATH>
@@ -34842,7 +35138,7 @@ ipol factors 1.01 - 2 blend from map slot to FF2</description>
       <datatype>0</datatype>
       <unittype>0</unittype>
       <embedinfo type="1" />
-      <DALINK index="0" />
+      <DALINK index="0" flags="0x02" objidhash="0xCD0CD1DB" />
       <MATH equation="X">
         <VAR id="X" />
       </MATH>
@@ -34886,7 +35182,7 @@ ipol factors 1.01 - 2 blend from map slot to FF2</description>
       <datatype>0</datatype>
       <unittype>0</unittype>
       <embedinfo type="1" />
-      <DALINK index="0" />
+      <DALINK index="0" flags="0x02" objidhash="0xCD0CD1DB" />
       <MATH equation="X">
         <VAR id="X" />
       </MATH>
@@ -34930,7 +35226,7 @@ ipol factors 1.01 - 2 blend from map slot to FF2</description>
       <datatype>0</datatype>
       <unittype>0</unittype>
       <embedinfo type="1" />
-      <DALINK index="0" />
+      <DALINK index="0" flags="0x02" objidhash="0xCD0CD1DB" />
       <MATH equation="X">
         <VAR id="X" />
       </MATH>
@@ -34974,7 +35270,7 @@ ipol factors 1.01 - 2 blend from map slot to FF2</description>
       <datatype>0</datatype>
       <unittype>0</unittype>
       <embedinfo type="1" />
-      <DALINK index="0" />
+      <DALINK index="0" flags="0x02" objidhash="0xCD0CD1DB" />
       <MATH equation="X">
         <VAR id="X" />
       </MATH>
@@ -35535,7 +35831,7 @@ ipol factors 1.01 - 2 blend from map slot to FF2</description>
       <datatype>0</datatype>
       <unittype>0</unittype>
       <embedinfo type="1" />
-      <DALINK index="0" />
+      <DALINK index="0" flags="0x02" objidhash="0x70BAF631" />
       <MATH equation="X">
         <VAR id="X" />
       </MATH>
@@ -35578,7 +35874,7 @@ ipol factors 1.01 - 2 blend from map slot to FF2</description>
       <datatype>0</datatype>
       <unittype>0</unittype>
       <embedinfo type="1" />
-      <DALINK index="0" />
+      <DALINK index="0" flags="0x02" objidhash="0x70BAF631" />
       <MATH equation="X">
         <VAR id="X" />
       </MATH>
@@ -35621,7 +35917,7 @@ ipol factors 1.01 - 2 blend from map slot to FF2</description>
       <datatype>0</datatype>
       <unittype>0</unittype>
       <embedinfo type="1" />
-      <DALINK index="0" />
+      <DALINK index="0" flags="0x02" objidhash="0x70BAF631" />
       <MATH equation="X">
         <VAR id="X" />
       </MATH>
@@ -35664,7 +35960,7 @@ ipol factors 1.01 - 2 blend from map slot to FF2</description>
       <datatype>0</datatype>
       <unittype>0</unittype>
       <embedinfo type="1" />
-      <DALINK index="0" />
+      <DALINK index="0" flags="0x02" objidhash="0x70BAF631" />
       <MATH equation="X">
         <VAR id="X" />
       </MATH>
@@ -35819,7 +36115,7 @@ ipol factors 1.01 - 2 blend from map slot to FF2</description>
       <datatype>0</datatype>
       <unittype>0</unittype>
       <embedinfo type="1" />
-      <DALINK index="0" />
+      <DALINK index="0" flags="0x02" objidhash="0x70BAF631" />
       <MATH equation="X">
         <VAR id="X" />
       </MATH>
@@ -35862,7 +36158,7 @@ ipol factors 1.01 - 2 blend from map slot to FF2</description>
       <datatype>0</datatype>
       <unittype>0</unittype>
       <embedinfo type="1" />
-      <DALINK index="0" />
+      <DALINK index="0" flags="0x02" objidhash="0x70BAF631" />
       <MATH equation="X">
         <VAR id="X" />
       </MATH>
@@ -35905,7 +36201,7 @@ ipol factors 1.01 - 2 blend from map slot to FF2</description>
       <datatype>0</datatype>
       <unittype>0</unittype>
       <embedinfo type="1" />
-      <DALINK index="0" />
+      <DALINK index="0" flags="0x02" objidhash="0x70BAF631" />
       <MATH equation="X">
         <VAR id="X" />
       </MATH>
@@ -35948,7 +36244,7 @@ ipol factors 1.01 - 2 blend from map slot to FF2</description>
       <datatype>0</datatype>
       <unittype>0</unittype>
       <embedinfo type="1" />
-      <DALINK index="0" />
+      <DALINK index="0" flags="0x02" objidhash="0x70BAF631" />
       <MATH equation="X">
         <VAR id="X" />
       </MATH>
@@ -36103,7 +36399,7 @@ ipol factors 1.01 - 2 blend from map slot to FF2</description>
       <datatype>0</datatype>
       <unittype>0</unittype>
       <embedinfo type="1" />
-      <DALINK index="0" />
+      <DALINK index="0" flags="0x02" objidhash="0x70BAF631" />
       <MATH equation="X">
         <VAR id="X" />
       </MATH>
@@ -36146,7 +36442,7 @@ ipol factors 1.01 - 2 blend from map slot to FF2</description>
       <datatype>0</datatype>
       <unittype>0</unittype>
       <embedinfo type="1" />
-      <DALINK index="0" />
+      <DALINK index="0" flags="0x02" objidhash="0x70BAF631" />
       <MATH equation="X">
         <VAR id="X" />
       </MATH>
@@ -36189,7 +36485,7 @@ ipol factors 1.01 - 2 blend from map slot to FF2</description>
       <datatype>0</datatype>
       <unittype>0</unittype>
       <embedinfo type="1" />
-      <DALINK index="0" />
+      <DALINK index="0" flags="0x02" objidhash="0x70BAF631" />
       <MATH equation="X">
         <VAR id="X" />
       </MATH>
@@ -36232,7 +36528,7 @@ ipol factors 1.01 - 2 blend from map slot to FF2</description>
       <datatype>0</datatype>
       <unittype>0</unittype>
       <embedinfo type="1" />
-      <DALINK index="0" />
+      <DALINK index="0" flags="0x02" objidhash="0x70BAF631" />
       <MATH equation="X">
         <VAR id="X" />
       </MATH>
@@ -36387,7 +36683,7 @@ ipol factors 1.01 - 2 blend from map slot to FF2</description>
       <datatype>0</datatype>
       <unittype>0</unittype>
       <embedinfo type="1" />
-      <DALINK index="0" />
+      <DALINK index="0" flags="0x02" objidhash="0xCD0CD1DB" />
       <MATH equation="X">
         <VAR id="X" />
       </MATH>
@@ -36400,7 +36696,7 @@ ipol factors 1.01 - 2 blend from map slot to FF2</description>
       <datatype>0</datatype>
       <unittype>0</unittype>
       <embedinfo type="1" />
-      <DALINK index="0" />
+      <DALINK index="0" flags="0x02" objidhash="0x21F5438C" />
       <MATH equation="X*0.0018129717">
         <VAR id="X" />
       </MATH>
@@ -36487,6 +36783,7 @@ ipol factors 1.01 - 2 blend from map slot to FF2</description>
       <indexcount>8</indexcount>
       <decimalpl>0</decimalpl>
       <embedinfo type="1" />
+      <DALINK flags="0x02" objidhash="0xCD0CD1DB" />
       <MATH equation="X">
         <VAR id="X" />
       </MATH>
@@ -36497,6 +36794,7 @@ ipol factors 1.01 - 2 blend from map slot to FF2</description>
       <indexcount>7</indexcount>
       <decimalpl>2</decimalpl>
       <embedinfo type="1" />
+      <DALINK flags="0x02" objidhash="0x01C8B5F8" />
       <MATH equation="X*0.0018129717">
         <VAR id="X" />
       </MATH>
@@ -36583,6 +36881,7 @@ ipol factors 1.01 - 2 blend from map slot to FF2</description>
       <indexcount>7</indexcount>
       <decimalpl>2</decimalpl>
       <embedinfo type="1" />
+      <DALINK flags="0x02" objidhash="0x01C8B5F8" />
       <MATH equation="X*0.0018129717">
         <VAR id="X" />
       </MATH>
@@ -36593,6 +36892,7 @@ ipol factors 1.01 - 2 blend from map slot to FF2</description>
       <indexcount>7</indexcount>
       <decimalpl>3</decimalpl>
       <embedinfo type="1" />
+      <DALINK flags="0x02" objidhash="0x4CBE55F1" />
       <MATH equation="X*0.0018129717">
         <VAR id="X" />
       </MATH>
@@ -36708,6 +37008,130 @@ ipol factors 1.01 - 2 blend from map slot to FF2</description>
     </XDFAXIS>
   </XDFTABLE>
   <XDFTABLE uniqueid="0x0" flags="0x30">
+    <title>Enable NLS</title>
+    <description>enable: 1
+disable : 0</description>
+    <CATEGORYMEM index="0" category="39" />
+    <CATEGORYMEM index="1" category="71" />
+    <XDFAXIS id="x" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x02" mmedelementsizebits="16" mmedmajorstridebits="-32" mmedminorstridebits="0" />
+      <indexcount>1</indexcount>
+      <decimalpl>1</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <DALINK index="0" />
+      <LABEL index="0" value="0.0" />
+      <MATH equation="X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="y" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x02" mmedelementsizebits="16" mmedmajorstridebits="-32" mmedminorstridebits="0" />
+      <indexcount>1</indexcount>
+      <decimalpl>1</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <DALINK index="0" />
+      <LABEL index="0" value="0.0" />
+      <MATH equation="X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="z">
+      <EMBEDDEDDATA mmedtypeflags="0x02" mmedaddress="0x7E8649" mmedelementsizebits="8" mmedrowcount="1" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units>-</units>
+      <decimalpl>0</decimalpl>
+      <min>0</min>
+      <max>1</max>
+      <outputtype>1</outputtype>
+      <MATH equation="X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE uniqueid="0x0" flags="0x30">
+    <title>NLS RPM Threshold (Minimum)</title>
+    <description>NLS logic will only activate above this RPM</description>
+    <CATEGORYMEM index="0" category="39" />
+    <CATEGORYMEM index="1" category="71" />
+    <XDFAXIS id="x" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x02" mmedelementsizebits="16" mmedmajorstridebits="-32" mmedminorstridebits="0" />
+      <indexcount>1</indexcount>
+      <decimalpl>1</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <DALINK index="0" />
+      <LABEL index="0" value="0.0" />
+      <MATH equation="X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="y" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x02" mmedelementsizebits="16" mmedmajorstridebits="-32" mmedminorstridebits="0" />
+      <indexcount>1</indexcount>
+      <decimalpl>1</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <DALINK index="0" />
+      <LABEL index="0" value="0.0" />
+      <MATH equation="X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="z">
+      <EMBEDDEDDATA mmedtypeflags="0x03" mmedaddress="0x7E864A" mmedelementsizebits="16" mmedrowcount="1" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units>rpm</units>
+      <decimalpl>0</decimalpl>
+      <min>2000</min>
+      <max>9000</max>
+      <outputtype>1</outputtype>
+      <MATH equation="X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE uniqueid="0x0" flags="0x30">
+    <title>NLS Pedal Threshold (Minimum)</title>
+    <description>NLS logic will only activate above this pedal percentage</description>
+    <CATEGORYMEM index="0" category="39" />
+    <CATEGORYMEM index="1" category="71" />
+    <XDFAXIS id="x" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x02" mmedelementsizebits="16" mmedmajorstridebits="-32" mmedminorstridebits="0" />
+      <indexcount>1</indexcount>
+      <decimalpl>1</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <DALINK index="0" />
+      <LABEL index="0" value="0.0" />
+      <MATH equation="X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="y" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x02" mmedelementsizebits="16" mmedmajorstridebits="-32" mmedminorstridebits="0" />
+      <indexcount>1</indexcount>
+      <decimalpl>1</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <DALINK index="0" />
+      <LABEL index="0" value="0.0" />
+      <MATH equation="X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="z">
+      <EMBEDDEDDATA mmedtypeflags="0x03" mmedaddress="0x7E864C" mmedelementsizebits="16" mmedrowcount="1" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units>%</units>
+      <decimalpl>0</decimalpl>
+      <min>40.000000</min>
+      <max>100.000000</max>
+      <outputtype>1</outputtype>
+      <MATH equation="X/40.96">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE uniqueid="0x0" flags="0x30">
     <title>Enable Port Injection Safety</title>
     <description>Set to 1 to enable; Will cut each cylinder&#39;s coil when the corresponding injector is cut.</description>
     <CATEGORYMEM index="0" category="39" />
@@ -36795,7 +37219,8 @@ ipol factors 1.01 - 2 blend from map slot to FF2</description>
     <title>TCU TQ Limit Override</title>
     <description>01: Ignore TCU TQ limit always
 02: Ignore TCU TQ limit except during launch control (after moving and launch gear [1st or 2nd] fully engaged)
-03: Ignore TCU TQ limit except during launch control (after launch traction mode ends, usually end of 2nd or 3rd gear)
+03: Ignore TCU TQ limit except during launch control (after launch traction mode ends, usually end of 2nd or 3rd gear).
+NOTE: Setting 3 should NOT be used on S58 due to their special launch control. We recommend using setting 2 (or 4 with xHP)
 04: No Override - TCU TQ limit fully active</description>
     <CATEGORYMEM index="0" category="39" />
     <CATEGORYMEM index="1" category="48" />
@@ -37947,7 +38372,7 @@ Required for auto PI strategy.</description>
       <datatype>0</datatype>
       <unittype>0</unittype>
       <embedinfo type="1" />
-      <DALINK index="0" />
+      <DALINK index="0" flags="0x02" objidhash="0xCD0CD1DB" />
       <MATH equation="X*1">
         <VAR id="X" />
       </MATH>
@@ -37960,7 +38385,7 @@ Required for auto PI strategy.</description>
       <datatype>0</datatype>
       <unittype>0</unittype>
       <embedinfo type="1" />
-      <DALINK index="0" />
+      <DALINK index="0" flags="0x02" objidhash="0xAA726CF9" />
       <MATH equation="X*0.01">
         <VAR id="X" />
       </MATH>
@@ -38044,7 +38469,7 @@ Required for auto PI strategy.</description>
       <datatype>0</datatype>
       <unittype>0</unittype>
       <embedinfo type="1" />
-      <DALINK index="0" />
+      <DALINK index="0" flags="0x02" objidhash="0xCD0CD1DB" />
       <MATH equation="X*1">
         <VAR id="X" />
       </MATH>
@@ -38057,7 +38482,7 @@ Required for auto PI strategy.</description>
       <datatype>0</datatype>
       <unittype>0</unittype>
       <embedinfo type="1" />
-      <DALINK index="0" />
+      <DALINK index="0" flags="0x02" objidhash="0xAA726CF9" />
       <MATH equation="X*0.01">
         <VAR id="X" />
       </MATH>
@@ -38140,7 +38565,7 @@ Required for auto PI strategy.</description>
       <datatype>0</datatype>
       <unittype>0</unittype>
       <embedinfo type="1" />
-      <DALINK index="0" />
+      <DALINK index="0" flags="0x02" objidhash="0xCD0CD1DB" />
       <MATH equation="X">
         <VAR id="X" />
       </MATH>
@@ -38153,7 +38578,7 @@ Required for auto PI strategy.</description>
       <datatype>0</datatype>
       <unittype>0</unittype>
       <embedinfo type="1" />
-      <DALINK index="0" />
+      <DALINK index="0" flags="0x02" objidhash="0x70BAF631" />
       <MATH equation="X">
         <VAR id="X" />
       </MATH>
@@ -38234,7 +38659,7 @@ Required for auto PI strategy.</description>
       <datatype>0</datatype>
       <unittype>0</unittype>
       <embedinfo type="1" />
-      <DALINK index="0" />
+      <DALINK index="0" flags="0x02" objidhash="0x70BAF631" />
       <MATH equation="X">
         <VAR id="X" />
       </MATH>
@@ -38347,7 +38772,7 @@ Required for manual PI strategy.</description>
       <datatype>0</datatype>
       <unittype>0</unittype>
       <embedinfo type="1" />
-      <DALINK index="0" />
+      <DALINK index="0" flags="0x02" objidhash="0xCD0CD1DB" />
       <MATH equation="X*1">
         <VAR id="X" />
       </MATH>
@@ -38360,7 +38785,7 @@ Required for manual PI strategy.</description>
       <datatype>0</datatype>
       <unittype>0</unittype>
       <embedinfo type="1" />
-      <DALINK index="0" />
+      <DALINK index="0" flags="0x02" objidhash="0xAA726CF9" />
       <MATH equation="X*0.01">
         <VAR id="X" />
       </MATH>
@@ -38443,7 +38868,7 @@ Required for manual PI strategy.</description>
       <datatype>0</datatype>
       <unittype>0</unittype>
       <embedinfo type="1" />
-      <DALINK index="0" />
+      <DALINK index="0" flags="0x02" objidhash="0xCD0CD1DB" />
       <MATH equation="X*1">
         <VAR id="X" />
       </MATH>
@@ -38456,7 +38881,7 @@ Required for manual PI strategy.</description>
       <datatype>0</datatype>
       <unittype>0</unittype>
       <embedinfo type="1" />
-      <DALINK index="0" />
+      <DALINK index="0" flags="0x02" objidhash="0xAA726CF9" />
       <MATH equation="X*0.01">
         <VAR id="X" />
       </MATH>
@@ -38607,7 +39032,7 @@ Required for manual PI strategy.</description>
   </XDFTABLE>
   <XDFTABLE uniqueid="0x0" flags="0x30">
     <title>Enable Increased Boost Ceiling (5 bar+)</title>
-    <description>Set to 1 to enable our custom patch which allows full use of 5 bar (and higher) MAP sensors. If using the OEM sensor gradient and offset tables, the following PNP Bosch 5 bar map sensor is required (part #: 13628514488)!  Otherwise you will need to enable and use the custom MAP scaling tables we provide.</description>
+    <description>Set to 1 to enable our custom patch which allows full use of 5 bar (and higher) MAP sensors. If using the OEM sensor gradient and offset tables, the following PnP Bosch 5 bar map sensor is required (part #: 13628514488)!  Otherwise you will need to enable and use the custom MAP scaling tables we provide.</description>
     <CATEGORYMEM index="0" category="39" />
     <CATEGORYMEM index="1" category="75" />
     <XDFAXIS id="x" uniqueid="0x0">
@@ -38646,26 +39071,28 @@ Required for manual PI strategy.</description>
     </XDFAXIS>
   </XDFTABLE>
   <XDFTABLE uniqueid="0x0" flags="0x30">
-    <title>Load Scaling for Increased Boost Ceiling (Deprecated)</title>
-    <description>The functionality of this table is deprecated and will be replaced next week with a much more robust solution.  If you are not currently using this, do not use it.  Feel free to contact us at mhd.tuning@gmail.com for more info / testing of the coming solution.</description>
+    <title>MHD+ Load Calculation Config</title>
+    <description>0 - disabled, no correction
+1 - correct Load Actual (relative filling model)
+2 - correct Load Actual (relative filling model) and also enable Load Reduction Scaling
+
+Please read our MHD+ Suite tuning guide PDF for more information.</description>
     <CATEGORYMEM index="0" category="39" />
     <CATEGORYMEM index="1" category="75" />
     <XDFAXIS id="x" uniqueid="0x0">
-      <EMBEDDEDDATA mmedtypeflags="0x03" mmedaddress="0x7E85FC" mmedelementsizebits="16" mmedcolcount="2" mmedmajorstridebits="0" mmedminorstridebits="0" />
-      <units>%</units>
-      <indexcount>2</indexcount>
+      <EMBEDDEDDATA mmedtypeflags="0x02" mmedelementsizebits="16" mmedmajorstridebits="-32" mmedminorstridebits="0" />
+      <indexcount>1</indexcount>
       <decimalpl>1</decimalpl>
       <datatype>0</datatype>
       <unittype>0</unittype>
-      <embedinfo type="1" />
       <DALINK index="0" />
-      <MATH equation="X/100">
+      <LABEL index="0" value="0.0" />
+      <MATH equation="X">
         <VAR id="X" />
       </MATH>
     </XDFAXIS>
     <XDFAXIS id="y" uniqueid="0x0">
-      <EMBEDDEDDATA mmedelementsizebits="8" mmedrowcount="1" mmedmajorstridebits="0" mmedminorstridebits="0" />
-      <units>-</units>
+      <EMBEDDEDDATA mmedtypeflags="0x02" mmedelementsizebits="16" mmedmajorstridebits="-32" mmedminorstridebits="0" />
       <indexcount>1</indexcount>
       <decimalpl>1</decimalpl>
       <datatype>0</datatype>
@@ -38677,7 +39104,53 @@ Required for manual PI strategy.</description>
       </MATH>
     </XDFAXIS>
     <XDFAXIS id="z">
-      <EMBEDDEDDATA mmedtypeflags="0x02" mmedaddress="0x7E8600" mmedelementsizebits="16" mmedrowcount="1" mmedcolcount="2" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <EMBEDDEDDATA mmedtypeflags="0x02" mmedaddress="0x7E8605" mmedelementsizebits="8" mmedrowcount="1" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <decimalpl>0</decimalpl>
+      <min>0.000000</min>
+      <max>5.000000</max>
+      <outputtype>1</outputtype>
+      <MATH equation="X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE uniqueid="0x0" flags="0x30">
+    <title>Load Reduction Scaling</title>
+    <description>Use this table to stay under the 327% max load ceiling at higher boost levels. A factor of 1.0 is &quot;no reduction&quot;, while lower factors will scale load down proportionally so that higher boost levels will not all trace the same 327% column. Fuel mass is automatically corrected for this as well.
+
+Used when MHD+ Load Calculation Config is set to 2.
+
+NOTE: Smoothness of table z-data is important! Please read our MHD+ Suite tuning guide PDF for more information.</description>
+    <CATEGORYMEM index="0" category="39" />
+    <CATEGORYMEM index="1" category="75" />
+    <XDFAXIS id="x" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x02" mmedaddress="0x7E8682" mmedelementsizebits="16" mmedcolcount="4" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units>g/s</units>
+      <indexcount>4</indexcount>
+      <decimalpl>1</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1" />
+      <DALINK index="0" flags="0x02" objidhash="0x4EC9F3D4" />
+      <MATH equation="X*0.03472225">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="y" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x03" mmedaddress="0x7E868A" mmedelementsizebits="16" mmedrowcount="10" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units>l/min</units>
+      <indexcount>10</indexcount>
+      <decimalpl>0</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1" />
+      <DALINK index="0" flags="0x02" objidhash="0xCD0CD1DB" />
+      <MATH equation="X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="z">
+      <EMBEDDEDDATA mmedtypeflags="0x02" mmedaddress="0x7E869E" mmedelementsizebits="16" mmedrowcount="10" mmedcolcount="4" mmedmajorstridebits="0" mmedminorstridebits="0" />
       <units>-</units>
       <decimalpl>2</decimalpl>
       <min>0</min>
@@ -38689,27 +39162,51 @@ Required for manual PI strategy.</description>
     </XDFAXIS>
   </XDFTABLE>
   <XDFTABLE uniqueid="0x0" flags="0x30">
-    <title>Load Scaling for Increased Boost Ceiling (Deprecated) - Load Actual</title>
+    <title>Load Reduction Scaling - MHD+ MAF</title>
     <description />
     <CATEGORYMEM index="0" category="39" />
     <CATEGORYMEM index="1" category="75" />
     <CATEGORYMEM index="2" category="76" />
     <XDFAXIS id="x">
       <EMBEDDEDDATA />
-      <indexcount>2</indexcount>
+      <indexcount>4</indexcount>
     </XDFAXIS>
     <XDFAXIS id="y">
       <EMBEDDEDDATA />
       <indexcount>1</indexcount>
     </XDFAXIS>
     <XDFAXIS id="z" uniqueid="0x0">
-      <EMBEDDEDDATA mmedtypeflags="0x03" mmedaddress="0x7E85FC" mmedelementsizebits="16" mmedcolcount="2" mmedmajorstridebits="0" mmedminorstridebits="0" />
-      <units>%</units>
-      <decimalpl>2</decimalpl>
+      <EMBEDDEDDATA mmedtypeflags="0x02" mmedaddress="0x7E8682" mmedelementsizebits="16" mmedcolcount="4" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units>g/s</units>
+      <decimalpl>1</decimalpl>
       <min>0</min>
-      <max>327.67</max>
+      <max>2275.5</max>
       <outputtype>1</outputtype>
-      <MATH equation="X/100">
+      <MATH equation="X*0.03472225">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE uniqueid="0x0" flags="0x0">
+    <title>Load Reduction Scaling - RPM</title>
+    <description />
+    <CATEGORYMEM index="0" category="39" />
+    <CATEGORYMEM index="1" category="75" />
+    <CATEGORYMEM index="2" category="76" />
+    <XDFAXIS id="x">
+      <EMBEDDEDDATA />
+      <indexcount>10</indexcount>
+    </XDFAXIS>
+    <XDFAXIS id="y">
+      <EMBEDDEDDATA />
+      <indexcount>1</indexcount>
+    </XDFAXIS>
+    <XDFAXIS id="z" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x03" mmedaddress="0x7E868A" mmedelementsizebits="16" mmedcolcount="10" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units>l/min</units>
+      <decimalpl>0</decimalpl>
+      <outputtype>1</outputtype>
+      <MATH equation="X">
         <VAR id="X" />
       </MATH>
     </XDFAXIS>

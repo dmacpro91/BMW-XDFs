@@ -1,9 +1,9 @@
 <ADXFORMAT version="1.01">
-  <!-- Written 04/10/2024 11:27:04 -->
+  <!-- Written 05/22/2024 15:22:24 -->
   <ADXHEADER>
     <guid>c15be4a1-e7d8-46c2-871b-e2bfeefecb7a</guid>
     <flags>0x10000</flags>
-    <objectcount>22</objectcount>
+    <objectcount>23</objectcount>
     <userversion>1.0</userversion>
     <author>MHD Tuning</author>
     <baud>1200</baud>
@@ -12,7 +12,7 @@
   </ADXHEADER>
 
   <ADXLISTVIEW id="RTAXISPARAMS" idhash="0xB630221B" title="Real Time Axis Parameters">
-    <entrycount>18</entrycount>
+    <entrycount>19</entrycount>
     <ADXLVENTRY entrytype="0" itemidhash="0xCD0CD1DB" />
     <ADXLVENTRY entrytype="0" itemidhash="0xAA726CF9" />
     <ADXLVENTRY entrytype="0" itemidhash="0xE2448F75" />
@@ -31,6 +31,7 @@
     <ADXLVENTRY entrytype="0" itemidhash="0xE12680B5" />
     <ADXLVENTRY entrytype="0" itemidhash="0x524CD4FC" />
     <ADXLVENTRY entrytype="0" itemidhash="0x0882C50D" />
+    <ADXLVENTRY entrytype="0" itemidhash="0x4EC9F3D4" />
   </ADXLISTVIEW>
 
   <ADXMACRO id="MONITORMACRO" idhash="0xD177CF5B" title="Monitor Macro" repeatcount="1">
@@ -321,15 +322,31 @@
     </MATH>
   </ADXVALUE>
 
+  <ADXVALUE id="MHDMAFCALC" idhash="0x4EC9F3D4" title="MHD+ MAF">
+    <desc>MHD+MAF</desc>
+    <flags>0x00000002</flags>
+    <units>g/s</units>
+    <packetoffset>0x22</packetoffset>
+    <sizeinbits>16</sizeinbits>
+    <range low="0.000000" high="2275.520020" />
+    <alarms low="0.000000" high="255.000000" />
+    <digcount>2</digcount>
+    <outputtype>3</outputtype>
+    <datatype>26</datatype>
+    <MATH equation="X*0.03472225">
+      <VAR varID="X" type="native" />
+    </MATH>
+  </ADXVALUE>
+
   <ADXCSENDCOMMAND id="MONITORREQUEST" idhash="0xA5AC8868" title="Monitor Request" flags="0x00000003">
     <bytestring size="0x3">2C8801</bytestring>
   </ADXCSENDCOMMAND>
 
   <ADXCLISTENPACKET id="MONITORREPLY" idhash="0x0A29353A" title="Monitor Reply" flags="0x00000005">
     <listentimeout>100</listentimeout>
-    <packetbodylength>34</packetbodylength>
+    <packetbodylength>36</packetbodylength>
     <packetoffsetinbody>0</packetoffsetinbody>
-    <packetsize>34</packetsize>
+    <packetsize>36</packetsize>
     <headerstring size="2">6C88</headerstring>
   </ADXCLISTENPACKET>
 </ADXFORMAT>
