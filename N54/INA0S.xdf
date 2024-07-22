@@ -1576,6 +1576,45 @@
     </XDFAXIS>
   </XDFTABLE>
   <XDFTABLE uniqueid="0x0" flags="0x30">
+    <title>Manual Injection Offset</title>
+    <description>This table should only be used if you received an email from Nexsys Motorsport stating so. Otherwise&#160;leave&#160;at&#160;0.</description>
+    <CATEGORYMEM index="0" category="129" />
+    <CATEGORYMEM index="1" category="153" />
+    <XDFAXIS id="x" uniqueid="0x0">
+      <EMBEDDEDDATA mmedelementsizebits="16" mmedmajorstridebits="-32" mmedminorstridebits="0" />
+      <indexcount>1</indexcount>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <DALINK index="0" />
+      <LABEL index="0" value="0.00" />
+      <MATH equation="X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="y" uniqueid="0x0">
+      <EMBEDDEDDATA mmedelementsizebits="16" mmedmajorstridebits="-32" mmedminorstridebits="0" />
+      <indexcount>1</indexcount>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <DALINK index="0" />
+      <LABEL index="0" value="0.00" />
+      <MATH equation="X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="z">
+      <EMBEDDEDDATA mmedtypeflags="0x02" mmedaddress="0x05560A" mmedelementsizebits="16" mmedrowcount="1" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units>ms</units>
+      <decimalpl>3</decimalpl>
+      <min>0</min>
+      <max>65.535</max>
+      <outputtype>1</outputtype>
+      <MATH equation="X*0.001">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE uniqueid="0x0" flags="0x30">
     <title>Minimum warning pressure (RPM x Oil Temp)</title>
     <description>Minimum oil pressure at which a warning (yellow) will occur</description>
     <CATEGORYMEM index="0" category="129" />
@@ -27485,6 +27524,44 @@ Z Data: &quot;Boost Target&quot; / X</description>
       </MATH>
     </XDFAXIS>
   </XDFTABLE>
+  <XDFTABLE uniqueid="0x0" flags="0x0">
+    <title>Minimum LPFP Pressure</title>
+    <description>c_fup_efp_bol_1 - Minimum LPFP pressure before entering limp mode.</description>
+    <CATEGORYMEM index="0" category="2" />
+    <XDFAXIS id="x" uniqueid="0x0">
+      <EMBEDDEDDATA mmedelementsizebits="16" mmedmajorstridebits="-32" mmedminorstridebits="0" />
+      <indexcount>1</indexcount>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <DALINK index="0" />
+      <LABEL index="0" value="0.00" />
+      <MATH equation="X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="y" uniqueid="0x0">
+      <EMBEDDEDDATA mmedelementsizebits="16" mmedmajorstridebits="-32" mmedminorstridebits="0" />
+      <indexcount>1</indexcount>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <DALINK index="0" />
+      <LABEL index="0" value="0.00" />
+      <MATH equation="X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="z">
+      <EMBEDDEDDATA mmedtypeflags="0x02" mmedaddress="0x4AFBE" mmedelementsizebits="16" mmedrowcount="1" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units>psi</units>
+      <decimalpl>2</decimalpl>
+      <min>0.000000</min>
+      <max>255.000000</max>
+      <outputtype>1</outputtype>
+      <MATH equation="(x*2.653360799573)*0.0145037738">
+        <VAR id="x" />
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
   <XDFFLAG uniqueid="0x0">
     <title>Inhibit Limp - MHD001 (CAN Sensor 1 Timeout)</title>
     <mask>0x01</mask>
@@ -27534,4 +27611,10 @@ Z Data: &quot;Boost Target&quot; / X</description>
     <CATEGORYMEM index="1" category="143" />
     <EMBEDDEDDATA mmedtypeflags="0x02" mmedaddress="0x07E6A0" mmedelementsizebits="32" mmedmajorstridebits="0" mmedminorstridebits="0" />
   </XDFFLAG>
+  <XDFPATCH uniqueid="0x11E7">
+    <title>N20 Sensor 3-cell Scaling</title>
+    <description>This patch will automatically apply the &quot;common&quot; 3-cell tmap scaling for the N20 sensor</description>
+    <CATEGORYMEM index="0" category="36" />
+    <XDFPATCHENTRY address="0x7F702" datasize="0xC" patchdata="6600BA01A203BD173B50D578" />
+  </XDFPATCH>
 </XDFFORMAT>
