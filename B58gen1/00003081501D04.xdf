@@ -78,6 +78,8 @@
     <CATEGORY index="0x45" name="Port Injection breakpoints" />
     <CATEGORY index="0x46" name="No Lift Shift (NLS)" />
     <CATEGORY index="0x47" name="ReFlex Integration" />
+	<CATEGORY index="0x4A" name="Advanced / Max Effort" />
+	<CATEGORY index="0x4B" name="Advanced / Max Effort breakpoints" />
   </XDFHEADER>
   <XDFTABLE>
     <title>Fan PWM based on coolant act to target delta X (autogen)</title>
@@ -322,7 +324,7 @@
       <units>Tamb</units>
       <indexcount>4</indexcount>
       <decimalpl>0</decimalpl>
-      <outputtype>2</outputtype>
+      <outputtype>1</outputtype>
       <datatype>0</datatype>
       <unittype>0</unittype>
       <embedinfo type="1" />
@@ -341,7 +343,7 @@
       <units>Tamb</units>
       <indexcount>4</indexcount>
       <decimalpl>0</decimalpl>
-      <outputtype>2</outputtype>
+      <outputtype>1</outputtype>
       <datatype>0</datatype>
       <unittype>0</unittype>
       <embedinfo type="1" />
@@ -390,7 +392,7 @@
       <units>Tamb</units>
       <indexcount>4</indexcount>
       <decimalpl>0</decimalpl>
-      <outputtype>2</outputtype>
+      <outputtype>1</outputtype>
       <datatype>0</datatype>
       <unittype>0</unittype>
       <embedinfo type="1" />
@@ -409,7 +411,7 @@
       <units>Tamb</units>
       <indexcount>4</indexcount>
       <decimalpl>0</decimalpl>
-      <outputtype>2</outputtype>
+      <outputtype>1</outputtype>
       <datatype>0</datatype>
       <unittype>0</unittype>
       <embedinfo type="1" />
@@ -3373,10 +3375,10 @@
   </XDFTABLE>
   <XDFTABLE uniqueid="0x0" flags="0x0">
     <title>Vanos EX (cold) 1</title>
-    <description>GKF_ASPR_NORM_KALT_PF2</description>
+    <description>GKF_ASPR_NORM_KALT_PF1</description>
     <CATEGORYMEM index="0" category="19" />
     <XDFAXIS id="x" uniqueid="0x0">
-      <EMBEDDEDDATA mmedtypeflags="0x01" mmedaddress="0x69AE5A" mmedelementsizebits="16" mmedcolcount="16" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <EMBEDDEDDATA mmedtypeflags="0x01" mmedaddress="0x69AE7A" mmedelementsizebits="16" mmedcolcount="16" mmedmajorstridebits="0" mmedminorstridebits="0" />
       <units>1/min</units>
       <indexcount>16</indexcount>
       <decimalpl>3</decimalpl>
@@ -3389,7 +3391,7 @@
       </MATH>
     </XDFAXIS>
     <XDFAXIS id="y" uniqueid="0x0">
-      <EMBEDDEDDATA mmedtypeflags="0x01" mmedaddress="0x69ADFA" mmedelementsizebits="16" mmedrowcount="12" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <EMBEDDEDDATA mmedtypeflags="0x01" mmedaddress="0x69AE12" mmedelementsizebits="16" mmedrowcount="12" mmedmajorstridebits="0" mmedminorstridebits="0" />
       <units>%</units>
       <indexcount>12</indexcount>
       <decimalpl>3</decimalpl>
@@ -3402,7 +3404,7 @@
       </MATH>
     </XDFAXIS>
     <XDFAXIS id="z">
-      <EMBEDDEDDATA mmedaddress="0x69AAFA" mmedelementsizebits="16" mmedrowcount="12" mmedcolcount="16" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <EMBEDDEDDATA mmedaddress="0x69AC7A" mmedelementsizebits="16" mmedrowcount="12" mmedcolcount="16" mmedmajorstridebits="0" mmedminorstridebits="0" />
       <units>&#176;</units>
       <decimalpl>3</decimalpl>
       <min>0.000000</min>
@@ -5303,7 +5305,7 @@
     </XDFAXIS>
   </XDFTABLE>
   <XDFTABLE uniqueid="0x0" flags="0x0">
-    <title>Maximaler Sollladedruck wegen Diagnose Ladedrucksensor</title>
+    <title>Boost Ceiling (BMW - Absolute Pressure)</title>
     <description>BMWtchsp_p_ReqMax_C</description>
     <CATEGORYMEM index="0" category="1" />
     <XDFAXIS id="x" uniqueid="0x0">
@@ -5346,7 +5348,7 @@
   </XDFTABLE>
   <XDFTABLE uniqueid="0x0" flags="0x0">
     <title>Boost set limit</title>
-    <description>KL_FPLDPUMP</description>
+    <description>BMWtchsp_rat_p_CmprPmp_T</description>
     <CATEGORYMEM index="0" category="1" />
     <XDFAXIS id="x" uniqueid="0x0">
       <EMBEDDEDDATA mmedaddress="0x69FDC4" mmedelementsizebits="16" mmedcolcount="8" mmedmajorstridebits="0" mmedminorstridebits="0" />
@@ -5388,7 +5390,7 @@
   </XDFTABLE>
   <XDFTABLE uniqueid="0x0" flags="0x0">
     <title>Boost Limit multiplier</title>
-    <description>KF_FPLDMAX</description>
+    <description>BMWtchsp_rat_p_CmprMax_M</description>
     <CATEGORYMEM index="0" category="1" />
     <XDFAXIS id="x" uniqueid="0x0">
       <EMBEDDEDDATA mmedaddress="0x69FDD4" mmedelementsizebits="16" mmedcolcount="8" mmedmajorstridebits="0" mmedminorstridebits="0" />
@@ -10231,7 +10233,7 @@
       <units>-</units>
       <indexcount>4</indexcount>
       <decimalpl>-1</decimalpl>
-      <outputtype>2</outputtype>
+      <outputtype>1</outputtype>
       <datatype>0</datatype>
       <unittype>0</unittype>
       <DALINK index="0" />
@@ -10277,7 +10279,7 @@
       <units>-</units>
       <indexcount>5</indexcount>
       <decimalpl>-1</decimalpl>
-      <outputtype>2</outputtype>
+      <outputtype>1</outputtype>
       <datatype>0</datatype>
       <unittype>0</unittype>
       <DALINK index="0" />
@@ -10516,7 +10518,7 @@
       <decimalpl>1</decimalpl>
       <min>0.000000</min>
       <max>255.000000</max>
-      <outputtype>2</outputtype>
+      <outputtype>1</outputtype>
       <MATH equation="X">
         <VAR id="X" />
       </MATH>
@@ -10633,7 +10635,7 @@
       <decimalpl>1</decimalpl>
       <min>0.000000</min>
       <max>255.000000</max>
-      <outputtype>2</outputtype>
+      <outputtype>1</outputtype>
       <MATH equation="X">
         <VAR id="X" />
       </MATH>
@@ -10742,7 +10744,7 @@
       <units>-</units>
       <indexcount>12</indexcount>
       <decimalpl>1</decimalpl>
-      <outputtype>2</outputtype>
+      <outputtype>1</outputtype>
       <datatype>0</datatype>
       <unittype>0</unittype>
       <embedinfo type="1" />
@@ -10756,7 +10758,7 @@
       <units>-</units>
       <indexcount>4</indexcount>
       <decimalpl>1</decimalpl>
-      <outputtype>2</outputtype>
+      <outputtype>1</outputtype>
       <datatype>0</datatype>
       <unittype>0</unittype>
       <embedinfo type="1" />
@@ -10771,7 +10773,7 @@
       <decimalpl>0</decimalpl>
       <min>0.000000</min>
       <max>255.000000</max>
-      <outputtype>2</outputtype>
+      <outputtype>1</outputtype>
       <MATH equation="X">
         <VAR id="X" />
       </MATH>
@@ -10786,7 +10788,7 @@
       <units>-</units>
       <indexcount>12</indexcount>
       <decimalpl>1</decimalpl>
-      <outputtype>2</outputtype>
+      <outputtype>1</outputtype>
       <datatype>0</datatype>
       <unittype>0</unittype>
       <embedinfo type="1" />
@@ -10814,7 +10816,7 @@
       <decimalpl>1</decimalpl>
       <min>0.000000</min>
       <max>255.000000</max>
-      <outputtype>2</outputtype>
+      <outputtype>1</outputtype>
       <MATH equation="X">
         <VAR id="X" />
       </MATH>
@@ -10837,7 +10839,7 @@
       <units>-</units>
       <indexcount>4</indexcount>
       <decimalpl>1</decimalpl>
-      <outputtype>2</outputtype>
+      <outputtype>1</outputtype>
       <datatype>0</datatype>
       <unittype>0</unittype>
       <embedinfo type="1" />
@@ -10864,7 +10866,7 @@
       <units>-</units>
       <indexcount>12</indexcount>
       <decimalpl>1</decimalpl>
-      <outputtype>2</outputtype>
+      <outputtype>1</outputtype>
       <datatype>0</datatype>
       <unittype>0</unittype>
       <embedinfo type="1" />
@@ -11243,7 +11245,7 @@
       <decimalpl>1</decimalpl>
       <min>0.000000</min>
       <max>255.000000</max>
-      <outputtype>2</outputtype>
+      <outputtype>1</outputtype>
       <MATH equation="X">
         <VAR id="X" />
       </MATH>
@@ -11937,7 +11939,7 @@
       <decimalpl>1</decimalpl>
       <min>0.000000</min>
       <max>255.000000</max>
-      <outputtype>2</outputtype>
+      <outputtype>1</outputtype>
       <MATH equation="X">
         <VAR id="X" />
       </MATH>
@@ -12441,7 +12443,7 @@
       <EMBEDDEDDATA mmedaddress="0x6E5390" mmedelementsizebits="8" mmedcolcount="10" mmedmajorstridebits="0" mmedminorstridebits="0" />
       <indexcount>10</indexcount>
       <decimalpl>0</decimalpl>
-      <outputtype>2</outputtype>
+      <outputtype>1</outputtype>
       <datatype>0</datatype>
       <unittype>0</unittype>
       <embedinfo type="1" />
@@ -12468,7 +12470,7 @@
       <units>1/min</units>
       <indexcount>12</indexcount>
       <decimalpl>0</decimalpl>
-      <outputtype>2</outputtype>
+      <outputtype>1</outputtype>
       <datatype>0</datatype>
       <unittype>0</unittype>
       <embedinfo type="1" />
@@ -12487,7 +12489,7 @@
       <units>1/min</units>
       <indexcount>12</indexcount>
       <decimalpl>0</decimalpl>
-      <outputtype>2</outputtype>
+      <outputtype>1</outputtype>
       <datatype>0</datatype>
       <unittype>0</unittype>
       <embedinfo type="1" />
@@ -12500,7 +12502,7 @@
       <EMBEDDEDDATA mmedaddress="0x6E5390" mmedelementsizebits="8" mmedcolcount="10" mmedmajorstridebits="0" mmedminorstridebits="0" />
       <indexcount>10</indexcount>
       <decimalpl>0</decimalpl>
-      <outputtype>2</outputtype>
+      <outputtype>1</outputtype>
       <datatype>0</datatype>
       <unittype>0</unittype>
       <embedinfo type="1" />
@@ -14807,7 +14809,7 @@
       <units>-</units>
       <indexcount>5</indexcount>
       <decimalpl>-1</decimalpl>
-      <outputtype>2</outputtype>
+      <outputtype>1</outputtype>
       <datatype>0</datatype>
       <unittype>0</unittype>
       <DALINK index="0" />
@@ -15964,7 +15966,7 @@ HDR=Rail Pressure Regulation</description>
       <decimalpl>1</decimalpl>
       <min>0.000000</min>
       <max>255.000000</max>
-      <outputtype>2</outputtype>
+      <outputtype>1</outputtype>
       <MATH equation="X">
         <VAR id="X" />
       </MATH>
@@ -16735,6 +16737,46 @@ HDR=Rail Pressure Regulation</description>
     </XDFAXIS>
   </XDFTABLE>
   <XDFTABLE uniqueid="0x0" flags="0x0">
+    <title>Conversion factor fuel mass to injection time (Injector Slope)</title>
+    <description>MK2TE</description>
+    <CATEGORYMEM index="0" category="5" />
+    <XDFAXIS id="x" uniqueid="0x0">
+      <EMBEDDEDDATA mmedelementsizebits="16" mmedmajorstridebits="-32" mmedminorstridebits="0" />
+      <indexcount>1</indexcount>
+      <decimalpl>1</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <DALINK index="0" />
+      <LABEL index="0" value="0.0" />
+      <MATH equation="X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="y" uniqueid="0x0">
+      <EMBEDDEDDATA mmedelementsizebits="16" mmedmajorstridebits="-32" mmedminorstridebits="0" />
+      <indexcount>1</indexcount>
+      <decimalpl>1</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <DALINK index="0" />
+      <LABEL index="0" value="0.0" />
+      <MATH equation="X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="z">
+      <EMBEDDEDDATA mmedaddress="0x6FC574" mmedelementsizebits="16" mmedrowcount="1" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units>ms * Hub/mg</units>
+      <decimalpl>6</decimalpl>
+      <min>0.000000</min>
+      <max>255.000000</max>
+      <outputtype>1</outputtype>
+      <MATH equation="X*0.000010416667">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE uniqueid="0x0" flags="0x0">
     <title>OPF Switch pressure sensor</title>
     <description>Exh_swtSensCfgPPFlt_C</description>
     <CATEGORYMEM index="0" category="26" />
@@ -16767,7 +16809,7 @@ HDR=Rail Pressure Regulation</description>
       <decimalpl>1</decimalpl>
       <min>0.000000</min>
       <max>255.000000</max>
-      <outputtype>2</outputtype>
+      <outputtype>1</outputtype>
       <MATH equation="X">
         <VAR id="X" />
       </MATH>
@@ -16790,9 +16832,9 @@ HDR=Rail Pressure Regulation</description>
     </XDFAXIS>
     <XDFAXIS id="y" uniqueid="0x0">
       <EMBEDDEDDATA mmedtypeflags="0x02" mmedelementsizebits="16" mmedmajorstridebits="0" mmedminorstridebits="0" />
-      <indexcount>16</indexcount>
+      <indexcount>32</indexcount>
       <decimalpl>0</decimalpl>
-      <outputtype>2</outputtype>
+      <outputtype>1</outputtype>
       <datatype>0</datatype>
       <unittype>0</unittype>
       <embedinfo type="2" />
@@ -16802,7 +16844,7 @@ HDR=Rail Pressure Regulation</description>
       </MATH>
     </XDFAXIS>
     <XDFAXIS id="z">
-      <EMBEDDEDDATA mmedtypeflags="0x02" mmedaddress="0x77F760" mmedelementsizebits="32" mmedrowcount="16" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <EMBEDDEDDATA mmedtypeflags="0x02" mmedaddress="0x77F760" mmedelementsizebits="32" mmedrowcount="32" mmedmajorstridebits="0" mmedminorstridebits="0" />
       <decimalpl>0</decimalpl>
       <min>0.000000</min>
       <max>255.000000</max>
@@ -29638,7 +29680,7 @@ ipol factors 1.01 - 2 blend from map slot to FF2</description>
       <units>Ethanol Content</units>
       <indexcount>10</indexcount>
       <decimalpl>0</decimalpl>
-      <outputtype>2</outputtype>
+      <outputtype>1</outputtype>
       <datatype>0</datatype>
       <unittype>0</unittype>
       <embedinfo type="1" />
@@ -29915,7 +29957,7 @@ ipol factors 1.01 - 2 blend from map slot to FF2</description>
       <indexcount>1</indexcount>
     </XDFAXIS>
     <XDFAXIS id="z" uniqueid="0x0">
-      <EMBEDDEDDATA mmedtypeflags="0x01" mmedaddress="0x715148" mmedelementsizebits="8" mmedcolcount="10" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <EMBEDDEDDATA mmedtypeflags="0x00" mmedaddress="0x715148" mmedelementsizebits="8" mmedcolcount="10" mmedmajorstridebits="0" mmedminorstridebits="0" />
       <units>E%</units>
       <indexcount>10</indexcount>
       <decimalpl>0</decimalpl>
@@ -29943,7 +29985,7 @@ ipol factors 1.01 - 2 blend from map slot to FF2</description>
       <indexcount>1</indexcount>
     </XDFAXIS>
     <XDFAXIS id="z" uniqueid="0x0">
-      <EMBEDDEDDATA mmedtypeflags="0x01" mmedaddress="0x71515C" mmedelementsizebits="8" mmedcolcount="10" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <EMBEDDEDDATA mmedtypeflags="0x00" mmedaddress="0x71515C" mmedelementsizebits="8" mmedcolcount="10" mmedmajorstridebits="0" mmedminorstridebits="0" />
       <units>E%</units>
       <indexcount>10</indexcount>
       <decimalpl>0</decimalpl>
@@ -29971,7 +30013,7 @@ ipol factors 1.01 - 2 blend from map slot to FF2</description>
       <indexcount>1</indexcount>
     </XDFAXIS>
     <XDFAXIS id="z" uniqueid="0x0">
-      <EMBEDDEDDATA mmedtypeflags="0x01" mmedaddress="0x715170" mmedelementsizebits="8" mmedcolcount="10" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <EMBEDDEDDATA mmedtypeflags="0x00" mmedaddress="0x715170" mmedelementsizebits="8" mmedcolcount="10" mmedmajorstridebits="0" mmedminorstridebits="0" />
       <units>E%</units>
       <indexcount>10</indexcount>
       <decimalpl>0</decimalpl>
@@ -29999,7 +30041,7 @@ ipol factors 1.01 - 2 blend from map slot to FF2</description>
       <indexcount>1</indexcount>
     </XDFAXIS>
     <XDFAXIS id="z" uniqueid="0x0">
-      <EMBEDDEDDATA mmedtypeflags="0x01" mmedaddress="0x715184" mmedelementsizebits="8" mmedcolcount="10" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <EMBEDDEDDATA mmedtypeflags="0x00" mmedaddress="0x715184" mmedelementsizebits="8" mmedcolcount="10" mmedmajorstridebits="0" mmedminorstridebits="0" />
       <units>E%</units>
       <indexcount>10</indexcount>
       <decimalpl>0</decimalpl>
@@ -30199,7 +30241,7 @@ ipol factors 1.01 - 2 blend from map slot to FF2</description>
       <indexcount>1</indexcount>
     </XDFAXIS>
     <XDFAXIS id="z" uniqueid="0x0">
-      <EMBEDDEDDATA mmedtypeflags="0x01" mmedaddress="0x715198" mmedelementsizebits="8" mmedcolcount="10" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <EMBEDDEDDATA mmedtypeflags="0x00" mmedaddress="0x715198" mmedelementsizebits="8" mmedcolcount="10" mmedmajorstridebits="0" mmedminorstridebits="0" />
       <units>E%</units>
       <indexcount>10</indexcount>
       <decimalpl>0</decimalpl>
@@ -30227,7 +30269,7 @@ ipol factors 1.01 - 2 blend from map slot to FF2</description>
       <indexcount>1</indexcount>
     </XDFAXIS>
     <XDFAXIS id="z" uniqueid="0x0">
-      <EMBEDDEDDATA mmedtypeflags="0x01" mmedaddress="0x7151AC" mmedelementsizebits="8" mmedcolcount="10" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <EMBEDDEDDATA mmedtypeflags="0x00" mmedaddress="0x7151AC" mmedelementsizebits="8" mmedcolcount="10" mmedmajorstridebits="0" mmedminorstridebits="0" />
       <units>E%</units>
       <indexcount>10</indexcount>
       <decimalpl>0</decimalpl>
@@ -30255,7 +30297,7 @@ ipol factors 1.01 - 2 blend from map slot to FF2</description>
       <indexcount>1</indexcount>
     </XDFAXIS>
     <XDFAXIS id="z" uniqueid="0x0">
-      <EMBEDDEDDATA mmedtypeflags="0x01" mmedaddress="0x7151C0" mmedelementsizebits="8" mmedcolcount="10" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <EMBEDDEDDATA mmedtypeflags="0x00" mmedaddress="0x7151C0" mmedelementsizebits="8" mmedcolcount="10" mmedmajorstridebits="0" mmedminorstridebits="0" />
       <units>E%</units>
       <indexcount>10</indexcount>
       <decimalpl>0</decimalpl>
@@ -30283,7 +30325,7 @@ ipol factors 1.01 - 2 blend from map slot to FF2</description>
       <indexcount>1</indexcount>
     </XDFAXIS>
     <XDFAXIS id="z" uniqueid="0x0">
-      <EMBEDDEDDATA mmedtypeflags="0x01" mmedaddress="0x7151D4" mmedelementsizebits="8" mmedcolcount="10" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <EMBEDDEDDATA mmedtypeflags="0x00" mmedaddress="0x7151D4" mmedelementsizebits="8" mmedcolcount="10" mmedmajorstridebits="0" mmedminorstridebits="0" />
       <units>E%</units>
       <indexcount>10</indexcount>
       <decimalpl>0</decimalpl>
@@ -30483,7 +30525,7 @@ ipol factors 1.01 - 2 blend from map slot to FF2</description>
       <indexcount>1</indexcount>
     </XDFAXIS>
     <XDFAXIS id="z" uniqueid="0x0">
-      <EMBEDDEDDATA mmedtypeflags="0x01" mmedaddress="0x7151E8" mmedelementsizebits="8" mmedcolcount="10" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <EMBEDDEDDATA mmedtypeflags="0x00" mmedaddress="0x7151E8" mmedelementsizebits="8" mmedcolcount="10" mmedmajorstridebits="0" mmedminorstridebits="0" />
       <units>E%</units>
       <indexcount>10</indexcount>
       <decimalpl>0</decimalpl>
@@ -30511,7 +30553,7 @@ ipol factors 1.01 - 2 blend from map slot to FF2</description>
       <indexcount>1</indexcount>
     </XDFAXIS>
     <XDFAXIS id="z" uniqueid="0x0">
-      <EMBEDDEDDATA mmedtypeflags="0x01" mmedaddress="0x7151FC" mmedelementsizebits="8" mmedcolcount="10" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <EMBEDDEDDATA mmedtypeflags="0x00" mmedaddress="0x7151FC" mmedelementsizebits="8" mmedcolcount="10" mmedmajorstridebits="0" mmedminorstridebits="0" />
       <units>E%</units>
       <indexcount>10</indexcount>
       <decimalpl>0</decimalpl>
@@ -30539,7 +30581,7 @@ ipol factors 1.01 - 2 blend from map slot to FF2</description>
       <indexcount>1</indexcount>
     </XDFAXIS>
     <XDFAXIS id="z" uniqueid="0x0">
-      <EMBEDDEDDATA mmedtypeflags="0x01" mmedaddress="0x715210" mmedelementsizebits="8" mmedcolcount="10" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <EMBEDDEDDATA mmedtypeflags="0x00" mmedaddress="0x715210" mmedelementsizebits="8" mmedcolcount="10" mmedmajorstridebits="0" mmedminorstridebits="0" />
       <units>E%</units>
       <indexcount>10</indexcount>
       <decimalpl>0</decimalpl>
@@ -30567,7 +30609,7 @@ ipol factors 1.01 - 2 blend from map slot to FF2</description>
       <indexcount>1</indexcount>
     </XDFAXIS>
     <XDFAXIS id="z" uniqueid="0x0">
-      <EMBEDDEDDATA mmedtypeflags="0x01" mmedaddress="0x715224" mmedelementsizebits="8" mmedcolcount="10" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <EMBEDDEDDATA mmedtypeflags="0x00" mmedaddress="0x715224" mmedelementsizebits="8" mmedcolcount="10" mmedmajorstridebits="0" mmedminorstridebits="0" />
       <units>E%</units>
       <indexcount>10</indexcount>
       <decimalpl>0</decimalpl>
@@ -30767,7 +30809,7 @@ ipol factors 1.01 - 2 blend from map slot to FF2</description>
       <indexcount>1</indexcount>
     </XDFAXIS>
     <XDFAXIS id="z" uniqueid="0x0">
-      <EMBEDDEDDATA mmedtypeflags="0x01" mmedaddress="0x715238" mmedelementsizebits="8" mmedcolcount="10" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <EMBEDDEDDATA mmedtypeflags="0x00" mmedaddress="0x715238" mmedelementsizebits="8" mmedcolcount="10" mmedmajorstridebits="0" mmedminorstridebits="0" />
       <units>E%</units>
       <indexcount>10</indexcount>
       <decimalpl>0</decimalpl>
@@ -30795,7 +30837,7 @@ ipol factors 1.01 - 2 blend from map slot to FF2</description>
       <indexcount>1</indexcount>
     </XDFAXIS>
     <XDFAXIS id="z" uniqueid="0x0">
-      <EMBEDDEDDATA mmedtypeflags="0x01" mmedaddress="0x71524C" mmedelementsizebits="8" mmedcolcount="10" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <EMBEDDEDDATA mmedtypeflags="0x00" mmedaddress="0x71524C" mmedelementsizebits="8" mmedcolcount="10" mmedmajorstridebits="0" mmedminorstridebits="0" />
       <units>E%</units>
       <indexcount>10</indexcount>
       <decimalpl>0</decimalpl>
@@ -30823,7 +30865,7 @@ ipol factors 1.01 - 2 blend from map slot to FF2</description>
       <indexcount>1</indexcount>
     </XDFAXIS>
     <XDFAXIS id="z" uniqueid="0x0">
-      <EMBEDDEDDATA mmedtypeflags="0x01" mmedaddress="0x715260" mmedelementsizebits="8" mmedcolcount="10" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <EMBEDDEDDATA mmedtypeflags="0x00" mmedaddress="0x715260" mmedelementsizebits="8" mmedcolcount="10" mmedmajorstridebits="0" mmedminorstridebits="0" />
       <units>E%</units>
       <indexcount>10</indexcount>
       <decimalpl>0</decimalpl>
@@ -30851,7 +30893,7 @@ ipol factors 1.01 - 2 blend from map slot to FF2</description>
       <indexcount>1</indexcount>
     </XDFAXIS>
     <XDFAXIS id="z" uniqueid="0x0">
-      <EMBEDDEDDATA mmedtypeflags="0x01" mmedaddress="0x715274" mmedelementsizebits="8" mmedcolcount="10" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <EMBEDDEDDATA mmedtypeflags="0x00" mmedaddress="0x715274" mmedelementsizebits="8" mmedcolcount="10" mmedmajorstridebits="0" mmedminorstridebits="0" />
       <units>E%</units>
       <indexcount>10</indexcount>
       <decimalpl>0</decimalpl>
@@ -31051,7 +31093,7 @@ ipol factors 1.01 - 2 blend from map slot to FF2</description>
       <indexcount>1</indexcount>
     </XDFAXIS>
     <XDFAXIS id="z" uniqueid="0x0">
-      <EMBEDDEDDATA mmedtypeflags="0x01" mmedaddress="0x715288" mmedelementsizebits="8" mmedcolcount="10" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <EMBEDDEDDATA mmedtypeflags="0x00" mmedaddress="0x715288" mmedelementsizebits="8" mmedcolcount="10" mmedmajorstridebits="0" mmedminorstridebits="0" />
       <units>E%</units>
       <indexcount>10</indexcount>
       <decimalpl>0</decimalpl>
@@ -31079,7 +31121,7 @@ ipol factors 1.01 - 2 blend from map slot to FF2</description>
       <indexcount>1</indexcount>
     </XDFAXIS>
     <XDFAXIS id="z" uniqueid="0x0">
-      <EMBEDDEDDATA mmedtypeflags="0x01" mmedaddress="0x71529C" mmedelementsizebits="8" mmedcolcount="10" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <EMBEDDEDDATA mmedtypeflags="0x00" mmedaddress="0x71529C" mmedelementsizebits="8" mmedcolcount="10" mmedmajorstridebits="0" mmedminorstridebits="0" />
       <units>E%</units>
       <indexcount>10</indexcount>
       <decimalpl>0</decimalpl>
@@ -31107,7 +31149,7 @@ ipol factors 1.01 - 2 blend from map slot to FF2</description>
       <indexcount>1</indexcount>
     </XDFAXIS>
     <XDFAXIS id="z" uniqueid="0x0">
-      <EMBEDDEDDATA mmedtypeflags="0x01" mmedaddress="0x7152B0" mmedelementsizebits="8" mmedcolcount="10" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <EMBEDDEDDATA mmedtypeflags="0x00" mmedaddress="0x7152B0" mmedelementsizebits="8" mmedcolcount="10" mmedmajorstridebits="0" mmedminorstridebits="0" />
       <units>E%</units>
       <indexcount>10</indexcount>
       <decimalpl>0</decimalpl>
@@ -31135,7 +31177,7 @@ ipol factors 1.01 - 2 blend from map slot to FF2</description>
       <indexcount>1</indexcount>
     </XDFAXIS>
     <XDFAXIS id="z" uniqueid="0x0">
-      <EMBEDDEDDATA mmedtypeflags="0x01" mmedaddress="0x7152C4" mmedelementsizebits="8" mmedcolcount="10" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <EMBEDDEDDATA mmedtypeflags="0x00" mmedaddress="0x7152C4" mmedelementsizebits="8" mmedcolcount="10" mmedmajorstridebits="0" mmedminorstridebits="0" />
       <units>E%</units>
       <indexcount>10</indexcount>
       <decimalpl>0</decimalpl>
@@ -31363,9 +31405,9 @@ ipol factors 1.01 - 2 blend from map slot to FF2</description>
       <units>%</units>
       <decimalpl>2</decimalpl>
       <min>-100</min>
-      <max>99.996</max>
+      <max>99.998</max>
       <embedinfo type="1" />
-      <MATH equation="X/327.68">
+      <MATH equation="X/655.36">
         <VAR id="X" />
       </MATH>
     </XDFAXIS>
@@ -31459,9 +31501,9 @@ ipol factors 1.01 - 2 blend from map slot to FF2</description>
       <units>%</units>
       <decimalpl>2</decimalpl>
       <min>-100</min>
-      <max>99.996</max>
+      <max>99.998</max>
       <embedinfo type="1" />
-      <MATH equation="X/327.68">
+      <MATH equation="X/655.36">
         <VAR id="X" />
       </MATH>
     </XDFAXIS>
@@ -31686,9 +31728,9 @@ ipol factors 1.01 - 2 blend from map slot to FF2</description>
       <units>%</units>
       <decimalpl>2</decimalpl>
       <min>-100</min>
-      <max>99.996</max>
+      <max>99.998</max>
       <embedinfo type="1" />
-      <MATH equation="X/327.68">
+      <MATH equation="X/655.36">
         <VAR id="X" />
       </MATH>
     </XDFAXIS>
@@ -31782,9 +31824,9 @@ ipol factors 1.01 - 2 blend from map slot to FF2</description>
       <units>%</units>
       <decimalpl>2</decimalpl>
       <min>-100</min>
-      <max>99.996</max>
+      <max>99.998</max>
       <embedinfo type="1" />
-      <MATH equation="X/327.68">
+      <MATH equation="X/655.36">
         <VAR id="X" />
       </MATH>
     </XDFAXIS>
@@ -31853,7 +31895,7 @@ ipol factors 1.01 - 2 blend from map slot to FF2</description>
     <CATEGORYMEM index="0" category="39" />
     <CATEGORYMEM index="1" category="48" />
     <XDFAXIS id="x" uniqueid="0x0">
-      <EMBEDDEDDATA mmedtypeflags="0x02" mmedelementsizebits="16" mmedmajorstridebits="-32" mmedminorstridebits="0" />
+      <EMBEDDEDDATA mmedtypeflags="0x00" mmedelementsizebits="16" mmedmajorstridebits="-32" mmedminorstridebits="0" />
       <indexcount>1</indexcount>
       <decimalpl>1</decimalpl>
       <datatype>0</datatype>
@@ -31865,7 +31907,7 @@ ipol factors 1.01 - 2 blend from map slot to FF2</description>
       </MATH>
     </XDFAXIS>
     <XDFAXIS id="y" uniqueid="0x0">
-      <EMBEDDEDDATA mmedtypeflags="0x02" mmedelementsizebits="16" mmedmajorstridebits="-32" mmedminorstridebits="0" />
+      <EMBEDDEDDATA mmedtypeflags="0x00" mmedelementsizebits="16" mmedmajorstridebits="-32" mmedminorstridebits="0" />
       <indexcount>1</indexcount>
       <decimalpl>1</decimalpl>
       <datatype>0</datatype>
@@ -31877,7 +31919,7 @@ ipol factors 1.01 - 2 blend from map slot to FF2</description>
       </MATH>
     </XDFAXIS>
     <XDFAXIS id="z">
-      <EMBEDDEDDATA mmedtypeflags="0x02" mmedaddress="0x7104D0" mmedelementsizebits="8" mmedrowcount="1" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <EMBEDDEDDATA mmedtypeflags="0x00" mmedaddress="0x7104D0" mmedelementsizebits="8" mmedrowcount="1" mmedmajorstridebits="0" mmedminorstridebits="0" />
       <decimalpl>0</decimalpl>
       <min>0.000000</min>
       <max>1.000000</max>
@@ -31893,7 +31935,7 @@ ipol factors 1.01 - 2 blend from map slot to FF2</description>
     <CATEGORYMEM index="0" category="39" />
     <CATEGORYMEM index="1" category="48" />
     <XDFAXIS id="x" uniqueid="0x0">
-      <EMBEDDEDDATA mmedtypeflags="0x02" mmedelementsizebits="16" mmedmajorstridebits="-32" mmedminorstridebits="0" />
+      <EMBEDDEDDATA mmedtypeflags="0x00" mmedelementsizebits="16" mmedmajorstridebits="-32" mmedminorstridebits="0" />
       <indexcount>1</indexcount>
       <decimalpl>1</decimalpl>
       <datatype>0</datatype>
@@ -31905,7 +31947,7 @@ ipol factors 1.01 - 2 blend from map slot to FF2</description>
       </MATH>
     </XDFAXIS>
     <XDFAXIS id="y" uniqueid="0x0">
-      <EMBEDDEDDATA mmedtypeflags="0x02" mmedelementsizebits="16" mmedmajorstridebits="-32" mmedminorstridebits="0" />
+      <EMBEDDEDDATA mmedtypeflags="0x00" mmedelementsizebits="16" mmedmajorstridebits="-32" mmedminorstridebits="0" />
       <indexcount>1</indexcount>
       <decimalpl>1</decimalpl>
       <datatype>0</datatype>
@@ -31917,12 +31959,136 @@ ipol factors 1.01 - 2 blend from map slot to FF2</description>
       </MATH>
     </XDFAXIS>
     <XDFAXIS id="z">
-      <EMBEDDEDDATA mmedtypeflags="0x02" mmedaddress="0x7104D1" mmedelementsizebits="8" mmedrowcount="1" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <EMBEDDEDDATA mmedtypeflags="0x00" mmedaddress="0x7104D1" mmedelementsizebits="8" mmedrowcount="1" mmedmajorstridebits="0" mmedminorstridebits="0" />
       <decimalpl>0</decimalpl>
       <min>0.000000</min>
       <max>1.000000</max>
       <outputtype>1</outputtype>
       <MATH equation="X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE uniqueid="0x0" flags="0x30">
+    <title>Enable NLS</title>
+    <description>enable: 1
+disable : 0</description>
+    <CATEGORYMEM index="0" category="39" />
+    <CATEGORYMEM index="1" category="71" />
+    <XDFAXIS id="x" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x00" mmedelementsizebits="16" mmedmajorstridebits="-32" mmedminorstridebits="0" />
+      <indexcount>1</indexcount>
+      <decimalpl>1</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <DALINK index="0" />
+      <LABEL index="0" value="0.0" />
+      <MATH equation="X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="y" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x00" mmedelementsizebits="16" mmedmajorstridebits="-32" mmedminorstridebits="0" />
+      <indexcount>1</indexcount>
+      <decimalpl>1</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <DALINK index="0" />
+      <LABEL index="0" value="0.0" />
+      <MATH equation="X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="z">
+      <EMBEDDEDDATA mmedtypeflags="0x00" mmedaddress="0x710645" mmedelementsizebits="8" mmedrowcount="1" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units>-</units>
+      <decimalpl>0</decimalpl>
+      <min>0</min>
+      <max>1</max>
+      <outputtype>1</outputtype>
+      <MATH equation="X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE uniqueid="0x0" flags="0x30">
+    <title>NLS RPM Threshold (Minimum)</title>
+    <description>NLS logic will only activate above this RPM</description>
+    <CATEGORYMEM index="0" category="39" />
+    <CATEGORYMEM index="1" category="71" />
+    <XDFAXIS id="x" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x00" mmedelementsizebits="16" mmedmajorstridebits="-32" mmedminorstridebits="0" />
+      <indexcount>1</indexcount>
+      <decimalpl>1</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <DALINK index="0" />
+      <LABEL index="0" value="0.0" />
+      <MATH equation="X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="y" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x00" mmedelementsizebits="16" mmedmajorstridebits="-32" mmedminorstridebits="0" />
+      <indexcount>1</indexcount>
+      <decimalpl>1</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <DALINK index="0" />
+      <LABEL index="0" value="0.0" />
+      <MATH equation="X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="z">
+      <EMBEDDEDDATA mmedtypeflags="0x01" mmedaddress="0x710646" mmedelementsizebits="16" mmedrowcount="1" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units>rpm</units>
+      <decimalpl>0</decimalpl>
+      <min>2000</min>
+      <max>9000</max>
+      <outputtype>1</outputtype>
+      <MATH equation="X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE uniqueid="0x0" flags="0x30">
+    <title>NLS Pedal Threshold (Minimum)</title>
+    <description>NLS logic will only activate above this pedal percentage</description>
+    <CATEGORYMEM index="0" category="39" />
+    <CATEGORYMEM index="1" category="71" />
+    <XDFAXIS id="x" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x00" mmedelementsizebits="16" mmedmajorstridebits="-32" mmedminorstridebits="0" />
+      <indexcount>1</indexcount>
+      <decimalpl>1</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <DALINK index="0" />
+      <LABEL index="0" value="0.0" />
+      <MATH equation="X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="y" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x00" mmedelementsizebits="16" mmedmajorstridebits="-32" mmedminorstridebits="0" />
+      <indexcount>1</indexcount>
+      <decimalpl>1</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <DALINK index="0" />
+      <LABEL index="0" value="0.0" />
+      <MATH equation="X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="z">
+      <EMBEDDEDDATA mmedtypeflags="0x01" mmedaddress="0x710648" mmedelementsizebits="16" mmedrowcount="1" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units>%</units>
+      <decimalpl>0</decimalpl>
+      <min>40.000000</min>
+      <max>100.000000</max>
+      <outputtype>1</outputtype>
+      <MATH equation="X/40.96">
         <VAR id="X" />
       </MATH>
     </XDFAXIS>
@@ -31958,6 +32124,46 @@ ipol factors 1.01 - 2 blend from map slot to FF2</description>
     </XDFAXIS>
     <XDFAXIS id="z">
       <EMBEDDEDDATA mmedtypeflags="0x00" mmedaddress="0x71064A" mmedelementsizebits="8" mmedrowcount="1" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <decimalpl>0</decimalpl>
+      <min>0.000000</min>
+      <max>1.000000</max>
+      <outputtype>1</outputtype>
+      <MATH equation="X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE uniqueid="0x0" flags="0x30">
+    <title>Enable Increased Boost Ceiling (5 bar+)</title>
+	<description>Set to 1 to enable our custom patch which allows full use of 5 bar (and higher) MAP sensors. The following PnP Bosch 5 bar map sensor is required (part #: 13628514488)</description>
+    <CATEGORYMEM index="0" category="39" />
+    <CATEGORYMEM index="1" category="75" />
+    <XDFAXIS id="x" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x02" mmedelementsizebits="16" mmedmajorstridebits="-32" mmedminorstridebits="0" />
+      <indexcount>1</indexcount>
+      <decimalpl>1</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <DALINK index="0" />
+      <LABEL index="0" value="0.0" />
+      <MATH equation="X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="y" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x02" mmedelementsizebits="16" mmedmajorstridebits="-32" mmedminorstridebits="0" />
+      <indexcount>1</indexcount>
+      <decimalpl>1</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <DALINK index="0" />
+      <LABEL index="0" value="0.0" />
+      <MATH equation="X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="z">
+      <EMBEDDEDDATA mmedtypeflags="0x02" mmedaddress="0x7105F9" mmedelementsizebits="8" mmedrowcount="1" mmedmajorstridebits="0" mmedminorstridebits="0" />
       <decimalpl>0</decimalpl>
       <min>0.000000</min>
       <max>1.000000</max>
@@ -32214,46 +32420,6 @@ ipol factors 1.01 - 2 blend from map slot to FF2</description>
       <max>255</max>
       <outputtype>1</outputtype>
       <MATH equation="X">
-        <VAR id="X" />
-      </MATH>
-    </XDFAXIS>
-  </XDFTABLE>
-  <XDFTABLE uniqueid="0x0" flags="0x0">
-    <title>Conversion factor fuel mass to injection time (Injector Slope)</title>
-    <description>MK2TE</description>
-    <CATEGORYMEM index="0" category="5" />
-    <XDFAXIS id="x" uniqueid="0x0">
-      <EMBEDDEDDATA mmedelementsizebits="16" mmedmajorstridebits="-32" mmedminorstridebits="0" />
-      <indexcount>1</indexcount>
-      <decimalpl>1</decimalpl>
-      <datatype>0</datatype>
-      <unittype>0</unittype>
-      <DALINK index="0" />
-      <LABEL index="0" value="0.0" />
-      <MATH equation="X">
-        <VAR id="X" />
-      </MATH>
-    </XDFAXIS>
-    <XDFAXIS id="y" uniqueid="0x0">
-      <EMBEDDEDDATA mmedelementsizebits="16" mmedmajorstridebits="-32" mmedminorstridebits="0" />
-      <indexcount>1</indexcount>
-      <decimalpl>1</decimalpl>
-      <datatype>0</datatype>
-      <unittype>0</unittype>
-      <DALINK index="0" />
-      <LABEL index="0" value="0.0" />
-      <MATH equation="X">
-        <VAR id="X" />
-      </MATH>
-    </XDFAXIS>
-    <XDFAXIS id="z">
-      <EMBEDDEDDATA mmedaddress="0x6FC574" mmedelementsizebits="16" mmedrowcount="1" mmedmajorstridebits="0" mmedminorstridebits="0" />
-      <units>ms * Hub/mg</units>
-      <decimalpl>6</decimalpl>
-      <min>0.000000</min>
-      <max>255.000000</max>
-      <outputtype>1</outputtype>
-      <MATH equation="X*0.000010416667">
         <VAR id="X" />
       </MATH>
     </XDFAXIS>
