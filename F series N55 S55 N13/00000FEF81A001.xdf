@@ -1077,7 +1077,7 @@
       <units>-</units>
       <indexcount>1</indexcount>
       <decimalpl>-1</decimalpl>
-      <outputtype>2</outputtype>
+      <outputtype>1</outputtype>
       <datatype>0</datatype>
       <unittype>0</unittype>
       <DALINK index="0" />
@@ -1541,7 +1541,7 @@
       <units>-</units>
       <indexcount>1</indexcount>
       <decimalpl>-1</decimalpl>
-      <outputtype>2</outputtype>
+      <outputtype>1</outputtype>
       <datatype>0</datatype>
       <unittype>0</unittype>
       <DALINK index="0" />
@@ -1585,7 +1585,7 @@ K_KHNST_NMAX_HOMDOE</description>
       <units>-</units>
       <indexcount>1</indexcount>
       <decimalpl>-1</decimalpl>
-      <outputtype>2</outputtype>
+      <outputtype>1</outputtype>
       <datatype>0</datatype>
       <unittype>0</unittype>
       <DALINK index="0" />
@@ -1658,7 +1658,7 @@ K_KHNST_NMAX_HOMDOE</description>
       <units>1/min</units>
       <indexcount>16</indexcount>
       <decimalpl>0</decimalpl>
-      <outputtype>2</outputtype>
+      <outputtype>1</outputtype>
       <datatype>0</datatype>
       <unittype>0</unittype>
       <embedinfo type="1" />
@@ -2020,7 +2020,7 @@ K_KHNST_NMAX_HOMDOE</description>
       <decimalpl>0</decimalpl>
       <min>0.000000</min>
       <max>255.000000</max>
-      <outputtype>2</outputtype>
+      <outputtype>1</outputtype>
       <MATH equation="X*1">
         <VAR id="X" />
       </MATH>
@@ -2328,7 +2328,7 @@ K_MAX_PSSOLBER</description>
       <units>-</units>
       <indexcount>1</indexcount>
       <decimalpl>-1</decimalpl>
-      <outputtype>2</outputtype>
+      <outputtype>1</outputtype>
       <datatype>0</datatype>
       <unittype>0</unittype>
       <DALINK index="0" />
@@ -2343,7 +2343,7 @@ K_MAX_PSSOLBER</description>
       <decimalpl>0</decimalpl>
       <min>0.000000</min>
       <max>255.000000</max>
-      <outputtype>2</outputtype>
+      <outputtype>1</outputtype>
       <MATH equation="X*0.1">
         <VAR id="X" />
       </MATH>
@@ -2372,7 +2372,7 @@ K_MAX_PSSOLBER</description>
       <units>-</units>
       <indexcount>1</indexcount>
       <decimalpl>-1</decimalpl>
-      <outputtype>2</outputtype>
+      <outputtype>1</outputtype>
       <datatype>0</datatype>
       <unittype>0</unittype>
       <DALINK index="0" />
@@ -2416,7 +2416,7 @@ K_MAX_PSSOLBER</description>
       <units>-</units>
       <indexcount>1</indexcount>
       <decimalpl>-1</decimalpl>
-      <outputtype>2</outputtype>
+      <outputtype>1</outputtype>
       <datatype>0</datatype>
       <unittype>0</unittype>
       <DALINK index="0" />
@@ -2685,7 +2685,7 @@ K_MAX_PSSOLBER</description>
       <units>-</units>
       <indexcount>1</indexcount>
       <decimalpl>-1</decimalpl>
-      <outputtype>2</outputtype>
+      <outputtype>1</outputtype>
       <datatype>0</datatype>
       <unittype>0</unittype>
       <DALINK index="0" />
@@ -2729,7 +2729,7 @@ K_MAX_PSSOLBER</description>
       <units>-</units>
       <indexcount>1</indexcount>
       <decimalpl>-1</decimalpl>
-      <outputtype>2</outputtype>
+      <outputtype>1</outputtype>
       <datatype>0</datatype>
       <unittype>0</unittype>
       <DALINK index="0" />
@@ -2902,7 +2902,7 @@ K_MAX_PSSOLBER</description>
       <units>-</units>
       <indexcount>1</indexcount>
       <decimalpl>-1</decimalpl>
-      <outputtype>2</outputtype>
+      <outputtype>1</outputtype>
       <datatype>0</datatype>
       <unittype>0</unittype>
       <DALINK index="0" />
@@ -3155,7 +3155,7 @@ K_MAX_PSSOLBER</description>
       <units>-</units>
       <indexcount>1</indexcount>
       <decimalpl>-1</decimalpl>
-      <outputtype>2</outputtype>
+      <outputtype>1</outputtype>
       <datatype>0</datatype>
       <unittype>0</unittype>
       <DALINK index="0" />
@@ -3199,7 +3199,7 @@ K_MAX_PSSOLBER</description>
       <units>-</units>
       <indexcount>1</indexcount>
       <decimalpl>-1</decimalpl>
-      <outputtype>2</outputtype>
+      <outputtype>1</outputtype>
       <datatype>0</datatype>
       <unittype>0</unittype>
       <DALINK index="0" />
@@ -3964,7 +3964,7 @@ K_TKWSOLL_
       <units>-</units>
       <indexcount>4</indexcount>
       <decimalpl>-1</decimalpl>
-      <outputtype>2</outputtype>
+      <outputtype>1</outputtype>
       <datatype>0</datatype>
       <unittype>0</unittype>
       <DALINK index="0" />
@@ -4010,7 +4010,7 @@ K_TKWSOLL_
       <units>-</units>
       <indexcount>5</indexcount>
       <decimalpl>-1</decimalpl>
-      <outputtype>2</outputtype>
+      <outputtype>1</outputtype>
       <datatype>0</datatype>
       <unittype>0</unittype>
       <DALINK index="0" />
@@ -6626,7 +6626,7 @@ KF_F_MDMX_TANS</description>
       <units>RPM</units>
       <indexcount>12</indexcount>
       <decimalpl>0</decimalpl>
-      <outputtype>2</outputtype>
+      <outputtype>1</outputtype>
       <datatype>0</datatype>
       <unittype>0</unittype>
       <embedinfo type="1" />
@@ -6653,7 +6653,7 @@ KF_F_MDMX_TANS</description>
       <units>Gear</units>
       <indexcount>10</indexcount>
       <decimalpl>0</decimalpl>
-      <outputtype>2</outputtype>
+      <outputtype>1</outputtype>
       <datatype>0</datatype>
       <unittype>0</unittype>
       <embedinfo type="1" />
@@ -6672,7 +6672,7 @@ KF_F_MDMX_TANS</description>
       <units>Gear</units>
       <indexcount>10</indexcount>
       <decimalpl>0</decimalpl>
-      <outputtype>2</outputtype>
+      <outputtype>1</outputtype>
       <datatype>0</datatype>
       <unittype>0</unittype>
       <embedinfo type="1" />
@@ -6686,7 +6686,7 @@ KF_F_MDMX_TANS</description>
       <units>RPM</units>
       <indexcount>12</indexcount>
       <decimalpl>0</decimalpl>
-      <outputtype>2</outputtype>
+      <outputtype>1</outputtype>
       <datatype>0</datatype>
       <unittype>0</unittype>
       <embedinfo type="1" />
@@ -6724,7 +6724,7 @@ KF_F_MDMX_TANS</description>
       <units>RPM</units>
       <indexcount>12</indexcount>
       <decimalpl>0</decimalpl>
-      <outputtype>2</outputtype>
+      <outputtype>1</outputtype>
       <datatype>0</datatype>
       <unittype>0</unittype>
       <embedinfo type="1" />
@@ -6751,7 +6751,7 @@ KF_F_MDMX_TANS</description>
       <units>Gear</units>
       <indexcount>10</indexcount>
       <decimalpl>0</decimalpl>
-      <outputtype>2</outputtype>
+      <outputtype>1</outputtype>
       <datatype>0</datatype>
       <unittype>0</unittype>
       <embedinfo type="1" />
@@ -6770,7 +6770,7 @@ KF_F_MDMX_TANS</description>
       <units>Gear</units>
       <indexcount>10</indexcount>
       <decimalpl>0</decimalpl>
-      <outputtype>2</outputtype>
+      <outputtype>1</outputtype>
       <datatype>0</datatype>
       <unittype>0</unittype>
       <embedinfo type="1" />
@@ -6784,7 +6784,7 @@ KF_F_MDMX_TANS</description>
       <units>RPM</units>
       <indexcount>12</indexcount>
       <decimalpl>0</decimalpl>
-      <outputtype>2</outputtype>
+      <outputtype>1</outputtype>
       <datatype>0</datatype>
       <unittype>0</unittype>
       <embedinfo type="1" />
@@ -6913,7 +6913,7 @@ KF_F_MDMX_TANS</description>
       <units>1/umin</units>
       <indexcount>22</indexcount>
       <decimalpl>0</decimalpl>
-      <outputtype>2</outputtype>
+      <outputtype>1</outputtype>
       <datatype>0</datatype>
       <unittype>0</unittype>
       <embedinfo type="1" />
@@ -6931,7 +6931,7 @@ KF_F_MDMX_TANS</description>
       <units>1/umin</units>
       <indexcount>22</indexcount>
       <decimalpl>0</decimalpl>
-      <outputtype>2</outputtype>
+      <outputtype>1</outputtype>
       <datatype>0</datatype>
       <unittype>0</unittype>
       <embedinfo type="1" />
@@ -6980,7 +6980,7 @@ KF_F_MDMX_TANS</description>
       <units>1/umin</units>
       <indexcount>22</indexcount>
       <decimalpl>0</decimalpl>
-      <outputtype>2</outputtype>
+      <outputtype>1</outputtype>
       <datatype>0</datatype>
       <unittype>0</unittype>
       <embedinfo type="1" />
@@ -6998,7 +6998,7 @@ KF_F_MDMX_TANS</description>
       <units>1/umin</units>
       <indexcount>22</indexcount>
       <decimalpl>0</decimalpl>
-      <outputtype>2</outputtype>
+      <outputtype>1</outputtype>
       <datatype>0</datatype>
       <unittype>0</unittype>
       <embedinfo type="1" />
@@ -7047,7 +7047,7 @@ KF_F_MDMX_TANS</description>
       <units>1/umin</units>
       <indexcount>22</indexcount>
       <decimalpl>0</decimalpl>
-      <outputtype>2</outputtype>
+      <outputtype>1</outputtype>
       <datatype>0</datatype>
       <unittype>0</unittype>
       <embedinfo type="1" />
@@ -7065,7 +7065,7 @@ KF_F_MDMX_TANS</description>
       <units>1/umin</units>
       <indexcount>22</indexcount>
       <decimalpl>0</decimalpl>
-      <outputtype>2</outputtype>
+      <outputtype>1</outputtype>
       <datatype>0</datatype>
       <unittype>0</unittype>
       <embedinfo type="1" />
@@ -7234,7 +7234,7 @@ KF_F_MDMX_TANS</description>
     </XDFAXIS>
   </XDFTABLE>
   <XDFTABLE>
-    <title>Pedal Sport+ (take off) AT Y (autogen)</title>
+    <title>Pedal Eco (take off) AT Y (autogen)</title>
     <CATEGORYMEM index="0" category="15" />
     <CATEGORYMEM index="1" category="16" />
     <XDFAXIS id="x">
@@ -7260,7 +7260,7 @@ KF_F_MDMX_TANS</description>
     </XDFAXIS>
   </XDFTABLE>
   <XDFTABLE>
-    <title>Pedal Sport+ (take off) AT X (autogen)</title>
+    <title>Pedal Eco (take off) AT X (autogen)</title>
     <CATEGORYMEM index="0" category="15" />
     <CATEGORYMEM index="1" category="16" />
     <XDFAXIS id="x">
@@ -7286,7 +7286,7 @@ KF_F_MDMX_TANS</description>
     </XDFAXIS>
   </XDFTABLE>
   <XDFTABLE uniqueid="0x0" flags="0x30">
-    <title>Pedal Sport+ (take off) AT</title>
+    <title>Pedal Eco (take off) AT</title>
     <description>KF_PEDAL_2_ANF_AT</description>
     <CATEGORYMEM index="0" category="15" />
     <XDFAXIS id="x" uniqueid="0x0">
@@ -7328,7 +7328,7 @@ KF_F_MDMX_TANS</description>
     </XDFAXIS>
   </XDFTABLE>
   <XDFTABLE>
-    <title>Pedal Sport+ AT Y (autogen)</title>
+    <title>Pedal Eco AT Y (autogen)</title>
     <CATEGORYMEM index="0" category="15" />
     <CATEGORYMEM index="1" category="16" />
     <XDFAXIS id="x">
@@ -7354,7 +7354,7 @@ KF_F_MDMX_TANS</description>
     </XDFAXIS>
   </XDFTABLE>
   <XDFTABLE>
-    <title>Pedal Sport+ AT X (autogen)</title>
+    <title>Pedal Eco AT X (autogen)</title>
     <CATEGORYMEM index="0" category="15" />
     <CATEGORYMEM index="1" category="16" />
     <XDFAXIS id="x">
@@ -7380,7 +7380,7 @@ KF_F_MDMX_TANS</description>
     </XDFAXIS>
   </XDFTABLE>
   <XDFTABLE uniqueid="0x0" flags="0x30">
-    <title>Pedal Sport+ AT</title>
+    <title>Pedal Eco AT</title>
     <description>KF_PEDAL_2_AT</description>
     <CATEGORYMEM index="0" category="15" />
     <XDFAXIS id="x" uniqueid="0x0">
@@ -7422,7 +7422,7 @@ KF_F_MDMX_TANS</description>
     </XDFAXIS>
   </XDFTABLE>
   <XDFTABLE>
-    <title>Pedal Sport+ (take off) Y (autogen)</title>
+    <title>Pedal Eco (take off) Y (autogen)</title>
     <CATEGORYMEM index="0" category="15" />
     <CATEGORYMEM index="1" category="16" />
     <XDFAXIS id="x">
@@ -7448,7 +7448,7 @@ KF_F_MDMX_TANS</description>
     </XDFAXIS>
   </XDFTABLE>
   <XDFTABLE>
-    <title>Pedal Sport+ (take off) X (autogen)</title>
+    <title>Pedal Eco (take off) X (autogen)</title>
     <CATEGORYMEM index="0" category="15" />
     <CATEGORYMEM index="1" category="16" />
     <XDFAXIS id="x">
@@ -7474,7 +7474,7 @@ KF_F_MDMX_TANS</description>
     </XDFAXIS>
   </XDFTABLE>
   <XDFTABLE uniqueid="0x0" flags="0x30">
-    <title>Pedal Sport+ (take off)</title>
+    <title>Pedal Eco (take off)</title>
     <description>KF_PEDAL_2_ANF</description>
     <CATEGORYMEM index="0" category="15" />
     <XDFAXIS id="x" uniqueid="0x0">
@@ -7516,7 +7516,7 @@ KF_F_MDMX_TANS</description>
     </XDFAXIS>
   </XDFTABLE>
   <XDFTABLE>
-    <title>Pedal Sport+ Y (autogen)</title>
+    <title>Pedal Eco Y (autogen)</title>
     <CATEGORYMEM index="0" category="15" />
     <CATEGORYMEM index="1" category="16" />
     <XDFAXIS id="x">
@@ -7542,7 +7542,7 @@ KF_F_MDMX_TANS</description>
     </XDFAXIS>
   </XDFTABLE>
   <XDFTABLE>
-    <title>Pedal Sport+ X (autogen)</title>
+    <title>Pedal Eco X (autogen)</title>
     <CATEGORYMEM index="0" category="15" />
     <CATEGORYMEM index="1" category="16" />
     <XDFAXIS id="x">
@@ -7568,7 +7568,7 @@ KF_F_MDMX_TANS</description>
     </XDFAXIS>
   </XDFTABLE>
   <XDFTABLE uniqueid="0x0" flags="0x30">
-    <title>Pedal Sport+</title>
+    <title>Pedal Eco</title>
     <description>KF_PEDAL_2</description>
     <CATEGORYMEM index="0" category="15" />
     <XDFAXIS id="x" uniqueid="0x0">
@@ -8216,7 +8216,7 @@ KF_F_MDMX_TANS</description>
       <units>-</units>
       <indexcount>1</indexcount>
       <decimalpl>-1</decimalpl>
-      <outputtype>2</outputtype>
+      <outputtype>1</outputtype>
       <datatype>0</datatype>
       <unittype>0</unittype>
       <DALINK index="0" />
@@ -9074,7 +9074,7 @@ KF_PATLR_D</description>
       <units>RPM</units>
       <indexcount>16</indexcount>
       <decimalpl>0</decimalpl>
-      <outputtype>2</outputtype>
+      <outputtype>1</outputtype>
       <datatype>0</datatype>
       <unittype>0</unittype>
       <embedinfo type="1" />
@@ -9095,7 +9095,7 @@ KF_ATLVST_NKW</description>
       <units>RPM</units>
       <indexcount>16</indexcount>
       <decimalpl>0</decimalpl>
-      <outputtype>2</outputtype>
+      <outputtype>1</outputtype>
       <datatype>0</datatype>
       <unittype>0</unittype>
       <embedinfo type="1" />
@@ -9345,7 +9345,7 @@ KL_ATLR_MX</description>
       <EMBEDDEDDATA mmedtypeflags="0x03" mmedaddress="0x1B2E7E" mmedelementsizebits="16" mmedcolcount="12" mmedmajorstridebits="0" mmedminorstridebits="0" />
       <indexcount>12</indexcount>
       <decimalpl>0</decimalpl>
-      <outputtype>2</outputtype>
+      <outputtype>1</outputtype>
       <datatype>0</datatype>
       <unittype>0</unittype>
       <embedinfo type="1" />
@@ -9363,7 +9363,7 @@ KL_ATLR_MX</description>
       <EMBEDDEDDATA mmedtypeflags="0x03" mmedaddress="0x1B2E7E" mmedelementsizebits="16" mmedcolcount="12" mmedmajorstridebits="0" mmedminorstridebits="0" />
       <indexcount>12</indexcount>
       <decimalpl>0</decimalpl>
-      <outputtype>2</outputtype>
+      <outputtype>1</outputtype>
       <datatype>0</datatype>
       <unittype>0</unittype>
       <embedinfo type="1" />
@@ -11442,7 +11442,7 @@ KFRKMI_UM</description>
       <EMBEDDEDDATA mmedaddress="0x1C862A" mmedelementsizebits="8" mmedcolcount="10" mmedmajorstridebits="0" mmedminorstridebits="0" />
       <indexcount>10</indexcount>
       <decimalpl>0</decimalpl>
-      <outputtype>2</outputtype>
+      <outputtype>1</outputtype>
       <datatype>0</datatype>
       <unittype>0</unittype>
       <embedinfo type="1" />
@@ -11470,7 +11470,7 @@ KFRKMI_UM</description>
       <units>1/min</units>
       <indexcount>12</indexcount>
       <decimalpl>0</decimalpl>
-      <outputtype>2</outputtype>
+      <outputtype>1</outputtype>
       <datatype>0</datatype>
       <unittype>0</unittype>
       <embedinfo type="1" />
@@ -11490,7 +11490,7 @@ KFRKMI_UM</description>
       <units>1/min</units>
       <indexcount>12</indexcount>
       <decimalpl>0</decimalpl>
-      <outputtype>2</outputtype>
+      <outputtype>1</outputtype>
       <datatype>0</datatype>
       <unittype>0</unittype>
       <embedinfo type="1" />
@@ -11503,7 +11503,7 @@ KFRKMI_UM</description>
       <EMBEDDEDDATA mmedaddress="0x1C862A" mmedelementsizebits="8" mmedcolcount="10" mmedmajorstridebits="0" mmedminorstridebits="0" />
       <indexcount>10</indexcount>
       <decimalpl>0</decimalpl>
-      <outputtype>2</outputtype>
+      <outputtype>1</outputtype>
       <datatype>0</datatype>
       <unittype>0</unittype>
       <embedinfo type="1" />
@@ -15560,7 +15560,7 @@ P-Anteil des Raildruckreglers</description>
       <units>1/min</units>
       <indexcount>6</indexcount>
       <decimalpl>0</decimalpl>
-      <outputtype>2</outputtype>
+      <outputtype>1</outputtype>
       <datatype>0</datatype>
       <unittype>0</unittype>
       <embedinfo type="1" />
@@ -15618,7 +15618,7 @@ P-Anteil des Raildruckreglers</description>
       <units>1/min</units>
       <indexcount>6</indexcount>
       <decimalpl>0</decimalpl>
-      <outputtype>2</outputtype>
+      <outputtype>1</outputtype>
       <datatype>0</datatype>
       <unittype>0</unittype>
       <embedinfo type="1" />
@@ -16031,7 +16031,7 @@ P-Anteil des Raildruckreglers</description>
       <decimalpl>0</decimalpl>
       <min>0.000000</min>
       <max>255.000000</max>
-      <outputtype>2</outputtype>
+      <outputtype>1</outputtype>
       <MATH equation="X*1">
         <VAR id="X" />
       </MATH>
@@ -16354,9 +16354,9 @@ P-Anteil des Raildruckreglers</description>
     </XDFAXIS>
     <XDFAXIS id="y" uniqueid="0x0">
       <EMBEDDEDDATA mmedtypeflags="0x02" mmedelementsizebits="16" mmedmajorstridebits="0" mmedminorstridebits="0" />
-      <indexcount>16</indexcount>
+      <indexcount>32</indexcount>
       <decimalpl>0</decimalpl>
-      <outputtype>2</outputtype>
+      <outputtype>1</outputtype>
       <datatype>0</datatype>
       <unittype>0</unittype>
       <embedinfo type="2" />
@@ -16366,7 +16366,7 @@ P-Anteil des Raildruckreglers</description>
       </MATH>
     </XDFAXIS>
     <XDFAXIS id="z">
-      <EMBEDDEDDATA mmedtypeflags="0x02" mmedaddress="0x1FFA50" mmedelementsizebits="32" mmedrowcount="16" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <EMBEDDEDDATA mmedtypeflags="0x02" mmedaddress="0x1FFA50" mmedelementsizebits="32" mmedrowcount="32" mmedmajorstridebits="0" mmedminorstridebits="0" />
       <decimalpl>0</decimalpl>
       <min>0.000000</min>
       <max>255.000000</max>
@@ -16682,7 +16682,7 @@ P-Anteil des Raildruckreglers</description>
       </MATH>
     </XDFAXIS>
     <XDFAXIS id="z">
-      <EMBEDDEDDATA mmedtypeflags="0x02" mmedaddress="0x1D639E" mmedelementsizebits="8" mmedrowcount="1" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <EMBEDDEDDATA mmedtypeflags="0x03" mmedaddress="0x1D639E" mmedelementsizebits="8" mmedrowcount="1" mmedmajorstridebits="0" mmedminorstridebits="0" />
       <units>*crk/10ms</units>
       <decimalpl>1</decimalpl>
       <min>0.000000</min>
@@ -16723,7 +16723,7 @@ P-Anteil des Raildruckreglers</description>
       </MATH>
     </XDFAXIS>
     <XDFAXIS id="z">
-      <EMBEDDEDDATA mmedtypeflags="0x02" mmedaddress="0x1D639F" mmedelementsizebits="8" mmedrowcount="1" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <EMBEDDEDDATA mmedtypeflags="0x03" mmedaddress="0x1D639F" mmedelementsizebits="8" mmedrowcount="1" mmedmajorstridebits="0" mmedminorstridebits="0" />
       <units>*crk/10ms</units>
       <decimalpl>1</decimalpl>
       <min>0.000000</min>
@@ -19334,7 +19334,7 @@ disable : 0</description>
       <units>1/min</units>
       <indexcount>16</indexcount>
       <decimalpl>0</decimalpl>
-      <outputtype>2</outputtype>
+      <outputtype>1</outputtype>
       <datatype>0</datatype>
       <unittype>0</unittype>
       <embedinfo type="1" />
@@ -19379,7 +19379,7 @@ disable : 0</description>
       <units>1/min</units>
       <indexcount>16</indexcount>
       <decimalpl>0</decimalpl>
-      <outputtype>2</outputtype>
+      <outputtype>1</outputtype>
       <datatype>0</datatype>
       <unittype>0</unittype>
       <embedinfo type="1" />
@@ -19424,7 +19424,7 @@ disable : 0</description>
       <units>1/min</units>
       <indexcount>16</indexcount>
       <decimalpl>0</decimalpl>
-      <outputtype>2</outputtype>
+      <outputtype>1</outputtype>
       <datatype>0</datatype>
       <unittype>0</unittype>
       <embedinfo type="1" />
@@ -19469,7 +19469,7 @@ disable : 0</description>
       <units>1/min</units>
       <indexcount>16</indexcount>
       <decimalpl>0</decimalpl>
-      <outputtype>2</outputtype>
+      <outputtype>1</outputtype>
       <datatype>0</datatype>
       <unittype>0</unittype>
       <embedinfo type="1" />
@@ -19514,7 +19514,7 @@ disable : 0</description>
       <units>1/min</units>
       <indexcount>16</indexcount>
       <decimalpl>0</decimalpl>
-      <outputtype>2</outputtype>
+      <outputtype>1</outputtype>
       <datatype>0</datatype>
       <unittype>0</unittype>
       <embedinfo type="1" />
@@ -19597,7 +19597,7 @@ disable : 0</description>
       <decimalpl>0</decimalpl>
       <min>0.000000</min>
       <max>255.000000</max>
-      <outputtype>2</outputtype>
+      <outputtype>1</outputtype>
       <MATH equation="X*1">
         <VAR id="X" />
       </MATH>
@@ -19652,7 +19652,7 @@ disable : 0</description>
       <decimalpl>0</decimalpl>
       <min>0.000000</min>
       <max>255.000000</max>
-      <outputtype>2</outputtype>
+      <outputtype>1</outputtype>
       <MATH equation="X*1">
         <VAR id="X" />
       </MATH>
@@ -19707,7 +19707,7 @@ disable : 0</description>
       <decimalpl>0</decimalpl>
       <min>0.000000</min>
       <max>255.000000</max>
-      <outputtype>2</outputtype>
+      <outputtype>1</outputtype>
       <MATH equation="X*1">
         <VAR id="X" />
       </MATH>
@@ -19762,7 +19762,7 @@ disable : 0</description>
       <decimalpl>0</decimalpl>
       <min>0.000000</min>
       <max>255.000000</max>
-      <outputtype>2</outputtype>
+      <outputtype>1</outputtype>
       <MATH equation="X*1">
         <VAR id="X" />
       </MATH>
@@ -19817,7 +19817,7 @@ disable : 0</description>
       <decimalpl>0</decimalpl>
       <min>0.000000</min>
       <max>255.000000</max>
-      <outputtype>2</outputtype>
+      <outputtype>1</outputtype>
       <MATH equation="X*1">
         <VAR id="X" />
       </MATH>
@@ -24874,7 +24874,7 @@ disable : 0</description>
       <units>1/min</units>
       <indexcount>8</indexcount>
       <decimalpl>0</decimalpl>
-      <outputtype>2</outputtype>
+      <outputtype>1</outputtype>
       <datatype>0</datatype>
       <unittype>0</unittype>
       <embedinfo type="1" />
@@ -24918,7 +24918,7 @@ disable : 0</description>
       <units>1/min</units>
       <indexcount>8</indexcount>
       <decimalpl>0</decimalpl>
-      <outputtype>2</outputtype>
+      <outputtype>1</outputtype>
       <datatype>0</datatype>
       <unittype>0</unittype>
       <embedinfo type="1" />
@@ -24962,7 +24962,7 @@ disable : 0</description>
       <units>1/min</units>
       <indexcount>8</indexcount>
       <decimalpl>0</decimalpl>
-      <outputtype>2</outputtype>
+      <outputtype>1</outputtype>
       <datatype>0</datatype>
       <unittype>0</unittype>
       <embedinfo type="1" />
@@ -25006,7 +25006,7 @@ disable : 0</description>
       <units>1/min</units>
       <indexcount>8</indexcount>
       <decimalpl>0</decimalpl>
-      <outputtype>2</outputtype>
+      <outputtype>1</outputtype>
       <datatype>0</datatype>
       <unittype>0</unittype>
       <embedinfo type="1" />
@@ -25050,7 +25050,7 @@ disable : 0</description>
       <units>1/min</units>
       <indexcount>8</indexcount>
       <decimalpl>0</decimalpl>
-      <outputtype>2</outputtype>
+      <outputtype>1</outputtype>
       <datatype>0</datatype>
       <unittype>0</unittype>
       <embedinfo type="1" />
@@ -25102,7 +25102,7 @@ disable : 0</description>
       <units>1/min</units>
       <indexcount>8</indexcount>
       <decimalpl>0</decimalpl>
-      <outputtype>2</outputtype>
+      <outputtype>1</outputtype>
       <datatype>0</datatype>
       <unittype>0</unittype>
       <embedinfo type="1" />
@@ -25131,7 +25131,7 @@ disable : 0</description>
       <units>1/min</units>
       <indexcount>8</indexcount>
       <decimalpl>0</decimalpl>
-      <outputtype>2</outputtype>
+      <outputtype>1</outputtype>
       <datatype>0</datatype>
       <unittype>0</unittype>
       <embedinfo type="1" />
@@ -25160,7 +25160,7 @@ disable : 0</description>
       <units>1/min</units>
       <indexcount>8</indexcount>
       <decimalpl>0</decimalpl>
-      <outputtype>2</outputtype>
+      <outputtype>1</outputtype>
       <datatype>0</datatype>
       <unittype>0</unittype>
       <embedinfo type="1" />
@@ -25189,7 +25189,7 @@ disable : 0</description>
       <units>1/min</units>
       <indexcount>8</indexcount>
       <decimalpl>0</decimalpl>
-      <outputtype>2</outputtype>
+      <outputtype>1</outputtype>
       <datatype>0</datatype>
       <unittype>0</unittype>
       <embedinfo type="1" />
@@ -25218,7 +25218,7 @@ disable : 0</description>
       <units>1/min</units>
       <indexcount>8</indexcount>
       <decimalpl>0</decimalpl>
-      <outputtype>2</outputtype>
+      <outputtype>1</outputtype>
       <datatype>0</datatype>
       <unittype>0</unittype>
       <embedinfo type="1" />
@@ -30135,7 +30135,7 @@ ipol factors 1.01 - 2 blend from map slot to FF2</description>
       <units>Ethanol Content</units>
       <indexcount>10</indexcount>
       <decimalpl>0</decimalpl>
-      <outputtype>2</outputtype>
+      <outputtype>1</outputtype>
       <datatype>0</datatype>
       <unittype>0</unittype>
       <embedinfo type="1" />
@@ -33174,6 +33174,170 @@ ipol factors 1.01 - 2 blend from map slot to FF2</description>
     </XDFAXIS>
   </XDFTABLE>
   <XDFTABLE uniqueid="0x0" flags="0x30">
+    <title>Enable Single Bank</title>
+    <description>For S55 single turbo cars only (has no effect on others)!  You must have the bank 1 primary O2 sensor moved to the downpipe (close to turbine exit), and the bank 2 primary sensor removed. Any bungs in the manifold should be plugged.</description>
+    <CATEGORYMEM index="0" category="39" />
+    <CATEGORYMEM index="1" category="61" />
+    <XDFAXIS id="x" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x02" mmedelementsizebits="16" mmedmajorstridebits="-32" mmedminorstridebits="0" />
+      <indexcount>1</indexcount>
+      <decimalpl>1</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <DALINK index="0" />
+      <LABEL index="0" value="0.0" />
+      <MATH equation="X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="y" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x02" mmedelementsizebits="16" mmedmajorstridebits="-32" mmedminorstridebits="0" />
+      <indexcount>1</indexcount>
+      <decimalpl>1</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <DALINK index="0" />
+      <LABEL index="0" value="0.0" />
+      <MATH equation="X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="z">
+      <EMBEDDEDDATA mmedtypeflags="0x02" mmedaddress="0x1D66FF" mmedelementsizebits="8" mmedrowcount="1" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <decimalpl>0</decimalpl>
+      <min>0.000000</min>
+      <max>1</max>
+      <outputtype>1</outputtype>
+      <MATH equation="X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE uniqueid="0x0" flags="0x30">
+    <title>Enable NLS</title>
+    <description>enable: 1
+disable : 0</description>
+    <CATEGORYMEM index="0" category="39" />
+    <CATEGORYMEM index="1" category="62" />
+    <XDFAXIS id="x" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x02" mmedelementsizebits="16" mmedmajorstridebits="-32" mmedminorstridebits="0" />
+      <indexcount>1</indexcount>
+      <decimalpl>1</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <DALINK index="0" />
+      <LABEL index="0" value="0.0" />
+      <MATH equation="X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="y" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x02" mmedelementsizebits="16" mmedmajorstridebits="-32" mmedminorstridebits="0" />
+      <indexcount>1</indexcount>
+      <decimalpl>1</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <DALINK index="0" />
+      <LABEL index="0" value="0.0" />
+      <MATH equation="X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="z">
+      <EMBEDDEDDATA mmedtypeflags="0x02" mmedaddress="0x1D6744" mmedelementsizebits="8" mmedrowcount="1" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units>-</units>
+      <decimalpl>0</decimalpl>
+      <min>0</min>
+      <max>1</max>
+      <outputtype>1</outputtype>
+      <MATH equation="X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE uniqueid="0x0" flags="0x30">
+    <title>NLS RPM Threshold (Minimum)</title>
+    <description>NLS logic will only activate above this RPM</description>
+    <CATEGORYMEM index="0" category="39" />
+    <CATEGORYMEM index="1" category="62" />
+    <XDFAXIS id="x" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x02" mmedelementsizebits="16" mmedmajorstridebits="-32" mmedminorstridebits="0" />
+      <indexcount>1</indexcount>
+      <decimalpl>1</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <DALINK index="0" />
+      <LABEL index="0" value="0.0" />
+      <MATH equation="X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="y" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x02" mmedelementsizebits="16" mmedmajorstridebits="-32" mmedminorstridebits="0" />
+      <indexcount>1</indexcount>
+      <decimalpl>1</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <DALINK index="0" />
+      <LABEL index="0" value="0.0" />
+      <MATH equation="X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="z">
+      <EMBEDDEDDATA mmedtypeflags="0x03" mmedaddress="0x1D6746" mmedelementsizebits="16" mmedrowcount="1" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units>rpm</units>
+      <decimalpl>0</decimalpl>
+      <min>2000</min>
+      <max>9000</max>
+      <outputtype>1</outputtype>
+      <MATH equation="X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE uniqueid="0x0" flags="0x30">
+    <title>NLS Pedal Threshold (Minimum)</title>
+    <description>NLS logic will only activate above this pedal percentage</description>
+    <CATEGORYMEM index="0" category="39" />
+    <CATEGORYMEM index="1" category="62" />
+    <XDFAXIS id="x" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x02" mmedelementsizebits="16" mmedmajorstridebits="-32" mmedminorstridebits="0" />
+      <indexcount>1</indexcount>
+      <decimalpl>1</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <DALINK index="0" />
+      <LABEL index="0" value="0.0" />
+      <MATH equation="X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="y" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x02" mmedelementsizebits="16" mmedmajorstridebits="-32" mmedminorstridebits="0" />
+      <indexcount>1</indexcount>
+      <decimalpl>1</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <DALINK index="0" />
+      <LABEL index="0" value="0.0" />
+      <MATH equation="X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="z">
+      <EMBEDDEDDATA mmedtypeflags="0x03" mmedaddress="0x1D6748" mmedelementsizebits="16" mmedrowcount="1" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units>%</units>
+      <decimalpl>0</decimalpl>
+      <min>40.000000</min>
+      <max>100.000000</max>
+      <outputtype>1</outputtype>
+      <MATH equation="X/40.96">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE uniqueid="0x0" flags="0x30">
     <title>Sensor Preset Selection</title>
     <description>00 - Disabled / Not Used
 01 - MHD CANBUS ECA
@@ -33839,9 +34003,9 @@ ipol factors 1.01 - 2 blend from map slot to FF2</description>
       <units>%</units>
       <decimalpl>2</decimalpl>
       <min>-100</min>
-      <max>99.996</max>
+      <max>99.998</max>
       <embedinfo type="1" />
-      <MATH equation="X/327.68">
+      <MATH equation="X/655.36">
         <VAR id="X" />
       </MATH>
     </XDFAXIS>
@@ -33935,9 +34099,9 @@ ipol factors 1.01 - 2 blend from map slot to FF2</description>
       <units>%</units>
       <decimalpl>2</decimalpl>
       <min>-100</min>
-      <max>99.996</max>
+      <max>99.998</max>
       <embedinfo type="1" />
-      <MATH equation="X/327.68">
+      <MATH equation="X/655.36">
         <VAR id="X" />
       </MATH>
     </XDFAXIS>
@@ -34133,9 +34297,9 @@ ipol factors 1.01 - 2 blend from map slot to FF2</description>
       <units>%</units>
       <decimalpl>2</decimalpl>
       <min>-100</min>
-      <max>99.996</max>
+      <max>99.998</max>
       <embedinfo type="1" />
-      <MATH equation="X/327.68">
+      <MATH equation="X/655.36">
         <VAR id="X" />
       </MATH>
     </XDFAXIS>
@@ -34229,9 +34393,9 @@ ipol factors 1.01 - 2 blend from map slot to FF2</description>
       <units>%</units>
       <decimalpl>2</decimalpl>
       <min>-100</min>
-      <max>99.996</max>
+      <max>99.998</max>
       <embedinfo type="1" />
-      <MATH equation="X/327.68">
+      <MATH equation="X/655.36">
         <VAR id="X" />
       </MATH>
     </XDFAXIS>
