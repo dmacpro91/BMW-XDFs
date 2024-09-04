@@ -345,7 +345,7 @@
     </XDFAXIS>
   </XDFTABLE>
   <XDFTABLE uniqueid="0x0" flags="0x30">
-    <title>Number of Hold Events (720* crk rotation)</title>
+    <title>Number of Hold Segments (720* crk rotation)</title>
     <description />
     <CATEGORYMEM index="0" category="129" />
     <CATEGORYMEM index="1" category="153" />
@@ -586,6 +586,46 @@
       <max>1599.9511</max>
       <outputtype>1</outputtype>
       <MATH equation="X/20.48">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE uniqueid="0x0" flags="0x30">
+    <title>Cooldown Segments (720* crk rotation) Before Next Enrichment Allowed</title>
+    <description />
+    <CATEGORYMEM index="0" category="129" />
+    <CATEGORYMEM index="1" category="153" />
+    <CATEGORYMEM index="2" category="156" />
+    <XDFAXIS id="x" uniqueid="0x0">
+      <EMBEDDEDDATA mmedelementsizebits="16" mmedmajorstridebits="-32" mmedminorstridebits="0" />
+      <indexcount>1</indexcount>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <DALINK index="0" />
+      <LABEL index="0" value="0.00" />
+      <MATH equation="X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="y" uniqueid="0x0">
+      <EMBEDDEDDATA mmedelementsizebits="16" mmedmajorstridebits="-32" mmedminorstridebits="0" />
+      <indexcount>1</indexcount>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <DALINK index="0" />
+      <LABEL index="0" value="0.00" />
+      <MATH equation="X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="z">
+      <EMBEDDEDDATA mmedtypeflags="0x02" mmedaddress="0x047B46" mmedelementsizebits="8" mmedrowcount="1" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units>720* crk rotations</units>
+      <decimalpl>0</decimalpl>
+      <min>0</min>
+      <max>255</max>
+      <outputtype>1</outputtype>
+      <MATH equation="X">
         <VAR id="X" />
       </MATH>
     </XDFAXIS>
@@ -1537,7 +1577,7 @@
   </XDFTABLE>
   <XDFTABLE uniqueid="0x0" flags="0x30">
     <title>Manual Injection Offset</title>
-    <description>This table should only be used if you received an email from Nexsys Motorsport stating so. Otherwise&#160;leave&#160;at&#160;0.</description>
+    <description>This table should only be used if you received an email from Nexsys Motorsport stating so. Otherwise leave at 0.</description>
     <CATEGORYMEM index="0" category="129" />
     <CATEGORYMEM index="1" category="153" />
     <XDFAXIS id="x" uniqueid="0x0">
@@ -10336,6 +10376,44 @@ To enable and use just bank 1 rear, set to 01
       <outputtype>1</outputtype>
       <MATH equation="X/1000">
         <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE uniqueid="0x0" flags="0x0">
+    <title>Minimum LPFP Pressure</title>
+    <description>c_fup_efp_bol_1 - Minimum LPFP pressure before entering limp mode.</description>
+    <CATEGORYMEM index="0" category="2" />
+    <XDFAXIS id="x" uniqueid="0x0">
+      <EMBEDDEDDATA mmedelementsizebits="16" mmedmajorstridebits="-32" mmedminorstridebits="0" />
+      <indexcount>1</indexcount>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <DALINK index="0" />
+      <LABEL index="0" value="0.00" />
+      <MATH equation="X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="y" uniqueid="0x0">
+      <EMBEDDEDDATA mmedelementsizebits="16" mmedmajorstridebits="-32" mmedminorstridebits="0" />
+      <indexcount>1</indexcount>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <DALINK index="0" />
+      <LABEL index="0" value="0.00" />
+      <MATH equation="X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="z">
+      <EMBEDDEDDATA mmedtypeflags="0x02" mmedaddress="0x420CC" mmedelementsizebits="16" mmedrowcount="1" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units>psi</units>
+      <decimalpl>2</decimalpl>
+      <min>0.000000</min>
+      <max>255.000000</max>
+      <outputtype>1</outputtype>
+      <MATH equation="(x*2.653360799573)*0.0145037738">
+        <VAR id="x" />
       </MATH>
     </XDFAXIS>
   </XDFTABLE>
@@ -27693,44 +27771,6 @@ Check your stock rom for the enable value.</description>
       <outputtype>1</outputtype>
       <MATH equation="X/100">
         <VAR id="X" />
-      </MATH>
-    </XDFAXIS>
-  </XDFTABLE>
-  <XDFTABLE uniqueid="0x0" flags="0x0">
-    <title>Minimum LPFP Pressure</title>
-    <description>c_fup_efp_bol_1 - Minimum LPFP pressure before entering limp mode.</description>
-    <CATEGORYMEM index="0" category="2" />
-    <XDFAXIS id="x" uniqueid="0x0">
-      <EMBEDDEDDATA mmedelementsizebits="16" mmedmajorstridebits="-32" mmedminorstridebits="0" />
-      <indexcount>1</indexcount>
-      <datatype>0</datatype>
-      <unittype>0</unittype>
-      <DALINK index="0" />
-      <LABEL index="0" value="0.00" />
-      <MATH equation="X">
-        <VAR id="X" />
-      </MATH>
-    </XDFAXIS>
-    <XDFAXIS id="y" uniqueid="0x0">
-      <EMBEDDEDDATA mmedelementsizebits="16" mmedmajorstridebits="-32" mmedminorstridebits="0" />
-      <indexcount>1</indexcount>
-      <datatype>0</datatype>
-      <unittype>0</unittype>
-      <DALINK index="0" />
-      <LABEL index="0" value="0.00" />
-      <MATH equation="X">
-        <VAR id="X" />
-      </MATH>
-    </XDFAXIS>
-    <XDFAXIS id="z">
-      <EMBEDDEDDATA mmedtypeflags="0x02" mmedaddress="0x420CC" mmedelementsizebits="16" mmedrowcount="1" mmedmajorstridebits="0" mmedminorstridebits="0" />
-      <units>psi</units>
-      <decimalpl>2</decimalpl>
-      <min>0.000000</min>
-      <max>255.000000</max>
-      <outputtype>1</outputtype>
-      <MATH equation="(x*2.653360799573)*0.0145037738">
-        <VAR id="x" />
       </MATH>
     </XDFAXIS>
   </XDFTABLE>
