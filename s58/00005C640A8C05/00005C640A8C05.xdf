@@ -20459,7 +20459,7 @@ Note: this is overriden by our custom boost control if the &quot;Enable Custom W
       <datatype>0</datatype>
       <unittype>0</unittype>
       <embedinfo type="1" />
-      <DALINK index="0" flags="0x02" objidhash="0xAA726CF9" />
+      <DALINK index="0" flags="0x02" objidhash="0xCD0CD1DB" />
       <MATH equation="X*1">
         <VAR id="X" />
       </MATH>
@@ -20472,7 +20472,7 @@ Note: this is overriden by our custom boost control if the &quot;Enable Custom W
       <datatype>0</datatype>
       <unittype>0</unittype>
       <embedinfo type="1" />
-      <DALINK index="0" />
+      <DALINK index="0" flags="0x02" objidhash="0xAA726CF9" />
       <MATH equation="X*0.01">
         <VAR id="X" />
       </MATH>
@@ -20503,7 +20503,7 @@ Note: this is overriden by our custom boost control if the &quot;Enable Custom W
       <datatype>0</datatype>
       <unittype>0</unittype>
       <embedinfo type="1" />
-      <DALINK index="0" flags="0x02" objidhash="0xAA726CF9" />
+      <DALINK index="0" flags="0x02" objidhash="0xCD0CD1DB" />
       <MATH equation="X*1">
         <VAR id="X" />
       </MATH>
@@ -20516,7 +20516,7 @@ Note: this is overriden by our custom boost control if the &quot;Enable Custom W
       <datatype>0</datatype>
       <unittype>0</unittype>
       <embedinfo type="1" />
-      <DALINK index="0" />
+      <DALINK index="0" flags="0x02" objidhash="0xAA726CF9" />
       <MATH equation="X*0.01">
         <VAR id="X" />
       </MATH>
@@ -20547,7 +20547,7 @@ Note: this is overriden by our custom boost control if the &quot;Enable Custom W
       <datatype>0</datatype>
       <unittype>0</unittype>
       <embedinfo type="1" />
-      <DALINK index="0" flags="0x02" objidhash="0xAA726CF9" />
+      <DALINK index="0" flags="0x02" objidhash="0xCD0CD1DB" />
       <MATH equation="X*1">
         <VAR id="X" />
       </MATH>
@@ -20560,7 +20560,7 @@ Note: this is overriden by our custom boost control if the &quot;Enable Custom W
       <datatype>0</datatype>
       <unittype>0</unittype>
       <embedinfo type="1" />
-      <DALINK index="0" />
+      <DALINK index="0" flags="0x02" objidhash="0xAA726CF9" />
       <MATH equation="X*0.01">
         <VAR id="X" />
       </MATH>
