@@ -78,6 +78,10 @@
     <CATEGORY index="0x45" name="Port Injection breakpoints" />
     <CATEGORY index="0x46" name="No Lift Shift (NLS)" />
     <CATEGORY index="0x47" name="ReFlex Integration" />
+    <CATEGORY index="0x48" name="Performance Gauges" />
+    <CATEGORY index="0x49" name="Performance Gauges breakpoints" />
+    <CATEGORY index="0x4A" name="Advanced / Max Effort" />
+    <CATEGORY index="0x4B" name="Advanced / Max Effort breakpoints" />
   </XDFHEADER>
   <XDFTABLE>
     <title>Fan PWM based on coolant act to target delta X (autogen)</title>
@@ -34579,6 +34583,7 @@ ipol factors 1.01 - 2 blend from map slot to FF2</description>
       <units>Ethanol Content</units>
       <indexcount>10</indexcount>
       <decimalpl>0</decimalpl>
+      <outputtype>2</outputtype>
       <datatype>0</datatype>
       <unittype>0</unittype>
       <embedinfo type="1" />
@@ -36772,7 +36777,6 @@ ipol factors 1.01 - 2 blend from map slot to FF2</description>
       <EMBEDDEDDATA mmedtypeflags="0x01" mmedaddress="0x7184D0" mmedelementsizebits="16" mmedrowcount="14" mmedmajorstridebits="0" mmedminorstridebits="0" />
       <units>psi</units>
       <indexcount>14</indexcount>
-      <decimalpl>1</decimalpl>
       <datatype>0</datatype>
       <unittype>0</unittype>
       <embedinfo type="1" />
@@ -36785,8 +36789,8 @@ ipol factors 1.01 - 2 blend from map slot to FF2</description>
       <EMBEDDEDDATA mmedtypeflags="0x01" mmedaddress="0x7184EC" mmedelementsizebits="16" mmedrowcount="14" mmedcolcount="16" mmedmajorstridebits="0" mmedminorstridebits="0" />
       <units>%</units>
       <decimalpl>2</decimalpl>
-      <min>-100.000000</min>
-      <max>99.998001</max>
+      <min>-50.000000</min>
+      <max>49.998001</max>
       <outputtype>1</outputtype>
       <MATH equation="X/655.36">
         <VAR id="X" />
@@ -36890,7 +36894,7 @@ ipol factors 1.01 - 2 blend from map slot to FF2</description>
     <XDFAXIS id="z">
       <EMBEDDEDDATA mmedtypeflags="0x01" mmedaddress="0x7184D0" mmedelementsizebits="16" mmedrowcount="1" mmedcolcount="14" mmedmajorstridebits="0" mmedminorstridebits="0" />
       <units>psi</units>
-      <decimalpl>1</decimalpl>
+      <decimalpl>2</decimalpl>
       <min>-59.400002</min>
       <max>59.400002</max>
       <outputtype>1</outputtype>
@@ -36909,7 +36913,6 @@ ipol factors 1.01 - 2 blend from map slot to FF2</description>
       <EMBEDDEDDATA mmedtypeflags="0x01" mmedaddress="0x7186AC" mmedelementsizebits="16" mmedcolcount="14" mmedmajorstridebits="0" mmedminorstridebits="0" />
       <units>psi</units>
       <indexcount>14</indexcount>
-      <decimalpl>0</decimalpl>
       <datatype>0</datatype>
       <unittype>0</unittype>
       <embedinfo type="1" />
@@ -36922,7 +36925,7 @@ ipol factors 1.01 - 2 blend from map slot to FF2</description>
       <EMBEDDEDDATA mmedtypeflags="0x01" mmedaddress="0x7186C8" mmedelementsizebits="16" mmedrowcount="14" mmedmajorstridebits="0" mmedminorstridebits="0" />
       <units>psi</units>
       <indexcount>14</indexcount>
-      <decimalpl>0</decimalpl>
+      <decimalpl>3</decimalpl>
       <datatype>0</datatype>
       <unittype>0</unittype>
       <embedinfo type="1" />
@@ -36935,8 +36938,8 @@ ipol factors 1.01 - 2 blend from map slot to FF2</description>
       <EMBEDDEDDATA mmedtypeflags="0x01" mmedaddress="0x7186E4" mmedelementsizebits="16" mmedrowcount="14" mmedcolcount="14" mmedmajorstridebits="0" mmedminorstridebits="0" />
       <units>%</units>
       <decimalpl>2</decimalpl>
-      <min>-100.000000</min>
-      <max>99.998001</max>
+      <min>-50.000000</min>
+      <max>49.998001</max>
       <outputtype>1</outputtype>
       <MATH equation="X/655.36">
         <VAR id="X" />
@@ -36986,7 +36989,7 @@ ipol factors 1.01 - 2 blend from map slot to FF2</description>
     <XDFAXIS id="z">
       <EMBEDDEDDATA mmedtypeflags="0x01" mmedaddress="0x7186AC" mmedelementsizebits="16" mmedrowcount="1" mmedcolcount="14" mmedmajorstridebits="0" mmedminorstridebits="0" />
       <units>psi</units>
-      <decimalpl>1</decimalpl>
+      <decimalpl>2</decimalpl>
       <min>-59.400002</min>
       <max>59.400002</max>
       <outputtype>1</outputtype>
@@ -37038,7 +37041,7 @@ ipol factors 1.01 - 2 blend from map slot to FF2</description>
     <XDFAXIS id="z">
       <EMBEDDEDDATA mmedtypeflags="0x01" mmedaddress="0x7186C8" mmedelementsizebits="16" mmedrowcount="1" mmedcolcount="14" mmedmajorstridebits="0" mmedminorstridebits="0" />
       <units>psi</units>
-      <decimalpl>1</decimalpl>
+      <decimalpl>3</decimalpl>
       <min>-59.400002</min>
       <max>59.400002</max>
       <outputtype>1</outputtype>
@@ -37247,7 +37250,6 @@ ipol factors 1.01 - 2 blend from map slot to FF2</description>
       <EMBEDDEDDATA mmedtypeflags="0x01" mmedaddress="0x719710" mmedelementsizebits="16" mmedrowcount="7" mmedmajorstridebits="0" mmedminorstridebits="0" />
       <units>psi</units>
       <indexcount>7</indexcount>
-      <decimalpl>1</decimalpl>
       <datatype>0</datatype>
       <unittype>0</unittype>
       <embedinfo type="1" />
@@ -37260,8 +37262,8 @@ ipol factors 1.01 - 2 blend from map slot to FF2</description>
       <EMBEDDEDDATA mmedtypeflags="0x01" mmedaddress="0x71971E" mmedelementsizebits="16" mmedrowcount="7" mmedcolcount="8" mmedmajorstridebits="0" mmedminorstridebits="0" />
       <units>%</units>
       <decimalpl>2</decimalpl>
-      <min>-100.000000</min>
-      <max>99.998001</max>
+      <min>-50.000000</min>
+      <max>49.998001</max>
       <outputtype>1</outputtype>
       <MATH equation="X/655.36">
         <VAR id="X" />
@@ -37350,7 +37352,7 @@ ipol factors 1.01 - 2 blend from map slot to FF2</description>
     <XDFAXIS id="z">
       <EMBEDDEDDATA mmedtypeflags="0x01" mmedaddress="0x719710" mmedelementsizebits="16" mmedrowcount="1" mmedcolcount="7" mmedmajorstridebits="0" mmedminorstridebits="0" />
       <units>psi</units>
-      <decimalpl>1</decimalpl>
+      <decimalpl>2</decimalpl>
       <min>-59.400002</min>
       <max>59.400002</max>
       <outputtype>1</outputtype>
@@ -37369,7 +37371,6 @@ ipol factors 1.01 - 2 blend from map slot to FF2</description>
       <EMBEDDEDDATA mmedtypeflags="0x01" mmedaddress="0x71978E" mmedelementsizebits="16" mmedcolcount="7" mmedmajorstridebits="0" mmedminorstridebits="0" />
       <units>psi</units>
       <indexcount>7</indexcount>
-      <decimalpl>0</decimalpl>
       <datatype>0</datatype>
       <unittype>0</unittype>
       <embedinfo type="1" />
@@ -37382,7 +37383,7 @@ ipol factors 1.01 - 2 blend from map slot to FF2</description>
       <EMBEDDEDDATA mmedtypeflags="0x01" mmedaddress="0x71979C" mmedelementsizebits="16" mmedrowcount="7" mmedmajorstridebits="0" mmedminorstridebits="0" />
       <units>psi</units>
       <indexcount>7</indexcount>
-      <decimalpl>0</decimalpl>
+      <decimalpl>3</decimalpl>
       <datatype>0</datatype>
       <unittype>0</unittype>
       <embedinfo type="1" />
@@ -37395,8 +37396,8 @@ ipol factors 1.01 - 2 blend from map slot to FF2</description>
       <EMBEDDEDDATA mmedtypeflags="0x01" mmedaddress="0x7197AA" mmedelementsizebits="16" mmedrowcount="7" mmedcolcount="7" mmedmajorstridebits="0" mmedminorstridebits="0" />
       <units>%</units>
       <decimalpl>2</decimalpl>
-      <min>-100.000000</min>
-      <max>99.998001</max>
+      <min>-50.000000</min>
+      <max>49.998001</max>
       <outputtype>1</outputtype>
       <MATH equation="X/655.36">
         <VAR id="X" />
@@ -37439,7 +37440,7 @@ ipol factors 1.01 - 2 blend from map slot to FF2</description>
     <XDFAXIS id="z">
       <EMBEDDEDDATA mmedtypeflags="0x01" mmedaddress="0x71978E" mmedelementsizebits="16" mmedrowcount="1" mmedcolcount="7" mmedmajorstridebits="0" mmedminorstridebits="0" />
       <units>psi</units>
-      <decimalpl>1</decimalpl>
+      <decimalpl>2</decimalpl>
       <min>-59.400002</min>
       <max>59.400002</max>
       <outputtype>1</outputtype>
@@ -37484,7 +37485,7 @@ ipol factors 1.01 - 2 blend from map slot to FF2</description>
     <XDFAXIS id="z">
       <EMBEDDEDDATA mmedtypeflags="0x01" mmedaddress="0x71979C" mmedelementsizebits="16" mmedrowcount="1" mmedcolcount="7" mmedmajorstridebits="0" mmedminorstridebits="0" />
       <units>psi</units>
-      <decimalpl>1</decimalpl>
+      <decimalpl>3</decimalpl>
       <min>-59.400002</min>
       <max>59.400002</max>
       <outputtype>1</outputtype>
@@ -37728,6 +37729,46 @@ disable : 0</description>
     </XDFAXIS>
     <XDFAXIS id="z">
       <EMBEDDEDDATA mmedaddress="0x71064A" mmedelementsizebits="8" mmedrowcount="1" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <decimalpl>0</decimalpl>
+      <min>0.000000</min>
+      <max>1.000000</max>
+      <outputtype>1</outputtype>
+      <MATH equation="X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE uniqueid="0x0" flags="0x30">
+    <title>Enable Increased Boost Ceiling (5 bar+)</title>
+    <description>Set to 1 to enable our custom patch which allows full use of 5 bar (and higher) MAP sensors. The following PnP Bosch 5 bar map sensor is required (part #: 13628514488)</description>
+    <CATEGORYMEM index="0" category="39" />
+    <CATEGORYMEM index="1" category="75" />
+    <XDFAXIS id="x" uniqueid="0x0">
+      <EMBEDDEDDATA mmedelementsizebits="16" mmedmajorstridebits="-32" mmedminorstridebits="0" />
+      <indexcount>1</indexcount>
+      <decimalpl>1</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <DALINK index="0" />
+      <LABEL index="0" value="0.0" />
+      <MATH equation="X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="y" uniqueid="0x0">
+      <EMBEDDEDDATA mmedelementsizebits="16" mmedmajorstridebits="-32" mmedminorstridebits="0" />
+      <indexcount>1</indexcount>
+      <decimalpl>1</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <DALINK index="0" />
+      <LABEL index="0" value="0.0" />
+      <MATH equation="X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="z">
+      <EMBEDDEDDATA mmedaddress="0x7105F9" mmedelementsizebits="8" mmedrowcount="1" mmedmajorstridebits="0" mmedminorstridebits="0" />
       <decimalpl>0</decimalpl>
       <min>0.000000</min>
       <max>1.000000</max>
