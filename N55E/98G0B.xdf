@@ -16265,7 +16265,7 @@ TVLDUVOS</description>
       </MATH>
     </XDFAXIS>
     <XDFAXIS id="z">
-      <EMBEDDEDDATA mmedaddress="0x1C1E76" mmedelementsizebits="8" mmedrowcount="1" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <EMBEDDEDDATA mmedaddress="0x1bece8" mmedelementsizebits="8" mmedrowcount="1" mmedmajorstridebits="0" mmedminorstridebits="0" />
       <decimalpl>2</decimalpl>
       <min>0.000000</min>
       <max>255.000000</max>
@@ -35399,7 +35399,8 @@ disable : 0</description>
   </XDFTABLE>
   <XDFTABLE uniqueid="0x0" flags="0x30">
     <title>Enable Load Patch</title>
-    <description>For N55 PWG ROMS only (has no effect on others)!  Setting to 1 will remove the influence of lambda on max load request.</description>
+    <description>Setting to 1 will remove the influence of lambda on max load request.
+Note: This is always set to 1 on 98G0B at flash time! Setting it here only matters for 9E60B.</description>
     <CATEGORYMEM index="0" category="39" />
     <CATEGORYMEM index="1" category="73" />
     <XDFAXIS id="x" uniqueid="0x0">
@@ -35480,7 +35481,7 @@ disable : 0</description>
   </XDFTABLE>
   <XDFTABLE uniqueid="0x0" flags="0x30">
     <title>Enable Custom WGDC Override</title>
-    <description>Setting to 1 will override the base WGDC % with the value from our MHD+ Custom WGDC Base table. Note: OEM WGDC I-Factor will still be active as well. Zero them out if not desired.</description>
+    <description>Setting to 1 will override the base WGDC % with the value from our MHD+ Custom WGDC Base table. Note: OEM WGDC I-Factor and Dynamic RPM adder will still be active as well. Zero them out if not desired.</description>
     <CATEGORYMEM index="0" category="39" />
     <CATEGORYMEM index="1" category="54" />
     <CATEGORYMEM index="2" category="3" />
