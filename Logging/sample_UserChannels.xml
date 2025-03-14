@@ -1,0 +1,22 @@
+<?xml version="1.0" standalone="yes"?>
+<MemActualValues>
+<!--
+This file is software specific and allows to add extra RAM logging channels (A2L needed).
+
+Naming:  should be named with the user current rom (prg). Example: 00003076501103_UserChannels.xml
+
+ReqBlock 		=> ram address in hex
+DataA 			=> raw value multiplicator
+DataB 			=> raw value adder
+Units 			=> unit string. Those can be converted at run time from metrics to imperial: kPa, hPa, *C, AFR, km/h
+RoundingDigits 	=> how many decimal digits
+Signed 			=> only add this tag if the raw value is signed. The value of signed is not used, only its presence
+IsSelected 		=> add this tag if you want the value to be in the default list of logged values (as defined when using "reset to default values" in the appendix
+Min, Max		=> gauges default values
+absolutePressure => add this tag if you want ambient pressure to be automatically substracted.
+ECU				=> for v8, add ecu="19" to long the 2nd ecu
+-->
+	<MemActualValue ReqBlock="51802430" Size="2" DataA="0.1" DataB="0" Units="*" RoundingDigits="1" Signed="1" IsSelected="1" Min="-12" Max="0">
+		<Text xml:lang="en">_Cyl1 Timing Cor</Text>
+	</MemActualValue>
+</MemActualValues>
