@@ -38529,7 +38529,7 @@ disable : 0</description>
   </XDFTABLE>
   <XDFTABLE uniqueid="0x0" flags="0x30">
     <title>LPFP Safety Input Source</title>
-    <description>0: LPFP Actual
+    <description>0: LPFP Actual (ReFlex Aux Pressure if not using integrated PI)
 1: Differential Fuel Pressure
 
 NOTE: Both settings require a physical Low Pressure Fuel Sensor!</description>
