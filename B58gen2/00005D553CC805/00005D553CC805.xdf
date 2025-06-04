@@ -5284,8 +5284,8 @@
     </XDFAXIS>
   </XDFTABLE>
   <XDFTABLE uniqueid="0x0" flags="0x0">
-    <title>Boost Limit multiplier</title>
-    <description>BMWtchsp_rat_p_CmprMax_M</description>
+    <title>Boost set limit (IAT)</title>
+    <description>BMWtchsp_rat_p_CmprMax_M - Boost setpoint limit table based on intake air temperature before the compressor.</description>
     <CATEGORYMEM index="0" category="1" />
     <XDFAXIS id="x" uniqueid="0x0">
       <EMBEDDEDDATA mmedtypeflags="0x02" mmedaddress="0x721EDE" mmedelementsizebits="16" mmedcolcount="8" mmedmajorstridebits="0" mmedminorstridebits="0" />
@@ -5462,7 +5462,7 @@
     </XDFAXIS>
   </XDFTABLE>
   <XDFTABLE>
-    <title>Boost Limit multiplier Y (autogen)</title>
+    <title>Boost set limit (IAT) Y (autogen)</title>
     <CATEGORYMEM index="0" category="1" />
     <CATEGORYMEM index="1" category="2" />
     <XDFAXIS id="x">
@@ -5488,7 +5488,7 @@
     </XDFAXIS>
   </XDFTABLE>
   <XDFTABLE>
-    <title>Boost Limit multiplier X (autogen)</title>
+    <title>Boost set limit (IAT) X (autogen)</title>
     <CATEGORYMEM index="0" category="1" />
     <CATEGORYMEM index="1" category="2" />
     <XDFAXIS id="x">
@@ -5613,6 +5613,48 @@
       <max>255.000000</max>
       <outputtype>1</outputtype>
       <MATH equation="X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE uniqueid="0x0" flags="0x30">
+    <title>Maximum torque limit (rev)</title>
+    <description>K_MD_KW_MAX_NLIMIT - This is the maximum amount of torque before the torque limiter 2048 appears (even if RPM is below the rev limiter). This often needs increased to report more torque to the TCU.</description>
+    <CATEGORYMEM index="0" category="9" />
+    <XDFAXIS id="x" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x0" mmedaddress="0x0" mmedelementsizebits="8" mmedcolcount="1" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units>-</units>
+      <indexcount>1</indexcount>
+      <decimalpl>0</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1" />
+      <DALINK index="0" />
+      <MATH equation="X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="y" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x0" mmedaddress="0x0" mmedelementsizebits="8" mmedcolcount="1" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units>-</units>
+      <indexcount>1</indexcount>
+      <decimalpl>0</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1" />
+      <DALINK index="0" />
+      <MATH equation="X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="z">
+      <EMBEDDEDDATA mmedtypeflags="0x3" mmedaddress="0x7239c8" mmedelementsizebits="16" mmedrowcount="1" mmedcolcount="1" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units>Nm</units>
+      <decimalpl>2</decimalpl>
+      <min>0</min>
+      <max>3276</max>
+      <outputtype>1</outputtype>
+      <MATH equation="X*0.1">
         <VAR id="X" />
       </MATH>
     </XDFAXIS>
@@ -8488,6 +8530,48 @@
       </MATH>
     </XDFAXIS>
   </XDFTABLE>
+  <XDFTABLE uniqueid="0x0" flags="0x30">
+    <title>Cooling target (eco)</title>
+    <description>KL_TKW_EC - Coolant target temperature in eco mode.</description>
+    <CATEGORYMEM index="0" category="33" />
+    <XDFAXIS id="x" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x3" mmedaddress="0x7306dc" mmedelementsizebits="16" mmedcolcount="4" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units>C</units>
+      <indexcount>4</indexcount>
+      <decimalpl>0</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1" />
+      <DALINK index="0" />
+      <MATH equation="X*0.1">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="y" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x0" mmedaddress="0x0" mmedelementsizebits="8" mmedcolcount="1" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units>-</units>
+      <indexcount>1</indexcount>
+      <decimalpl>0</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1" />
+      <DALINK index="0" />
+      <MATH equation="X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="z">
+      <EMBEDDEDDATA mmedtypeflags="0x3" mmedaddress="0x7306c4" mmedelementsizebits="16" mmedrowcount="1" mmedcolcount="4" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units>C</units>
+      <decimalpl>2</decimalpl>
+      <min>0</min>
+      <max>327.675</max>
+      <outputtype>1</outputtype>
+      <MATH equation="X*0.01">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
   <XDFTABLE>
     <title>Coolant target (normal) X (autogen)</title>
     <CATEGORYMEM index="0" category="33" />
@@ -8538,6 +8622,32 @@
       <embedinfo type="1" />
       <DALINK index="0" flags="0x02" objidhash="0x524CD4FC" />
       <MATH equation="X/10">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE>
+    <title>Cooling target (eco) X (autogen)</title>
+    <CATEGORYMEM index="0" category="33" />
+    <CATEGORYMEM index="1" category="34" />
+    <XDFAXIS id="x">
+      <EMBEDDEDDATA />
+      <indexcount>4</indexcount>
+    </XDFAXIS>
+    <XDFAXIS id="y">
+      <EMBEDDEDDATA />
+      <indexcount>1</indexcount>
+    </XDFAXIS>
+    <XDFAXIS id="z" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x3" mmedaddress="0x7306dc" mmedelementsizebits="16" mmedcolcount="4" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units>C</units>
+      <indexcount>4</indexcount>
+      <decimalpl>0</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1" />
+      <DALINK index="0" />
+      <MATH equation="X*0.1">
         <VAR id="X" />
       </MATH>
     </XDFAXIS>
@@ -11831,7 +11941,7 @@
       <datatype>0</datatype>
       <unittype>0</unittype>
       <embedinfo type="1" />
-      <DALINK index="0" />
+      <DALINK index="0" flags="0x02" objidhash="0xCD0CD1DB" />
       <MATH equation="X*1">
         <VAR id="X" />
       </MATH>
@@ -11844,7 +11954,7 @@
       <datatype>0</datatype>
       <unittype>0</unittype>
       <embedinfo type="1" />
-      <DALINK index="0" />
+      <DALINK index="0" flags="0x02" objidhash="0xAA726CF9" />
       <MATH equation="X*0.01">
         <VAR id="X" />
       </MATH>
@@ -11949,7 +12059,7 @@
       <datatype>0</datatype>
       <unittype>0</unittype>
       <embedinfo type="1" />
-      <DALINK index="0" />
+      <DALINK index="0" flags="0x02" objidhash="0xAA726CF9" />
       <MATH equation="X*0.01">
         <VAR id="X" />
       </MATH>
@@ -11975,7 +12085,7 @@
       <datatype>0</datatype>
       <unittype>0</unittype>
       <embedinfo type="1" />
-      <DALINK index="0" />
+      <DALINK index="0" flags="0x02" objidhash="0xCD0CD1DB" />
       <MATH equation="X*1">
         <VAR id="X" />
       </MATH>
