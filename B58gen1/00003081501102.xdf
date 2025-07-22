@@ -1,5 +1,5 @@
-<?xml version="1.0"?>
-<XDFFORMAT xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.80">
+<?xml version="1.0" encoding="utf-8"?>
+<XDFFORMAT xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" version="1.80">
   <XDFHEADER>
     <flags>0x1</flags>
     <description />
@@ -40201,6 +40201,48 @@ Values &lt;= 0 are treated as &quot;no lock&quot;.</description>
       <max>255</max>
       <outputtype>1</outputtype>
       <MATH equation="X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE uniqueid="0x0" flags="0x0">
+    <title>Boost Ceiling (Bosch - Absolute Pressure)</title>
+    <description>PVDMX - Boost ceiling from the Bosch layer</description>
+    <CATEGORYMEM index="0" category="1" />
+    <XDFAXIS id="x" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x0" mmedaddress="0x0" mmedelementsizebits="8" mmedcolcount="1" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units>-</units>
+      <indexcount>1</indexcount>
+      <decimalpl>0</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1" />
+      <DALINK index="0" />
+      <MATH equation="X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="y" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x0" mmedaddress="0x0" mmedelementsizebits="8" mmedcolcount="1" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units>-</units>
+      <indexcount>1</indexcount>
+      <decimalpl>0</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1" />
+      <DALINK index="0" />
+      <MATH equation="X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="z">
+      <EMBEDDEDDATA mmedaddress="0x6E88C6" mmedelementsizebits="16" mmedrowcount="1" mmedcolcount="1" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units>hPa</units>
+      <decimalpl>3</decimalpl>
+      <min>0</min>
+      <max>5119.92</max>
+      <outputtype>1</outputtype>
+      <MATH equation="X*0.078125">
         <VAR id="X" />
       </MATH>
     </XDFAXIS>
