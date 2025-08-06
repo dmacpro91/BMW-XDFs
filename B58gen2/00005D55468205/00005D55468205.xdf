@@ -1,5 +1,5 @@
-<?xml version="1.0"?>
-<XDFFORMAT xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.70">
+<?xml version="1.0" encoding="utf-8"?>
+<XDFFORMAT xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" version="1.70">
   <XDFHEADER>
     <flags>0x1</flags>
     <description />
@@ -2958,7 +2958,7 @@
     <description>BMWls_rf_MaxKnk_M - Maximum load during knock detection. May need to raise 0.0 row if encountering RF Max Index 10.</description>
     <CATEGORYMEM index="0" category="13" />
     <XDFAXIS id="x" uniqueid="0x0">
-      <EMBEDDEDDATA mmedtypeflags="0x3" mmedaddress="0x71e5e6" mmedelementsizebits="16" mmedcolcount="8" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <EMBEDDEDDATA mmedtypeflags="0x3" mmedaddress="0x71E5E6" mmedelementsizebits="16" mmedcolcount="8" mmedmajorstridebits="0" mmedminorstridebits="0" />
       <units>1/min</units>
       <indexcount>8</indexcount>
       <decimalpl>0</decimalpl>
@@ -2984,7 +2984,7 @@
       </MATH>
     </XDFAXIS>
     <XDFAXIS id="z">
-      <EMBEDDEDDATA mmedtypeflags="0x3" mmedaddress="0x71e26e" mmedelementsizebits="16" mmedrowcount="6" mmedcolcount="8" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <EMBEDDEDDATA mmedtypeflags="0x3" mmedaddress="0x71E26E" mmedelementsizebits="16" mmedrowcount="6" mmedcolcount="8" mmedmajorstridebits="0" mmedminorstridebits="0" />
       <units>-</units>
       <decimalpl>1</decimalpl>
       <min>0</min>
@@ -3362,7 +3362,7 @@
       <indexcount>1</indexcount>
     </XDFAXIS>
     <XDFAXIS id="z" uniqueid="0x0">
-      <EMBEDDEDDATA mmedtypeflags="0x3" mmedaddress="0x71e5e6" mmedelementsizebits="16" mmedcolcount="8" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <EMBEDDEDDATA mmedtypeflags="0x3" mmedaddress="0x71E5E6" mmedelementsizebits="16" mmedcolcount="8" mmedmajorstridebits="0" mmedminorstridebits="0" />
       <units>1/min</units>
       <indexcount>8</indexcount>
       <decimalpl>0</decimalpl>
@@ -4143,7 +4143,7 @@
       <indexcount>1</indexcount>
     </XDFAXIS>
     <XDFAXIS id="z" uniqueid="0x0">
-      <EMBEDDEDDATA mmedtypeflags="0x2" mmedaddress="0x723cfe" mmedelementsizebits="16" mmedcolcount="6" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <EMBEDDEDDATA mmedtypeflags="0x2" mmedaddress="0x723CFE" mmedelementsizebits="16" mmedcolcount="6" mmedmajorstridebits="0" mmedminorstridebits="0" />
       <units>-</units>
       <indexcount>6</indexcount>
       <decimalpl>3</decimalpl>
@@ -5060,7 +5060,7 @@
     <CATEGORYMEM index="0" category="1" />
     <CATEGORYMEM index="1" category="3" />
     <XDFAXIS id="x" uniqueid="0x0">
-      <EMBEDDEDDATA mmedtypeflags="0x3" mmedaddress="0x724e4c" mmedelementsizebits="16" mmedcolcount="4" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <EMBEDDEDDATA mmedtypeflags="0x3" mmedaddress="0x724E4C" mmedelementsizebits="16" mmedcolcount="4" mmedmajorstridebits="0" mmedminorstridebits="0" />
       <units>1/min</units>
       <indexcount>4</indexcount>
       <decimalpl>0</decimalpl>
@@ -5086,7 +5086,7 @@
       </MATH>
     </XDFAXIS>
     <XDFAXIS id="z">
-      <EMBEDDEDDATA mmedtypeflags="0x2" mmedaddress="0x724e3c" mmedelementsizebits="16" mmedrowcount="1" mmedcolcount="4" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <EMBEDDEDDATA mmedtypeflags="0x2" mmedaddress="0x724E3C" mmedelementsizebits="16" mmedrowcount="1" mmedcolcount="4" mmedmajorstridebits="0" mmedminorstridebits="0" />
       <units>%</units>
       <decimalpl>2</decimalpl>
       <min>0</min>
@@ -5111,7 +5111,7 @@
       <indexcount>1</indexcount>
     </XDFAXIS>
     <XDFAXIS id="z" uniqueid="0x0">
-      <EMBEDDEDDATA mmedtypeflags="0x3" mmedaddress="0x724e4c" mmedelementsizebits="16" mmedcolcount="4" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <EMBEDDEDDATA mmedtypeflags="0x3" mmedaddress="0x724E4C" mmedelementsizebits="16" mmedcolcount="4" mmedmajorstridebits="0" mmedminorstridebits="0" />
       <units>1/min</units>
       <indexcount>4</indexcount>
       <decimalpl>0</decimalpl>
@@ -5171,7 +5171,7 @@
     <description>BMWtchsp_rat_p_CmprMax_M - Boost setpoint limit table based on intake air temperature before the compressor.</description>
     <CATEGORYMEM index="0" category="1" />
     <XDFAXIS id="x" uniqueid="0x0">
-      <EMBEDDEDDATA mmedtypeflags="0x2" mmedaddress="0x7250c0" mmedelementsizebits="16" mmedcolcount="8" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <EMBEDDEDDATA mmedtypeflags="0x2" mmedaddress="0x7250C0" mmedelementsizebits="16" mmedcolcount="8" mmedmajorstridebits="0" mmedminorstridebits="0" />
       <units>g/s</units>
       <indexcount>8</indexcount>
       <decimalpl>3</decimalpl>
@@ -5184,7 +5184,7 @@
       </MATH>
     </XDFAXIS>
     <XDFAXIS id="y" uniqueid="0x0">
-      <EMBEDDEDDATA mmedtypeflags="0x3" mmedaddress="0x7250b4" mmedelementsizebits="16" mmedcolcount="6" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <EMBEDDEDDATA mmedtypeflags="0x3" mmedaddress="0x7250B4" mmedelementsizebits="16" mmedcolcount="6" mmedmajorstridebits="0" mmedminorstridebits="0" />
       <units>C</units>
       <indexcount>6</indexcount>
       <decimalpl>3</decimalpl>
@@ -5197,7 +5197,7 @@
       </MATH>
     </XDFAXIS>
     <XDFAXIS id="z">
-      <EMBEDDEDDATA mmedtypeflags="0x2" mmedaddress="0x724f28" mmedelementsizebits="16" mmedrowcount="6" mmedcolcount="8" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <EMBEDDEDDATA mmedtypeflags="0x2" mmedaddress="0x724F28" mmedelementsizebits="16" mmedrowcount="6" mmedcolcount="8" mmedmajorstridebits="0" mmedminorstridebits="0" />
       <units>-</units>
       <decimalpl>3</decimalpl>
       <min>0</min>
@@ -5213,7 +5213,7 @@
     <description>BMWtchsp_rat_p_CmprMaxRace_M - Boost setpoint limit table during racestart (launch control).</description>
     <CATEGORYMEM index="0" category="1" />
     <XDFAXIS id="x" uniqueid="0x0">
-      <EMBEDDEDDATA mmedtypeflags="0x2" mmedaddress="0x7250ec" mmedelementsizebits="16" mmedcolcount="8" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <EMBEDDEDDATA mmedtypeflags="0x2" mmedaddress="0x7250EC" mmedelementsizebits="16" mmedcolcount="8" mmedmajorstridebits="0" mmedminorstridebits="0" />
       <units>g/s</units>
       <indexcount>8</indexcount>
       <decimalpl>3</decimalpl>
@@ -5226,7 +5226,7 @@
       </MATH>
     </XDFAXIS>
     <XDFAXIS id="y" uniqueid="0x0">
-      <EMBEDDEDDATA mmedtypeflags="0x3" mmedaddress="0x7250e0" mmedelementsizebits="16" mmedcolcount="6" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <EMBEDDEDDATA mmedtypeflags="0x3" mmedaddress="0x7250E0" mmedelementsizebits="16" mmedcolcount="6" mmedmajorstridebits="0" mmedminorstridebits="0" />
       <units>C</units>
       <indexcount>6</indexcount>
       <decimalpl>3</decimalpl>
@@ -5239,7 +5239,7 @@
       </MATH>
     </XDFAXIS>
     <XDFAXIS id="z">
-      <EMBEDDEDDATA mmedtypeflags="0x2" mmedaddress="0x724f88" mmedelementsizebits="16" mmedrowcount="6" mmedcolcount="8" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <EMBEDDEDDATA mmedtypeflags="0x2" mmedaddress="0x724F88" mmedelementsizebits="16" mmedrowcount="6" mmedcolcount="8" mmedmajorstridebits="0" mmedminorstridebits="0" />
       <units>-</units>
       <decimalpl>3</decimalpl>
       <min>0</min>
@@ -5339,7 +5339,7 @@
     <description>BMWtchsp_rat_p_CmprMaxTMax_T - Boost setpoint limit table based compressor outlet temperature.</description>
     <CATEGORYMEM index="0" category="1" />
     <XDFAXIS id="x" uniqueid="0x0">
-      <EMBEDDEDDATA mmedtypeflags="0x2" mmedaddress="0x7250d0" mmedelementsizebits="16" mmedcolcount="8" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <EMBEDDEDDATA mmedtypeflags="0x2" mmedaddress="0x7250D0" mmedelementsizebits="16" mmedcolcount="8" mmedmajorstridebits="0" mmedminorstridebits="0" />
       <units>C</units>
       <indexcount>8</indexcount>
       <decimalpl>3</decimalpl>
@@ -5441,7 +5441,7 @@
       <indexcount>1</indexcount>
     </XDFAXIS>
     <XDFAXIS id="z" uniqueid="0x0">
-      <EMBEDDEDDATA mmedtypeflags="0x3" mmedaddress="0x7250b4" mmedelementsizebits="16" mmedcolcount="6" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <EMBEDDEDDATA mmedtypeflags="0x3" mmedaddress="0x7250B4" mmedelementsizebits="16" mmedcolcount="6" mmedmajorstridebits="0" mmedminorstridebits="0" />
       <units>C</units>
       <indexcount>6</indexcount>
       <decimalpl>3</decimalpl>
@@ -5467,7 +5467,7 @@
       <indexcount>1</indexcount>
     </XDFAXIS>
     <XDFAXIS id="z" uniqueid="0x0">
-      <EMBEDDEDDATA mmedtypeflags="0x2" mmedaddress="0x7250c0" mmedelementsizebits="16" mmedcolcount="8" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <EMBEDDEDDATA mmedtypeflags="0x2" mmedaddress="0x7250C0" mmedelementsizebits="16" mmedcolcount="8" mmedmajorstridebits="0" mmedminorstridebits="0" />
       <units>g/s</units>
       <indexcount>8</indexcount>
       <decimalpl>3</decimalpl>
@@ -5493,7 +5493,7 @@
       <indexcount>1</indexcount>
     </XDFAXIS>
     <XDFAXIS id="z" uniqueid="0x0">
-      <EMBEDDEDDATA mmedtypeflags="0x2" mmedaddress="0x7250d0" mmedelementsizebits="16" mmedcolcount="8" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <EMBEDDEDDATA mmedtypeflags="0x2" mmedaddress="0x7250D0" mmedelementsizebits="16" mmedcolcount="8" mmedmajorstridebits="0" mmedminorstridebits="0" />
       <units>C</units>
       <indexcount>8</indexcount>
       <decimalpl>3</decimalpl>
@@ -5519,7 +5519,7 @@
       <indexcount>1</indexcount>
     </XDFAXIS>
     <XDFAXIS id="z" uniqueid="0x0">
-      <EMBEDDEDDATA mmedtypeflags="0x3" mmedaddress="0x7250e0" mmedelementsizebits="16" mmedcolcount="6" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <EMBEDDEDDATA mmedtypeflags="0x3" mmedaddress="0x7250E0" mmedelementsizebits="16" mmedcolcount="6" mmedmajorstridebits="0" mmedminorstridebits="0" />
       <units>C</units>
       <indexcount>6</indexcount>
       <decimalpl>3</decimalpl>
@@ -5545,7 +5545,7 @@
       <indexcount>1</indexcount>
     </XDFAXIS>
     <XDFAXIS id="z" uniqueid="0x0">
-      <EMBEDDEDDATA mmedtypeflags="0x2" mmedaddress="0x7250ec" mmedelementsizebits="16" mmedcolcount="8" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <EMBEDDEDDATA mmedtypeflags="0x2" mmedaddress="0x7250EC" mmedelementsizebits="16" mmedcolcount="8" mmedmajorstridebits="0" mmedminorstridebits="0" />
       <units>g/s</units>
       <indexcount>8</indexcount>
       <decimalpl>3</decimalpl>
@@ -5693,7 +5693,7 @@
       </MATH>
     </XDFAXIS>
     <XDFAXIS id="z">
-      <EMBEDDEDDATA mmedtypeflags="0x3" mmedaddress="0x726da2" mmedelementsizebits="16" mmedrowcount="1" mmedcolcount="1" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <EMBEDDEDDATA mmedtypeflags="0x3" mmedaddress="0x726DA2" mmedelementsizebits="16" mmedrowcount="1" mmedcolcount="1" mmedmajorstridebits="0" mmedminorstridebits="0" />
       <units>Nm</units>
       <decimalpl>2</decimalpl>
       <min>0</min>
@@ -8622,7 +8622,7 @@
     <description>KL_TKW_EC - Coolant target temperature in eco mode.</description>
     <CATEGORYMEM index="0" category="33" />
     <XDFAXIS id="x" uniqueid="0x0">
-      <EMBEDDEDDATA mmedtypeflags="0x3" mmedaddress="0x7343e0" mmedelementsizebits="16" mmedcolcount="4" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <EMBEDDEDDATA mmedtypeflags="0x3" mmedaddress="0x7343E0" mmedelementsizebits="16" mmedcolcount="4" mmedmajorstridebits="0" mmedminorstridebits="0" />
       <units>C</units>
       <indexcount>4</indexcount>
       <decimalpl>0</decimalpl>
@@ -8648,7 +8648,7 @@
       </MATH>
     </XDFAXIS>
     <XDFAXIS id="z">
-      <EMBEDDEDDATA mmedtypeflags="0x3" mmedaddress="0x7343c8" mmedelementsizebits="16" mmedrowcount="1" mmedcolcount="4" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <EMBEDDEDDATA mmedtypeflags="0x3" mmedaddress="0x7343C8" mmedelementsizebits="16" mmedrowcount="1" mmedcolcount="4" mmedmajorstridebits="0" mmedminorstridebits="0" />
       <units>C</units>
       <decimalpl>2</decimalpl>
       <min>0</min>
@@ -8726,7 +8726,7 @@
       <indexcount>1</indexcount>
     </XDFAXIS>
     <XDFAXIS id="z" uniqueid="0x0">
-      <EMBEDDEDDATA mmedtypeflags="0x3" mmedaddress="0x7343e0" mmedelementsizebits="16" mmedcolcount="4" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <EMBEDDEDDATA mmedtypeflags="0x3" mmedaddress="0x7343E0" mmedelementsizebits="16" mmedcolcount="4" mmedmajorstridebits="0" mmedminorstridebits="0" />
       <units>C</units>
       <indexcount>4</indexcount>
       <decimalpl>0</decimalpl>
@@ -10544,7 +10544,7 @@
       </MATH>
     </XDFAXIS>
     <XDFAXIS id="z">
-      <EMBEDDEDDATA mmedtypeflags="0x3" mmedaddress="0x73ca92" mmedelementsizebits="16" mmedrowcount="1" mmedcolcount="1" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <EMBEDDEDDATA mmedtypeflags="0x3" mmedaddress="0x73CA92" mmedelementsizebits="16" mmedrowcount="1" mmedcolcount="1" mmedmajorstridebits="0" mmedminorstridebits="0" />
       <units>l/h</units>
       <decimalpl>0</decimalpl>
       <min>0</min>
@@ -10560,7 +10560,7 @@
     <description>BMWlpa_volf_FuMaxBoosCtlr_T - Use this table to disable RF Max Index 4. Set to 327</description>
     <CATEGORYMEM index="0" category="5" />
     <XDFAXIS id="x" uniqueid="0x0">
-      <EMBEDDEDDATA mmedtypeflags="0x3" mmedaddress="0x73cab2" mmedelementsizebits="16" mmedcolcount="6" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <EMBEDDEDDATA mmedtypeflags="0x3" mmedaddress="0x73CAB2" mmedelementsizebits="16" mmedcolcount="6" mmedmajorstridebits="0" mmedminorstridebits="0" />
       <units>bar</units>
       <indexcount>6</indexcount>
       <decimalpl>0</decimalpl>
@@ -10586,7 +10586,7 @@
       </MATH>
     </XDFAXIS>
     <XDFAXIS id="z">
-      <EMBEDDEDDATA mmedtypeflags="0x3" mmedaddress="0x73ca9e" mmedelementsizebits="16" mmedrowcount="1" mmedcolcount="6" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <EMBEDDEDDATA mmedtypeflags="0x3" mmedaddress="0x73CA9E" mmedelementsizebits="16" mmedrowcount="1" mmedcolcount="6" mmedmajorstridebits="0" mmedminorstridebits="0" />
       <units>l/h</units>
       <decimalpl>0</decimalpl>
       <min>0</min>
@@ -10610,7 +10610,7 @@
       <indexcount>1</indexcount>
     </XDFAXIS>
     <XDFAXIS id="z" uniqueid="0x0">
-      <EMBEDDEDDATA mmedtypeflags="0x3" mmedaddress="0x73cab2" mmedelementsizebits="16" mmedcolcount="6" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <EMBEDDEDDATA mmedtypeflags="0x3" mmedaddress="0x73CAB2" mmedelementsizebits="16" mmedcolcount="6" mmedmajorstridebits="0" mmedminorstridebits="0" />
       <units>bar</units>
       <indexcount>6</indexcount>
       <decimalpl>0</decimalpl>
@@ -11079,6 +11079,41 @@
       </MATH>
     </XDFAXIS>
   </XDFTABLE>
+  <XDFTABLE>
+    <title>Torque Limits PHEV</title>
+    <description>KL_MD_K_MAX_VL_STRG_AT_VAR</description>
+    <CATEGORYMEM index="0" category="9" />
+    <CATEGORYMEM index="1" category="11" />
+    <XDFAXIS id="x">
+      <EMBEDDEDDATA mmedtypeflags="0x3" mmedaddress="0x74374C" mmedelementsizebits="16" mmedcolcount="12" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units>-</units>
+      <indexcount>12</indexcount>
+      <decimalpl>3</decimalpl>
+      <embedinfo type="1" />
+      <MATH equation="X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="y">
+      <EMBEDDEDDATA mmedtypeflags="0x0" mmedaddress="0x0" mmedelementsizebits="8" mmedrowcount="1" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units>-</units>
+      <indexcount>13</indexcount>
+      <decimalpl>-1</decimalpl>
+      <embedinfo type="0" />
+      <MATH equation="X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="z">
+      <EMBEDDEDDATA mmedtypeflags="0x3" mmedaddress="0x743614" mmedelementsizebits="16" mmedrowcount="13" mmedcolcount="12" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units>Nm</units>
+      <decimalpl>3</decimalpl>
+      <embedinfo type="1" />
+      <MATH equation="X*0.1">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
   <XDFTABLE uniqueid="0x0" flags="0x0">
     <title>Torque request ceiling (eco mt)</title>
     <description>KL_MD_K_MAX_VL_ECO_STRG_HS - Torque Request Ceiling for manual transmissions in eco drive mode</description>
@@ -11118,6 +11153,30 @@
       <max>3276</max>
       <outputtype>1</outputtype>
       <MATH equation="X*0.1">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE>
+    <title>Torque Limits PHEV X (autogen)</title>
+    <CATEGORYMEM index="0" category="9" />
+    <CATEGORYMEM index="1" category="11" />
+    <CATEGORYMEM index="2" category="12" />
+    <XDFAXIS id="x">
+      <EMBEDDEDDATA />
+      <indexcount>12</indexcount>
+    </XDFAXIS>
+    <XDFAXIS id="y">
+      <EMBEDDEDDATA />
+      <indexcount>1</indexcount>
+    </XDFAXIS>
+    <XDFAXIS id="z">
+      <EMBEDDEDDATA mmedtypeflags="0x3" mmedaddress="0x74374C" mmedelementsizebits="16" mmedcolcount="12" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units>-</units>
+      <indexcount>12</indexcount>
+      <decimalpl>3</decimalpl>
+      <embedinfo type="1" />
+      <MATH equation="X">
         <VAR id="X" />
       </MATH>
     </XDFAXIS>
@@ -12883,7 +12942,7 @@
       </MATH>
     </XDFAXIS>
     <XDFAXIS id="z">
-      <EMBEDDEDDATA mmedtypeflags="0x0" mmedaddress="0x74faf4" mmedelementsizebits="8" mmedrowcount="1" mmedcolcount="1" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <EMBEDDEDDATA mmedtypeflags="0x0" mmedaddress="0x74FAF4" mmedelementsizebits="8" mmedrowcount="1" mmedcolcount="1" mmedmajorstridebits="0" mmedminorstridebits="0" />
       <units>-</units>
       <decimalpl>0</decimalpl>
       <min>0</min>
@@ -13019,7 +13078,7 @@
       </MATH>
     </XDFAXIS>
     <XDFAXIS id="z">
-      <EMBEDDEDDATA mmedtypeflags="0x0" mmedaddress="0x7500ab" mmedelementsizebits="8" mmedrowcount="1" mmedcolcount="1" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <EMBEDDEDDATA mmedtypeflags="0x0" mmedaddress="0x7500AB" mmedelementsizebits="8" mmedrowcount="1" mmedcolcount="1" mmedmajorstridebits="0" mmedminorstridebits="0" />
       <units>-</units>
       <decimalpl>0</decimalpl>
       <min>0</min>
@@ -13036,7 +13095,7 @@
     <CATEGORYMEM index="0" category="1" />
     <CATEGORYMEM index="1" category="3" />
     <XDFAXIS id="x" uniqueid="0x0">
-      <EMBEDDEDDATA mmedtypeflags="0x2" mmedaddress="0x723cfe" mmedelementsizebits="16" mmedcolcount="6" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <EMBEDDEDDATA mmedtypeflags="0x2" mmedaddress="0x723CFE" mmedelementsizebits="16" mmedcolcount="6" mmedmajorstridebits="0" mmedminorstridebits="0" />
       <units>-</units>
       <indexcount>6</indexcount>
       <decimalpl>3</decimalpl>
@@ -13145,7 +13204,7 @@
       </MATH>
     </XDFAXIS>
     <XDFAXIS id="z">
-      <EMBEDDEDDATA mmedtypeflags="0x0" mmedaddress="0x7509d5" mmedelementsizebits="8" mmedrowcount="1" mmedcolcount="1" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <EMBEDDEDDATA mmedtypeflags="0x0" mmedaddress="0x7509D5" mmedelementsizebits="8" mmedrowcount="1" mmedcolcount="1" mmedmajorstridebits="0" mmedminorstridebits="0" />
       <units>-</units>
       <decimalpl>1</decimalpl>
       <min />
@@ -42435,6 +42494,90 @@ NOTE: Smoothness of table z-data is important! Please read our MHD+ Suite tuning
       <max>100.000000</max>
       <outputtype>1</outputtype>
       <MATH equation="X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE uniqueid="0x0">
+    <title>Ethanol Content Hold (RPM Threshold)</title>
+    <description>Lock the Ethanol Content (Active) reading above this RPM threshold. Useful on very high power builds / high flow fuel systems.
+Values &lt;= 0 are treated as &quot;no lock&quot;.</description>
+    <CATEGORYMEM index="0" category="39" />
+    <CATEGORYMEM index="1" category="49" />
+    <XDFAXIS id="x" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x02" mmedelementsizebits="16" mmedmajorstridebits="-32" mmedminorstridebits="0" />
+      <indexcount>1</indexcount>
+      <decimalpl>1</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <DALINK index="0" />
+      <LABEL index="0" value="0.0" />
+      <MATH equation="X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="y" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x02" mmedelementsizebits="16" mmedmajorstridebits="-32" mmedminorstridebits="0" />
+      <indexcount>1</indexcount>
+      <decimalpl>1</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <DALINK index="0" />
+      <LABEL index="0" value="0.0" />
+      <MATH equation="X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="z">
+      <EMBEDDEDDATA mmedtypeflags="0x03" mmedaddress="0x7E859A" mmedelementsizebits="16" mmedrowcount="1" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units>l/min</units>
+      <decimalpl>0</decimalpl>
+      <min>0</min>
+      <max>32767</max>
+      <outputtype>1</outputtype>
+      <MATH equation="X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE uniqueid="0x0">
+    <title>Ethanol Content Hold (Load Threshold)</title>
+    <description>Lock the Ethanol Content (Active) reading above this Load threshold. Useful on very high power builds / high flow fuel systems.
+Values &lt;= 0 are treated as &quot;no lock&quot;.</description>
+    <CATEGORYMEM index="0" category="39" />
+    <CATEGORYMEM index="1" category="49" />
+    <XDFAXIS id="x" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x02" mmedelementsizebits="16" mmedmajorstridebits="-32" mmedminorstridebits="0" />
+      <indexcount>1</indexcount>
+      <decimalpl>1</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <DALINK index="0" />
+      <LABEL index="0" value="0.0" />
+      <MATH equation="X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="y" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x02" mmedelementsizebits="16" mmedmajorstridebits="-32" mmedminorstridebits="0" />
+      <indexcount>1</indexcount>
+      <decimalpl>1</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <DALINK index="0" />
+      <LABEL index="0" value="0.0" />
+      <MATH equation="X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="z">
+      <EMBEDDEDDATA mmedtypeflags="0x03" mmedaddress="0x7E859C" mmedelementsizebits="16" mmedrowcount="1" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units>%</units>
+      <decimalpl>0</decimalpl>
+      <min>0</min>
+      <max>327.67</max>
+      <outputtype>1</outputtype>
+      <MATH equation="X*0.01">
         <VAR id="X" />
       </MATH>
     </XDFAXIS>
