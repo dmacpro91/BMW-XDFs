@@ -12199,6 +12199,48 @@
       </MATH>
     </XDFAXIS>
   </XDFTABLE>
+  <XDFTABLE uniqueid="0x0" flags="0x30">
+    <title>Maximum allowed vehicle acceleration</title>
+    <description>MoFAMo_vDeltaThrsd_C - This table defines the maximum vehicle acceleration. This can cause limp mode and error 1F053C.</description>
+    <CATEGORYMEM index="0" category="9" />
+    <XDFAXIS id="x" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x0" mmedaddress="0x0" mmedelementsizebits="8" mmedcolcount="1" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units>-</units>
+      <indexcount>1</indexcount>
+      <decimalpl>0</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1" />
+      <DALINK index="0" />
+      <MATH equation="X*1">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="y" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x0" mmedaddress="0x0" mmedelementsizebits="8" mmedcolcount="1" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units>-</units>
+      <indexcount>1</indexcount>
+      <decimalpl>0</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1" />
+      <DALINK index="0" />
+      <MATH equation="X*1">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="z">
+      <EMBEDDEDDATA mmedtypeflags="0x0" mmedaddress="0x6C8E80" mmedelementsizebits="16" mmedrowcount="1" mmedcolcount="1" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units>m/s</units>
+      <decimalpl>3</decimalpl>
+      <min>0</min>
+      <max>6.553</max>
+      <outputtype>1</outputtype>
+      <MATH equation="X*0.0001">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
   <XDFTABLE uniqueid="0x0" flags="0x0">
     <title>Max power (monitoring)</title>
     <description>MoFTrqPtd_pwrMax_C</description>
@@ -39999,6 +40041,166 @@ NOTE: A duration of 0 sec here prevents healing and requires clearing codes or r
     </XDFAXIS>
   </XDFTABLE>
   <XDFTABLE uniqueid="0x0" flags="0x30">
+    <title>Disable Torque Limiter 4096 (VMAX)</title>
+    <description>Set to 1 to fully disable this torque limiter.</description>
+    <CATEGORYMEM index="0" category="39" />
+    <CATEGORYMEM index="1" category="48" />
+    <XDFAXIS id="x" uniqueid="0x0">
+      <EMBEDDEDDATA mmedelementsizebits="16" mmedmajorstridebits="-32" mmedminorstridebits="0" />
+      <indexcount>1</indexcount>
+      <decimalpl>1</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <DALINK index="0" />
+      <LABEL index="0" value="0.0" />
+      <MATH equation="X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="y" uniqueid="0x0">
+      <EMBEDDEDDATA mmedelementsizebits="16" mmedmajorstridebits="-32" mmedminorstridebits="0" />
+      <indexcount>1</indexcount>
+      <decimalpl>1</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <DALINK index="0" />
+      <LABEL index="0" value="0.0" />
+      <MATH equation="X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="z">
+      <EMBEDDEDDATA mmedaddress="0x7105FD" mmedelementsizebits="8" mmedrowcount="1" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <decimalpl>0</decimalpl>
+      <min>0.000000</min>
+      <max>1.000000</max>
+      <outputtype>1</outputtype>
+      <MATH equation="X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE uniqueid="0x0" flags="0x30">
+    <title>Disable Torque Limiter 8192 (ACCEL)</title>
+    <description>Set to 1 to fully disable this torque limiter.</description>
+    <CATEGORYMEM index="0" category="39" />
+    <CATEGORYMEM index="1" category="48" />
+    <XDFAXIS id="x" uniqueid="0x0">
+      <EMBEDDEDDATA mmedelementsizebits="16" mmedmajorstridebits="-32" mmedminorstridebits="0" />
+      <indexcount>1</indexcount>
+      <decimalpl>1</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <DALINK index="0" />
+      <LABEL index="0" value="0.0" />
+      <MATH equation="X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="y" uniqueid="0x0">
+      <EMBEDDEDDATA mmedelementsizebits="16" mmedmajorstridebits="-32" mmedminorstridebits="0" />
+      <indexcount>1</indexcount>
+      <decimalpl>1</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <DALINK index="0" />
+      <LABEL index="0" value="0.0" />
+      <MATH equation="X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="z">
+      <EMBEDDEDDATA mmedaddress="0x7105FE" mmedelementsizebits="8" mmedrowcount="1" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <decimalpl>0</decimalpl>
+      <min>0.000000</min>
+      <max>1.000000</max>
+      <outputtype>1</outputtype>
+      <MATH equation="X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE uniqueid="0x0" flags="0x30">
+    <title>Disable Torque Limiter 2097152 (MD_RAD)</title>
+    <description>Set to 1 to fully disable this torque limiter.</description>
+    <CATEGORYMEM index="0" category="39" />
+    <CATEGORYMEM index="1" category="48" />
+    <XDFAXIS id="x" uniqueid="0x0">
+      <EMBEDDEDDATA mmedelementsizebits="16" mmedmajorstridebits="-32" mmedminorstridebits="0" />
+      <indexcount>1</indexcount>
+      <decimalpl>1</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <DALINK index="0" />
+      <LABEL index="0" value="0.0" />
+      <MATH equation="X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="y" uniqueid="0x0">
+      <EMBEDDEDDATA mmedelementsizebits="16" mmedmajorstridebits="-32" mmedminorstridebits="0" />
+      <indexcount>1</indexcount>
+      <decimalpl>1</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <DALINK index="0" />
+      <LABEL index="0" value="0.0" />
+      <MATH equation="X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="z">
+      <EMBEDDEDDATA mmedaddress="0x7105FF" mmedelementsizebits="8" mmedrowcount="1" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <decimalpl>0</decimalpl>
+      <min>0.000000</min>
+      <max>1.000000</max>
+      <outputtype>1</outputtype>
+      <MATH equation="X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE uniqueid="0x0" flags="0x30">
+    <title>Disable Torque Limiter 8388608 (MT Clutch Slip)</title>
+    <description>Set to 1 to fully disable this torque limiter.</description>
+    <CATEGORYMEM index="0" category="39" />
+    <CATEGORYMEM index="1" category="48" />
+    <XDFAXIS id="x" uniqueid="0x0">
+      <EMBEDDEDDATA mmedelementsizebits="16" mmedmajorstridebits="-32" mmedminorstridebits="0" />
+      <indexcount>1</indexcount>
+      <decimalpl>1</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <DALINK index="0" />
+      <LABEL index="0" value="0.0" />
+      <MATH equation="X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="y" uniqueid="0x0">
+      <EMBEDDEDDATA mmedelementsizebits="16" mmedmajorstridebits="-32" mmedminorstridebits="0" />
+      <indexcount>1</indexcount>
+      <decimalpl>1</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <DALINK index="0" />
+      <LABEL index="0" value="0.0" />
+      <MATH equation="X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="z">
+      <EMBEDDEDDATA mmedaddress="0x710600" mmedelementsizebits="8" mmedrowcount="1" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <decimalpl>0</decimalpl>
+      <min>0.000000</min>
+      <max>1.000000</max>
+      <outputtype>1</outputtype>
+      <MATH equation="X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE uniqueid="0x0" flags="0x30">
     <title>Sensor Preset Selection</title>
     <description>00 - Disabled / Not Used
 01 - MHD CANBUS ECA
@@ -40331,48 +40533,6 @@ Values &lt;= 0 are treated as &quot;no lock&quot;.</description>
       <max>255</max>
       <outputtype>1</outputtype>
       <MATH equation="X">
-        <VAR id="X" />
-      </MATH>
-    </XDFAXIS>
-  </XDFTABLE>
-  <XDFTABLE uniqueid="0x0" flags="0x30">
-    <title>Maximum allowed vehicle acceleration</title>
-    <description>MoFAMo_vDeltaThrsd_C - This table defines the maximum vehicle acceleration. This can cause limp mode and error 1F053C.</description>
-    <CATEGORYMEM index="0" category="9" />
-    <XDFAXIS id="x" uniqueid="0x0">
-      <EMBEDDEDDATA mmedtypeflags="0x0" mmedaddress="0x0" mmedelementsizebits="8" mmedcolcount="1" mmedmajorstridebits="0" mmedminorstridebits="0" />
-      <units>-</units>
-      <indexcount>1</indexcount>
-      <decimalpl>0</decimalpl>
-      <datatype>0</datatype>
-      <unittype>0</unittype>
-      <embedinfo type="1" />
-      <DALINK index="0" />
-      <MATH equation="X*1">
-        <VAR id="X" />
-      </MATH>
-    </XDFAXIS>
-    <XDFAXIS id="y" uniqueid="0x0">
-      <EMBEDDEDDATA mmedtypeflags="0x0" mmedaddress="0x0" mmedelementsizebits="8" mmedcolcount="1" mmedmajorstridebits="0" mmedminorstridebits="0" />
-      <units>-</units>
-      <indexcount>1</indexcount>
-      <decimalpl>0</decimalpl>
-      <datatype>0</datatype>
-      <unittype>0</unittype>
-      <embedinfo type="1" />
-      <DALINK index="0" />
-      <MATH equation="X*1">
-        <VAR id="X" />
-      </MATH>
-    </XDFAXIS>
-    <XDFAXIS id="z">
-      <EMBEDDEDDATA mmedtypeflags="0x0" mmedaddress="0x6C8E80" mmedelementsizebits="16" mmedrowcount="1" mmedcolcount="1" mmedmajorstridebits="0" mmedminorstridebits="0" />
-      <units>m/s</units>
-      <decimalpl>3</decimalpl>
-      <min>0</min>
-      <max>6.553</max>
-      <outputtype>1</outputtype>
-      <MATH equation="X*0.0001">
         <VAR id="X" />
       </MATH>
     </XDFAXIS>
