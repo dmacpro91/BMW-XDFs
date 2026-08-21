@@ -18,23 +18,23 @@
     <CATEGORY index="0x8" name="Knock Control &gt; Reference Level" />
     <CATEGORY index="0x9" name="Valvetronic" />
     <CATEGORY index="0xA" name="Valvetronic &gt; Vanos" />
-    <CATEGORY index="0xB" name="Boost &gt; Boost Control &gt; PID Limits" />
+    <CATEGORY index="0xB" name="Boost &gt; Boost Control &gt; PID Limit" />
     <CATEGORY index="0xC" name="Boost &gt; Boost Control" />
     <CATEGORY index="0xD" name="Boost &gt; Turbine" />
     <CATEGORY index="0xE" name="Boost &gt; Overboost" />
     <CATEGORY index="0xF" name="Ignition" />
-    <CATEGORY index="0x10" name="Ignition &gt; Burning Limit &gt; Catalyst..." />
+    <CATEGORY index="0x10" name="Ignition &gt; Burning Limit &gt; Cataly" />
     <CATEGORY index="0x11" name="Ignition &gt; Correction" />
     <CATEGORY index="0x12" name="Valvetronic &gt; Valvelift" />
     <CATEGORY index="0x13" name="Fuel &gt; FlexFuel Vehicle" />
     <CATEGORY index="0x14" name="Boost &gt; WGDC" />
     <CATEGORY index="0x15" name="Throttle" />
-    <CATEGORY index="0x16" name="Boost &gt; MAP Sensor &gt; Plausability Check" />
+    <CATEGORY index="0x16" name="Boost &gt; MAP Sensor &gt; Plausability" />
     <CATEGORY index="0x17" name="Boost &gt; Boost Setpoint Limit" />
     <CATEGORY index="0x18" name="Fuel &gt; Scalar" />
     <CATEGORY index="0x19" name="Torque &gt; Gradients" />
     <CATEGORY index="0x1A" name="Catalyst" />
-    <CATEGORY index="0x1B" name="Catalyst &gt; Catalyst Heating &gt; Activa..." />
+    <CATEGORY index="0x1B" name="Catalyst &gt; Catalyst Heating &gt; Act" />
     <CATEGORY index="0x1C" name="Load (Relative Filling)" />
     <CATEGORY index="0x1D" name="Startup" />
     <CATEGORY index="0x1E" name="Engine Speed" />
@@ -56,6 +56,7 @@
     <CATEGORY index="0x2E" name="Sound Tuning &gt; Activation" />
     <CATEGORY index="0x2F" name="Torque &gt; Tuning Protection" />
     <CATEGORY index="0x30" name="Sound Tuning &gt; Exhaust Flaps" />
+    <CATEGORY index="0x31" name="A2L code-transfer (verified)" />
   </XDFHEADER>
   <XDFTABLE uniqueid="0x0" flags="0x0">
     <title>Boost Correction Factor (Rich)</title>
@@ -5749,7 +5750,7 @@ Modifies the integral gain (addition) of wastegate dutycycle to the base wastega
   <XDFTABLE uniqueid="0x0" flags="0x0">
     <title>Ignition Timing Correction (Factor - Partial Load)</title>
     <description>KF_FDZWT_PF2
-Modifies the ignition timing correction factor based on engine and intake temperature. This table is a factor of &lt;a class='linked-table button button-small button-energized button-in-text' ng-click='linkTable("Hy42N3o+J38kLlc=");'&gt;Ignition Correction (Partial Load)&lt;/a&gt;. &lt;br&gt; Zero means no ignition timing is subtracted from &lt;a class='linked-table button button-small button-energized button-in-text' ng-click='linkTabl...</description>
+Modifies the ignition timing correction factor based on engine and intake temperature. This table is a factor of &lt;a class='linked-table button button-small button-energized button-in-text' ng-click='linkTable("Hy42N3o+J38kLlc=");'&gt;Ignition Correction (Partial Load)&lt;/a&gt;. &lt;br&gt; Zero means no ignition timing is subtracted from &lt;a class='linked-table button button-small button-energized button-in-tex...</description>
     <CATEGORYMEM index="0" category="16" />
     <CATEGORYMEM index="1" category="18" />
     <XDFAXIS id="x" uniqueid="0x0">
@@ -6101,7 +6102,7 @@ Modifies the calculated force on the wastegate as a function of exhaust mass flo
   <XDFTABLE uniqueid="0x0" flags="0x0">
     <title>Blend Factor For Throttle</title>
     <description>KF_FK_FTRANSVL
-Modifies the blend factor over throttle. The values represent the relation ship between this table and &lt;a class='linked-table button button-small button-energized button-in-text' ng-click='linkTable("HyQ2I3M5JWQ/NzZvJyg4eDAh");'&gt;Maximum Target Pressure Ratio Over Throttle&lt;/a&gt;. Y axis is the pressure ratio from &lt;a class='linked-table button button-small button-energized button-in-text' ng-click='linkTable("HyQ2I3M5...</description>
+Modifies the blend factor over throttle. The values represent the relation ship between this table and &lt;a class='linked-table button button-small button-energized button-in-text' ng-click='linkTable("HyQ2I3M5JWQ/NzZvJyg4eDAh");'&gt;Maximum Target Pressure Ratio Over Throttle&lt;/a&gt;. Y axis is the pressure ratio from &lt;a class='linked-table button button-small button-energized button-in-text' ng-click='link...</description>
     <CATEGORYMEM index="0" category="22" />
     <XDFAXIS id="x" uniqueid="0x0">
       <EMBEDDEDDATA mmedtypeflags="0x03" mmedaddress="0x1A0104" mmedelementsizebits="16" mmedcolcount="6" mmedmajorstridebits="0" mmedminorstridebits="0" />
@@ -11150,7 +11151,7 @@ Modifies engine torque during startup. &lt;br&gt; Increasing the values of this 
   <XDFTABLE uniqueid="0x0" flags="0x0">
     <title>Mode Dependent Torque Limitation (Automatic)</title>
     <description>KF_MODE_MDMAX_AT
-Modifies the mode dependent load limitation. &lt;br&gt; X-axis represents the following modes: D, S, M, D+Sport mode, S+Sport mode, M+Sport mode, D+Eco mode, S+Eco mode, M+Eco mode. &lt;br&gt; The Z values represent the limitation state: &lt;br&gt; 0 = No limitation &lt;br&gt; 1 = Torque limitation based on &lt;a class='linked-table button button-small button-energized button-in-text' ng-click='linkTable("Hy42PmQiPmEsNyJhJSImbTghEQ==");'&gt;...</description>
+Modifies the mode dependent load limitation. &lt;br&gt; X-axis represents the following modes: D, S, M, D+Sport mode, S+Sport mode, M+Sport mode, D+Eco mode, S+Eco mode, M+Eco mode. &lt;br&gt; The Z values represent the limitation state: &lt;br&gt; 0 = No limitation &lt;br&gt; 1 = Torque limitation based on &lt;a class='linked-table button button-small button-energized button-in-text' ng-click='linkTable("Hy42Pm...</description>
     <CATEGORYMEM index="0" category="1" />
     <CATEGORYMEM index="1" category="24" />
     <XDFAXIS id="x" uniqueid="0x0">
@@ -21064,7 +21065,7 @@ Request to switch the Active Shutter Grill depending on the filtered mean value 
   <XDFTABLE uniqueid="0x0" flags="0x0">
     <title>MD Increase Through Enrichment</title>
     <description>KL_FMDI_VL
-Modifies torque factor increase during enrichment. &lt;br&gt; The z-values will multiply the values of &lt;a class='linked-table button button-small button-energized button-in-text' ng-click='linkTable("Hy42PmQgPHArWQ==");'&gt;Optimal Reference Torque 1&lt;/a&gt; and &lt;a class='linked-table button button-small button-energized button-in-text' ng-click='linkTable("Hy42PmQgPHArWg==");'&gt;Optimal Reference Torque 2&lt;/a&gt;</description>
+Modifies torque factor increase during enrichment. &lt;br&gt; The z-values will multiply the values of &lt;a class='linked-table button button-small button-energized button-in-text' ng-click='linkTable("Hy42PmQgPHArWQ==");'&gt;Optimal Reference Torque 1&lt;/a&gt; and &lt;a class='linked-table button button-small button-energized button-in-text' ng-click='linkTable("Hy42PmQgPHArWg==");'&gt;Optimal Reference Torque 2...</description>
     <CATEGORYMEM index="0" category="1" />
     <CATEGORYMEM index="1" category="24" />
     <XDFAXIS id="x" uniqueid="0x0">
@@ -24947,7 +24948,7 @@ Modifies maximum volumetric efficiency that the engine can achieve in full load 
     </XDFAXIS>
   </XDFTABLE>
   <XDFTABLE uniqueid="0x0" flags="0x0">
-    <title>Characteristic filter constant low-pass for crossfading should lambda Of Exhaust-lambda On Combustion chamber-lambda im &#252;be...</title>
+    <title>Characteristic filter constant low-pass for crossfading should lambda Of Exhaust-lambda On Combustion chamber-lambda im ...</title>
     <description>KL_LA_UESP_BRPRIO_FK</description>
     <CATEGORYMEM index="0" category="5" />
     <XDFAXIS id="x" uniqueid="0x0">
@@ -32573,6 +32574,2019 @@ Modifies the pedal input in percentage, before the exhaust flap opens &lt;br&gt;
       <max>655.350000</max>
       <outputtype>1</outputtype>
       <MATH equation="X*0.01">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE uniqueid="0x0" flags="0x0">
+    <title>KF_DNWE_MDBREMS</title>
+    <description>KF_DNWE_MDBREMS
+A2L-named, code-transfer placement, round-trip-verified.
+Wiedereinsetzdrehzahlanhebung beim Bremsen</description>
+    <CATEGORYMEM index="0" category="50" />
+    <XDFAXIS id="x" uniqueid="0x0">
+      <EMBEDDEDDATA mmedelementsizebits="8" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units>-</units>
+      <indexcount>4</indexcount>
+      <decimalpl>3</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <DALINK index="0" />
+      <LABEL index="0" value="-1999.990234" />
+      <LABEL index="1" value="-499.997559" />
+      <LABEL index="2" value="-249.998779" />
+      <LABEL index="3" value="-199.999023" />
+      <MATH equation="X*1">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="y" uniqueid="0x0">
+      <EMBEDDEDDATA mmedelementsizebits="8" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units>-</units>
+      <indexcount>10</indexcount>
+      <decimalpl>0</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <DALINK index="0" />
+      <LABEL index="0" value="0.000000" />
+      <LABEL index="1" value="1.000000" />
+      <LABEL index="2" value="2.000000" />
+      <LABEL index="3" value="3.000000" />
+      <LABEL index="4" value="4.000000" />
+      <LABEL index="5" value="5.000000" />
+      <LABEL index="6" value="6.000000" />
+      <LABEL index="7" value="7.000000" />
+      <LABEL index="8" value="8.000000" />
+      <LABEL index="9" value="9.000000" />
+      <MATH equation="X*1">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="z">
+      <EMBEDDEDDATA mmedtypeflags="0x07" mmedaddress="0x1ADDC6" mmedelementsizebits="16" mmedrowcount="10" mmedcolcount="4" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units>-</units>
+      <decimalpl>0</decimalpl>
+      <min>-32768.000000</min>
+      <max>32767.000000</max>
+      <outputtype>1</outputtype>
+      <MATH equation="X*1.0">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE uniqueid="0x0" flags="0x0">
+    <title>KF_FRKKORWF_KH</title>
+    <description>KF_FRKKORWF_KH
+A2L-named, code-transfer placement, round-trip-verified.
+Kennfeld Wandfilm-Korrektur KH-Einspritzung (KH)</description>
+    <CATEGORYMEM index="0" category="50" />
+    <XDFAXIS id="x" uniqueid="0x0">
+      <EMBEDDEDDATA mmedelementsizebits="8" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units>-</units>
+      <indexcount>8</indexcount>
+      <decimalpl>4</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <DALINK index="0" />
+      <LABEL index="0" value="0.000000" />
+      <LABEL index="1" value="0.000000" />
+      <LABEL index="2" value="0.000000" />
+      <LABEL index="3" value="0.000000" />
+      <LABEL index="4" value="0.000000" />
+      <LABEL index="5" value="0.000000" />
+      <LABEL index="6" value="0.000000" />
+      <LABEL index="7" value="0.000000" />
+      <MATH equation="X*1">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="y" uniqueid="0x0">
+      <EMBEDDEDDATA mmedelementsizebits="8" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units>-</units>
+      <indexcount>8</indexcount>
+      <decimalpl>3</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <DALINK index="0" />
+      <LABEL index="0" value="10.009765" />
+      <LABEL index="1" value="20.019530" />
+      <LABEL index="2" value="29.980467" />
+      <LABEL index="3" value="39.990233" />
+      <LABEL index="4" value="49.999998" />
+      <LABEL index="5" value="60.009763" />
+      <LABEL index="6" value="70.019528" />
+      <LABEL index="7" value="95.019527" />
+      <MATH equation="X*1">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="z">
+      <EMBEDDEDDATA mmedtypeflags="0x07" mmedaddress="0x192D08" mmedelementsizebits="8" mmedrowcount="8" mmedcolcount="8" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units>-</units>
+      <decimalpl>4</decimalpl>
+      <min>-1.000000</min>
+      <max>0.992100</max>
+      <outputtype>1</outputtype>
+      <MATH equation="X*0.007811811023622047">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE uniqueid="0x0" flags="0x0">
+    <title>KF_IERRGENLIMSLP</title>
+    <description>KF_IERRGENLIMSLP
+A2L-named, code-transfer placement, round-trip-verified.
+Erregerstrom bei SLP aktiv</description>
+    <CATEGORYMEM index="0" category="50" />
+    <XDFAXIS id="x" uniqueid="0x0">
+      <EMBEDDEDDATA mmedelementsizebits="8" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units>-</units>
+      <indexcount>6</indexcount>
+      <decimalpl>3</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <DALINK index="0" />
+      <LABEL index="0" value="0.000000" />
+      <LABEL index="1" value="0.100000" />
+      <LABEL index="2" value="0.200000" />
+      <LABEL index="3" value="0.300000" />
+      <LABEL index="4" value="0.400000" />
+      <LABEL index="5" value="0.500000" />
+      <MATH equation="X*1">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="y" uniqueid="0x0">
+      <EMBEDDEDDATA mmedelementsizebits="8" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units>-</units>
+      <indexcount>6</indexcount>
+      <decimalpl>0</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <DALINK index="0" />
+      <LABEL index="0" value="0.000000" />
+      <LABEL index="1" value="1.000000" />
+      <LABEL index="2" value="2.000000" />
+      <LABEL index="3" value="3.000000" />
+      <LABEL index="4" value="4.000000" />
+      <LABEL index="5" value="5.000000" />
+      <MATH equation="X*1">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="z">
+      <EMBEDDEDDATA mmedtypeflags="0x06" mmedaddress="0x19C836" mmedelementsizebits="8" mmedrowcount="6" mmedcolcount="6" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units>-</units>
+      <decimalpl>3</decimalpl>
+      <min>0.000000</min>
+      <max>31.875000</max>
+      <outputtype>1</outputtype>
+      <MATH equation="X*0.125">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE uniqueid="0x0" flags="0x0">
+    <title>KF_LAGERLHPVL_D_AT</title>
+    <description>KF_LAGERLHPVL_D_AT
+A2L-named, code-transfer placement, round-trip-verified.
+Faktor Unruhe (Volllast) zur Einrechnung der Dynamik fuer Lagerkraftberechnung LHP(Lenkhilfepumpe) bei Automat</description>
+    <CATEGORYMEM index="0" category="50" />
+    <XDFAXIS id="x" uniqueid="0x0">
+      <EMBEDDEDDATA mmedelementsizebits="8" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units>-</units>
+      <indexcount>6</indexcount>
+      <decimalpl>0</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <DALINK index="0" />
+      <LABEL index="0" value="0.000000" />
+      <LABEL index="1" value="1000.000000" />
+      <LABEL index="2" value="2000.000000" />
+      <LABEL index="3" value="3000.000000" />
+      <LABEL index="4" value="4000.000000" />
+      <LABEL index="5" value="5000.000000" />
+      <MATH equation="X*1">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="y" uniqueid="0x0">
+      <EMBEDDEDDATA mmedelementsizebits="8" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units>-</units>
+      <indexcount>6</indexcount>
+      <decimalpl>3</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <DALINK index="0" />
+      <LABEL index="0" value="0.000000" />
+      <LABEL index="1" value="100.000000" />
+      <LABEL index="2" value="350.000000" />
+      <LABEL index="3" value="500.000000" />
+      <LABEL index="4" value="600.000000" />
+      <LABEL index="5" value="700.000000" />
+      <MATH equation="X*1">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="z">
+      <EMBEDDEDDATA mmedtypeflags="0x06" mmedaddress="0x19D582" mmedelementsizebits="16" mmedrowcount="6" mmedcolcount="6" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units>-</units>
+      <decimalpl>6</decimalpl>
+      <min>0.000000</min>
+      <max>3.999900</max>
+      <outputtype>1</outputtype>
+      <MATH equation="X*0.000061034561684596016">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE uniqueid="0x0" flags="0x0">
+    <title>KF_LBAUMS</title>
+    <description>KF_LBAUMS
+A2L-named, code-transfer placement, round-trip-verified.
+Umschaltkennfeld Luft-BA; Bit0...3: Vorgang; Bit4...7: Ziel</description>
+    <CATEGORYMEM index="0" category="50" />
+    <XDFAXIS id="x" uniqueid="0x0">
+      <EMBEDDEDDATA mmedelementsizebits="8" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units>-</units>
+      <indexcount>4</indexcount>
+      <decimalpl>4</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <DALINK index="0" />
+      <LABEL index="0" value="0.000000" />
+      <LABEL index="1" value="0.011765" />
+      <LABEL index="2" value="0.023529" />
+      <LABEL index="3" value="0.035294" />
+      <MATH equation="X*1">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="y" uniqueid="0x0">
+      <EMBEDDEDDATA mmedelementsizebits="8" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units>-</units>
+      <indexcount>4</indexcount>
+      <decimalpl>4</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <DALINK index="0" />
+      <LABEL index="0" value="0.000000" />
+      <LABEL index="1" value="0.011765" />
+      <LABEL index="2" value="0.023529" />
+      <LABEL index="3" value="0.035294" />
+      <MATH equation="X*1">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="z">
+      <EMBEDDEDDATA mmedtypeflags="0x06" mmedaddress="0x18F9FE" mmedelementsizebits="8" mmedrowcount="4" mmedcolcount="4" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units>-</units>
+      <decimalpl>0</decimalpl>
+      <min>0.000000</min>
+      <max>255.000000</max>
+      <outputtype>1</outputtype>
+      <MATH equation="X*1.0">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE uniqueid="0x0" flags="0x0">
+    <title>KF_LLR_PD_LF_GK</title>
+    <description>KF_LLR_PD_LF_GK
+A2L-named, code-transfer placement, round-trip-verified.
+PD-Anteil des Luftpfades fuer eingekoppelten Antriebsstrang</description>
+    <CATEGORYMEM index="0" category="50" />
+    <XDFAXIS id="x" uniqueid="0x0">
+      <EMBEDDEDDATA mmedelementsizebits="8" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units>-</units>
+      <indexcount>12</indexcount>
+      <decimalpl>0</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <DALINK index="0" />
+      <LABEL index="0" value="-300.000000" />
+      <LABEL index="1" value="-150.000000" />
+      <LABEL index="2" value="-75.000000" />
+      <LABEL index="3" value="-30.000000" />
+      <LABEL index="4" value="-15.000000" />
+      <LABEL index="5" value="-5.000000" />
+      <LABEL index="6" value="5.000000" />
+      <LABEL index="7" value="15.000000" />
+      <LABEL index="8" value="30.000000" />
+      <LABEL index="9" value="75.000000" />
+      <LABEL index="10" value="150.000000" />
+      <LABEL index="11" value="300.000000" />
+      <MATH equation="X*1">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="y" uniqueid="0x0">
+      <EMBEDDEDDATA mmedelementsizebits="8" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units>-</units>
+      <indexcount>8</indexcount>
+      <decimalpl>0</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <DALINK index="0" />
+      <LABEL index="0" value="-2000.000000" />
+      <LABEL index="1" value="-1200.000000" />
+      <LABEL index="2" value="-400.000000" />
+      <LABEL index="3" value="-200.000000" />
+      <LABEL index="4" value="200.000000" />
+      <LABEL index="5" value="400.000000" />
+      <LABEL index="6" value="900.000000" />
+      <LABEL index="7" value="2000.000000" />
+      <MATH equation="X*1">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="z">
+      <EMBEDDEDDATA mmedtypeflags="0x07" mmedaddress="0x18798C" mmedelementsizebits="16" mmedrowcount="8" mmedcolcount="12" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units>-</units>
+      <decimalpl>3</decimalpl>
+      <min>-3276.800000</min>
+      <max>3276.700000</max>
+      <outputtype>1</outputtype>
+      <MATH equation="X*0.09999999999999999">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE uniqueid="0x0" flags="0x0">
+    <title>KF_LLR_PD_LF_GK_KH</title>
+    <description>KF_LLR_PD_LF_GK_KH
+A2L-named, code-transfer placement, round-trip-verified.
+PD-Anteil des Luftpfades fuer eingekoppelten Antriebsstrang und Katheizen</description>
+    <CATEGORYMEM index="0" category="50" />
+    <XDFAXIS id="x" uniqueid="0x0">
+      <EMBEDDEDDATA mmedelementsizebits="8" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units>-</units>
+      <indexcount>12</indexcount>
+      <decimalpl>0</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <DALINK index="0" />
+      <LABEL index="0" value="-300.000000" />
+      <LABEL index="1" value="-150.000000" />
+      <LABEL index="2" value="-75.000000" />
+      <LABEL index="3" value="-30.000000" />
+      <LABEL index="4" value="-15.000000" />
+      <LABEL index="5" value="-5.000000" />
+      <LABEL index="6" value="5.000000" />
+      <LABEL index="7" value="15.000000" />
+      <LABEL index="8" value="30.000000" />
+      <LABEL index="9" value="75.000000" />
+      <LABEL index="10" value="150.000000" />
+      <LABEL index="11" value="300.000000" />
+      <MATH equation="X*1">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="y" uniqueid="0x0">
+      <EMBEDDEDDATA mmedelementsizebits="8" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units>-</units>
+      <indexcount>8</indexcount>
+      <decimalpl>0</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <DALINK index="0" />
+      <LABEL index="0" value="-2000.000000" />
+      <LABEL index="1" value="-1200.000000" />
+      <LABEL index="2" value="-400.000000" />
+      <LABEL index="3" value="-200.000000" />
+      <LABEL index="4" value="200.000000" />
+      <LABEL index="5" value="400.000000" />
+      <LABEL index="6" value="900.000000" />
+      <LABEL index="7" value="2000.000000" />
+      <MATH equation="X*1">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="z">
+      <EMBEDDEDDATA mmedtypeflags="0x07" mmedaddress="0x1878A2" mmedelementsizebits="16" mmedrowcount="8" mmedcolcount="12" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units>-</units>
+      <decimalpl>3</decimalpl>
+      <min>-3276.800000</min>
+      <max>3276.700000</max>
+      <outputtype>1</outputtype>
+      <MATH equation="X*0.09999999999999999">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE uniqueid="0x0" flags="0x0">
+    <title>KF_LLR_PD_LF_OK_VBM_1</title>
+    <description>KF_LLR_PD_LF_OK_VBM_1
+A2L-named, code-transfer placement, round-trip-verified.
+PD-Anteil des Luftpfades fuer ausgekoppelten Motor und Verbrennungsmodus 1</description>
+    <CATEGORYMEM index="0" category="50" />
+    <XDFAXIS id="x" uniqueid="0x0">
+      <EMBEDDEDDATA mmedelementsizebits="8" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units>-</units>
+      <indexcount>12</indexcount>
+      <decimalpl>0</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <DALINK index="0" />
+      <LABEL index="0" value="-300.000000" />
+      <LABEL index="1" value="-150.000000" />
+      <LABEL index="2" value="-75.000000" />
+      <LABEL index="3" value="-30.000000" />
+      <LABEL index="4" value="-15.000000" />
+      <LABEL index="5" value="-5.000000" />
+      <LABEL index="6" value="5.000000" />
+      <LABEL index="7" value="15.000000" />
+      <LABEL index="8" value="30.000000" />
+      <LABEL index="9" value="75.000000" />
+      <LABEL index="10" value="150.000000" />
+      <LABEL index="11" value="300.000000" />
+      <MATH equation="X*1">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="y" uniqueid="0x0">
+      <EMBEDDEDDATA mmedelementsizebits="8" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units>-</units>
+      <indexcount>8</indexcount>
+      <decimalpl>0</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <DALINK index="0" />
+      <LABEL index="0" value="-2000.000000" />
+      <LABEL index="1" value="-1200.000000" />
+      <LABEL index="2" value="-400.000000" />
+      <LABEL index="3" value="-200.000000" />
+      <LABEL index="4" value="200.000000" />
+      <LABEL index="5" value="400.000000" />
+      <LABEL index="6" value="900.000000" />
+      <LABEL index="7" value="2000.000000" />
+      <MATH equation="X*1">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="z">
+      <EMBEDDEDDATA mmedtypeflags="0x07" mmedaddress="0x1875D2" mmedelementsizebits="16" mmedrowcount="8" mmedcolcount="12" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units>-</units>
+      <decimalpl>3</decimalpl>
+      <min>-3276.800000</min>
+      <max>3276.700000</max>
+      <outputtype>1</outputtype>
+      <MATH equation="X*0.09999999999999999">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE uniqueid="0x0" flags="0x0">
+    <title>KF_LLR_PD_LF_OK_VBM_2</title>
+    <description>KF_LLR_PD_LF_OK_VBM_2
+A2L-named, code-transfer placement, round-trip-verified.
+PD-Anteil des Luftpfades fuer ausgekoppelten Motor und Verbrennungsmodus 2</description>
+    <CATEGORYMEM index="0" category="50" />
+    <XDFAXIS id="x" uniqueid="0x0">
+      <EMBEDDEDDATA mmedelementsizebits="8" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units>-</units>
+      <indexcount>12</indexcount>
+      <decimalpl>0</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <DALINK index="0" />
+      <LABEL index="0" value="-300.000000" />
+      <LABEL index="1" value="-150.000000" />
+      <LABEL index="2" value="-75.000000" />
+      <LABEL index="3" value="-30.000000" />
+      <LABEL index="4" value="-15.000000" />
+      <LABEL index="5" value="-5.000000" />
+      <LABEL index="6" value="5.000000" />
+      <LABEL index="7" value="15.000000" />
+      <LABEL index="8" value="30.000000" />
+      <LABEL index="9" value="75.000000" />
+      <LABEL index="10" value="150.000000" />
+      <LABEL index="11" value="300.000000" />
+      <MATH equation="X*1">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="y" uniqueid="0x0">
+      <EMBEDDEDDATA mmedelementsizebits="8" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units>-</units>
+      <indexcount>8</indexcount>
+      <decimalpl>0</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <DALINK index="0" />
+      <LABEL index="0" value="-1100.000000" />
+      <LABEL index="1" value="-900.000000" />
+      <LABEL index="2" value="-400.000000" />
+      <LABEL index="3" value="-200.000000" />
+      <LABEL index="4" value="200.000000" />
+      <LABEL index="5" value="400.000000" />
+      <LABEL index="6" value="900.000000" />
+      <LABEL index="7" value="1100.000000" />
+      <MATH equation="X*1">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="z">
+      <EMBEDDEDDATA mmedtypeflags="0x07" mmedaddress="0x1874E8" mmedelementsizebits="16" mmedrowcount="8" mmedcolcount="12" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units>-</units>
+      <decimalpl>3</decimalpl>
+      <min>-3276.800000</min>
+      <max>3276.700000</max>
+      <outputtype>1</outputtype>
+      <MATH equation="X*0.09999999999999999">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE uniqueid="0x0" flags="0x0">
+    <title>KF_LLR_PD_ZD_GK</title>
+    <description>KF_LLR_PD_ZD_GK
+A2L-named, code-transfer placement, round-trip-verified.
+PD-Anteil des Zuendpfades fuer eingekoppelten Motor</description>
+    <CATEGORYMEM index="0" category="50" />
+    <XDFAXIS id="x" uniqueid="0x0">
+      <EMBEDDEDDATA mmedelementsizebits="8" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units>-</units>
+      <indexcount>12</indexcount>
+      <decimalpl>0</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <DALINK index="0" />
+      <LABEL index="0" value="-300.000000" />
+      <LABEL index="1" value="-150.000000" />
+      <LABEL index="2" value="-75.000000" />
+      <LABEL index="3" value="-30.000000" />
+      <LABEL index="4" value="-15.000000" />
+      <LABEL index="5" value="-5.000000" />
+      <LABEL index="6" value="5.000000" />
+      <LABEL index="7" value="15.000000" />
+      <LABEL index="8" value="30.000000" />
+      <LABEL index="9" value="75.000000" />
+      <LABEL index="10" value="150.000000" />
+      <LABEL index="11" value="300.000000" />
+      <MATH equation="X*1">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="y" uniqueid="0x0">
+      <EMBEDDEDDATA mmedelementsizebits="8" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units>-</units>
+      <indexcount>8</indexcount>
+      <decimalpl>0</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <DALINK index="0" />
+      <LABEL index="0" value="-2000.000000" />
+      <LABEL index="1" value="-1200.000000" />
+      <LABEL index="2" value="-200.000000" />
+      <LABEL index="3" value="-100.000000" />
+      <LABEL index="4" value="100.000000" />
+      <LABEL index="5" value="200.000000" />
+      <LABEL index="6" value="900.000000" />
+      <LABEL index="7" value="2000.000000" />
+      <MATH equation="X*1">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="z">
+      <EMBEDDEDDATA mmedtypeflags="0x07" mmedaddress="0x18721A" mmedelementsizebits="16" mmedrowcount="8" mmedcolcount="12" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units>-</units>
+      <decimalpl>3</decimalpl>
+      <min>-3276.800000</min>
+      <max>3276.700000</max>
+      <outputtype>1</outputtype>
+      <MATH equation="X*0.09999999999999999">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE uniqueid="0x0" flags="0x0">
+    <title>KF_LLR_PD_ZD_GK_KH</title>
+    <description>KF_LLR_PD_ZD_GK_KH
+A2L-named, code-transfer placement, round-trip-verified.
+PD-Anteil des Zuendpfades fuer eingekoppelten Motor und Katheizen</description>
+    <CATEGORYMEM index="0" category="50" />
+    <XDFAXIS id="x" uniqueid="0x0">
+      <EMBEDDEDDATA mmedelementsizebits="8" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units>-</units>
+      <indexcount>12</indexcount>
+      <decimalpl>0</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <DALINK index="0" />
+      <LABEL index="0" value="-300.000000" />
+      <LABEL index="1" value="-150.000000" />
+      <LABEL index="2" value="-75.000000" />
+      <LABEL index="3" value="-30.000000" />
+      <LABEL index="4" value="-15.000000" />
+      <LABEL index="5" value="-5.000000" />
+      <LABEL index="6" value="5.000000" />
+      <LABEL index="7" value="15.000000" />
+      <LABEL index="8" value="30.000000" />
+      <LABEL index="9" value="75.000000" />
+      <LABEL index="10" value="150.000000" />
+      <LABEL index="11" value="300.000000" />
+      <MATH equation="X*1">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="y" uniqueid="0x0">
+      <EMBEDDEDDATA mmedelementsizebits="8" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units>-</units>
+      <indexcount>8</indexcount>
+      <decimalpl>0</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <DALINK index="0" />
+      <LABEL index="0" value="-2000.000000" />
+      <LABEL index="1" value="-1200.000000" />
+      <LABEL index="2" value="-400.000000" />
+      <LABEL index="3" value="-200.000000" />
+      <LABEL index="4" value="200.000000" />
+      <LABEL index="5" value="400.000000" />
+      <LABEL index="6" value="900.000000" />
+      <LABEL index="7" value="2000.000000" />
+      <MATH equation="X*1">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="z">
+      <EMBEDDEDDATA mmedtypeflags="0x07" mmedaddress="0x187130" mmedelementsizebits="16" mmedrowcount="8" mmedcolcount="12" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units>-</units>
+      <decimalpl>3</decimalpl>
+      <min>-3276.800000</min>
+      <max>3276.700000</max>
+      <outputtype>1</outputtype>
+      <MATH equation="X*0.09999999999999999">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE uniqueid="0x0" flags="0x0">
+    <title>KF_NWE_BAS_DKG_GD</title>
+    <description>KF_NWE_BAS_DKG_GD
+A2L-named, code-transfer placement, round-trip-verified.
+Basiswiedereinsetzdrehzahl gedrosselt (DKG)</description>
+    <CATEGORYMEM index="0" category="50" />
+    <XDFAXIS id="x" uniqueid="0x0">
+      <EMBEDDEDDATA mmedelementsizebits="8" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units>-</units>
+      <indexcount>4</indexcount>
+      <decimalpl>4</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <DALINK index="0" />
+      <LABEL index="0" value="-30.000000" />
+      <LABEL index="1" value="9.800000" />
+      <LABEL index="2" value="20.300000" />
+      <LABEL index="3" value="90.000000" />
+      <MATH equation="X*1">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="y" uniqueid="0x0">
+      <EMBEDDEDDATA mmedelementsizebits="8" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units>-</units>
+      <indexcount>10</indexcount>
+      <decimalpl>0</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <DALINK index="0" />
+      <LABEL index="0" value="0.000000" />
+      <LABEL index="1" value="1.000000" />
+      <LABEL index="2" value="2.000000" />
+      <LABEL index="3" value="3.000000" />
+      <LABEL index="4" value="4.000000" />
+      <LABEL index="5" value="5.000000" />
+      <LABEL index="6" value="6.000000" />
+      <LABEL index="7" value="7.000000" />
+      <LABEL index="8" value="8.000000" />
+      <LABEL index="9" value="9.000000" />
+      <MATH equation="X*1">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="z">
+      <EMBEDDEDDATA mmedtypeflags="0x07" mmedaddress="0x1ADBC6" mmedelementsizebits="16" mmedrowcount="10" mmedcolcount="4" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units>-</units>
+      <decimalpl>0</decimalpl>
+      <min>-32768.000000</min>
+      <max>32767.000000</max>
+      <outputtype>1</outputtype>
+      <MATH equation="X*1.0">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE uniqueid="0x0" flags="0x0">
+    <title>KF_POELCC_MN</title>
+    <description>KF_POELCC_MN
+A2L-named, code-transfer placement, round-trip-verified.
+Min Druck vor CC-Meldung in SLR ?ldruck</description>
+    <CATEGORYMEM index="0" category="50" />
+    <XDFAXIS id="x" uniqueid="0x0">
+      <EMBEDDEDDATA mmedelementsizebits="8" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units>-</units>
+      <indexcount>4</indexcount>
+      <decimalpl>0</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <DALINK index="0" />
+      <LABEL index="0" value="700.000000" />
+      <LABEL index="1" value="1700.000000" />
+      <LABEL index="2" value="2000.000000" />
+      <LABEL index="3" value="4500.000000" />
+      <MATH equation="X*1">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="y" uniqueid="0x0">
+      <EMBEDDEDDATA mmedelementsizebits="8" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units>-</units>
+      <indexcount>4</indexcount>
+      <decimalpl>3</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <DALINK index="0" />
+      <LABEL index="0" value="-30.000000" />
+      <LABEL index="1" value="0.000000" />
+      <LABEL index="2" value="120.000000" />
+      <LABEL index="3" value="140.000000" />
+      <MATH equation="X*1">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="z">
+      <EMBEDDEDDATA mmedtypeflags="0x06" mmedaddress="0x18ECEC" mmedelementsizebits="16" mmedrowcount="4" mmedcolcount="4" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units>-</units>
+      <decimalpl>0</decimalpl>
+      <min>0.000000</min>
+      <max>65535.000000</max>
+      <outputtype>1</outputtype>
+      <MATH equation="X*1.0">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE uniqueid="0x0" flags="0x0">
+    <title>KF_POELRDYN</title>
+    <description>KF_POELRDYN
+A2L-named, code-transfer placement, round-trip-verified.
+Max. Dyn. Solldruckabweichung f?r FSP-Eintrag</description>
+    <CATEGORYMEM index="0" category="50" />
+    <XDFAXIS id="x" uniqueid="0x0">
+      <EMBEDDEDDATA mmedelementsizebits="8" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units>-</units>
+      <indexcount>4</indexcount>
+      <decimalpl>0</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <DALINK index="0" />
+      <LABEL index="0" value="500.000000" />
+      <LABEL index="1" value="2000.000000" />
+      <LABEL index="2" value="4000.000000" />
+      <LABEL index="3" value="6000.000000" />
+      <MATH equation="X*1">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="y" uniqueid="0x0">
+      <EMBEDDEDDATA mmedelementsizebits="8" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units>-</units>
+      <indexcount>4</indexcount>
+      <decimalpl>3</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <DALINK index="0" />
+      <LABEL index="0" value="-40.000000" />
+      <LABEL index="1" value="0.000000" />
+      <LABEL index="2" value="80.000000" />
+      <LABEL index="3" value="110.000000" />
+      <MATH equation="X*1">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="z">
+      <EMBEDDEDDATA mmedtypeflags="0x06" mmedaddress="0x18EC88" mmedelementsizebits="16" mmedrowcount="4" mmedcolcount="4" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units>-</units>
+      <decimalpl>0</decimalpl>
+      <min>0.000000</min>
+      <max>65535.000000</max>
+      <outputtype>1</outputtype>
+      <MATH equation="X*1.0">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE uniqueid="0x0" flags="0x0">
+    <title>KF_POELREG_D</title>
+    <description>KF_POELREG_D
+A2L-named, code-transfer placement, round-trip-verified.
+D-Parameter f?r ?ldruckregler (abh. von Tpoel_reg, Nkw)</description>
+    <CATEGORYMEM index="0" category="50" />
+    <XDFAXIS id="x" uniqueid="0x0">
+      <EMBEDDEDDATA mmedelementsizebits="8" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units>-</units>
+      <indexcount>8</indexcount>
+      <decimalpl>0</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <DALINK index="0" />
+      <LABEL index="0" value="750.000000" />
+      <LABEL index="1" value="1000.000000" />
+      <LABEL index="2" value="1500.000000" />
+      <LABEL index="3" value="2000.000000" />
+      <LABEL index="4" value="3000.000000" />
+      <LABEL index="5" value="3500.000000" />
+      <LABEL index="6" value="4500.000000" />
+      <LABEL index="7" value="5250.000000" />
+      <MATH equation="X*1">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="y" uniqueid="0x0">
+      <EMBEDDEDDATA mmedelementsizebits="8" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units>-</units>
+      <indexcount>6</indexcount>
+      <decimalpl>3</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <DALINK index="0" />
+      <LABEL index="0" value="-30.000000" />
+      <LABEL index="1" value="0.000000" />
+      <LABEL index="2" value="20.000000" />
+      <LABEL index="3" value="40.000000" />
+      <LABEL index="4" value="50.000000" />
+      <LABEL index="5" value="90.000000" />
+      <MATH equation="X*1">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="z">
+      <EMBEDDEDDATA mmedtypeflags="0x06" mmedaddress="0x18EC16" mmedelementsizebits="16" mmedrowcount="6" mmedcolcount="8" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units>-</units>
+      <decimalpl>7</decimalpl>
+      <min>0.000000</min>
+      <max>0.999985</max>
+      <outputtype>1</outputtype>
+      <MATH equation="X*0.00001525878906250001">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE uniqueid="0x0" flags="0x0">
+    <title>KF_POELREG_I</title>
+    <description>KF_POELREG_I
+A2L-named, code-transfer placement, round-trip-verified.
+I-Parameter f?r ?ldruckregler (abh. von Tpoel_reg, Nkw)</description>
+    <CATEGORYMEM index="0" category="50" />
+    <XDFAXIS id="x" uniqueid="0x0">
+      <EMBEDDEDDATA mmedelementsizebits="8" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units>-</units>
+      <indexcount>8</indexcount>
+      <decimalpl>0</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <DALINK index="0" />
+      <LABEL index="0" value="750.000000" />
+      <LABEL index="1" value="1000.000000" />
+      <LABEL index="2" value="1500.000000" />
+      <LABEL index="3" value="2000.000000" />
+      <LABEL index="4" value="3000.000000" />
+      <LABEL index="5" value="3500.000000" />
+      <LABEL index="6" value="4500.000000" />
+      <LABEL index="7" value="5250.000000" />
+      <MATH equation="X*1">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="y" uniqueid="0x0">
+      <EMBEDDEDDATA mmedelementsizebits="8" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units>-</units>
+      <indexcount>6</indexcount>
+      <decimalpl>3</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <DALINK index="0" />
+      <LABEL index="0" value="-30.000000" />
+      <LABEL index="1" value="0.000000" />
+      <LABEL index="2" value="20.000000" />
+      <LABEL index="3" value="40.000000" />
+      <LABEL index="4" value="50.000000" />
+      <LABEL index="5" value="90.000000" />
+      <MATH equation="X*1">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="z">
+      <EMBEDDEDDATA mmedtypeflags="0x06" mmedaddress="0x18EB98" mmedelementsizebits="16" mmedrowcount="6" mmedcolcount="8" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units>-</units>
+      <decimalpl>7</decimalpl>
+      <min>0.000000</min>
+      <max>0.999985</max>
+      <outputtype>1</outputtype>
+      <MATH equation="X*0.00001525878906250001">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE uniqueid="0x0" flags="0x0">
+    <title>KF_POELSOLL_ADP</title>
+    <description>KF_POELSOLL_ADP
+A2L-named, code-transfer placement, round-trip-verified.
+Lastabh?ngiger ?ldruck Sollwertoffset</description>
+    <CATEGORYMEM index="0" category="50" />
+    <XDFAXIS id="x" uniqueid="0x0">
+      <EMBEDDEDDATA mmedelementsizebits="8" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units>-</units>
+      <indexcount>10</indexcount>
+      <decimalpl>0</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <DALINK index="0" />
+      <LABEL index="0" value="700.000000" />
+      <LABEL index="1" value="1300.000000" />
+      <LABEL index="2" value="1700.000000" />
+      <LABEL index="3" value="2000.000000" />
+      <LABEL index="4" value="3000.000000" />
+      <LABEL index="5" value="4000.000000" />
+      <LABEL index="6" value="4500.000000" />
+      <LABEL index="7" value="5500.000000" />
+      <LABEL index="8" value="6000.000000" />
+      <LABEL index="9" value="7000.000000" />
+      <MATH equation="X*1">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="y" uniqueid="0x0">
+      <EMBEDDEDDATA mmedelementsizebits="8" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units>-</units>
+      <indexcount>6</indexcount>
+      <decimalpl>7</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <DALINK index="0" />
+      <LABEL index="0" value="0.000000" />
+      <LABEL index="1" value="0.199997" />
+      <LABEL index="2" value="0.250000" />
+      <LABEL index="3" value="0.500000" />
+      <LABEL index="4" value="0.649994" />
+      <LABEL index="5" value="0.999985" />
+      <MATH equation="X*1">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="z">
+      <EMBEDDEDDATA mmedtypeflags="0x06" mmedaddress="0x18E9EA" mmedelementsizebits="16" mmedrowcount="6" mmedcolcount="10" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units>-</units>
+      <decimalpl>0</decimalpl>
+      <min>0.000000</min>
+      <max>65535.000000</max>
+      <outputtype>1</outputtype>
+      <MATH equation="X*1.0">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE uniqueid="0x0" flags="0x0">
+    <title>KF_POELWARN_MN</title>
+    <description>KF_POELWARN_MN
+A2L-named, code-transfer placement, round-trip-verified.
+Max Druck vor FSP-Eintrag in SLR ?ldruck</description>
+    <CATEGORYMEM index="0" category="50" />
+    <XDFAXIS id="x" uniqueid="0x0">
+      <EMBEDDEDDATA mmedelementsizebits="8" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units>-</units>
+      <indexcount>4</indexcount>
+      <decimalpl>0</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <DALINK index="0" />
+      <LABEL index="0" value="600.000000" />
+      <LABEL index="1" value="2000.000000" />
+      <LABEL index="2" value="4500.000000" />
+      <LABEL index="3" value="7000.000000" />
+      <MATH equation="X*1">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="y" uniqueid="0x0">
+      <EMBEDDEDDATA mmedelementsizebits="8" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units>-</units>
+      <indexcount>4</indexcount>
+      <decimalpl>3</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <DALINK index="0" />
+      <LABEL index="0" value="-40.000000" />
+      <LABEL index="1" value="0.000000" />
+      <LABEL index="2" value="80.000000" />
+      <LABEL index="3" value="150.000000" />
+      <MATH equation="X*1">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="z">
+      <EMBEDDEDDATA mmedtypeflags="0x06" mmedaddress="0x18E96A" mmedelementsizebits="16" mmedrowcount="4" mmedcolcount="4" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units>-</units>
+      <decimalpl>0</decimalpl>
+      <min>0.000000</min>
+      <max>65535.000000</max>
+      <outputtype>1</outputtype>
+      <MATH equation="X*1.0">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE uniqueid="0x0" flags="0x0">
+    <title>KF_QVH2O_FT</title>
+    <description>KF_QVH2O_FT
+A2L-named, code-transfer placement, round-trip-verified.
+Berechnung der temperaturabh?ngigen Zusatzrate: f_T =aT_0 + aT_1 * (T - Tx) + aT_2 * (T - Tx)^2 + aT_3 * (T - Tx)^3 + aT_exp * exp(bT_exp * (T - Tx))</description>
+    <CATEGORYMEM index="0" category="50" />
+    <XDFAXIS id="x" uniqueid="0x0">
+      <EMBEDDEDDATA mmedelementsizebits="8" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units>-</units>
+      <indexcount>12</indexcount>
+      <decimalpl>3</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <DALINK index="0" />
+      <LABEL index="0" value="-20.000000" />
+      <LABEL index="1" value="0.000000" />
+      <LABEL index="2" value="5.000000" />
+      <LABEL index="3" value="10.000000" />
+      <LABEL index="4" value="15.000000" />
+      <LABEL index="5" value="20.000000" />
+      <LABEL index="6" value="25.000000" />
+      <LABEL index="7" value="30.000000" />
+      <LABEL index="8" value="35.000000" />
+      <LABEL index="9" value="40.000000" />
+      <LABEL index="10" value="50.000000" />
+      <LABEL index="11" value="60.000000" />
+      <MATH equation="X*1">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="y" uniqueid="0x0">
+      <EMBEDDEDDATA mmedelementsizebits="8" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units>-</units>
+      <indexcount>2</indexcount>
+      <decimalpl>0</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <DALINK index="0" />
+      <LABEL index="0" value="1.000000" />
+      <LABEL index="1" value="2.000000" />
+      <MATH equation="X*1">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="z">
+      <EMBEDDEDDATA mmedtypeflags="0x07" mmedaddress="0x18E790" mmedelementsizebits="16" mmedrowcount="2" mmedcolcount="12" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units>-</units>
+      <decimalpl>4</decimalpl>
+      <min>-327.680000</min>
+      <max>327.670000</max>
+      <outputtype>1</outputtype>
+      <MATH equation="X*0.01">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE uniqueid="0x0" flags="0x0">
+    <title>KF_QVH2O_XU</title>
+    <description>KF_QVH2O_XU
+A2L-named, code-transfer placement, round-trip-verified.
+Berechnung der Spannungsabh?ngigkeit: x_U = exp((U-U_0)/(U_std - U_0)))</description>
+    <CATEGORYMEM index="0" category="50" />
+    <XDFAXIS id="x" uniqueid="0x0">
+      <EMBEDDEDDATA mmedelementsizebits="8" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units>-</units>
+      <indexcount>12</indexcount>
+      <decimalpl>4</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <DALINK index="0" />
+      <LABEL index="0" value="9.999993" />
+      <LABEL index="1" value="10.999992" />
+      <LABEL index="2" value="11.999991" />
+      <LABEL index="3" value="12.499991" />
+      <LABEL index="4" value="12.999990" />
+      <LABEL index="5" value="13.300772" />
+      <LABEL index="6" value="13.499990" />
+      <LABEL index="7" value="13.800771" />
+      <LABEL index="8" value="13.999990" />
+      <LABEL index="9" value="14.499989" />
+      <LABEL index="10" value="15.499989" />
+      <LABEL index="11" value="15.999988" />
+      <MATH equation="X*1">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="y" uniqueid="0x0">
+      <EMBEDDEDDATA mmedelementsizebits="8" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units>-</units>
+      <indexcount>2</indexcount>
+      <decimalpl>0</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <DALINK index="0" />
+      <LABEL index="0" value="1.000000" />
+      <LABEL index="1" value="2.000000" />
+      <MATH equation="X*1">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="z">
+      <EMBEDDEDDATA mmedtypeflags="0x07" mmedaddress="0x18E6F8" mmedelementsizebits="16" mmedrowcount="2" mmedcolcount="12" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units>-</units>
+      <decimalpl>4</decimalpl>
+      <min>-327.680000</min>
+      <max>327.670000</max>
+      <outputtype>1</outputtype>
+      <MATH equation="X*0.01">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE uniqueid="0x0" flags="0x0">
+    <title>KF_SBAUMS_H</title>
+    <description>KF_SBAUMS_H
+A2L-named, code-transfer placement, round-trip-verified.
+Umschaltkennfeld SubBA Homogen</description>
+    <CATEGORYMEM index="0" category="50" />
+    <XDFAXIS id="x" uniqueid="0x0">
+      <EMBEDDEDDATA mmedelementsizebits="8" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units>-</units>
+      <indexcount>22</indexcount>
+      <decimalpl>0</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <DALINK index="0" />
+      <LABEL index="0" value="1.000000" />
+      <LABEL index="1" value="2.000000" />
+      <LABEL index="2" value="3.000000" />
+      <LABEL index="3" value="4.000000" />
+      <LABEL index="4" value="5.000000" />
+      <LABEL index="5" value="6.000000" />
+      <LABEL index="6" value="7.000000" />
+      <LABEL index="7" value="8.000000" />
+      <LABEL index="8" value="9.000000" />
+      <LABEL index="9" value="10.000000" />
+      <LABEL index="10" value="11.000000" />
+      <LABEL index="11" value="12.000000" />
+      <LABEL index="12" value="13.000000" />
+      <LABEL index="13" value="14.000000" />
+      <LABEL index="14" value="15.000000" />
+      <LABEL index="15" value="16.000000" />
+      <LABEL index="16" value="17.000000" />
+      <LABEL index="17" value="18.000000" />
+      <LABEL index="18" value="19.000000" />
+      <LABEL index="19" value="20.000000" />
+      <LABEL index="20" value="21.000000" />
+      <LABEL index="21" value="22.000000" />
+      <MATH equation="X*1">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="y" uniqueid="0x0">
+      <EMBEDDEDDATA mmedelementsizebits="8" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units>-</units>
+      <indexcount>22</indexcount>
+      <decimalpl>0</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <DALINK index="0" />
+      <LABEL index="0" value="1.000000" />
+      <LABEL index="1" value="2.000000" />
+      <LABEL index="2" value="3.000000" />
+      <LABEL index="3" value="4.000000" />
+      <LABEL index="4" value="5.000000" />
+      <LABEL index="5" value="6.000000" />
+      <LABEL index="6" value="7.000000" />
+      <LABEL index="7" value="8.000000" />
+      <LABEL index="8" value="9.000000" />
+      <LABEL index="9" value="10.000000" />
+      <LABEL index="10" value="11.000000" />
+      <LABEL index="11" value="12.000000" />
+      <LABEL index="12" value="13.000000" />
+      <LABEL index="13" value="14.000000" />
+      <LABEL index="14" value="15.000000" />
+      <LABEL index="15" value="16.000000" />
+      <LABEL index="16" value="17.000000" />
+      <LABEL index="17" value="18.000000" />
+      <LABEL index="18" value="19.000000" />
+      <LABEL index="19" value="20.000000" />
+      <LABEL index="20" value="21.000000" />
+      <LABEL index="21" value="22.000000" />
+      <MATH equation="X*1">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="z">
+      <EMBEDDEDDATA mmedtypeflags="0x06" mmedaddress="0x18FC32" mmedelementsizebits="16" mmedrowcount="22" mmedcolcount="22" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units>-</units>
+      <decimalpl>0</decimalpl>
+      <min>0.000000</min>
+      <max>65535.000000</max>
+      <outputtype>1</outputtype>
+      <MATH equation="X*1.0">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE uniqueid="0x0" flags="0x0">
+    <title>KF_ZYL_AUS_MODE_PRIO</title>
+    <description>KF_ZYL_AUS_MODE_PRIO
+A2L-named, code-transfer placement, round-trip-verified.
+Kennfeld Auswahl Modus und Priorisierung Zylinderausblendung</description>
+    <CATEGORYMEM index="0" category="50" />
+    <XDFAXIS id="x" uniqueid="0x0">
+      <EMBEDDEDDATA mmedelementsizebits="8" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units>-</units>
+      <indexcount>14</indexcount>
+      <decimalpl>0</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <DALINK index="0" />
+      <LABEL index="0" value="0.000000" />
+      <LABEL index="1" value="1.000000" />
+      <LABEL index="2" value="2.000000" />
+      <LABEL index="3" value="3.000000" />
+      <LABEL index="4" value="4.000000" />
+      <LABEL index="5" value="5.000000" />
+      <LABEL index="6" value="6.000000" />
+      <LABEL index="7" value="7.000000" />
+      <LABEL index="8" value="8.000000" />
+      <LABEL index="9" value="9.000000" />
+      <LABEL index="10" value="10.000000" />
+      <LABEL index="11" value="11.000000" />
+      <LABEL index="12" value="12.000000" />
+      <LABEL index="13" value="255.000000" />
+      <MATH equation="X*1">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="y" uniqueid="0x0">
+      <EMBEDDEDDATA mmedelementsizebits="8" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units>-</units>
+      <indexcount>2</indexcount>
+      <decimalpl>4</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <DALINK index="0" />
+      <LABEL index="0" value="0.000000" />
+      <LABEL index="1" value="0.003922" />
+      <MATH equation="X*1">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="z">
+      <EMBEDDEDDATA mmedtypeflags="0x06" mmedaddress="0x197F18" mmedelementsizebits="8" mmedrowcount="2" mmedcolcount="14" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units>-</units>
+      <decimalpl>0</decimalpl>
+      <min>0.000000</min>
+      <max>255.000000</max>
+      <outputtype>1</outputtype>
+      <MATH equation="X*1.0">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE uniqueid="0x0" flags="0x0">
+    <title>KL_BNLIM</title>
+    <description>KL_BNLIM
+A2L-named, code-transfer placement, round-trip-verified.
+Kennlinie DSC min Spannung, abhaengig vom BN-Strom</description>
+    <CATEGORYMEM index="0" category="50" />
+    <XDFAXIS id="x" uniqueid="0x0">
+      <EMBEDDEDDATA mmedelementsizebits="8" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units>-</units>
+      <indexcount>4</indexcount>
+      <decimalpl>0</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <DALINK index="0" />
+      <LABEL index="0" value="0.000000" />
+      <LABEL index="1" value="0.000000" />
+      <LABEL index="2" value="110.000000" />
+      <LABEL index="3" value="125.000000" />
+      <MATH equation="X*1">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="y" uniqueid="0x0">
+      <EMBEDDEDDATA mmedelementsizebits="8" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units>-</units>
+      <indexcount>1</indexcount>
+      <decimalpl>0</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <DALINK index="0" />
+      <LABEL index="0" value="0.000000" />
+      <MATH equation="X*1">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="z">
+      <EMBEDDEDDATA mmedtypeflags="0x02" mmedaddress="0x18E0B4" mmedelementsizebits="8" mmedrowcount="1" mmedcolcount="4" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units>-</units>
+      <decimalpl>3</decimalpl>
+      <min>0.000000</min>
+      <max>25.500000</max>
+      <outputtype>1</outputtype>
+      <MATH equation="X*0.1">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE uniqueid="0x0" flags="0x0">
+    <title>KL_DMD_MAX1</title>
+    <description>KL_DMD_MAX1
+A2L-named, code-transfer placement, round-trip-verified.
+Maximaler Momentengradient Generator</description>
+    <CATEGORYMEM index="0" category="50" />
+    <XDFAXIS id="x" uniqueid="0x0">
+      <EMBEDDEDDATA mmedelementsizebits="8" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units>-</units>
+      <indexcount>6</indexcount>
+      <decimalpl>3</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <DALINK index="0" />
+      <LABEL index="0" value="0.000000" />
+      <LABEL index="1" value="1.000000" />
+      <LABEL index="2" value="2.000000" />
+      <LABEL index="3" value="3.000000" />
+      <LABEL index="4" value="4.000000" />
+      <LABEL index="5" value="5.000000" />
+      <MATH equation="X*1">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="y" uniqueid="0x0">
+      <EMBEDDEDDATA mmedelementsizebits="8" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units>-</units>
+      <indexcount>1</indexcount>
+      <decimalpl>0</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <DALINK index="0" />
+      <LABEL index="0" value="0.000000" />
+      <MATH equation="X*1">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="z">
+      <EMBEDDEDDATA mmedtypeflags="0x03" mmedaddress="0x19C462" mmedelementsizebits="16" mmedrowcount="1" mmedcolcount="6" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units>-</units>
+      <decimalpl>3</decimalpl>
+      <min>-3276.800000</min>
+      <max>3276.700000</max>
+      <outputtype>1</outputtype>
+      <MATH equation="X*0.09999999999999999">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE uniqueid="0x0" flags="0x0">
+    <title>KL_DNWE_REDAT_RS</title>
+    <description>KL_DNWE_REDAT_RS
+A2L-named, code-transfer placement, round-trip-verified.
+Wiedereinsetzdrehzahlreduzierung bei R?ckschaltung</description>
+    <CATEGORYMEM index="0" category="50" />
+    <XDFAXIS id="x" uniqueid="0x0">
+      <EMBEDDEDDATA mmedelementsizebits="8" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units>-</units>
+      <indexcount>10</indexcount>
+      <decimalpl>0</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <DALINK index="0" />
+      <LABEL index="0" value="0.000000" />
+      <LABEL index="1" value="1.000000" />
+      <LABEL index="2" value="2.000000" />
+      <LABEL index="3" value="3.000000" />
+      <LABEL index="4" value="4.000000" />
+      <LABEL index="5" value="5.000000" />
+      <LABEL index="6" value="6.000000" />
+      <LABEL index="7" value="7.000000" />
+      <LABEL index="8" value="8.000000" />
+      <LABEL index="9" value="9.000000" />
+      <MATH equation="X*1">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="y" uniqueid="0x0">
+      <EMBEDDEDDATA mmedelementsizebits="8" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units>-</units>
+      <indexcount>1</indexcount>
+      <decimalpl>0</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <DALINK index="0" />
+      <LABEL index="0" value="0.000000" />
+      <MATH equation="X*1">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="z">
+      <EMBEDDEDDATA mmedtypeflags="0x03" mmedaddress="0x1AE10E" mmedelementsizebits="16" mmedrowcount="1" mmedcolcount="10" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units>-</units>
+      <decimalpl>0</decimalpl>
+      <min>-32768.000000</min>
+      <max>32767.000000</max>
+      <outputtype>1</outputtype>
+      <MATH equation="X*1.0">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE uniqueid="0x0" flags="0x0">
+    <title>KL_FZW_GK2GD</title>
+    <description>KL_FZW_GK2GD
+A2L-named, code-transfer placement, round-trip-verified.
+?berblendfaktor Spreizung GK2GD</description>
+    <CATEGORYMEM index="0" category="50" />
+    <XDFAXIS id="x" uniqueid="0x0">
+      <EMBEDDEDDATA mmedelementsizebits="8" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units>-</units>
+      <indexcount>8</indexcount>
+      <decimalpl>7</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <DALINK index="0" />
+      <LABEL index="0" value="0.000000" />
+      <LABEL index="1" value="0.100006" />
+      <LABEL index="2" value="0.199997" />
+      <LABEL index="3" value="0.300003" />
+      <LABEL index="4" value="0.399994" />
+      <LABEL index="5" value="0.500000" />
+      <LABEL index="6" value="0.600006" />
+      <LABEL index="7" value="0.999985" />
+      <MATH equation="X*1">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="y" uniqueid="0x0">
+      <EMBEDDEDDATA mmedelementsizebits="8" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units>-</units>
+      <indexcount>1</indexcount>
+      <decimalpl>0</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <DALINK index="0" />
+      <LABEL index="0" value="0.000000" />
+      <MATH equation="X*1">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="z">
+      <EMBEDDEDDATA mmedtypeflags="0x02" mmedaddress="0x18FA76" mmedelementsizebits="8" mmedrowcount="1" mmedcolcount="8" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units>-</units>
+      <decimalpl>4</decimalpl>
+      <min>0.000000</min>
+      <max>0.996000</max>
+      <outputtype>1</outputtype>
+      <MATH equation="X*0.0039058823529411766">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE uniqueid="0x0" flags="0x0">
+    <title>KL_IBATTSOLL</title>
+    <description>KL_IBATTSOLL
+A2L-named, code-transfer placement, round-trip-verified.
+Kennlinie f?r die Abh?ngigkeit I_Battsoll vom D_Soc</description>
+    <CATEGORYMEM index="0" category="50" />
+    <XDFAXIS id="x" uniqueid="0x0">
+      <EMBEDDEDDATA mmedelementsizebits="8" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units>-</units>
+      <indexcount>4</indexcount>
+      <decimalpl>5</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <DALINK index="0" />
+      <LABEL index="0" value="10.000606" />
+      <LABEL index="1" value="20.001211" />
+      <LABEL index="2" value="29.998765" />
+      <LABEL index="3" value="39.001446" />
+      <MATH equation="X*1">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="y" uniqueid="0x0">
+      <EMBEDDEDDATA mmedelementsizebits="8" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units>-</units>
+      <indexcount>1</indexcount>
+      <decimalpl>0</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <DALINK index="0" />
+      <LABEL index="0" value="0.000000" />
+      <MATH equation="X*1">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="z">
+      <EMBEDDEDDATA mmedtypeflags="0x02" mmedaddress="0x18E4BA" mmedelementsizebits="16" mmedrowcount="1" mmedcolcount="4" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units>-</units>
+      <decimalpl>3</decimalpl>
+      <min>-200.000000</min>
+      <max>5042.800000</max>
+      <outputtype>1</outputtype>
+      <MATH equation="X*0.07694819562066071">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE uniqueid="0x0" flags="0x0">
+    <title>KL_ISGIMM_TCHIP2</title>
+    <description>KL_ISGIMM_TCHIP2
+A2L-named, code-transfer placement, round-trip-verified.
+Kennlinie Chiptemperatur 2</description>
+    <CATEGORYMEM index="0" category="50" />
+    <XDFAXIS id="x" uniqueid="0x0">
+      <EMBEDDEDDATA mmedelementsizebits="8" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units>-</units>
+      <indexcount>6</indexcount>
+      <decimalpl>0</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <DALINK index="0" />
+      <LABEL index="0" value="1.000000" />
+      <LABEL index="1" value="2.000000" />
+      <LABEL index="2" value="3.000000" />
+      <LABEL index="3" value="4.000000" />
+      <LABEL index="4" value="5.000000" />
+      <LABEL index="5" value="6.000000" />
+      <MATH equation="X*1">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="y" uniqueid="0x0">
+      <EMBEDDEDDATA mmedelementsizebits="8" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units>-</units>
+      <indexcount>1</indexcount>
+      <decimalpl>0</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <DALINK index="0" />
+      <LABEL index="0" value="0.000000" />
+      <MATH equation="X*1">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="z">
+      <EMBEDDEDDATA mmedtypeflags="0x03" mmedaddress="0x19B0E8" mmedelementsizebits="16" mmedrowcount="1" mmedcolcount="6" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units>-</units>
+      <decimalpl>3</decimalpl>
+      <min>-3276.800000</min>
+      <max>3276.700000</max>
+      <outputtype>1</outputtype>
+      <MATH equation="X*0.09999999999999999">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE uniqueid="0x0" flags="0x0">
+    <title>KL_ISGUSM_MAIERRG</title>
+    <description>KL_ISGUSM_MAIERRG
+A2L-named, code-transfer placement, round-trip-verified.
+Korrektur Grenzerregerstrom Maschinentyp abh?ngig</description>
+    <CATEGORYMEM index="0" category="50" />
+    <XDFAXIS id="x" uniqueid="0x0">
+      <EMBEDDEDDATA mmedelementsizebits="8" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units>-</units>
+      <indexcount>6</indexcount>
+      <decimalpl>0</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <DALINK index="0" />
+      <LABEL index="0" value="1.000000" />
+      <LABEL index="1" value="2.000000" />
+      <LABEL index="2" value="3.000000" />
+      <LABEL index="3" value="4.000000" />
+      <LABEL index="4" value="5.000000" />
+      <LABEL index="5" value="6.000000" />
+      <MATH equation="X*1">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="y" uniqueid="0x0">
+      <EMBEDDEDDATA mmedelementsizebits="8" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units>-</units>
+      <indexcount>1</indexcount>
+      <decimalpl>0</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <DALINK index="0" />
+      <LABEL index="0" value="0.000000" />
+      <MATH equation="X*1">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="z">
+      <EMBEDDEDDATA mmedtypeflags="0x02" mmedaddress="0x19C3AE" mmedelementsizebits="16" mmedrowcount="1" mmedcolcount="6" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units>-</units>
+      <decimalpl>5</decimalpl>
+      <min>0.000000</min>
+      <max>81.918750</max>
+      <outputtype>1</outputtype>
+      <MATH equation="X*0.00125">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE uniqueid="0x0" flags="0x0">
+    <title>KL_KHNST_BA_LUFT</title>
+    <description>KL_KHNST_BA_LUFT
+A2L-named, code-transfer placement, round-trip-verified.
+Temperaturbereiche in denen Katheizen im gedrosselten Betrieb stattfindet</description>
+    <CATEGORYMEM index="0" category="50" />
+    <XDFAXIS id="x" uniqueid="0x0">
+      <EMBEDDEDDATA mmedelementsizebits="8" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units>-</units>
+      <indexcount>4</indexcount>
+      <decimalpl>4</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <DALINK index="0" />
+      <LABEL index="0" value="0.000000" />
+      <LABEL index="1" value="0.100000" />
+      <LABEL index="2" value="0.200000" />
+      <LABEL index="3" value="0.300000" />
+      <MATH equation="X*1">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="y" uniqueid="0x0">
+      <EMBEDDEDDATA mmedelementsizebits="8" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units>-</units>
+      <indexcount>1</indexcount>
+      <decimalpl>0</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <DALINK index="0" />
+      <LABEL index="0" value="0.000000" />
+      <MATH equation="X*1">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="z">
+      <EMBEDDEDDATA mmedtypeflags="0x02" mmedaddress="0x19ECAE" mmedelementsizebits="8" mmedrowcount="1" mmedcolcount="4" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units>-</units>
+      <decimalpl>4</decimalpl>
+      <min>0.000000</min>
+      <max>3.000000</max>
+      <outputtype>1</outputtype>
+      <MATH equation="X*0.011764705882352941">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE uniqueid="0x0" flags="0x0">
+    <title>KL_MDRDMK_LDM_BREMS</title>
+    <description>KL_MDRDMK_LDM_BREMS
+A2L-named, code-transfer placement, round-trip-verified.
+Offset DCC-Moments des LDM unterhalb von Mdk_reib, damit Bremsreku entsprechend der Anforderung umgesetzt wird</description>
+    <CATEGORYMEM index="0" category="50" />
+    <XDFAXIS id="x" uniqueid="0x0">
+      <EMBEDDEDDATA mmedelementsizebits="8" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units>-</units>
+      <indexcount>4</indexcount>
+      <decimalpl>3</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <DALINK index="0" />
+      <LABEL index="0" value="-100.000000" />
+      <LABEL index="1" value="-80.000000" />
+      <LABEL index="2" value="-50.000000" />
+      <LABEL index="3" value="0.000000" />
+      <MATH equation="X*1">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="y" uniqueid="0x0">
+      <EMBEDDEDDATA mmedelementsizebits="8" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units>-</units>
+      <indexcount>1</indexcount>
+      <decimalpl>0</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <DALINK index="0" />
+      <LABEL index="0" value="0.000000" />
+      <MATH equation="X*1">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="z">
+      <EMBEDDEDDATA mmedtypeflags="0x03" mmedaddress="0x1AF438" mmedelementsizebits="16" mmedrowcount="1" mmedcolcount="4" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units>-</units>
+      <decimalpl>3</decimalpl>
+      <min>-3276.800000</min>
+      <max>3276.700000</max>
+      <outputtype>1</outputtype>
+      <MATH equation="X*0.09999999999999999">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE uniqueid="0x0" flags="0x0">
+    <title>KL_NKWMAXLIN</title>
+    <description>KL_NKWMAXLIN
+A2L-named, code-transfer placement, round-trip-verified.
+Max Drehzahl bis zu der lin. Zusammenhang zwischen P_oel_ist und Nkw erkannt werden kann</description>
+    <CATEGORYMEM index="0" category="50" />
+    <XDFAXIS id="x" uniqueid="0x0">
+      <EMBEDDEDDATA mmedelementsizebits="8" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units>-</units>
+      <indexcount>4</indexcount>
+      <decimalpl>3</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <DALINK index="0" />
+      <LABEL index="0" value="-40.000000" />
+      <LABEL index="1" value="0.000000" />
+      <LABEL index="2" value="50.000000" />
+      <LABEL index="3" value="150.000000" />
+      <MATH equation="X*1">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="y" uniqueid="0x0">
+      <EMBEDDEDDATA mmedelementsizebits="8" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units>-</units>
+      <indexcount>1</indexcount>
+      <decimalpl>0</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <DALINK index="0" />
+      <LABEL index="0" value="0.000000" />
+      <MATH equation="X*1">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="z">
+      <EMBEDDEDDATA mmedtypeflags="0x03" mmedaddress="0x18EEBC" mmedelementsizebits="16" mmedrowcount="1" mmedcolcount="4" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units>-</units>
+      <decimalpl>0</decimalpl>
+      <min>-32768.000000</min>
+      <max>32767.000000</max>
+      <outputtype>1</outputtype>
+      <MATH equation="X*1.0">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE uniqueid="0x0" flags="0x0">
+    <title>KL_POELRSTAT_MN</title>
+    <description>KL_POELRSTAT_MN
+A2L-named, code-transfer placement, round-trip-verified.
+Max. Statische Solldruckabweichung f?r FSP-Eintrag (Druck zu niedrig)</description>
+    <CATEGORYMEM index="0" category="50" />
+    <XDFAXIS id="x" uniqueid="0x0">
+      <EMBEDDEDDATA mmedelementsizebits="8" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units>-</units>
+      <indexcount>4</indexcount>
+      <decimalpl>0</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <DALINK index="0" />
+      <LABEL index="0" value="500.000000" />
+      <LABEL index="1" value="2000.000000" />
+      <LABEL index="2" value="4000.000000" />
+      <LABEL index="3" value="6000.000000" />
+      <MATH equation="X*1">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="y" uniqueid="0x0">
+      <EMBEDDEDDATA mmedelementsizebits="8" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units>-</units>
+      <indexcount>1</indexcount>
+      <decimalpl>0</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <DALINK index="0" />
+      <LABEL index="0" value="0.000000" />
+      <MATH equation="X*1">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="z">
+      <EMBEDDEDDATA mmedtypeflags="0x02" mmedaddress="0x18EE64" mmedelementsizebits="16" mmedrowcount="1" mmedcolcount="4" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units>-</units>
+      <decimalpl>0</decimalpl>
+      <min>0.000000</min>
+      <max>65535.000000</max>
+      <outputtype>1</outputtype>
+      <MATH equation="X*1.0">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE uniqueid="0x0" flags="0x0">
+    <title>KL_PWRDF</title>
+    <description>KL_PWRDF
+A2L-named, code-transfer placement, round-trip-verified.
+Kennlinie f?r den Einfluss der Pi-Regler auf den df- Teil der Verbraucherreduzierung</description>
+    <CATEGORYMEM index="0" category="50" />
+    <XDFAXIS id="x" uniqueid="0x0">
+      <EMBEDDEDDATA mmedelementsizebits="8" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units>-</units>
+      <indexcount>14</indexcount>
+      <decimalpl>2</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <DALINK index="0" />
+      <LABEL index="0" value="19.921860" />
+      <LABEL index="1" value="26.171855" />
+      <LABEL index="2" value="32.031226" />
+      <LABEL index="3" value="37.890596" />
+      <LABEL index="4" value="44.140592" />
+      <LABEL index="5" value="49.999962" />
+      <LABEL index="6" value="55.859333" />
+      <LABEL index="7" value="62.109328" />
+      <LABEL index="8" value="67.968699" />
+      <LABEL index="9" value="73.828069" />
+      <LABEL index="10" value="80.078065" />
+      <LABEL index="11" value="85.937435" />
+      <LABEL index="12" value="92.187431" />
+      <LABEL index="13" value="98.046801" />
+      <MATH equation="X*1">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="y" uniqueid="0x0">
+      <EMBEDDEDDATA mmedelementsizebits="8" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units>-</units>
+      <indexcount>1</indexcount>
+      <decimalpl>0</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <DALINK index="0" />
+      <LABEL index="0" value="0.000000" />
+      <MATH equation="X*1">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="z">
+      <EMBEDDEDDATA mmedtypeflags="0x02" mmedaddress="0x18E464" mmedelementsizebits="8" mmedrowcount="1" mmedcolcount="14" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units>-</units>
+      <decimalpl>3</decimalpl>
+      <min>0.000000</min>
+      <max>13.000000</max>
+      <outputtype>1</outputtype>
+      <MATH equation="X*0.050980392156862744">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE uniqueid="0x0" flags="0x0">
+    <title>KL_TSHEIZ_ST2</title>
+    <description>KL_TSHEIZ_ST2
+A2L-named, code-transfer placement, round-trip-verified.
+Zeit f?r Energiesparstufe 2</description>
+    <CATEGORYMEM index="0" category="50" />
+    <XDFAXIS id="x" uniqueid="0x0">
+      <EMBEDDEDDATA mmedelementsizebits="8" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units>-</units>
+      <indexcount>8</indexcount>
+      <decimalpl>3</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <DALINK index="0" />
+      <LABEL index="0" value="-25.000000" />
+      <LABEL index="1" value="-10.000000" />
+      <LABEL index="2" value="0.000000" />
+      <LABEL index="3" value="10.000000" />
+      <LABEL index="4" value="15.000000" />
+      <LABEL index="5" value="20.000000" />
+      <LABEL index="6" value="25.000000" />
+      <LABEL index="7" value="30.000000" />
+      <MATH equation="X*1">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="y" uniqueid="0x0">
+      <EMBEDDEDDATA mmedelementsizebits="8" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units>-</units>
+      <indexcount>1</indexcount>
+      <decimalpl>0</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <DALINK index="0" />
+      <LABEL index="0" value="0.000000" />
+      <MATH equation="X*1">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="z">
+      <EMBEDDEDDATA mmedtypeflags="0x02" mmedaddress="0x19F0B4" mmedelementsizebits="16" mmedrowcount="1" mmedcolcount="8" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units>-</units>
+      <decimalpl>3</decimalpl>
+      <min>0.000000</min>
+      <max>6553.500000</max>
+      <outputtype>1</outputtype>
+      <MATH equation="X*0.1">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE uniqueid="0x0" flags="0x0">
+    <title>KL_UEBL_MSHUB_FWNWKH</title>
+    <description>KL_UEBL_MSHUB_FWNWKH
+A2L-named, code-transfer placement, round-trip-verified.
+?berblender f?r F_wnwkh in der EISY_HUB</description>
+    <CATEGORYMEM index="0" category="50" />
+    <XDFAXIS id="x" uniqueid="0x0">
+      <EMBEDDEDDATA mmedelementsizebits="8" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units>-</units>
+      <indexcount>2</indexcount>
+      <decimalpl>4</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <DALINK index="0" />
+      <LABEL index="0" value="0.500000" />
+      <LABEL index="1" value="0.503906" />
+      <MATH equation="X*1">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="y" uniqueid="0x0">
+      <EMBEDDEDDATA mmedelementsizebits="8" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units>-</units>
+      <indexcount>1</indexcount>
+      <decimalpl>0</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <DALINK index="0" />
+      <LABEL index="0" value="0.000000" />
+      <MATH equation="X*1">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="z">
+      <EMBEDDEDDATA mmedtypeflags="0x02" mmedaddress="0x192AC6" mmedelementsizebits="8" mmedrowcount="1" mmedcolcount="2" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units>-</units>
+      <decimalpl>4</decimalpl>
+      <min>0.000000</min>
+      <max>0.996094</max>
+      <outputtype>1</outputtype>
+      <MATH equation="X*0.00390625">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE uniqueid="0x0" flags="0x0">
+    <title>KL_WESNESPR</title>
+    <description>KL_WESNESPR
+A2L-named, code-transfer placement, round-trip-verified.
+Winkel Einlassventil schlie?t nach Einlass-Spreizung als Funktion von Hubev_ist</description>
+    <CATEGORYMEM index="0" category="50" />
+    <XDFAXIS id="x" uniqueid="0x0">
+      <EMBEDDEDDATA mmedelementsizebits="8" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units>-</units>
+      <indexcount>8</indexcount>
+      <decimalpl>5</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <DALINK index="0" />
+      <LABEL index="0" value="0.200000" />
+      <LABEL index="1" value="0.327000" />
+      <LABEL index="2" value="0.576000" />
+      <LABEL index="3" value="1.085000" />
+      <LABEL index="4" value="2.505000" />
+      <LABEL index="5" value="4.687000" />
+      <LABEL index="6" value="7.495000" />
+      <LABEL index="7" value="9.600000" />
+      <MATH equation="X*1">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="y" uniqueid="0x0">
+      <EMBEDDEDDATA mmedelementsizebits="8" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units>-</units>
+      <indexcount>1</indexcount>
+      <decimalpl>0</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <DALINK index="0" />
+      <LABEL index="0" value="0.000000" />
+      <MATH equation="X*1">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="z">
+      <EMBEDDEDDATA mmedtypeflags="0x03" mmedaddress="0x191080" mmedelementsizebits="16" mmedrowcount="1" mmedcolcount="8" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units>-</units>
+      <decimalpl>4</decimalpl>
+      <min>-768.000000</min>
+      <max>767.976562</max>
+      <outputtype>1</outputtype>
+      <MATH equation="X*0.0234375">
         <VAR id="X" />
       </MATH>
     </XDFAXIS>
