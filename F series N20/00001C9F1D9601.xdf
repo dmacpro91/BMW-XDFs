@@ -3,7 +3,7 @@
   <XDFHEADER>
     <flags>0x1</flags>
     <deftitle>N20-EWG-H-P MEVD172P 9G4LBIX6 (romVersion 017243)</deftitle>
-    <description>N20-EWG-H-P (MEVD172P), ROM 9G4LBIX6, romVersion 017243. 700 tables. Generated definition, not hand-authored. VALID ONLY FOR romVersion 017243: addresses do not transfer between ROM versions, so using this file against another ROM reads and writes the wrong locations. Every table was verified by decoding it back out of 00001C9F1D9601_original.bin through this definition; 42948 values compared, 700 of 700 exact.</description>
+    <description>N20-EWG-H-P (MEVD172P), ROM 9G4LBIX6, romVersion 017243. 737 tables. Generated definition, not hand-authored. VALID ONLY FOR romVersion 017243: addresses do not transfer between ROM versions, so using this file against another ROM reads and writes the wrong locations. Every table was verified by decoding it back out of 00001C9F1D9601_original.bin through this definition; 44612 values compared, 737 of 737 exact.</description>
     <BASEOFFSET offset="0" subtract="0" />
     <DEFAULTS datasizeinbits="16" sigdigits="1" outputtype="1" signed="0" lsbfirst="1" float="0" />
     <REGION type="0xFFFFFFFF" startaddress="0x0" size="0x400000" regionflags="0x0" name="Binary File" desc="This region describes the bin file edited by this XDF" />
