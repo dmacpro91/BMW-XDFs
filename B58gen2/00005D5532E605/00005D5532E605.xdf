@@ -4281,6 +4281,142 @@
       </MATH>
     </XDFAXIS>
   </XDFTABLE>
+  <XDFTABLE uniqueid="0x0" flags="0x30">
+    <title>Valvetronic eccentric shaft angle to lift</title>
+    <description>KL_HUBEX - This table performs an inverted lookup to determine the valvetronic shaft angle required to hit a target valve lift.</description>
+    <CATEGORYMEM index="0" category="19" />
+    <XDFAXIS id="x" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x2" mmedaddress="0x71BB2E" mmedelementsizebits="16" mmedcolcount="18" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units>mm</units>
+      <indexcount>18</indexcount>
+      <decimalpl>3</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1" />
+      <DALINK index="0" />
+      <MATH equation="X*0.001">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="y" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x0" mmedaddress="0x0" mmedelementsizebits="8" mmedcolcount="1" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units>-</units>
+      <indexcount>1</indexcount>
+      <decimalpl>0</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1" />
+      <DALINK index="0" />
+      <MATH equation="X*1">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="z">
+      <EMBEDDEDDATA mmedtypeflags="0x2" mmedaddress="0x71BA7E" mmedelementsizebits="16" mmedrowcount="1" mmedcolcount="18" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units />
+      <decimalpl>3</decimalpl>
+      <min>0</min>
+      <max>255</max>
+      <outputtype>1</outputtype>
+      <MATH equation="X*0.1">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE uniqueid="0x0" flags="0x30">
+    <title>Valvetronic maximum eccentric shaft angle (RPM)</title>
+    <description>KL_EXWMX_N - This table limits the maximum valvetronic shaft angle by RPM.</description>
+    <CATEGORYMEM index="0" category="19" />
+    <XDFAXIS id="x" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x3" mmedaddress="0x71BB52" mmedelementsizebits="16" mmedcolcount="6" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units>1/min</units>
+      <indexcount>6</indexcount>
+      <decimalpl>0</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1" />
+      <DALINK index="0" />
+      <MATH equation="X*1">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="y" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x0" mmedaddress="0x0" mmedelementsizebits="8" mmedcolcount="1" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units>-</units>
+      <indexcount>1</indexcount>
+      <decimalpl>0</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1" />
+      <DALINK index="0" />
+      <MATH equation="X*1">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="z">
+      <EMBEDDEDDATA mmedtypeflags="0x2" mmedaddress="0x71BAA2" mmedelementsizebits="16" mmedrowcount="1" mmedcolcount="6" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units />
+      <decimalpl>3</decimalpl>
+      <min>0</min>
+      <max>255</max>
+      <outputtype>1</outputtype>
+      <MATH equation="X*0.1">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE>
+    <title>Valvetronic eccentric shaft angle to lift X (autogen)</title>
+    <CATEGORYMEM index="0" category="19" />
+    <CATEGORYMEM index="1" category="27" />
+    <XDFAXIS id="x">
+      <EMBEDDEDDATA />
+      <indexcount>18</indexcount>
+    </XDFAXIS>
+    <XDFAXIS id="y">
+      <EMBEDDEDDATA />
+      <indexcount>1</indexcount>
+    </XDFAXIS>
+    <XDFAXIS id="z" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x2" mmedaddress="0x71BB2E" mmedelementsizebits="16" mmedcolcount="18" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units>mm</units>
+      <indexcount>18</indexcount>
+      <decimalpl>3</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1" />
+      <DALINK index="0" />
+      <MATH equation="X*0.001">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE>
+    <title>Valvetronic maximum eccentric shaft angle (RPM) X (autogen)</title>
+    <CATEGORYMEM index="0" category="19" />
+    <CATEGORYMEM index="1" category="27" />
+    <XDFAXIS id="x">
+      <EMBEDDEDDATA />
+      <indexcount>6</indexcount>
+    </XDFAXIS>
+    <XDFAXIS id="y">
+      <EMBEDDEDDATA />
+      <indexcount>1</indexcount>
+    </XDFAXIS>
+    <XDFAXIS id="z" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x3" mmedaddress="0x71BB52" mmedelementsizebits="16" mmedcolcount="6" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units>1/min</units>
+      <indexcount>6</indexcount>
+      <decimalpl>0</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1" />
+      <DALINK index="0" />
+      <MATH equation="X*1">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
   <XDFTABLE uniqueid="0x0" flags="0x0">
     <title>Max valve lift (10ms)</title>
     <description>KF_HUB_GRDMX</description>
@@ -13869,6 +14005,48 @@
       <embedinfo type="1" />
       <DALINK index="0" />
       <MATH equation="X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE uniqueid="0x0" flags="0x30">
+    <title>Enable Factory Launch Control</title>
+    <description>BMWas_cw_EnaRennstart_C - Set to 7 to enable or 0 to disable.</description>
+    <CATEGORYMEM index="0" category="25" />
+    <XDFAXIS id="x" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x0" mmedaddress="0x0" mmedelementsizebits="8" mmedcolcount="1" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units>-</units>
+      <indexcount>1</indexcount>
+      <decimalpl>0</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1" />
+      <DALINK index="0" />
+      <MATH equation="X*1">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="y" uniqueid="0x0">
+      <EMBEDDEDDATA mmedtypeflags="0x0" mmedaddress="0x0" mmedelementsizebits="8" mmedcolcount="1" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units>-</units>
+      <indexcount>1</indexcount>
+      <decimalpl>0</decimalpl>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <embedinfo type="1" />
+      <DALINK index="0" />
+      <MATH equation="X*1">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="z">
+      <EMBEDDEDDATA mmedtypeflags="0x0" mmedaddress="0x74BA96" mmedelementsizebits="8" mmedrowcount="1" mmedcolcount="1" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <units>-</units>
+      <decimalpl>1</decimalpl>
+      <min>0</min>
+      <max>255</max>
+      <outputtype>1</outputtype>
+      <MATH equation="X*1">
         <VAR id="X" />
       </MATH>
     </XDFAXIS>
@@ -38644,8 +38822,10 @@ ipol factors 1.01 - 2 blend from map slot to FF2</description>
     </XDFAXIS>
   </XDFTABLE>
   <XDFTABLE uniqueid="0x0" flags="0x30">
-    <title>ReFlex Aux 2 Set as Relay Trigger</title>
-    <description>Set to 1 if this aux output is triggering a relay. It will then only output DC% at either 0 or 100% (0-49.9% treated as 0%, 50-100% treated as 100%)</description>
+    <title>ReFlex Aux 2 Output Type</title>
+    <description>00: Normal PWM output driven by the per map / flexfuel DC% output tables with interpolation.
+01: Relay Trigger - when this aux output is controlling a traditional relay, it will only output DC% at either 0 or 100% (0-49.9% treated as 0%, 50-100% treated as 100%)
+02: Line Lock - when this aux output is controlling a line lock kit, it will only output 100% DC after the cruise control rocker UP is held for 2 seconds while stopped and on the brake pedal. The pedal threshold condition is also ignored. Press and hold for 2 seconds again (while stopped and on the brake) to release. NOTE: The CEL will flash while line lock is active.</description>
     <CATEGORYMEM index="0" category="250" />
     <CATEGORYMEM index="1" category="72" />
     <CATEGORYMEM index="2" category="61" />
@@ -38673,8 +38853,10 @@ ipol factors 1.01 - 2 blend from map slot to FF2</description>
     </XDFAXIS>
   </XDFTABLE>
   <XDFTABLE uniqueid="0x0" flags="0x30">
-    <title>ReFlex Aux 3 Set as Relay Trigger</title>
-    <description>Set to 1 if this aux output is triggering a relay. It will then only output DC% at either 0 or 100% (0-49.9% treated as 0%, 50-100% treated as 100%)</description>
+    <title>ReFlex Aux 3 Output Type</title>
+    <description>00: Normal PWM output driven by the per map / flexfuel DC% output tables with interpolation.
+01: Relay Trigger - when this aux output is controlling a traditional relay, it will only output DC% at either 0 or 100% (0-49.9% treated as 0%, 50-100% treated as 100%)
+02: Line Lock - when this aux output is controlling a line lock kit, it will only output 100% DC after the cruise control rocker UP is held for 2 seconds while stopped and on the brake pedal. The pedal threshold condition is also ignored. Press and hold for 2 seconds again (while stopped and on the brake) to release. NOTE: The CEL will flash while line lock is active.</description>
     <CATEGORYMEM index="0" category="250" />
     <CATEGORYMEM index="1" category="72" />
     <CATEGORYMEM index="2" category="63" />
@@ -38702,8 +38884,10 @@ ipol factors 1.01 - 2 blend from map slot to FF2</description>
     </XDFAXIS>
   </XDFTABLE>
   <XDFTABLE uniqueid="0x0" flags="0x30">
-    <title>ReFlex Aux 4 Set as Relay Trigger</title>
-    <description>Set to 1 if this aux output is triggering a relay. It will then only output DC% at either 0 or 100% (0-49.9% treated as 0%, 50-100% treated as 100%)</description>
+    <title>ReFlex Aux 4 Output Type</title>
+    <description>00: Normal PWM output driven by the per map / flexfuel DC% output tables with interpolation.
+01: Relay Trigger - when this aux output is controlling a traditional relay, it will only output DC% at either 0 or 100% (0-49.9% treated as 0%, 50-100% treated as 100%)
+02: Line Lock - when this aux output is controlling a line lock kit, it will only output 100% DC after the cruise control rocker UP is held for 2 seconds while stopped and on the brake pedal. The pedal threshold condition is also ignored. Press and hold for 2 seconds again (while stopped and on the brake) to release. NOTE: The CEL will flash while line lock is active.</description>
     <CATEGORYMEM index="0" category="250" />
     <CATEGORYMEM index="1" category="72" />
     <CATEGORYMEM index="2" category="65" />
